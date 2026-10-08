@@ -23,6 +23,7 @@
   "dependencies": {
     "@fontsource-variable/nunito-sans": "5.3.0",
     "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "@fontsource/skranji": "5.3.0",
     "@js-temporal/polyfill": "0.5.1",
     "@neondatabase/auth": "0.5.0-beta",
     "@neondatabase/serverless": "1.2.0",
