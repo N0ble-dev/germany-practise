@@ -14,5 +14,7 @@ export default defineConfig([
     "test-results/**",
     "playwright-report/**",
     "drizzle/meta/**",
+    "artifacts/**",
+    ".cache/**",
   ]),
 ]);

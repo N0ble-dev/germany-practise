@@ -2,8 +2,11 @@ node_modules/
 .next/
 .env*
 !.env.example
+!.env.production.example
 *.tsbuildinfo
 playwright-report/
 test-results/
 coverage/
 .agents
+.cache/
+artifacts/
