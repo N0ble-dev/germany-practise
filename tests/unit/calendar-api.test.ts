@@ -44,7 +44,7 @@ import { GET as status } from "@/app/api/calendar/google/route";
 beforeEach(() => {
   vi.resetAllMocks();
   mocks.configured.mockReturnValue(true);
-  mocks.user.mockResolvedValue({ id });
+  mocks.user.mockResolvedValue({ id, email: "amina@example.com" });
 });
 function post(
   path: string,
@@ -106,6 +106,7 @@ it("uses offline narrow-scope PKCE and an encrypted user-bound HttpOnly cookie",
   expect(options).toMatchObject({
     access_type: "offline",
     prompt: "consent",
+    login_hint: "amina@example.com",
     scope: ["https://www.googleapis.com/auth/calendar.app.created"],
     code_challenge: "challenge",
     code_challenge_method: "S256",
