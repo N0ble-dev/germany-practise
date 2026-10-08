@@ -139,7 +139,7 @@ export function ProfilePdfExport() {
           if (!busy) setOpen(next);
         }}
         title="Your learning notebook, as a PDF"
-        description="Choose what to include. The PDF downloads to your device, ready to study, print, or keep offline."
+        description="Choose what to include in your notebook, with a cover, clickable contents and study tables. Download it to study, print or keep offline."
       >
         <fieldset className="pdf-sections" disabled={busy}>
           <legend>Include in my PDF</legend>
