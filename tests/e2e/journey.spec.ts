@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 import AxeBuilder from "@axe-core/playwright";
 import { bookLessons } from "../../src/lib/journey-content";
 import { personalize } from "../../src/lib/journey-content";
@@ -170,6 +170,9 @@ test("a learner recalls, listens, speaks, and passes the first chapter's life mi
       .click();
   }
   await page.goto("/lessons/1?step=speak");
+  await expect(
+    page.locator(".speaking-self-check input").first(),
+  ).toBeVisible();
   for (const checkbox of await page.locator(".speaking-self-check input").all())
     await checkbox.check();
   await page

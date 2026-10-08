@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 import AxeBuilder from "@axe-core/playwright";
 test("a learner adds a word, reviews it, and keeps progress after reloading", async ({
   page,
@@ -102,6 +102,12 @@ test("mobile navigation, dark theme, and all practice routes work", async ({
 test("imports legacy storage and handles empty or damaged collections safely", async ({
   page,
 }) => {
+  // Start with legacy storage only; guest onboarding created a v2 save in the fixture.
+  await page.evaluate(() => {
+    localStorage.removeItem("deutsch-journey-v2");
+    localStorage.removeItem("deutsch-journey-v2:guest");
+    localStorage.removeItem("deutsch-journey-v2:owner");
+  });
   await page.addInitScript(() => {
     localStorage.setItem(
       "dj_words",
@@ -129,6 +135,7 @@ test("imports legacy storage and handles empty or damaged collections safely", a
     const s = JSON.parse(localStorage.getItem("deutsch-journey-v2")!);
     s.words = [];
     localStorage.setItem("deutsch-journey-v2", JSON.stringify(s));
+    localStorage.setItem("deutsch-journey-v2:guest", JSON.stringify(s));
   });
   await page.goto("/review");
   await expect(
@@ -138,9 +145,10 @@ test("imports legacy storage and handles empty or damaged collections safely", a
   await expect(
     page.getByRole("heading", { name: "Start with a word." }),
   ).toBeVisible();
-  await page.evaluate(() =>
-    localStorage.setItem("deutsch-journey-v2", "broken"),
-  );
+  await page.evaluate(() => {
+    localStorage.setItem("deutsch-journey-v2", "broken");
+    localStorage.setItem("deutsch-journey-v2:guest", "broken");
+  });
   await page.reload();
   await expect(
     page.getByRole("alert").filter({ hasText: "original is preserved" }),
@@ -189,7 +197,8 @@ test("cloud endpoints deny unauthenticated access or explain missing configurati
   const progress = await request.get("/api/progress");
   expect([401, 503]).toContain(progress.status());
   const session = await request.get("/api/auth/get-session");
-  expect([200, 503]).toContain(session.status());
+  // The managed proxy returns 502 when its configured upstream is unreachable.
+  expect([200, 502, 503]).toContain(session.status());
   if (session.ok()) expect(await session.json()).toBeNull();
   const crossOrigin = await request.put("/api/progress", {
     headers: { Origin: "https://example.com" },

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./fixtures";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 import { initialState } from "../../src/lib/content";
@@ -180,11 +180,10 @@ test("Google controls sync a plan and explain what remains after disconnecting",
     until: "2030-01-07",
     weekdays: [],
   });
-  await page.addInitScript(
-    (value) =>
-      localStorage.setItem("deutsch-journey-v2", JSON.stringify(value)),
-    state,
-  );
+  await page.addInitScript((value) => {
+    localStorage.setItem("deutsch-journey-v2", JSON.stringify(value));
+    localStorage.setItem("deutsch-journey-v2:guest", JSON.stringify(value));
+  }, state);
   await page.goto("/planner");
   await expect(page.locator("main h1")).toBeVisible();
   test.skip(
