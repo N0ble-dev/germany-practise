@@ -171,7 +171,9 @@ function GoogleControls({ sessions }: { sessions: StudySession[] }) {
         <>
           <p className="muted">
             Connect Google Calendar to send this plan to its own study calendar
-            with your chosen reminder times.
+            with your chosen reminder times. Google sign-in identifies you; this
+            separate step asks for calendar permission. Choose the same Google
+            account to keep your learning and reminders together.
           </p>
           {!connection ? (
             <p className="muted small">Checking the calendar connection…</p>
@@ -188,7 +190,9 @@ function GoogleControls({ sessions }: { sessions: StudySession[] }) {
             </>
           ) : !connection.signedIn ? (
             <Button asChild>
-              <Link href="/profile">Sign in to connect Google Calendar</Link>
+              <Link href="/signin?next=%2Fplanner">
+                Sign in to connect Google Calendar
+              </Link>
             </Button>
           ) : (
             <Button disabled={busy} onClick={() => void connect()}>

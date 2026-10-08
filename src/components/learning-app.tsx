@@ -34,15 +34,26 @@ import {
   Compass,
   CalendarDays,
 } from "lucide-react";
-import { useLearning, updateState } from "@/lib/store";
+import { useLearning, updateState, activateLearningAccount } from "@/lib/store";
+import { authClient } from "@/lib/auth-client";
 import { dueWords, streak, type LearningState } from "@/lib/learning";
 import { lessons } from "@/lib/content";
 import { Button } from "./ui/button";
 import { Dialog } from "./ui/dialog";
+import { AccountEntry } from "./account-entry";
+import { BrandMark } from "./brand-mark";
+export type LearningIdentity = {
+  id: string;
+  name: string;
+  email: string;
+  image?: string | null;
+};
 const AppContext = createContext<{
   state: LearningState;
   notify: (message: string) => void;
   cloudEnabled: boolean;
+  identity: LearningIdentity | null;
+  displayName: string;
 } | null>(null);
 export function useApp() {
   const value = useContext(AppContext);
@@ -93,6 +104,8 @@ const titles: Record<string, string> = {
   "/inspiration": "My Germany dream",
   "/progress": "Look how far you’ve come",
   "/profile": "Your learning preferences",
+  "/signup": "Your German journey starts here",
+  "/signin": "Welcome back",
 };
 function subscribeMobile(listener: () => void) {
   const query = window.matchMedia("(max-width: 760px)");
@@ -108,7 +121,47 @@ export function LearningApp({
   children: ReactNode;
   cloudEnabled: boolean;
 }) {
+  return cloudEnabled ? (
+    <ManagedLearningApp>{children}</ManagedLearningApp>
+  ) : (
+    <LearningWorkspace cloudEnabled={false} identity={null} pending={false}>
+      {children}
+    </LearningWorkspace>
+  );
+}
+function ManagedLearningApp({ children }: { children: ReactNode }) {
+  const { data: session, isPending } = authClient.useSession();
+  return (
+    <LearningWorkspace
+      key={session?.user.id ?? "guest"}
+      cloudEnabled
+      identity={session?.user ?? null}
+      pending={isPending}
+    >
+      {children}
+    </LearningWorkspace>
+  );
+}
+function LearningWorkspace({
+  children,
+  cloudEnabled,
+  identity,
+  pending,
+}: {
+  children: ReactNode;
+  cloudEnabled: boolean;
+  identity: LearningIdentity | null;
+  pending: boolean;
+}) {
   const snapshot = useLearning();
+  const userId = identity?.id;
+  const userName = identity?.name;
+  useEffect(() => {
+    if (!pending)
+      activateLearningAccount(
+        userId ? { id: userId, name: userName ?? "Learner" } : null,
+      );
+  }, [pending, userId, userName]);
   const pathname = usePathname();
   const router = useRouter();
   const mobile = useSyncExternalStore(
@@ -179,19 +232,24 @@ export function LearningApp({
       previousFocus?.focus();
     };
   }, [mobile, menu]);
-  if (!state)
+  if (
+    !state ||
+    (pending && snapshot?.owner !== null) ||
+    snapshot?.owner !== (identity?.id ?? null)
+  )
     return (
       <div className="loading-screen">
-        <div className="brand-symbol">
-          dj
-          <span />
-        </div>
+        <BrandMark />
         <p>Opening your learning journey…</p>
       </div>
     );
   const reviewCount = dueWords(state).length;
+  const displayName = identity ? state.name : "Guest";
   return (
-    <AppContext.Provider value={{ state, notify, cloudEnabled }}>
+    <AppContext.Provider
+      key={identity?.id ?? "guest"}
+      value={{ state, notify, cloudEnabled, identity, displayName }}
+    >
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
@@ -212,10 +270,7 @@ export function LearningApp({
           aria-label="Main navigation"
         >
           <Link href="/" className="brand" onClick={() => setMenu(false)}>
-            <div className="brand-symbol">
-              dj
-              <span />
-            </div>
+            <BrandMark />
             <div>
               <strong>
                 deutsch journey<span className="brand-dot">.</span>
@@ -230,14 +285,7 @@ export function LearningApp({
           >
             <X />
           </button>
-          <div className="course-tag">
-            <span className="german-flag" />
-            <div>
-              <strong>Deutsch A1.1</strong>
-              <small>Your Menschen companion</small>
-            </div>
-            <ChevronRight size={15} />
-          </div>
+
           <nav>
             {navigation.map((group) => (
               <div className="nav-group" key={group.title}>
@@ -280,11 +328,15 @@ export function LearningApp({
               onClick={() => setMenu(false)}
             >
               <span className="avatar">
-                {state.name.slice(0, 1).toUpperCase()}
+                {displayName.slice(0, 1).toUpperCase()}
               </span>
               <div>
-                <strong>{state.name}</strong>
-                <small>A1 explorer</small>
+                <strong>{displayName}</strong>
+                <small>
+                  {identity
+                    ? "Google account · A1 explorer"
+                    : "Guest · saved on this device"}
+                </small>
               </div>
               <Settings size={18} />
             </Link>
@@ -311,6 +363,7 @@ export function LearningApp({
               </span>
             </div>
             <div className="topbar-actions">
+              {cloudEnabled && <AccountEntry />}
               <button
                 className="search-trigger"
                 aria-label="Find a word or lesson"

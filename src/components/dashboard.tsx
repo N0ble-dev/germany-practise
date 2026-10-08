@@ -30,7 +30,7 @@ import { lessons } from "@/lib/content";
 import { emptyLessonProgress, journeyPercent } from "@/lib/journey-model";
 import { speakGerman } from "@/lib/speech";
 export function Dashboard() {
-  const { state, notify } = useApp();
+  const { state, notify, displayName } = useApp();
   const today = dailyActivities(state);
   const due = dueWords(state);
   const dailyXp = today.reduce((sum, a) => sum + a.xp, 0);
@@ -83,7 +83,7 @@ export function Dashboard() {
       <div className="page-heading">
         <div>
           <h1>
-            {greeting}, {state.name} <span className="wave">☀</span>
+            {greeting}, {displayName} <span className="wave">☀</span>
           </h1>
           <p>
             You don’t need to learn it all today. Just a little more than

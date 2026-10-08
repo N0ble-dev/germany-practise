@@ -12,7 +12,6 @@ import {
   Check,
   ArrowRight,
   Award,
-  LogOut,
 } from "lucide-react";
 import Link from "next/link";
 import { useApp } from "./learning-app";
@@ -31,8 +30,13 @@ import {
   migrateLegacy,
   updateState,
 } from "@/lib/store";
-import { authClient } from "@/lib/auth-client";
-import { isAuthError } from "@neondatabase/auth/next";
+import { CloudAccount } from "./cloud-account";
+import {
+  ProfileSummary,
+  ProfileNotebook,
+  ProfilePdfExport,
+} from "./profile-notebook";
+import { personalProfileSchema } from "@/lib/journey-model";
 export function Progress() {
   const { state } = useApp();
   const masteredChapters = Object.values(state.journey.lessons).filter(
@@ -235,7 +239,6 @@ export function Progress() {
 }
 export function Profile() {
   const { state, notify, cloudEnabled } = useApp();
-  const [name, setName] = useState(state.name);
   const input = useRef<HTMLInputElement>(null);
   const [pending, setPending] = useState<LearningState | null>(null);
   const [error, setError] = useState("");
@@ -273,12 +276,16 @@ export function Profile() {
     <>
       <div className="page-heading">
         <div>
-          <h1>Make this journey feel like yours.</h1>
+          <h1>Your learning, all in one place.</h1>
           <p>
-            A comfortable pace, helpful translations, and your words kept safe.
+            Your words, sentences, notes, and the small steps that bring Germany
+            closer.
           </p>
         </div>
+        <ProfilePdfExport />
       </div>
+      <ProfileSummary />
+      <ProfileNotebook />
       <div className="two-column profile-grid">
         <section className="panel">
           <h2>Your learning preferences</h2>
@@ -286,7 +293,9 @@ export function Profile() {
             className="profile-form"
             onSubmit={(e) => {
               e.preventDefault();
-              const value = name.trim();
+              const value = String(
+                new FormData(e.currentTarget).get("name") ?? "",
+              ).trim();
               if (value) {
                 updateState((s) => ({ ...s, name: value }));
                 notify("Your name is saved.");
@@ -298,12 +307,59 @@ export function Profile() {
               <input
                 required
                 maxLength={60}
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                name="name"
+                key={state.name}
+                defaultValue={state.name}
               />
             </label>
             <Button type="submit" variant="outline">
               Save my name
+            </Button>
+          </form>
+          <form
+            className="profile-personal-form"
+            onSubmit={(event) => {
+              event.preventDefault();
+              const data = personalProfileSchema.parse(
+                Object.fromEntries(new FormData(event.currentTarget)),
+              );
+              updateState((state) => ({ ...state, personalProfile: data }));
+              notify("Your personal learning details are saved.");
+            }}
+          >
+            <fieldset>
+              <legend>Your German introductions</legend>
+              <p className="muted small">
+                These details help personalize your book exercises.
+              </p>
+              {(
+                [
+                  ["country", "Country"],
+                  ["city", "City"],
+                  ["profession", "Profession"],
+                  ["languages", "Languages I speak"],
+                ] as const
+              ).map(([field, label]) => (
+                <label key={field}>
+                  {label}
+                  <input
+                    name={field}
+                    key={state.personalProfile[field]}
+                    defaultValue={state.personalProfile[field]}
+                    maxLength={field === "languages" ? 150 : 80}
+                    autoComplete={
+                      field === "country"
+                        ? "country-name"
+                        : field === "city"
+                          ? "address-level2"
+                          : "off"
+                    }
+                  />
+                </label>
+              ))}
+            </fieldset>
+            <Button variant="outline" type="submit">
+              Save my learning details
             </Button>
           </form>
           <fieldset className="goal-options">
@@ -397,7 +453,7 @@ export function Profile() {
           </section>
           <section className="panel">
             <Cloud size={25} />
-            <h2>Continue on another device</h2>
+            <h2>Account and cloud backup</h2>
             {cloudEnabled ? (
               <CloudAccount />
             ) : (
@@ -441,390 +497,12 @@ export function Profile() {
             onClick={() => {
               if (pending) {
                 importState(pending);
-                setName(pending.name);
                 setPending(null);
                 notify("Your learning journey has been imported.");
               }
             }}
           >
             Import this backup
-          </Button>
-        </div>
-      </Dialog>
-    </>
-  );
-}
-function CloudAccount() {
-  const { state, notify } = useApp();
-  const {
-    data: session,
-    isPending,
-    error: sessionError,
-    refetch,
-  } = authClient.useSession();
-  const [signup, setSignup] = useState(false);
-  const [verificationEmail, setVerificationEmail] = useState("");
-  const [notice, setNotice] = useState("");
-  const [error, setError] = useState("");
-  const [busy, setBusy] = useState(false);
-  const [revision, setRevision] = useState<number | null>(null);
-  const [revisionUser, setRevisionUser] = useState<string | null>(null);
-  const [remote, setRemote] = useState<{
-    data: LearningState;
-    revision: number;
-  } | null>(null);
-  async function authenticate(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setBusy(true);
-    setError("");
-    setNotice("");
-    const form = new FormData(e.currentTarget);
-    const email = String(form.get("email")).trim();
-    try {
-      const result = signup
-        ? await authClient.signUp.email({
-            name: state.name,
-            email,
-            password: String(form.get("password")),
-          })
-        : await authClient.signIn.email({
-            email,
-            password: String(form.get("password")),
-          });
-      if (result.error?.code === "email_not_confirmed") {
-        setVerificationEmail(email);
-        setNotice("Verify your email before signing in. Request a code below.");
-        return;
-      }
-      if (result.error)
-        throw new Error(
-          result.error.message ??
-            "Sign-in could not finish. Check your details and try again.",
-        );
-      const restored = await authClient.getSession();
-      if (restored.error)
-        throw new Error(
-          "Your account session could not be restored. Try signing in again.",
-        );
-      if (!restored.data?.user) {
-        if (signup) {
-          setVerificationEmail(email);
-          setNotice(
-            "Your account is created. Verify your email, then sign in.",
-          );
-          return;
-        }
-        throw new Error("Sign-in did not create a session. Please try again.");
-      }
-      notify("You’re signed in. Your local progress is ready to save.");
-      setSignup(false);
-    } catch (e) {
-      // The Neon wrapper can throw a normalized AuthError before returning a result.
-      if (isAuthError(e) && e.code === "email_not_confirmed") {
-        setVerificationEmail(email);
-        setNotice("Verify your email before signing in. Request a code below.");
-        return;
-      }
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-  async function verifyEmail(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setBusy(true);
-    setError("");
-    try {
-      const form = new FormData(e.currentTarget);
-      const result = await authClient.emailOtp.verifyEmail({
-        email: verificationEmail,
-        otp: String(form.get("otp")),
-      });
-      if (result.error)
-        throw new Error(
-          result.error.code === "validation_failed"
-            ? "That code could not be verified. Check the six digits or request a new one."
-            : (result.error.message ??
-                "That code could not be verified. Request a new one."),
-        );
-      setVerificationEmail("");
-      setSignup(false);
-      setNotice("Email verified. Sign in to continue your journey.");
-    } catch (e) {
-      setError(
-        isAuthError(e) && e.code === "validation_failed"
-          ? "That code could not be verified. Check the six digits or request a new one."
-          : (e as Error).message,
-      );
-    } finally {
-      setBusy(false);
-    }
-  }
-  async function sendVerificationCode() {
-    setBusy(true);
-    setError("");
-    try {
-      const result = await authClient.emailOtp.sendVerificationOtp({
-        email: verificationEmail,
-        type: "email-verification",
-      });
-      if (result.error)
-        throw new Error(
-          result.error.message ??
-            "The verification code could not be sent. Please try again.",
-        );
-      setNotice("Check your email for a six-digit verification code.");
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-  async function signOut() {
-    setBusy(true);
-    setError("");
-    try {
-      const result = await authClient.signOut();
-      if (result.error)
-        throw new Error(
-          result.error.message ??
-            "Sign-out could not finish. Please try again.",
-        );
-      setRevision(null);
-      setRevisionUser(null);
-      setRemote(null);
-      setNotice("");
-      setSignup(false);
-      setVerificationEmail("");
-      notify("Signed out. Your local progress stays with you.");
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-  async function load() {
-    setBusy(true);
-    setError("");
-    try {
-      const response = await fetch("/api/progress", { cache: "no-store" });
-      const body = await response.json();
-      if (!response.ok) throw new Error(body.error);
-      if (body.data) {
-        const parsed = stateSchema.parse(body.data);
-        setRemote({ data: parsed, revision: body.revision });
-      } else {
-        setRevision(0);
-        setRevisionUser(session?.user.id ?? null);
-        notify("No cloud backup yet. Save your current journey to begin.");
-      }
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-  async function save() {
-    setBusy(true);
-    setError("");
-    try {
-      let currentRevision = revisionUser === session?.user.id ? revision : null;
-      if (currentRevision === null) {
-        const read = await fetch("/api/progress", { cache: "no-store" });
-        const existing = await read.json();
-        if (!read.ok) throw new Error(existing.error);
-        if (existing.data)
-          throw new Error(
-            "This account already has a cloud journey. Export your local progress, then load the cloud backup before saving.",
-          );
-        currentRevision = 0;
-      }
-      const response = await fetch("/api/progress", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: state, revision: currentRevision }),
-      });
-      const body = await response.json();
-      if (!response.ok) throw new Error(body.error);
-      setRevision(body.revision);
-      setRevisionUser(session?.user.id ?? null);
-      notify("Your cloud backup is saved.");
-    } catch (e) {
-      setError((e as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-  return (
-    <>
-      {isPending ? (
-        <p className="muted">Checking your account…</p>
-      ) : session ? (
-        <>
-          <p className="muted">
-            Signed in as {session.user.email}. Save after practicing, then load
-            on your other device. Cloud backups are manual.
-          </p>
-          <div className="button-row">
-            <Button disabled={busy} onClick={() => void save()}>
-              <Cloud size={16} />
-              Save to cloud
-            </Button>
-            <Button
-              variant="outline"
-              disabled={busy}
-              onClick={() => void load()}
-            >
-              Load cloud backup
-            </Button>
-            <Button
-              size="sm"
-              variant="ghost"
-              disabled={busy}
-              onClick={() => void signOut()}
-            >
-              <LogOut size={15} />
-              Sign out
-            </Button>
-          </div>
-        </>
-      ) : verificationEmail ? (
-        <form className="auth-form" onSubmit={verifyEmail}>
-          <p className="muted">Verify the email for your account.</p>
-          <label>
-            Email
-            <input
-              type="email"
-              value={verificationEmail}
-              readOnly
-              autoComplete="email"
-            />
-          </label>
-          <label>
-            Verification code
-            <input
-              name="otp"
-              inputMode="numeric"
-              autoComplete="one-time-code"
-              pattern="[0-9]{6}"
-              minLength={6}
-              maxLength={6}
-              required
-            />
-          </label>
-          <div className="button-row">
-            <Button disabled={busy} type="submit">
-              {busy ? "Connecting…" : "Verify email"}
-            </Button>
-            <Button
-              disabled={busy}
-              variant="outline"
-              type="button"
-              onClick={() => void sendVerificationCode()}
-            >
-              Send verification code
-            </Button>
-            <Button
-              disabled={busy}
-              variant="ghost"
-              type="button"
-              onClick={() => {
-                setVerificationEmail("");
-                setSignup(false);
-                setNotice("");
-                setError("");
-              }}
-            >
-              Back to sign in
-            </Button>
-          </div>
-        </form>
-      ) : (
-        <form onSubmit={authenticate} className="auth-form">
-          <label>
-            Email
-            <input type="email" name="email" autoComplete="email" required />
-          </label>
-          <label>
-            Password
-            <input
-              type="password"
-              name="password"
-              minLength={signup ? 12 : 1}
-              maxLength={128}
-              autoComplete={signup ? "new-password" : "current-password"}
-              required
-            />
-          </label>
-          {signup && (
-            <small className="muted">Use at least 12 characters.</small>
-          )}
-          <div className="button-row">
-            <Button disabled={busy} type="submit">
-              {busy ? "Connecting…" : signup ? "Create account" : "Sign in"}
-            </Button>
-            <Button
-              type="button"
-              variant="ghost"
-              disabled={busy}
-              onClick={() => {
-                setSignup((s) => !s);
-                setError("");
-              }}
-            >
-              {signup ? "I have an account" : "Create an account"}
-            </Button>
-          </div>
-        </form>
-      )}
-      {notice && (
-        <p role="status" className="muted small">
-          {notice}
-        </p>
-      )}
-      {sessionError && !isPending && (
-        <div role="alert" className="form-error">
-          <p>
-            Your account service could not connect. Your local progress is safe.
-          </p>
-          <Button variant="outline" size="sm" onClick={() => void refetch()}>
-            Try the connection again
-          </Button>
-        </div>
-      )}
-      {error && (
-        <p role="alert" className="form-error">
-          {error}
-        </p>
-      )}
-      <Dialog
-        open={!!remote}
-        onOpenChange={(open) => !open && setRemote(null)}
-        title="Load your cloud journey?"
-        description="This replaces the progress on this device. Export your local backup first to preserve any different words or practice."
-      >
-        {remote && (
-          <p>
-            {remote.data.name} · {remote.data.words.length} words ·{" "}
-            {remote.data.xp} XP
-          </p>
-        )}
-        <div className="button-row">
-          <Button variant="outline" onClick={() => exportState(state)}>
-            Export local backup
-          </Button>
-          <Button
-            onClick={() => {
-              if (remote) {
-                importState(remote.data);
-                setRevision(remote.revision);
-                setRevisionUser(session?.user.id ?? null);
-                setRemote(null);
-                notify("Cloud progress loaded onto this device.");
-              }
-            }}
-          >
-            Load this journey
           </Button>
         </div>
       </Dialog>
