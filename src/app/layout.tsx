@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { LearningApp } from "@/components/learning-app";
 import { isCloudConfigured } from "@/lib/auth";
+import { creatorBrand } from "@/lib/creator-brand";
 import "./journey.css";
 import "./globals.css";
 import "./motivation.css";
@@ -8,6 +9,11 @@ import "./planner.css";
 import "./welcome.css";
 import "./profile.css";
 export const metadata: Metadata = {
+  applicationName: "Deutsch Journey",
+  creator: creatorBrand.name,
+  authors: [
+    { name: creatorBrand.name, url: creatorBrand.website || undefined },
+  ],
   title: "Deutsch Journey · A little German, every day",
   description:
     "Your personal A1.1 German learning companion. Build a steady habit with vocabulary, spaced reviews, listening, and everyday conversations.",

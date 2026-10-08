@@ -1,5 +1,6 @@
 import { jsPDF } from "jspdf";
 import { autoTable, type RowInput, type UserOptions } from "jspdf-autotable";
+import { creatorBrand } from "./creator-brand";
 import {
   studyDate,
   type LearningReport,
@@ -11,6 +12,8 @@ export type ReportFonts = {
   arabic: Uint8Array;
   bold?: Uint8Array;
   logo?: Uint8Array;
+  creatorLogo?: Uint8Array;
+  creatorName?: Uint8Array;
 };
 const titles: Record<ReportSectionId, string> = {
   overview: "Your learner profile",
@@ -66,6 +69,10 @@ export async function createProfilePdf(
   pdf.addFont("NotoSans-Bold.ttf", "Notebook", "bold");
   pdf.addFileToVFS("Amiri.ttf", base64(fonts.arabic));
   pdf.addFont("Amiri.ttf", "Arabic", "normal");
+  if (fonts.creatorName) {
+    pdf.addFileToVFS("Skranji.ttf", base64(fonts.creatorName));
+    pdf.addFont("Skranji.ttf", "Creator", "normal");
+  }
   pdf.setProperties({
     title: "Deutsch Journey · My learning notebook",
     author: report.learner,
@@ -409,7 +416,37 @@ export async function createProfilePdf(
     }
     pdf.setDrawColor(...line);
     pdf.line(left, 282, left + width, 282);
-    text(report.learner, left, 289, 8, false, 130);
+    const footerTextX = left + (fonts.creatorLogo ? 11 : 0);
+    if (fonts.creatorLogo) {
+      pdf.setFillColor(255, 255, 255);
+      pdf.setDrawColor(...line);
+      pdf.setLineWidth(0.2);
+      pdf.circle(left + 4.5, 288, 4.5, "FD");
+      pdf.addImage(fonts.creatorLogo, "PNG", left + 2, 285.2, 5, 5.6);
+      pdf.link(left, 283.5, 9, 9, { url: creatorBrand.website });
+    }
+    text(report.learner, footerTextX, 286, 8, false, 130);
+    pdf.setFont("Notebook", "normal");
+    pdf.setFontSize(7);
+    pdf.setTextColor(...muted);
+    const prefix = `© ${creatorBrand.copyrightYear} `;
+    pdf.text(prefix, footerTextX, 291);
+    const prefixWidth = pdf.getTextWidth(prefix);
+    pdf.setFont(fonts.creatorName ? "Creator" : "Notebook", "normal");
+    pdf.setFontSize(7.5);
+    pdf.text(creatorBrand.name, footerTextX + prefixWidth, 291);
+    const nameWidth = pdf.getTextWidth(creatorBrand.name);
+    pdf.setFont("Notebook", "normal");
+    pdf.setFontSize(7);
+    const suffix = ". All rights reserved.";
+    pdf.text(suffix, footerTextX + prefixWidth + nameWidth, 291);
+    pdf.link(
+      footerTextX,
+      288,
+      prefixWidth + nameWidth + pdf.getTextWidth(suffix),
+      5,
+      { url: creatorBrand.website },
+    );
     pdf.setFont("Notebook", "normal");
     pdf.setFontSize(8);
     pdf.setTextColor(...muted);
@@ -429,6 +466,8 @@ export async function downloadProfilePdf(
       "/fonts/pdf/Amiri-Regular.ttf",
       "/fonts/pdf/NotoSans-Bold.ttf",
       "/brand/deutsch-journey.png",
+      creatorBrand.logo,
+      "/fonts/pdf/Skranji-Regular.ttf",
     ].map(async (path) => {
       const response = await fetch(path, { signal });
       if (!response.ok)
@@ -438,7 +477,14 @@ export async function downloadProfilePdf(
   );
   const blob = await createProfilePdf(
     report,
-    { latin: bytes[0], arabic: bytes[1], bold: bytes[2], logo: bytes[3] },
+    {
+      latin: bytes[0],
+      arabic: bytes[1],
+      bold: bytes[2],
+      logo: bytes[3],
+      creatorLogo: bytes[4],
+      creatorName: bytes[5],
+    },
     signal,
   );
   signal.throwIfAborted();

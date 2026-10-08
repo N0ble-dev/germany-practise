@@ -42,6 +42,7 @@ import { Button } from "./ui/button";
 import { Dialog } from "./ui/dialog";
 import { AccountEntry } from "./account-entry";
 import { BrandMark } from "./brand-mark";
+import { CreatorCredit } from "./creator-credit";
 export type LearningIdentity = {
   id: string;
   name: string;
@@ -407,8 +408,8 @@ function LearningWorkspace({
             {children}
           </main>
           <footer className="app-footer">
-            <span>Made for your next “Ich kann das.”</span>
-            <span>
+            <CreatorCredit />
+            <span className="footer-save-status">
               <span className="status-dot" />{" "}
               {snapshot.storageError
                 ? "Export this session to keep it"
