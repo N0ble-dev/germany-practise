@@ -300,35 +300,20 @@ legend {
   gap: 10px;
 }
 .brand-symbol {
-  position: relative;
-  width: 34px;
-  height: 38px;
-  font-family: "Plus Jakarta Sans Variable", sans-serif;
-  color: var(--primary);
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: -5px;
-  padding-right: 5px;
-}
-.brand-symbol span {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #e6b46d;
-  bottom: 1px;
-  right: 9px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 .brand strong {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: -0.7px;
   line-height: 1.6;
   white-space: nowrap;
 }
 .brand-dot {
-  color: var(--primary);
+  color: #c38a00;
 }
 .brand small {
   display: block;
