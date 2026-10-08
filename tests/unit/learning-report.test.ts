@@ -45,11 +45,17 @@ it("creates a real, paginated PDF with embedded German/Arabic fonts", async () =
   const blob = await createProfilePdf(report, {
     latin: readFileSync("public/fonts/pdf/NotoSans-Regular.ttf"),
     arabic: readFileSync("public/fonts/pdf/Amiri-Regular.ttf"),
+    bold: readFileSync("public/fonts/pdf/NotoSans-Bold.ttf"),
+    logo: readFileSync("public/brand/deutsch-journey.png"),
   });
   const pdf = Buffer.from(await blob.arrayBuffer());
   expect(pdf.subarray(0, 5).toString()).toBe("%PDF-");
   expect(pdf.toString("latin1")).toContain("/ToUnicode");
-  expect(pdf.toString("latin1")).toMatch(/\/Count [2-9]/);
+  expect(
+    Number(pdf.toString("latin1").match(/\/Count (\d+)/)?.[1]),
+  ).toBeGreaterThan(1);
+  // Only the selected sentences section gets a contents link.
+  expect(pdf.toString("latin1").match(/\/Subtype \/Link/g)).toHaveLength(1);
   expect(blob.size).toBeGreaterThan(10_000);
 });
 it("cancels generation when the account changes", async () => {

@@ -1,6 +1,6 @@
 import { lessons } from "./content";
 import { destinations } from "./destinations";
-import { formatWord, streak, type LearningState } from "./learning";
+import { formatWord, streak, type LearningState, type Word } from "./learning";
 import { stepLabels } from "./journey-model";
 import { studyLabels } from "./planner-model";
 
@@ -15,7 +15,25 @@ export const reportSections = [
   { id: "motivation", label: "My Germany dream" },
 ] as const;
 export type ReportSectionId = (typeof reportSections)[number]["id"];
-export type ReportEntry = { title?: string; lines: string[] };
+export type ReportEntry = {
+  title?: string;
+  lines: string[];
+  word?: Pick<
+    Word,
+    | "english"
+    | "arabic"
+    | "plural"
+    | "example"
+    | "hint"
+    | "topic"
+    | "lesson"
+    | "status"
+    | "favorite"
+    | "reviews"
+    | "mistakes"
+    | "due"
+  >;
+};
 export type ReportSection = {
   id: ReportSectionId;
   title: string;
@@ -92,6 +110,20 @@ export function buildLearningReport(
         .sort((a, b) => a.german.localeCompare(b.german, "de"))
         .map((word) => ({
           title: formatWord(word),
+          word: {
+            english: word.english,
+            arabic: word.arabic,
+            plural: word.plural,
+            example: word.example,
+            hint: word.hint,
+            topic: word.topic,
+            lesson: word.lesson,
+            status: word.status,
+            favorite: word.favorite,
+            reviews: word.reviews,
+            mistakes: word.mistakes,
+            due: word.due,
+          },
           lines: [
             word.english,
             ...(word.arabic ? [word.arabic] : []),
