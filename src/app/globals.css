@@ -1,6 +1,13 @@
 @import "@fontsource-variable/nunito-sans";
 @import "@fontsource-variable/plus-jakarta-sans";
+@import "@fontsource/skranji/latin-400.css";
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Skranji Fallback";
+  src: local("Arial");
+  font-display: swap;
+}
 
 :root {
   --bg: #f4f6f8;
@@ -10,6 +17,7 @@
   --line: #e7ebf1;
   --primary: #6a5acb;
   --primary-hover: #594ab6;
+  --creator-accent: #0b7089;
   --lavender: #efedfa;
   --mint: #e8f3ee;
   --peach: #fbede3;
@@ -29,6 +37,7 @@
   --line: #364455;
   --primary: #b2a6ff;
   --primary-hover: #c7beff;
+  --creator-accent: #3edbec;
   --lavender: #36334c;
   --mint: #2a413b;
   --peach: #473a31;
@@ -1027,17 +1036,113 @@ legend {
   font-size: 10px;
 }
 .app-footer {
-  padding: 12px 34px 22px;
+  padding: 18px 34px 24px;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 11px;
 }
-.app-footer > span:last-child {
+.footer-save-status {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+.creator-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.creator-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-left: 0;
+  padding: 5px 8px 5px 0;
+  border-radius: 10px;
+  color: var(--text);
+}
+.creator-logo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  padding: 7px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+}
+.creator-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.creator-signature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.45;
+}
+.creator-eyebrow {
+  color: var(--muted);
+  font-size: 10px;
+}
+.creator-signature strong {
+  font-family: "Skranji", "Skranji Fallback", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-underline-offset: 4px;
+}
+.creator-signature svg {
+  color: var(--muted);
+}
+a.creator-signature {
+  margin-left: 0;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+a.creator-signature:hover {
+  color: var(--creator-accent);
+  background: var(--surface);
+}
+a.creator-signature:hover strong,
+a.creator-signature:focus-visible strong {
+  text-decoration: underline;
+}
+a.creator-signature:focus-visible {
+  outline: 2px solid var(--creator-accent);
+  outline-offset: 4px;
+}
+.creator-copyright {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.creator-copyright:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.creator-copyright:focus-visible {
+  outline: 2px solid var(--creator-accent);
+  outline-offset: 3px;
+}
+.creator-copyright-name {
+  font-family: "Skranji", "Skranji Fallback", cursive;
+  font-weight: 400;
 }
 .status-dot {
   width: 6px;
@@ -1046,8 +1151,13 @@ legend {
   display: inline-block;
   background: #75a68a;
 }
-.app-footer a {
+.footer-save-status a {
   margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
 }
 .panel {
   padding: 26px;
@@ -2616,11 +2726,10 @@ legend {
     margin-left: auto;
     margin-right: auto;
   }
-  .app-footer > span:first-child {
-    display: none;
-  }
   .app-footer {
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
   .collection-summary {
     gap: 14px;
