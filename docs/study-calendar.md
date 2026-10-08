@@ -6,6 +6,16 @@ Choose a date, study focus, chapter, duration, and reminder time. Sessions can r
 
 Your plan is saved in this browser and included in local exports and optional Neon cloud backups. Use **Save to cloud** and **Load cloud backup** to transfer the plan between devices. There is no automatic merging between devices.
 
+## Google-only learning accounts
+
+Use **Continue with Google** on `/signup`, `/signin`, or Preferences. The same flow creates an account on the first visit and signs in on later visits. Local learning stays available with **Continue without an account**.
+
+Google OAuth initiation has been checked against this workspace's Neon service. Neon provides shared Google credentials for development. For production, configure your own Google client in the branch's **Settings → Auth → OAuth providers → Google → Configure** and add the app's HTTPS origin to trusted domains. Disable email/password and any other login providers in the Neon Console to enforce Google-only identity on the hosted service too. The app proxy already denies alternate identity methods; database credentials do not authorize changes to Neon Auth provider settings. See [Neon's OAuth setup](https://neon.com/docs/auth/guides/setup-oauth).
+
+For automated service configuration, Neon's [email/password configuration API](https://api-docs.neon.tech/reference/updateneonauthemailandpasswordconfig) accepts `{"enabled": false}` on `PATCH /api/v2/projects/{project_id}/branches/{branch_id}/auth/email_and_password`, using a Neon management API key. This workspace has database access but no management API key, so the hosted service setting has not been changed. Keep Google enabled when disabling email/password.
+
+Google sign-in grants account identity. Calendar sync needs an additional permission to manage the app's study calendar. The app suggests the signed-in account when connecting; Google still allows the learner to choose their account.
+
 ## Connect Google Calendar
 
 The app implements the authorization and sync process. The project owner must create a Google OAuth client in their own Google Cloud account. Neon sign-in identifies the learner; connecting Google separately grants permission to manage a dedicated study calendar.
@@ -28,6 +38,14 @@ The app implements the authorization and sync process. The project owner must cr
 
    The host, port, and path must match `APP_URL`. Production needs `https://YOUR_DOMAIN/api/calendar/google/callback` registered separately. This is a server authorization flow; adding JavaScript origins alone does not configure the callback.
 
+   To use this same OAuth client for production Google sign-in, also register the exact redirect URI shown in Neon's Google provider dialog. Its format is `${NEON_AUTH_BASE_URL}/callback/google`, including the Auth URL's path. For this workspace:
+
+   ```text
+   https://ep-jolly-poetry-b5xd0omu.neonauth.c-7.us-east-2.aws.neon.tech/neondb/auth/callback/google
+   ```
+
+   Paste the client ID and secret into Neon's Google provider configuration. The app's `/auth/complete` page is the later landing page, not Google's authorized redirect URI for Neon sign-in. Each Neon branch needs its own registered Auth callback.
+
 5. Copy the client ID and secret into `.env.local`:
 
    ```dotenv
@@ -46,7 +64,7 @@ The app implements the authorization and sync process. The project owner must cr
    These are server settings. Keep them out of `NEXT_PUBLIC_` variables, version control, screenshots, and browser code. Retain the same encryption key across restarts and deployments; changing it requires reconnecting calendars.
 
 6. Configure the existing Neon account/database settings from the README and run `npm run db:migrate` to create the calendar connection table. This workspace's migration has already been applied. Restart `npm run dev`. For production, set the environment before building and ensure the deployment supports the calendar sync route's runtime.
-7. Sign in through **Preferences**, open **My study calendar**, and select **Google Calendar → Connect Google Calendar**. Choose your Google account and approve the requested calendar permission. On return, click **Sync my study plan**.
+7. Use **Continue with Google**, open **My study calendar**, and select **Google Calendar → Connect Google Calendar**. If you start sign-in from the planner, you return there automatically. Choose the same Google account and approve the requested calendar permission. On return, click **Sync my study plan**.
 
 For Google OAuth configuration and deployment requirements, see [Google's web-server authorization guide](https://developers.google.com/identity/protocols/oauth2/web-server). [Testing-mode authorizations and refresh credentials expire after seven days](https://support.google.com/cloud/answer/15549945) for this scope; reconnect when needed. Public use requires switching the audience to production and completing any consent/verification requirements Google shows for your configuration.
 
