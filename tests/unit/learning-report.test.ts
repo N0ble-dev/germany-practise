@@ -47,6 +47,8 @@ it("creates a real, paginated PDF with embedded German/Arabic fonts", async () =
     arabic: readFileSync("public/fonts/pdf/Amiri-Regular.ttf"),
     bold: readFileSync("public/fonts/pdf/NotoSans-Bold.ttf"),
     logo: readFileSync("public/brand/deutsch-journey.png"),
+    creatorLogo: readFileSync("public/brand/nabil-logo.png"),
+    creatorName: readFileSync("public/fonts/pdf/Skranji-Regular.ttf"),
   });
   const pdf = Buffer.from(await blob.arrayBuffer());
   expect(pdf.subarray(0, 5).toString()).toBe("%PDF-");
@@ -55,7 +57,12 @@ it("creates a real, paginated PDF with embedded German/Arabic fonts", async () =
     Number(pdf.toString("latin1").match(/\/Count (\d+)/)?.[1]),
   ).toBeGreaterThan(1);
   // Only the selected sentences section gets a contents link.
-  expect(pdf.toString("latin1").match(/\/Subtype \/Link/g)).toHaveLength(1);
+  expect(pdf.toString("latin1").match(/\/Dest \[/g)).toHaveLength(1);
+  const pages = Number(pdf.toString("latin1").match(/\/Count (\d+)/)?.[1]);
+  // Every page's logo and copyright credit lead to the creator's actual site.
+  expect(
+    pdf.toString("latin1").match(/\/URI \(https:\/\/nabil7\.site\/\)/g),
+  ).toHaveLength(pages * 2);
   expect(blob.size).toBeGreaterThan(10_000);
 });
 it("cancels generation when the account changes", async () => {

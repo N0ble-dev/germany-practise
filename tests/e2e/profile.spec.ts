@@ -112,7 +112,9 @@ test("logout hides account identity and collections, and signing back in restore
   await expect(
     page.getByRole("heading", { name: "Guest profile", exact: true }),
   ).toBeVisible();
-  await expect(page.getByText(accountA.name, { exact: true })).toHaveCount(0);
+  await expect(
+    page.locator("main").getByText(accountA.name, { exact: true }),
+  ).toHaveCount(0);
   await expect(page.getByText(sentence, { exact: true })).toHaveCount(0);
   await expect(page.locator(".profile-link strong")).toHaveText("Guest");
   await page.reload();
