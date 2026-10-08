@@ -36,7 +36,7 @@ The app implements the authorization and sync process. The project owner must cr
    http://localhost:3008/api/calendar/google/callback
    ```
 
-   The host, port, and path must match `APP_URL`. Production needs `https://YOUR_DOMAIN/api/calendar/google/callback` registered separately. This is a server authorization flow; adding JavaScript origins alone does not configure the callback.
+   The host, port, and path must match `APP_URL`. Production needs `https://germany-practise.vercel.app/api/calendar/google/callback` registered separately. Set production `APP_URL=https://germany-practise.vercel.app` and follow [production sign-in setup](production-auth.md). This is a server authorization flow; adding JavaScript origins alone does not configure the callback.
 
    To use this same OAuth client for production Google sign-in, also register the exact redirect URI shown in Neon's Google provider dialog. Its format is `${NEON_AUTH_BASE_URL}/callback/google`, including the Auth URL's path. For this workspace:
 
