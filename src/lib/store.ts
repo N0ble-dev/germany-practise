@@ -20,10 +20,11 @@ import {
   type WordEvidence,
 } from "./journey-model";
 import { bookLessons } from "./journey-content";
+import { LearningStorage, type LearningSnapshot } from "./learning-storage";
+export { STORAGE_KEY } from "./learning-storage";
 
-export const STORAGE_KEY = "deutsch-journey-v2";
-type Snapshot = { data: LearningState; storageError: string | null };
-let snapshot: Snapshot | null = null;
+let snapshot: LearningSnapshot | null = null;
+let repository: LearningStorage | null = null;
 let initialized = false;
 const listeners = new Set<() => void>();
 function emit() {
@@ -64,33 +65,32 @@ export function migrateLegacy(
 function initialize() {
   if (initialized || typeof window === "undefined") return;
   initialized = true;
-  let data = initialState();
-  let storageError: string | null = null;
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    data = saved
-      ? stateSchema.parse(JSON.parse(saved))
-      : migrateLegacy(localStorage);
-    if (!saved) localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  } catch {
-    storageError =
-      "Your saved data could not be read. The original is preserved. Export this session before leaving, or import a valid backup.";
-  }
-  snapshot = { data, storageError };
+  repository = new LearningStorage(
+    {
+      getItem: (key) => window.localStorage.getItem(key),
+      setItem: (key, value) => window.localStorage.setItem(key, value),
+    },
+    () => migrateLegacy(window.localStorage),
+  );
+  snapshot = repository.current;
   emit();
   window.addEventListener("storage", (event) => {
-    if (event.key !== STORAGE_KEY || !event.newValue) return;
-    try {
-      snapshot = {
-        data: stateSchema.parse(JSON.parse(event.newValue)),
-        storageError: null,
-      };
+    if (repository?.receive(event.key, event.newValue)) {
+      snapshot = repository.current;
       emit();
-    } catch {
-      /* Preserve the current usable snapshot. */
     }
   });
 }
+export function activateLearningAccount(
+  user: { id: string; name: string } | null,
+) {
+  initialize();
+  if (repository?.activate(user)) {
+    snapshot = repository.current;
+    emit();
+  }
+}
+
 function subscribe(fn: () => void) {
   listeners.add(fn);
   queueMicrotask(initialize);
@@ -112,19 +112,12 @@ export function updateState(
     ...updater(snapshot.data),
     updatedAt: new Date().toISOString(),
   });
-  let storageError = snapshot.storageError;
-  try {
-    if (storageError && !replaceCorrupt)
-      throw new Error("Preserve unreadable original");
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    storageError = null;
-  } catch {
-    storageError ||=
-      "This browser could not save your progress. Export a backup before closing this tab.";
-  }
-  snapshot = { data, storageError };
+  if (!repository) return;
+  repository.write(data, replaceCorrupt);
+  snapshot = repository.current;
   emit();
 }
+
 export function makeActivity(
   kind: Activity["kind"],
   label: string,

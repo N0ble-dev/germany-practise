@@ -59,6 +59,7 @@ export const activitySchema = z.object({
 export type Activity = z.infer<typeof activitySchema>;
 export const stateSchema = z.object({
   version: z.literal(2),
+  onboardingComplete: z.boolean().default(false),
   name: z.string().trim().min(1).max(60),
   goal: z.union([z.literal(10), z.literal(20), z.literal(30)]),
   language: z.enum(["en", "ar"]),

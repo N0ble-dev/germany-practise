@@ -332,7 +332,8 @@ export const starterWords: Word[] = seeds.map((s, i) => ({
 export function initialState(): LearningState {
   return {
     version: 2,
-    name: "Nabil",
+    onboardingComplete: false,
+    name: "Guest",
     goal: 10,
     language: "en",
     currentLesson: 1,
