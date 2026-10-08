@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1125" viewBox="0 0 800 1125">
+  <rect width="800" height="1125" fill="#171717"/>
+  <path fill="#FFF9EB" d="M90 0h4v1125h-4z" opacity=".15"/>
+  <text x="145" y="170" font-family="Arial,sans-serif" font-size="23" letter-spacing="5" fill="#FFCE00">MY GERMANY DREAM</text>
+  <text x="145" y="328" font-family="Arial,sans-serif" font-size="75" font-weight="700" fill="#FFF9EB">Jeden Tag</text>
+  <text x="145" y="421" font-family="Arial,sans-serif" font-size="75" font-weight="700" fill="#FFF9EB">ein kleiner</text>
+  <text x="145" y="514" font-family="Arial,sans-serif" font-size="75" font-weight="700" fill="#FFCE00">Schritt.</text>
+  <text x="145" y="593" font-family="Arial,sans-serif" font-size="26" fill="#D1CABD">A small step every day.</text>
+  <path d="M145 670H650" stroke="#FFF9EB" stroke-opacity=".2" stroke-width="2"/>
+  <text x="145" y="751" font-family="Arial,sans-serif" font-size="29" fill="#FFF9EB">Learn a little today.</text>
+  <text x="145" y="802" font-family="Arial,sans-serif" font-size="29" fill="#FFF9EB">Build the life you picture</text>
+  <text x="145" y="853" font-family="Arial,sans-serif" font-size="29" fill="#FFF9EB">in Germany.</text>
+  <rect x="145" y="975" width="90" height="12" fill="#FFF9EB"/>
+  <rect x="235" y="975" width="90" height="12" fill="#DD0000"/>
+  <rect x="325" y="975" width="90" height="12" fill="#FFCE00"/>
+  <text x="145" y="1040" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#FFF9EB">DEUTSCH JOURNEY</text>
+</svg>

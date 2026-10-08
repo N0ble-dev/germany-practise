@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="192" viewBox="0 0 1200 192">
+  <rect width="1200" height="192" fill="#171717"/>
+  <path d="M0 15H1200" stroke="#DD0000" stroke-width="12"/>
+  <path d="M0 177H1200" stroke="#FFCE00" stroke-width="12"/>
+  <g fill="#FFF9EB" font-family="Arial,sans-serif" font-size="36" font-weight="700" letter-spacing="4">
+    <text x="70" y="110">DEUTSCH JOURNEY</text>
+    <text x="670" y="110">DEUTSCH JOURNEY</text>
+  </g>
+  <circle cx="560" cy="96" r="12" fill="#FFCE00"/>
+  <circle cx="1160" cy="96" r="12" fill="#FFCE00"/>
+</svg>
