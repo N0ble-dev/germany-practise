@@ -5,6 +5,8 @@ import "./journey.css";
 import "./globals.css";
 import "./motivation.css";
 import "./planner.css";
+import "./welcome.css";
+import "./profile.css";
 export const metadata: Metadata = {
   title: "Deutsch Journey · A little German, every day",
   description:
