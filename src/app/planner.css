@@ -1,0 +1,599 @@
+.study-week-strip {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(340px, 1.25fr);
+  align-items: center;
+  gap: 28px;
+  padding: 26px 30px;
+  background: var(--mint);
+  border: 1px solid color-mix(in srgb, var(--mint-text) 16%, var(--mint));
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+}
+.study-week-copy h2 {
+  margin: 8px 0;
+  max-width: 350px;
+  font-size: 23px;
+}
+.study-week-copy p {
+  color: var(--mint-text);
+}
+.study-week-days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+.study-week-days button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 12px 3px 7px;
+  min-height: 98px;
+  font-variant-numeric: tabular-nums;
+}
+.study-week-days button:hover,
+.study-week-days .is-selected {
+  background: var(--surface);
+  border-color: var(--mint-text);
+}
+.study-week-days .is-today strong {
+  color: var(--primary);
+}
+.study-week-days button > span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.study-week-days strong {
+  font-size: 22px;
+  margin: 4px 0;
+}
+.week-session-dots {
+  display: flex;
+  gap: 4px;
+  min-height: 12px;
+  align-items: center;
+}
+.study-planner-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 22px;
+  margin-bottom: 24px;
+  align-items: start;
+}
+.study-month,
+.study-agenda {
+  min-width: 0;
+}
+.study-month-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.study-month-toolbar h2 {
+  margin-top: 5px;
+}
+.study-month-toolbar .button-row {
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+.plan-view-timezone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.plan-view-timezone select {
+  width: auto;
+  max-width: 240px;
+  padding: 7px 10px;
+  font-size: 12px;
+}
+.study-month-table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 3px;
+}
+.study-month-table th {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 5px 0 10px;
+}
+.study-month-table abbr {
+  text-decoration: none;
+}
+.study-month-table td {
+  padding: 0;
+  vertical-align: top;
+}
+.study-date {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  min-height: 106px;
+  padding: 7px 5px;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  overflow: hidden;
+}
+.study-date:hover {
+  border-color: var(--primary);
+}
+.study-date.selected-date {
+  border: 2px solid var(--primary);
+  padding: 6px 4px;
+  background: var(--lavender);
+}
+.date-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  align-self: flex-start;
+  border-radius: 50%;
+}
+.current-date .date-number {
+  background: var(--primary);
+  color: var(--surface);
+  font-weight: 800;
+}
+.outside-month .date-number {
+  color: var(--muted);
+}
+.date-study-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.focus-lesson {
+  --focus-color: var(--primary);
+  --focus-bg: var(--lavender);
+}
+.focus-review {
+  --focus-color: var(--mint-text);
+  --focus-bg: var(--mint);
+}
+.focus-listening {
+  --focus-color: var(--warm-text);
+  --focus-bg: var(--peach);
+}
+.focus-speaking {
+  --focus-color: var(--text);
+  --focus-bg: var(--blue);
+}
+.focus-grammar {
+  --focus-color: var(--muted);
+  --focus-bg: var(--bg);
+}
+.study-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--focus-color, var(--primary));
+}
+.date-study-chip {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--focus-bg);
+  color: var(--focus-color);
+  padding: 2px 3px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.date-study-chip > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.more-study {
+  color: var(--muted);
+  font-size: 10px;
+}
+.study-focus-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 16px 3px 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.study-focus-legend > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.study-agenda h2 {
+  margin: 8px 0 4px;
+}
+.study-agenda-list {
+  margin-top: 22px;
+}
+.study-agenda-session {
+  display: flex;
+  gap: 10px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.session-focus-icon,
+.plan-header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--focus-bg, var(--lavender));
+  color: var(--focus-color, var(--primary));
+}
+.agenda-session-main {
+  min-width: 0;
+  flex: 1;
+}
+.session-time {
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.agenda-session-main h3 {
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+.agenda-session-main > p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.agenda-session-main .session-note {
+  margin: 9px 0;
+  overflow-wrap: anywhere;
+}
+.session-reminder {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 9px;
+}
+.session-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 12px;
+}
+.session-action-row > .button:first-child {
+  margin-right: 3px;
+}
+.session-action-row > .button {
+  min-height: 36px;
+}
+.study-session-finished h3 {
+  color: var(--muted);
+}
+.study-day-empty {
+  text-align: center;
+  padding: 35px 0 22px;
+  color: var(--muted);
+}
+.study-day-empty > svg {
+  color: var(--primary);
+}
+.study-day-empty h3 {
+  color: var(--text);
+  margin: 14px 0 8px;
+}
+.study-day-empty p {
+  margin: 0 auto 18px;
+  max-width: 260px;
+  font-size: 13px;
+}
+.agenda-habit-note {
+  border-top: 1px solid var(--line);
+  padding-top: 15px;
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.study-session-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+.study-session-form label {
+  display: grid;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 0;
+}
+.study-session-form input,
+.study-session-form select,
+.study-session-form textarea {
+  font-weight: 400;
+  font-size: 13px;
+  min-width: 0;
+}
+.plan-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.plan-weekday-options {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+}
+.plan-weekday-options legend {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.plan-weekday-options label {
+  position: relative;
+  flex: 1;
+}
+.plan-weekday-options input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.plan-weekday-options span {
+  padding: 10px 2px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 400;
+}
+.plan-weekday-options input:checked + span {
+  background: var(--lavender);
+  color: var(--primary);
+  border-color: var(--primary);
+  font-weight: 800;
+}
+.plan-weekday-options input:focus-visible + span {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+.plan-series-remove {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 18px 0;
+}
+.plan-series-remove input {
+  width: 18px;
+  min-height: 18px;
+  flex-shrink: 0;
+}
+.calendar-reminders {
+  scroll-margin-top: 24px;
+}
+.calendar-reminders .section-heading {
+  align-items: flex-start;
+}
+.calendar-reminders .section-heading h2 {
+  margin: 7px 0;
+}
+.calendar-reminders .plan-header-icon {
+  width: 48px;
+  height: 48px;
+}
+.calendar-provider-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 18px;
+}
+.google-calendar-controls {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+}
+.google-calendar-controls > .button {
+  justify-self: start;
+}
+.calendar-connected {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--mint-text);
+  font-weight: 700;
+}
+.calendar-export-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  margin-top: 22px;
+  padding-top: 22px;
+}
+.calendar-export-row > div {
+  flex: 1;
+  min-width: 220px;
+}
+.calendar-export-row label {
+  font-size: 11px;
+  display: grid;
+  gap: 5px;
+}
+.calendar-export-row select {
+  font-size: 12px;
+}
+.calendar-import-help {
+  margin: 18px 0 8px;
+  font-size: 13px;
+}
+.upcoming-study {
+  margin: 24px 0;
+}
+.upcoming-study-session {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.upcoming-study-session > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.upcoming-study-session strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.upcoming-study-session small {
+  display: block;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.upcoming-study-session:hover strong {
+  color: var(--primary);
+}
+.upcoming-study > .small {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.upcoming-study > p a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+@media (max-width: 1150px) {
+  .study-planner-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .study-agenda-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 24px;
+  }
+  .study-week-strip {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  .study-week-copy h2 {
+    max-width: none;
+  }
+}
+@media (max-width: 600px) {
+  .study-week-strip {
+    padding: 20px 16px;
+  }
+  .study-week-copy h2 {
+    font-size: 20px;
+  }
+  .study-week-days {
+    gap: 3px;
+  }
+  .study-week-days button {
+    min-height: 84px;
+    padding: 7px 0 4px;
+  }
+  .study-week-days strong {
+    font-size: 20px;
+  }
+  .study-week-days button > span {
+    font-size: 10px;
+  }
+  .study-month.panel {
+    padding: 16px 10px;
+  }
+  .study-month-toolbar {
+    padding: 0 5px;
+    gap: 4px;
+  }
+  .study-month-toolbar h2 {
+    font-size: 17px;
+  }
+  .study-month-toolbar .eyebrow {
+    font-size: 9px;
+  }
+  .study-month-toolbar .button {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .plan-view-timezone {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 0 5px;
+  }
+  .plan-view-timezone select {
+    width: 100%;
+    max-width: none;
+  }
+  .study-month-table {
+    border-spacing: 2px;
+  }
+  .study-date {
+    min-height: 76px;
+    padding: 5px 3px;
+    gap: 5px;
+  }
+  .study-date.selected-date {
+    padding: 4px 2px;
+  }
+  .date-study-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .date-study-chip {
+    padding: 3px 1px;
+    background: none;
+  }
+  .date-study-chip > span,
+  .date-study-chip > svg {
+    display: none;
+  }
+  .more-study {
+    font-size: 8px;
+    width: 100%;
+  }
+  .study-agenda-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .plan-form-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .calendar-provider-options {
+    gap: 6px;
+  }
+  .calendar-provider-options .button {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .calendar-export-row > div,
+  .calendar-export-row label,
+  .calendar-export-row > .button {
+    width: 100%;
+  }
+  .calendar-export-row > div {
+    min-width: 0;
+  }
+}

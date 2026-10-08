@@ -1,0 +1,46 @@
+[
+  {
+    "id": "berlin",
+    "title": "Brandenburg Gate III - Flickr - wit.jpg",
+    "author": "Bill Tyne from Oxford, England",
+    "source": "https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_III_-_Flickr_-_wit.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "changes": "Resized to 1600 pixels wide and converted to WebP. Displayed with a cropped frame.",
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "id": "hamburg",
+    "title": "Hamburg, Speicherstadt, Wasserschloss -- 2016 -- 2944-50.jpg",
+    "author": "Dietmar Rabich",
+    "source": "https://commons.wikimedia.org/wiki/File:Hamburg,_Speicherstadt,_Wasserschloss_--_2016_--_2944-50.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "changes": "Resized to 1600 pixels wide and converted to WebP. Displayed with a cropped frame.",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "id": "heidelberg",
+    "title": "Old Bridge across the Neckar river at sunset, Heidelberg.jpg",
+    "author": "Hartmut Schmidt, Heidelberg",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Bridge_across_the_Neckar_river_at_sunset,_Heidelberg.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "changes": "Resized to 1600 pixels wide and converted to WebP. Displayed with a cropped frame.",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "id": "eibsee",
+    "title": "Eibsee mirroring the mountains.jpg",
+    "author": "Jp.Deguo",
+    "source": "https://commons.wikimedia.org/wiki/File:Eibsee_mirroring_the_mountains.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "changes": "Resized to 1600 pixels wide and converted to WebP. Displayed with a cropped frame.",
+    "width": 1600,
+    "height": 1067
+  }
+]

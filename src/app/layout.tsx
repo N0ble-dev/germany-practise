@@ -1,0 +1,29 @@
+import type { Metadata, Viewport } from "next";
+import { LearningApp } from "@/components/learning-app";
+import { isCloudConfigured } from "@/lib/auth";
+import "./journey.css";
+import "./globals.css";
+import "./motivation.css";
+import "./planner.css";
+export const metadata: Metadata = {
+  title: "Deutsch Journey · A little German, every day",
+  description:
+    "Your personal A1.1 German learning companion. Build a steady habit with vocabulary, spaced reviews, listening, and everyday conversations.",
+};
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#f4f6f8",
+};
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  const cloudEnabled = isCloudConfigured();
+  return (
+    <html lang="en">
+      <body>
+        <LearningApp cloudEnabled={cloudEnabled}>{children}</LearningApp>
+      </body>
+    </html>
+  );
+}

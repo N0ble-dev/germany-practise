@@ -1,0 +1,544 @@
+.germany-reminder {
+  display: grid;
+  grid-template-columns: minmax(0, 1.13fr) minmax(0, 1fr);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  margin-bottom: 26px;
+}
+.reminder-photo {
+  position: relative;
+  min-height: 370px;
+  margin: 0;
+  background: var(--blue);
+}
+.dream-photo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #cedce1;
+  overflow: hidden;
+  outline: 1px solid oklch(0 0 0 / 0.1);
+  outline-offset: -1px;
+}
+:root[data-theme="dark"] .dream-photo {
+  outline-color: oklch(1 0 0 / 0.1);
+}
+.reminder-photo .dream-photo {
+  position: absolute;
+  inset: 0;
+}
+.dream-image {
+  object-fit: cover;
+}
+.dream-image.photo-berlin {
+  object-position: 50% 40%;
+}
+.dream-image.photo-eibsee {
+  object-position: 58% 50%;
+}
+.dream-photo-fallback {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  height: 100%;
+  padding: 26px;
+  gap: 10px;
+  text-align: center;
+  color: #283549;
+  background: #dce7e9;
+}
+.dream-photo-fallback span {
+  max-width: 220px;
+  font-size: 12px;
+}
+.dream-stamp {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border: 1px solid #ffffff40;
+  border-radius: 8px;
+  background: #152d30ed;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 650;
+}
+.reminder-photo figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 16px;
+  color: #fff;
+  background: #142335e6;
+  padding: 14px 20px;
+}
+.reminder-photo figcaption > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 650;
+}
+.reminder-photo figcaption svg {
+  flex-shrink: 0;
+}
+.photo-credit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 40px;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.reminder-copy {
+  display: grid;
+  align-content: center;
+  gap: 13px;
+  padding: 32px;
+  min-width: 0;
+}
+.reminder-copy h2 {
+  font-size: clamp(25px, 2.5vw, 34px);
+  line-height: 1.3;
+  text-wrap: balance;
+}
+.my-dream-reason {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+.daily-encouragement {
+  position: relative;
+  padding: 13px 48px 13px 15px;
+  border-left: 3px solid var(--primary);
+  background: var(--lavender);
+  border-radius: 0 10px 10px 0;
+}
+.daily-encouragement strong {
+  display: block;
+  font-size: 13px;
+}
+.daily-encouragement > span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+.daily-encouragement .button {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+}
+.gentle-reminder {
+  font-size: 12px;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.dream-study-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.dream-study-status.has-practiced {
+  color: var(--mint-text);
+}
+.reminder-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 3px;
+}
+.reminder-actions .text-link {
+  font-size: 11px;
+  min-height: 40px;
+}
+.reminder-compact {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1fr);
+  margin-bottom: 0;
+}
+.reminder-compact .reminder-copy {
+  padding: 23px;
+  gap: 11px;
+}
+.reminder-compact .reminder-copy h2 {
+  font-size: 26px;
+}
+.reminder-compact .my-dream-reason {
+  font-size: 12px;
+}
+.reminder-compact .reminder-photo {
+  min-height: 395px;
+}
+.reminder-compact .reminder-photo figcaption {
+  padding: 10px 15px;
+}
+.reminder-compact .dream-stamp {
+  left: 12px;
+  top: 12px;
+  font-size: 10px;
+  padding: 7px 9px;
+}
+.dream-personal-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 275px;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.dream-reason-editor {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+.dream-reason-editor h2 {
+  margin: 8px 0 10px;
+  font-size: 20px;
+}
+.dream-reason-editor .muted {
+  font-size: 12px;
+}
+.dream-reason-editor form {
+  display: grid;
+  gap: 12px;
+}
+.dream-reason-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.dream-reason-footer > span {
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.dream-practice-note {
+  display: grid;
+  gap: 9px;
+  align-content: start;
+}
+.dream-practice-note > strong {
+  display: block;
+  font:
+    700 40px/1 "Plus Jakarta Sans Variable",
+    sans-serif;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+.dream-practice-note > span:not(.eyebrow) {
+  font-size: 12px;
+}
+.dream-practice-note > p {
+  font-size: 11px;
+}
+.dream-practice-note .text-link {
+  margin-top: 2px;
+  min-height: 40px;
+  font-size: 11px;
+}
+.dream-destinations .section-heading {
+  margin-bottom: 20px;
+}
+.dream-destinations h2 {
+  margin-top: 7px;
+  font-size: 24px;
+  text-wrap: balance;
+}
+.dream-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.dream-destination {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+}
+.dream-destination.chosen-destination {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary);
+}
+.destination-photo-wrap {
+  height: 260px;
+  position: relative;
+}
+.destination-region {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #152d30ed;
+  border: 1px solid #ffffff40;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 11px;
+  padding: 6px 10px;
+}
+.destination-body {
+  padding: 23px;
+  display: grid;
+  align-content: start;
+  gap: 15px;
+  flex: 1;
+}
+.destination-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.destination-title h3 {
+  font-size: 24px;
+}
+.destination-title > span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 750;
+}
+.destination-body > p {
+  font-size: 13px;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.destination-phrase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--mint);
+  border-radius: 11px;
+  padding: 14px;
+}
+.destination-phrase > div {
+  min-width: 0;
+}
+.destination-phrase strong {
+  font-size: 13px;
+  display: block;
+}
+.destination-phrase span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.destination-phrase .button {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+}
+.destination-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+.destination-actions > .button {
+  min-height: 44px;
+}
+.destination-actions .text-link {
+  font-size: 11px;
+  width: 100%;
+  min-height: 40px;
+}
+.dream-next-step {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 25px;
+  background: var(--mint);
+  border-radius: 18px;
+  margin-top: 30px;
+}
+.dream-next-step > svg {
+  color: var(--mint-text);
+  flex-shrink: 0;
+}
+.dream-next-step > div {
+  flex: 1;
+}
+.dream-next-step p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 7px;
+}
+.dream-photo-credits {
+  margin-top: 25px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  font-size: 11px;
+  color: var(--muted);
+  scroll-margin-top: 30px;
+}
+.dream-photo-credits summary {
+  cursor: pointer;
+  min-height: 40px;
+  font-weight: 750;
+}
+.dream-photo-credits ul {
+  padding-left: 17px;
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+.dream-photo-credits a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.dream-photo-credits a:hover {
+  color: var(--primary);
+}
+@media (max-width: 1180px) {
+  .dream-personal-row {
+    grid-template-columns: minmax(0, 1fr) 245px;
+    gap: 18px;
+  }
+  .dream-reason-editor {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .reminder-copy {
+    padding: 26px;
+  }
+  .reminder-compact .reminder-copy h2 {
+    font-size: 23px;
+  }
+  .reminder-compact .reminder-copy {
+    padding: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .dream-gallery {
+    gap: 18px;
+  }
+  .destination-body {
+    padding: 19px;
+  }
+  .destination-photo-wrap {
+    height: 220px;
+  }
+  .dream-next-step {
+    flex-wrap: wrap;
+  }
+  .dream-next-step > div {
+    flex-basis: 75%;
+  }
+  .dream-next-step > .button {
+    margin-left: 43px;
+  }
+  .reminder-compact {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  }
+}
+@media (max-width: 760px) {
+  .dream-personal-row {
+    grid-template-columns: 1fr;
+  }
+  .dream-practice-note {
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 18px;
+    align-items: center;
+  }
+  .dream-practice-note > .eyebrow {
+    grid-column: 1 / -1;
+  }
+  .dream-practice-note > strong {
+    grid-row: 2 / 4;
+  }
+  .dream-practice-note > .text-link {
+    grid-column: 2;
+  }
+  .germany-reminder:not(.reminder-compact) {
+    grid-template-columns: 1fr;
+  }
+  .germany-reminder:not(.reminder-compact) .reminder-photo {
+    min-height: 300px;
+  }
+  .reminder-copy h2 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 600px) {
+  .germany-reminder {
+    grid-template-columns: 1fr;
+    border-radius: 18px;
+  }
+  .reminder-compact .reminder-photo {
+    min-height: 255px;
+  }
+  .reminder-compact .reminder-copy {
+    padding: 22px;
+  }
+  .reminder-compact .reminder-copy h2 {
+    font-size: 28px;
+  }
+  .dream-gallery {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .dream-destinations h2 {
+    font-size: 22px;
+  }
+  .destination-photo-wrap {
+    height: 235px;
+  }
+  .destination-body {
+    padding: 20px;
+  }
+  .dream-next-step {
+    padding: 22px;
+    align-items: flex-start;
+  }
+  .dream-next-step h2 {
+    font-size: 19px;
+  }
+  .dream-next-step > .button {
+    margin-left: 0;
+    width: 100%;
+  }
+  .germany-reminder:not(.reminder-compact) .reminder-photo {
+    min-height: 265px;
+  }
+  .reminder-copy {
+    padding: 24px;
+  }
+  .dream-reason-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .germany-reminder *,
+  .dream-gallery *,
+  .dream-personal-row * {
+    scroll-behavior: auto;
+    transition: none;
+    animation: none;
+  }
+}

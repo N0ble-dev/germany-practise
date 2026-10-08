@@ -1,0 +1,955 @@
+.eyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  color: var(--muted);
+}
+.book-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  padding: 32px 40px;
+  margin-bottom: 28px;
+  border-radius: 22px;
+  background: var(--mint);
+  overflow: hidden;
+}
+.book-banner h2 {
+  font-size: clamp(25px, 3vw, 37px);
+  margin: 10px 0 12px;
+}
+.book-banner p {
+  margin: 12px 0;
+  max-width: 440px;
+}
+.book-banner .button {
+  margin-top: 8px;
+}
+.book-cover {
+  flex-shrink: 0;
+  width: 175px;
+  height: 260px;
+  padding: 20px 22px;
+  border-radius: 3px 13px 13px 3px;
+  transform: rotate(6deg);
+  background: #325a50;
+  color: #fff;
+  box-shadow:
+    -6px 5px 0 #253d36,
+    9px 15px 20px #253d3620;
+  border-left: 5px solid #719687;
+}
+.book-cover > span {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  display: block;
+}
+.book-cover strong {
+  font:
+    700 55px "Plus Jakarta Sans Variable",
+    sans-serif;
+  letter-spacing: -0.04em;
+  display: block;
+  margin: 6px 0;
+}
+.book-cover small {
+  font-size: 10px;
+  line-height: 1.5;
+  display: block;
+}
+.cover-lines {
+  display: flex;
+  gap: 8px;
+  margin: 13px 0;
+}
+.cover-lines i {
+  background: #c6dbc3;
+  border-radius: 40px;
+  width: 12px;
+  height: 27px;
+  transform: rotate(25deg);
+}
+.cover-lines i:nth-child(2) {
+  height: 42px;
+  background: #edccaa;
+}
+.cover-lines i:nth-child(3) {
+  background: #cad2ed;
+  height: 55px;
+}
+.book-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 24px;
+  align-items: start;
+}
+.book-modules,
+.book-side {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+.book-module {
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.module-heading {
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--lavender);
+}
+.module-2 .module-heading {
+  background: var(--peach);
+}
+.module-3 .module-heading {
+  background: var(--mint);
+}
+.module-4 .module-heading {
+  background: var(--blue);
+}
+.module-heading > div {
+  flex: 1;
+}
+.module-heading h2 {
+  margin: 4px 0;
+  font-size: 18px;
+}
+.module-heading p {
+  font-size: 12px;
+}
+.module-number {
+  font:
+    750 26px "Plus Jakarta Sans Variable",
+    sans-serif;
+  color: var(--primary);
+}
+.book-chapter {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 22px;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.15s;
+}
+.book-chapter:hover {
+  background: var(--bg);
+}
+.book-chapter > div {
+  flex: 1;
+  min-width: 0;
+}
+.book-chapter h3 {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.book-chapter p {
+  color: var(--muted);
+  font-size: 12px;
+}
+.chapter-number {
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--muted);
+  font-weight: 800;
+  width: 38px;
+  height: 43px;
+  flex-shrink: 0;
+}
+.chapter-number.is-done {
+  background: var(--mint);
+  color: var(--mint-text);
+}
+.chapter-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  margin: 9px 0 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.chapter-meta span {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+.book-chapter .progress-bar {
+  width: 100%;
+  height: 3px;
+  background: var(--line);
+  border-radius: 3px;
+}
+.book-chapter .progress-bar span {
+  display: block;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 3px;
+}
+.module-checkpoint {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 22px;
+  background: var(--bg);
+}
+.module-checkpoint > div {
+  flex: 1;
+}
+.module-checkpoint strong {
+  font-size: 12px;
+}
+.module-checkpoint small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+.book-side h2 {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 17px;
+  margin: 7px 0 10px;
+}
+.book-side .panel > p {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.daily-book-routine ol {
+  padding: 0;
+  list-style: none;
+  margin: 20px 0;
+  display: grid;
+  gap: 20px;
+}
+.daily-book-routine li {
+  display: flex;
+  gap: 12px;
+}
+.daily-book-routine li > span {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--lavender);
+  color: var(--primary);
+  width: 25px;
+  height: 25px;
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.daily-book-routine li > div {
+  flex: 1;
+}
+.daily-book-routine li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+.daily-book-routine li small {
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.daily-book-routine li p {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+.weekly-rhythm {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  font-size: 12px;
+}
+.weekly-rhythm p {
+  color: var(--muted);
+  margin-top: 5px;
+}
+.personal-book-profile form {
+  display: grid;
+  gap: 12px;
+}
+.personal-book-profile label {
+  font-size: 11px;
+}
+.memory-map {
+  margin: 26px 0 16px;
+}
+.memory-map h2 {
+  margin: 4px 0 7px;
+}
+.place-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.place-links a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 12px;
+  background: var(--bg);
+}
+.place-links a:hover {
+  background: var(--mint);
+}
+.back-to-book {
+  margin-bottom: 17px;
+  display: inline-flex;
+}
+.chapter-layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.chapter-stepper {
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  padding: 13px 10px;
+  background: var(--surface);
+  position: sticky;
+  top: 20px;
+}
+.chapter-stepper-header {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 8px 8px 15px;
+  font-size: 12px;
+}
+.chapter-stepper button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 9px 8px;
+  border-radius: 10px;
+  margin: 3px 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+.chapter-stepper button > span {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  font-size: 10px;
+  flex-shrink: 0;
+}
+.chapter-stepper button.active {
+  background: var(--lavender);
+  color: var(--primary);
+  font-weight: 800;
+}
+.chapter-stepper button.practiced > span {
+  background: var(--mint);
+  border-color: transparent;
+  color: var(--mint-text);
+}
+.stepper-note {
+  border-top: 1px solid var(--line);
+  padding: 14px 8px 3px;
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.chapter-main {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+.chapter-exercise {
+  min-height: 380px;
+  padding: 28px;
+}
+.exercise-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+.exercise-heading > span:last-child {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.chapter-exercise > h2 {
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+.step-content {
+  display: grid;
+  gap: 19px;
+}
+.step-content h3 {
+  margin-bottom: 7px;
+}
+.step-content .button-row {
+  flex-wrap: wrap;
+}
+.chapter-story {
+  padding: 24px;
+  border-radius: 15px;
+  background: var(--mint);
+}
+.chapter-story > span {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  vertical-align: top;
+}
+.chapter-story p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+.outcome-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.outcome-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.outcome-list svg {
+  color: var(--mint-text);
+  flex-shrink: 0;
+  align-self: center;
+}
+.step-footer {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.step-footer p {
+  max-width: 220px;
+}
+.journey-word-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.journey-word-grid article {
+  border: 1px solid var(--line);
+  padding: 15px;
+  border-radius: 12px;
+}
+.journey-word-grid article > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.journey-word-grid article p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.journey-word-grid article small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+.journey-word-grid article .word-context {
+  padding-top: 9px;
+  margin-top: 9px;
+  border-top: 1px solid var(--line);
+  font-style: italic;
+  color: var(--text);
+}
+.sound-examples,
+.pattern-list {
+  display: grid;
+  gap: 10px;
+}
+.sound-examples > div,
+.pattern-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--line);
+  padding: 13px;
+  border-radius: 12px;
+}
+.pattern-list > div {
+  flex-wrap: wrap;
+}
+.pattern-list p {
+  font-size: 17px;
+}
+.journey-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.journey-check input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin: 2px 0 0;
+  flex-shrink: 0;
+  accent-color: var(--primary);
+}
+.journey-instruction {
+  border-radius: 12px;
+  background: var(--blue);
+  padding: 17px;
+  font-size: 13px;
+}
+.journey-instruction p + p {
+  margin-top: 8px;
+}
+.journey-quiz .exercise-prompt {
+  font-size: 22px;
+  margin: 9px 0 18px;
+}
+.journey-quiz .answer-feedback,
+.recall-exercise .answer-feedback {
+  display: grid;
+  gap: 12px;
+  margin-top: 17px;
+}
+.recall-exercise {
+  display: grid;
+  gap: 15px;
+}
+.recall-exercise > h3 {
+  font-size: 26px;
+}
+.journey-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px 0;
+}
+.journey-details[open] summary {
+  margin-bottom: 16px;
+}
+.journey-details[open] > .button,
+.journey-details[open] > label {
+  margin: 10px 0;
+}
+.journey-dialogue {
+  display: grid;
+  gap: 14px;
+  background: var(--bg);
+  border-radius: 13px;
+  padding: 20px;
+}
+.journey-dialogue > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.journey-dialogue > div > span {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: var(--lavender);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
+}
+.journey-dialogue small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+.built-sentence {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  min-height: 88px;
+  background: var(--blue);
+  border-radius: 12px;
+}
+.built-sentence button {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--text);
+}
+.token-bank button {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.journey-stage-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.journey-stage-tabs button {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--muted);
+  background: var(--surface);
+  font-size: 12px;
+  text-align: left;
+}
+.journey-stage-tabs button.active {
+  color: var(--primary);
+  background: var(--lavender);
+  border-color: var(--primary);
+  font-weight: 800;
+}
+.voice-recorder {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+.voice-recorder audio {
+  max-width: 100%;
+  width: 100%;
+}
+.speaking-self-check {
+  border: 1px solid var(--line);
+  padding: 18px;
+  border-radius: 12px;
+  display: grid;
+  gap: 15px;
+}
+.speaking-self-check legend {
+  padding: 0 6px;
+  font-weight: 750;
+}
+.conversation-bubble {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--mint);
+  padding: 20px;
+  border-radius: 15px 15px 15px 3px;
+  font-size: 18px;
+}
+.step-content form {
+  display: grid;
+  gap: 15px;
+}
+.journey-mission-title {
+  font-size: 23px;
+}
+.mission-checklist {
+  display: grid;
+  gap: 11px;
+  padding: 18px;
+  background: var(--bg);
+  border-radius: 12px;
+}
+.mission-checklist > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.mission-checklist span {
+  width: 21px;
+  height: 21px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--muted);
+}
+.mission-checklist .criterion-passed {
+  color: var(--mint-text);
+  background: var(--mint);
+}
+.chapter-mastery > p {
+  margin-top: 12px;
+}
+.mastery-skills {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.mastery-skills > a {
+  padding: 13px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: grid;
+  gap: 6px;
+}
+.mastery-skills span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.mastery-skills strong {
+  font-size: 19px;
+}
+.mastery-skills small {
+  font-size: 10px;
+  color: var(--mint-text);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.mastery-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.mastery-bottom > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+.chapter-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.checkpoint-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 24px;
+  align-items: start;
+}
+.checkpoint-mission {
+  display: grid;
+  gap: 20px;
+}
+.checkpoint-mission form {
+  display: grid;
+  gap: 17px;
+}
+.checkpoint-support {
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 14px;
+  display: grid;
+  gap: 10px;
+  font-size: 12px;
+}
+.flash-recall {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 350px);
+  margin: 15px auto;
+}
+.number-practice {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.number-practice > p,
+.number-practice > details,
+.number-practice form {
+  margin-top: 15px;
+}
+.number-patterns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+.number-patterns button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 11px;
+}
+.number-patterns span {
+  flex: 1;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1180px) {
+  .book-overview-grid,
+  .checkpoint-layout {
+    grid-template-columns: minmax(0, 1fr) 245px;
+    gap: 18px;
+  }
+  .chapter-layout {
+    grid-template-columns: 175px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .chapter-exercise {
+    padding: 23px;
+  }
+  .mastery-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .book-overview-grid,
+  .checkpoint-layout {
+    grid-template-columns: 1fr;
+  }
+  .book-overview-grid > .book-side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .book-overview-grid > .book-side > :last-child {
+    grid-column: 1 / -1;
+  }
+  .chapter-layout {
+    grid-template-columns: 1fr;
+  }
+  .chapter-stepper {
+    position: static;
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .chapter-stepper button {
+    width: auto;
+    white-space: nowrap;
+    padding: 7px 10px;
+    flex-shrink: 0;
+  }
+  .chapter-stepper-header,
+  .stepper-note {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .book-banner {
+    padding: 25px;
+    gap: 15px;
+  }
+  .book-cover {
+    width: 115px;
+    height: 169px;
+    padding: 14px;
+  }
+  .book-cover strong {
+    font-size: 37px;
+  }
+  .book-cover > span {
+    font-size: 7px;
+  }
+  .book-cover small {
+    font-size: 8px;
+  }
+  .cover-lines {
+    margin: 6px 0;
+  }
+  .cover-lines i,
+  .cover-lines i:nth-child(2),
+  .cover-lines i:nth-child(3) {
+    height: 20px;
+    width: 7px;
+  }
+  .book-banner h2 {
+    font-size: 24px;
+  }
+  .book-banner .small {
+    font-size: 10px;
+  }
+  .book-banner > div:first-child {
+    min-width: 0;
+  }
+  .book-overview-grid > .book-side {
+    grid-template-columns: 1fr;
+  }
+  .module-heading,
+  .book-chapter {
+    padding: 17px;
+    gap: 10px;
+  }
+  .module-heading > .small {
+    display: none;
+  }
+  .module-heading h2 {
+    font-size: 17px;
+  }
+  .module-number {
+    font-size: 23px;
+  }
+  .book-chapter > svg {
+    display: none;
+  }
+  .module-checkpoint {
+    padding: 15px 17px;
+  }
+  .chapter-exercise {
+    padding: 20px;
+  }
+  .chapter-story {
+    padding: 20px;
+  }
+  .chapter-story p {
+    font-size: 16px;
+  }
+  .step-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .step-footer p {
+    max-width: none;
+  }
+  .mastery-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sound-examples > div {
+    flex-wrap: wrap;
+  }
+  .journey-word-grid {
+    grid-template-columns: 1fr;
+  }
+  .mastery-skills > a {
+    padding: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .book-cover {
+    display: none;
+  }
+  .book-banner {
+    padding: 25px;
+  }
+  .journey-stage-tabs {
+    grid-template-columns: 1fr;
+  }
+}
