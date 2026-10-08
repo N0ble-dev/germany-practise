@@ -15,13 +15,22 @@ async function authenticated() {
   if (error) throw new Error("The account session could not be checked.");
   return data?.user ? data : null;
 }
-export async function GET() {
+export async function GET(request: Request) {
   if (!isCloudConfigured())
     return response({ error: "Cloud saving is not configured." }, 503);
   try {
     const session = await authenticated();
     if (!session)
       return response({ error: "Sign in to access your cloud progress." }, 401);
+    const expectedAccount = request.headers.get("X-Learning-Account");
+    if (expectedAccount && expectedAccount !== session.user.id)
+      return response(
+        {
+          error:
+            "Your account changed. Open your current profile and try again.",
+        },
+        409,
+      );
     const [row] = await getDb()
       .select({
         data: learningStates.data,
@@ -61,6 +70,15 @@ export async function PUT(request: Request) {
     const session = await authenticated();
     if (!session)
       return response({ error: "Sign in to save your progress." }, 401);
+    const expectedAccount = request.headers.get("X-Learning-Account");
+    if (expectedAccount && expectedAccount !== session.user.id)
+      return response(
+        {
+          error:
+            "Your account changed. Open your current profile and try again.",
+        },
+        409,
+      );
     const body = await request.text();
     if (body.length > 2_000_000)
       return response({ error: "Your backup is too large to save." }, 413);

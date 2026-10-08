@@ -40,6 +40,7 @@ export async function POST(request: Request) {
     const url = client.generateAuthUrl({
       access_type: "offline",
       prompt: "consent",
+      login_hint: user.email,
       scope: [calendarScope],
       state,
       code_challenge: codeChallenge,

@@ -8,6 +8,42 @@ function handler(method: Method) {
     request: Request,
     context: { params: Promise<{ path: string[] }> },
   ) => {
+    const path = (await context.params).path.join("/");
+    // Expose only the authentication operations this Google-only app uses.
+    // Disabling other providers in Neon Console also protects the hosted URL.
+    const allowed =
+      (method === "GET" && ["get-session", "token", "jwks"].includes(path)) ||
+      (method === "POST" && ["sign-in/social", "sign-out"].includes(path)) ||
+      ((method === "GET" || method === "POST") && path === "callback/google");
+    if (!allowed)
+      return NextResponse.json(
+        {
+          code: "GOOGLE_ONLY",
+          message: "Continue with Google to access your account.",
+        },
+        { status: 403, headers: { "Cache-Control": "no-store" } },
+      );
+    if (path === "sign-in/social") {
+      try {
+        const body = await request.clone().json();
+        if (body?.provider !== "google")
+          return NextResponse.json(
+            {
+              code: "GOOGLE_ONLY",
+              message: "Only Google sign-in is available.",
+            },
+            { status: 403 },
+          );
+      } catch {
+        return NextResponse.json(
+          {
+            code: "INVALID_REQUEST",
+            message: "A Google sign-in request is required.",
+          },
+          { status: 400 },
+        );
+      }
+    }
     if (!isAuthConfigured())
       return NextResponse.json(
         { error: "Accounts are not configured. Local learning is available." },
