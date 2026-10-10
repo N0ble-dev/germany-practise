@@ -8,6 +8,7 @@ import "./motivation.css";
 import "./planner.css";
 import "./welcome.css";
 import "./profile.css";
+import "./review.css";
 export const metadata: Metadata = {
   applicationName: "Deutsch Journey",
   creator: creatorBrand.name,
