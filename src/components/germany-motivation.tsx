@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -22,6 +23,8 @@ import {
 import { defaultWhy, motivationForToday } from "@/lib/motivation";
 import { updateState } from "@/lib/store";
 import { speakGerman } from "@/lib/speech";
+
+const GermanyPhotoDeck = dynamic(() => import("./germany-photo-deck"));
 
 function DestinationPhoto({
   destination,
@@ -69,32 +72,39 @@ export function GermanyMotivation({ compact = false }: { compact?: boolean }) {
       className={`germany-reminder ${compact ? "reminder-compact" : ""}`}
       aria-label="My daily Germany reminder"
     >
-      <figure className="reminder-photo">
-        <DestinationPhoto
-          key={place.id}
-          destination={place}
-          eager
-          sizes={
-            compact
-              ? "(max-width: 600px) 100vw, (max-width: 1000px) 45vw, 360px"
-              : "(max-width: 760px) 100vw, 60vw"
-          }
-        />
-        <span className="dream-stamp">
-          <Compass size={14} />
-          Someday, my everyday.
-        </span>
-        <figcaption>
-          <span>
-            <MapPin size={14} />
-            {place.name} · {place.landmark}
+      {compact ? (
+        <figure className="reminder-photo">
+          <DestinationPhoto
+            key={place.id}
+            destination={place}
+            eager
+            sizes={
+              compact
+                ? "(max-width: 600px) 100vw, (max-width: 1000px) 45vw, 360px"
+                : "(max-width: 760px) 100vw, 60vw"
+            }
+          />
+          <span className="dream-stamp">
+            <Compass size={14} />
+            Someday, my everyday.
           </span>
-          <Link href="/inspiration#photo-credits" className="photo-credit-link">
-            Photo credits
-            <Camera size={13} />
-          </Link>
-        </figcaption>
-      </figure>
+          <figcaption>
+            <span>
+              <MapPin size={14} />
+              {place.name} · {place.landmark}
+            </span>
+            <Link
+              href="/inspiration#photo-credits"
+              className="photo-credit-link"
+            >
+              Photo credits
+              <Camera size={13} />
+            </Link>
+          </figcaption>
+        </figure>
+      ) : (
+        <GermanyPhotoDeck key={place.id} destination={place} />
+      )}
       <div className="reminder-copy">
         <span className="eyebrow">THE LIFE YOU’RE LEARNING FOR</span>
         <h2>
