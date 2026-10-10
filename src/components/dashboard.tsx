@@ -18,6 +18,7 @@ import {
 import { useApp } from "./learning-app";
 import { GermanyMotivation } from "./germany-motivation";
 import { UpcomingStudy } from "./upcoming-study";
+import { StudyShortcuts } from "./study-shortcuts";
 import { Button } from "./ui/button";
 import {
   dailyActivities,
@@ -98,6 +99,7 @@ export function Dashboard() {
           })}
         </span>
       </div>
+      <StudyShortcuts />
       <div className="dashboard-grid">
         <div className="dashboard-primary">
           <GermanyMotivation compact />
