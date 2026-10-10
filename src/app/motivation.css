@@ -23,6 +23,50 @@
   outline: 1px solid oklch(0 0 0 / 0.1);
   outline-offset: -1px;
 }
+.dream-card-reminder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px 18px 90px;
+}
+.dream-card-stage {
+  height: 300px;
+  width: 100%;
+  min-width: 0;
+}
+.dream-card-stage [aria-roledescription="carousel"]:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+.dream-deck-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.dream-deck-controls .button {
+  width: 44px;
+  height: 44px;
+  flex: none;
+}
+.dream-deck-counter {
+  min-width: 42px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 600px) {
+  .dream-card-stage {
+    height: 260px;
+  }
+  .dream-card-reminder {
+    padding-top: 52px;
+    padding-bottom: 106px;
+  }
+}
 :root[data-theme="dark"] .dream-photo {
   outline-color: oklch(1 0 0 / 0.1);
 }
