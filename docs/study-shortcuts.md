@@ -1,0 +1,7 @@
+# Study desk shortcuts
+
+The dashboard uses the React Bits [GlassIcons TS-TW component](https://reactbits.dev/components/glass-icons) for book lessons, vocabulary, flashcard review, listening, the study calendar and progress. Each shortcut links to an existing study route and uses Next.js navigation while preserving normal modified-click behavior.
+
+The exact downloaded registry lives in `docs/vendor/GlassIcons-TS-TW.json`. It declares no additional dependencies. `src/components/GlassIcons.tsx` uses that source with repository formatting and two React compatibility adjustments: settings update in a layout effect, and browser feature detection/canvas map generation run in a cancellable animation-frame callback. Hugeicons React and free icons supply the six glyphs, imported individually to keep the bundle small. The separately installed CardSwap component also received the same render-purity correction for its settings ref so the repository lint check passes.
+
+`src/components/study-shortcuts.tsx` contains the app-specific configuration. It preserves the requested glass, tilted plate, press interaction and parallax settings. Labels stay visible for touch and keyboard use; the theme follows the app. A ResizeObserver adjusts the grid to the actual available space, with three columns on phones and six when there is enough room. The rendering component loads in a separate client chunk. The registry includes reduced-motion handling and a DOM fallback when WebGL is unavailable.

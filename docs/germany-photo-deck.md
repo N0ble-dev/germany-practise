@@ -1,0 +1,11 @@
+# Germany photo deck
+
+The inspiration page uses the React Bits [CardSwap TS-TW component](https://reactbits.dev/components/card-swap) in the main reminder's photo area. The compact dashboard reminder keeps a single destination photo so daily practice stays easy to reach.
+
+`docs/vendor/CardSwap-TS-TW.json` stores the exact downloaded registry. `src/components/CardSwap.tsx` follows that source with repository formatting and a React render-purity fix: its settings ref updates in a layout effect. Two optional adapter props support flashcards: `navigation` disables ungraded click/arrow navigation, and `padding` lets interactive cards fit on phones without shrinking touch targets. Defaults preserve the registry behavior. Carousel keyboard events also leave nested inputs and buttons alone. The registry's Hugeicons dependencies are installed alongside the GlassIcons glyphs.
+
+The flashcard review page uses CardSwap with custom `Card` children through `src/components/flashcard-stack.tsx`. Only the current word renders; the other cards are decorative, hidden from assistive technology and inert. Rating advances the stack; autoplay, drag and direct navigation are disabled. The existing review queue, Again requeue, scheduling, recall/article validation, audio evidence and XP logic remain in `review.tsx`. The stack fits the actual available width and measures content height to accommodate examples, Arabic text and long learner entries. Reduced-motion users get the same stack with instant word changes.
+
+`src/components/germany-photo-deck.tsx` configures four locally hosted Germany photos, with the learner's saved destination first. Photos swap every four seconds. Previous/next and pause controls work with touch and keyboard; the stack also supports swiping and arrow keys. Autoplay pauses for keyboard focus and stops when reduced motion is requested. The existing destination gallery remains the place to choose and save the daily reminder. Photo credit links retain the existing source and license details.
+
+CardSwap loads in a separate client chunk through the photo-deck component. Its own resize observer fits the stack to the available space. Width and height follow the requested 420 × 300 custom-card example, with smaller offsets and a shorter mobile stage to keep the photos and controls within the page.
