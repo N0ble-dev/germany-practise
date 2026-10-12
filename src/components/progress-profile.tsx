@@ -37,6 +37,7 @@ import {
   ProfilePdfExport,
 } from "./profile-notebook";
 import { personalProfileSchema } from "@/lib/journey-model";
+import { ProfileShareControls } from "./profile-share";
 export function Progress() {
   const { state } = useApp();
   const masteredChapters = Object.values(state.journey.lessons).filter(
@@ -285,6 +286,7 @@ export function Profile() {
         <ProfilePdfExport />
       </div>
       <ProfileSummary />
+      <ProfileShareControls />
       <ProfileNotebook />
       <div className="two-column profile-grid">
         <section className="panel">

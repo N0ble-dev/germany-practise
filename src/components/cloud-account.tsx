@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { GoogleMark } from "./google-mark";
+import type { AuthDestination } from "@/lib/auth-navigation";
 export function CloudAccount({
   standalone = false,
   onAuthenticated,
@@ -18,7 +19,7 @@ export function CloudAccount({
 }: {
   standalone?: boolean;
   onAuthenticated?: () => void;
-  returnTo?: "/" | "/planner" | "/profile";
+  returnTo?: AuthDestination;
   oauthFailed?: boolean;
 } = {}) {
   const { state, notify } = useApp();
