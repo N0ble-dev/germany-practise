@@ -15,6 +15,13 @@
       "when": 1791456828606,
       "tag": "0001_absent_stingray",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791829743421,
+      "tag": "0002_tough_bulldozer",
+      "breakpoints": true
     }
   ]
 }
