@@ -3,6 +3,7 @@ type CardDetails = {
   accountId?: string;
   words: number;
   xp: number;
+  showStats?: boolean;
 };
 
 function loadCardImage(source: string, signal: AbortSignal) {
@@ -101,6 +102,15 @@ export async function createLearnerCard(
     size--;
   } while (size > 20);
   context.fillText(details.name, 400, 705, 680);
+  if (details.showStats === false) {
+    context.fillStyle = "#FFF9EB";
+    context.fillRect(65, 800, 670, 115);
+    context.fillStyle = "#171717";
+    context.font = '700 28px "Nunito Sans Variable", sans-serif';
+    context.fillText("A LITTLE GERMAN, EVERY DAY", 400, 866, 650);
+    signal.throwIfAborted();
+    return canvas.toDataURL("image/png");
+  }
   context.fillStyle = "#171717";
   context.beginPath();
   context.roundRect(100, 824, 280, 75, 37.5);

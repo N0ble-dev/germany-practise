@@ -33,6 +33,7 @@ import {
   CircleHelp,
   Compass,
   CalendarDays,
+  Users,
 } from "lucide-react";
 import { useLearning, updateState, activateLearningAccount } from "@/lib/store";
 import { authClient } from "@/lib/auth-client";
@@ -69,6 +70,7 @@ const navigation = [
       { href: "/lessons", label: "My learning path", icon: BookOpen },
       { href: "/planner", label: "My study calendar", icon: CalendarDays },
       { href: "/vocabulary", label: "Vocabulary", icon: Library },
+      { href: "/space", label: "Study together", icon: Users },
     ],
   },
   {
@@ -105,6 +107,7 @@ const titles: Record<string, string> = {
   "/inspiration": "My Germany dream",
   "/progress": "Look how far you’ve come",
   "/profile": "Your learning preferences",
+  "/space": "Your shared study space",
   "/signup": "Your German journey starts here",
   "/signin": "Welcome back",
 };
@@ -122,6 +125,22 @@ export function LearningApp({
   children: ReactNode;
   cloudEnabled: boolean;
 }) {
+  const pathname = usePathname();
+  if (pathname.startsWith("/share/"))
+    return (
+      <div className="public-share-shell">
+        <header>
+          <Link href="/" className="brand">
+            <BrandMark />
+            <strong>deutsch journey.</strong>
+          </Link>
+        </header>
+        <main id="main-content">{children}</main>
+        <footer>
+          <CreatorCredit />
+        </footer>
+      </div>
+    );
   return cloudEnabled ? (
     <ManagedLearningApp>{children}</ManagedLearningApp>
   ) : (
