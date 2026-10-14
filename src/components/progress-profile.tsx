@@ -38,6 +38,7 @@ import {
 } from "./profile-notebook";
 import { PersonalLifeProfile } from "./personal-life-profile";
 import { ProfileShareControls } from "./profile-share";
+import { LibraryBookmarks } from "./content-library";
 export function Progress() {
   const { state } = useApp();
   const masteredChapters = Object.values(state.journey.lessons).filter(
@@ -289,6 +290,7 @@ export function Profile() {
       <ProfileShareControls />
       <PersonalLifeProfile />
       <ProfileNotebook />
+      <LibraryBookmarks />
       <div className="two-column profile-grid">
         <section className="panel">
           <h2>Your learning preferences</h2>

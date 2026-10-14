@@ -98,6 +98,7 @@ export function GermanJourney({
   const [level, setLevel] = useState(initialLevel);
   const [answer, setAnswer] = useState("");
   const [saved, setSaved] = useState("");
+  const [practicePrompt, setPracticePrompt] = useState<string | null>(null);
   const story = levelStories[level];
   const selected = courses.filter((course) => course.level === level);
   const value = answer.trim();
@@ -175,6 +176,7 @@ export function GermanJourney({
               onClick={() => {
                 setLevel(item);
                 setSaved("");
+                setPracticePrompt(null);
               }}
             >
               <span>{item}</span>
@@ -233,17 +235,17 @@ export function GermanJourney({
               </div>
             </Link>
           )}
-          <Link href="/exams/resources" className="journey-resource-link">
+          <Link href="/library" className="journey-resource-link">
             <GraduationCap size={24} />
             <div>
-              <span className="eyebrow">A1–C2 · RESOURCE LIBRARY</span>
-              <h3>Learn from trusted sources</h3>
+              <span className="eyebrow">AVAILABLE NOW · CONTENT LIBRARY</span>
+              <h3>Open the books. Explore the sentences.</h3>
               <p>
-                Official exam resources and learning links. Find material for
-                your next step.
+                2,296 words, 331,254 sentence pairs, ten book chapters, and
+                their activities and grammar references.
               </p>
               <span className="text-link">
-                Explore resources <ArrowRight size={15} />
+                Explore the content <ArrowRight size={15} />
               </span>
             </div>
           </Link>
@@ -265,7 +267,7 @@ export function GermanJourney({
             <h3 id="journey-practice-title">
               Try something that feels like real life.
             </h3>
-            <p>{story.prompt}</p>
+            <p>{practicePrompt ?? story.prompt}</p>
             <small>
               These are practice ideas, not reviewed lessons or graded CEFR
               assessments. Use your own knowledge and ask for feedback.
@@ -316,26 +318,29 @@ export function GermanJourney({
         </div>
         <div className="journey-section-heading">
           <div>
-            <h3>The {level} course path we’re building</h3>
+            <h3>Practise {level} real-life themes</h3>
             <p>
-              Original course outlines. Full lessons and recordings appear after
-              review.
+              Choose a situation for your writing and speaking practice, then
+              explore the source library for words and examples.
             </p>
           </div>
-          <Link href="/courses" className="text-link">
-            See reviewed lessons <ArrowRight size={15} />
+          <Link
+            href="/library?collection=tatoeba&kind=sentence_pair"
+            className="text-link"
+          >
+            Explore source sentences <ArrowRight size={15} />
           </Link>
         </div>
         <div className="journey-course-outlines">
           {selected.map((course) => (
             <article key={course.id}>
-              <span className="soft-badge">In preparation</span>
+              <span className="soft-badge">Practice themes</span>
               <h3>{course.title}</h3>
               {course.modules.map((module) => (
                 <details key={module.id}>
                   <summary>
                     {module.title}
-                    <small>{module.lessonIds.length} lesson ideas</small>
+                    <small>{module.lessonIds.length} practice prompts</small>
                   </summary>
                   <ul>
                     {course.lessons
@@ -344,6 +349,18 @@ export function GermanJourney({
                         <li key={lesson.id}>
                           <strong>{lesson.title}</strong>
                           <span>{lesson.mission}</span>
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            onClick={() => {
+                              setPracticePrompt(lesson.mission);
+                              document
+                                .getElementById("journey-practice-title")
+                                ?.scrollIntoView({ block: "center" });
+                            }}
+                          >
+                            Use this prompt <ArrowRight size={14} />
+                          </Button>
                         </li>
                       ))}
                   </ul>

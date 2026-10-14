@@ -44,7 +44,8 @@ export function Vocabulary() {
       (filter === "all" ||
         (filter === "favorites" && w.favorite) ||
         (filter === "difficult" && w.mistakes > 0) ||
-        String(w.lesson) === filter),
+        (filter === "library" && !!w.source) ||
+        (!w.source && String(w.lesson) === filter)),
   );
   function startAdd() {
     setEditing(null);
@@ -183,6 +184,7 @@ export function Vocabulary() {
             <option value="all">All words</option>
             <option value="favorites">Favorites</option>
             <option value="difficult">Needs a little care</option>
+            <option value="library">From the content library</option>
             {Array.from({ length: 12 }, (_, i) => (
               <option value={i + 1} key={i}>
                 Lesson {i + 1}
@@ -214,7 +216,14 @@ export function Vocabulary() {
                 {w.hint && <span className="memory-hint">{w.hint}</span>}
               </div>
               <div className="vocabulary-meta">
-                <span className="soft-badge">Lesson {w.lesson}</span>
+                <span className="soft-badge">
+                  {w.source ? "Content library" : `Lesson ${w.lesson}`}
+                </span>
+                {w.source && (
+                  <a href={w.source.url} target="_blank" rel="noreferrer">
+                    Source & attribution
+                  </a>
+                )}
                 <small>{w.topic}</small>
                 <span className={`word-status status-${w.status}`}>
                   {w.status}

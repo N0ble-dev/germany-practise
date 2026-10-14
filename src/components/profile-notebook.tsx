@@ -377,8 +377,9 @@ function ProfileWords() {
               </p>
             )}
             <small className="notebook-meta">
-              {word.topic} · Lesson {word.lesson} · {word.status} ·{" "}
-              {word.reviews} reviews
+              {word.topic} ·{" "}
+              {word.source ? "Content library" : `Lesson ${word.lesson}`} ·{" "}
+              {word.status} · {word.reviews} reviews
             </small>
           </>
         )}

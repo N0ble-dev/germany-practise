@@ -169,6 +169,23 @@ export function Dashboard() {
           </section>
           <PersonalLifeTodayCard />
           <JourneyTodayCard />
+          <section className="explore-banner">
+            <span className="explore-icon">
+              <BookOpen size={24} />
+            </span>
+            <div>
+              <h3>Your content is ready to explore.</h3>
+              <p>
+                Open the books, discover words, and practise German–English
+                sentences.
+              </p>
+            </div>
+            <Button variant="outline" asChild>
+              <Link href="/library">
+                Open content library <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </section>
           <section className="continue-section">
             <div className="section-heading">
               <h2>Pick up where you are</h2>

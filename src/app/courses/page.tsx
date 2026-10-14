@@ -30,13 +30,13 @@ export default async function CoursesPage() {
       </header>
       {!lessons.length ? (
         <section className="panel">
-          <h2>The first reviewed lesson is being prepared.</h2>
+          <h2>Explore your books and source content.</h2>
           <p>
-            Keep practising with your A1.1 foundation course while new lessons
-            complete their review. The A1–C2 course path is being developed;
-            each lesson appears here when it is ready.
+            The supplied German library is available now: book chapters,
+            vocabulary, sentence pairs, activities, and grammar references.
+            Assessed original lessons appear here separately.
           </p>
-          <Link href="/lessons">Continue practising</Link>
+          <Link href="/library">Open the content library</Link>
         </section>
       ) : (
         <div className="studio-vocabulary">

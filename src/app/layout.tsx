@@ -18,6 +18,7 @@ import "./community.css";
 import "./content-factory.css";
 import "./content-imports.css";
 import "./german-journey.css";
+import "./library.css";
 export const metadata: Metadata = {
   applicationName: "Deutsch Journey",
   creator: creatorBrand.name,

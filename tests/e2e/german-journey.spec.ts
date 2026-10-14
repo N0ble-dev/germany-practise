@@ -87,7 +87,7 @@ test("all levels expose distinct directions and the available foundation stays a
       page.getByRole("link", { name: `Explore ${level} exam preparation` }),
     ).toHaveAttribute("href", `/exams?level=${level}`);
     await expect(
-      page.getByText("In preparation", { exact: true }).first(),
+      page.getByText("Practice themes", { exact: true }).first(),
     ).toBeVisible();
   }
   await page.locator(".journey-foundation").click();

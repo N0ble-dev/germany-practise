@@ -70,7 +70,7 @@ const navigation = [
     items: [
       { href: "/", label: "Today", icon: LayoutDashboard },
       { href: "/lessons", label: "My learning path", icon: BookOpen },
-      { href: "/courses", label: "Reviewed courses", icon: GraduationCap },
+      { href: "/library", label: "Content library", icon: Library },
       { href: "/planner", label: "My study calendar", icon: CalendarDays },
       { href: "/vocabulary", label: "Vocabulary", icon: Library },
       { href: "/space", label: "Study together", icon: Users },
@@ -100,6 +100,7 @@ const navigation = [
 const titles: Record<string, string> = {
   "/": "Your German, every day",
   "/lessons": "My learning path",
+  "/library": "Your German content library",
   "/planner": "My study calendar",
   "/vocabulary": "My vocabulary",
   "/review": "Flashcard practice",
