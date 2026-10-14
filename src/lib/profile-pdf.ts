@@ -317,12 +317,15 @@ export async function createProfilePdf(
               word.english,
               ...(word.example ? [`Example: ${word.example}`] : []),
               ...(word.hint ? [`Hint: ${word.hint}`] : []),
+              ...(word.source
+                ? [`Source: ${word.source.attribution}`, word.source.url]
+                : []),
             ].join("\n"),
             word.arabic || "—",
             {
               content: [
                 word.topic,
-                `Lesson ${word.lesson} · ${word.status}`,
+                `${word.source ? "Content library" : `Lesson ${word.lesson}`} · ${word.status}`,
                 ...(word.favorite ? ["Favorite"] : []),
                 `${word.reviews} reviews · ${word.mistakes} tricky`,
                 `Next: ${studyDate(word.due)}`,

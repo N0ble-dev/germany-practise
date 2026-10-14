@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "mode": "source_reference",
+  "archives": [
+    {
+      "id": "deutsch-im-blick-20e0d0a93f2d14ae",
+      "provider": "deutsch_im_blick",
+      "manifestHash": "20e0d0a93f2d14ae1dae6aedfa77a82d69ce2a6b25ab4bac7db2585a16a5701a"
+    },
+    {
+      "id": "tatoeba-5e53bd1f27017773",
+      "provider": "tatoeba",
+      "manifestHash": "5e53bd1f27017773ec9f0f536aaac6734593e5c5b675e82f70376b7c473a854d"
+    },
+    {
+      "id": "zum-59cafd878e0e1517",
+      "provider": "zum",
+      "manifestHash": "59cafd878e0e1517c862594c6f2db83b1c12fa2879a35dfe22c6a8554bf46f44"
+    }
+  ]
+}

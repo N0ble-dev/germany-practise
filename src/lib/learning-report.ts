@@ -33,6 +33,7 @@ export type ReportEntry = {
     | "reviews"
     | "mistakes"
     | "due"
+    | "source"
   >;
 };
 export type ReportSection = {
@@ -119,6 +120,7 @@ export function buildLearningReport(
             reviews: word.reviews,
             mistakes: word.mistakes,
             due: word.due,
+            source: word.source,
           },
           lines: [
             word.english,
@@ -126,16 +128,32 @@ export function buildLearningReport(
             ...(word.plural ? [`Plural: ${word.plural}`] : []),
             ...(word.example ? [`Example: ${word.example}`] : []),
             ...(word.hint ? [`Your hint: ${word.hint}`] : []),
-            `${word.topic} · Lesson ${word.lesson} · ${word.status}${word.favorite ? " · Favorite" : ""}`,
+            `${word.topic} · ${word.source ? "Content library" : `Lesson ${word.lesson}`} · ${word.status}${word.favorite ? " · Favorite" : ""}`,
+            ...(word.source
+              ? [
+                  `Source: ${word.source.attribution}`,
+                  word.source.url,
+                  `${word.source.license} · ${word.source.licenseUrl}`,
+                ]
+              : []),
             `${word.reviews} reviews · ${word.mistakes} tricky moments · Next review: ${studyDate(word.due)}`,
           ],
         })),
     );
   if (selected.includes("sentences"))
-    add(
-      "sentences",
-      state.savedSentences.map((sentence) => ({ lines: [sentence] })),
-    );
+    add("sentences", [
+      ...state.savedSentences.map((sentence) => ({ lines: [sentence] })),
+      ...(state.libraryBookmarks ?? []).map((item) => ({
+        title: `Source text · ${item.source.label}`,
+        lines: [
+          item.german,
+          item.english,
+          item.source.attribution,
+          item.source.url,
+          `${item.source.license} · ${item.source.licenseUrl}`,
+        ],
+      })),
+    ]);
   if (selected.includes("journey"))
     add("journey", [
       ...Object.entries(state.journey.lessons).map(([number, progress]) => ({

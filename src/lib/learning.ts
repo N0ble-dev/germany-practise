@@ -7,6 +7,7 @@ import {
 } from "./journey-model";
 import { motivationSchema } from "./motivation-model";
 import { plannerSchema } from "./planner-model";
+import { libraryBookmarkSchema, libraryCreditSchema } from "./library/model";
 
 export const wordSchema = z
   .object({
@@ -21,6 +22,7 @@ export const wordSchema = z
     lesson: z.number().int().min(1).max(12),
     example: z.string().max(500),
     hint: z.string().max(500),
+    source: libraryCreditSchema.optional(),
     favorite: z.boolean(),
     status: z.enum(["new", "learning", "reviewing", "mastered"]),
     due: z.string().datetime(),
@@ -69,6 +71,7 @@ export const stateSchema = z.object({
   activities: z.array(activitySchema).max(10000),
   completedLessons: z.array(z.number().int().min(1).max(12)).max(12),
   savedSentences: z.array(z.string().max(500)).max(1000),
+  libraryBookmarks: z.array(libraryBookmarkSchema).max(500).optional(),
   lessonNotes: z.record(z.string(), z.string().max(2000)),
   theme: z.enum(["light", "dark"]),
   updatedAt: z.string().datetime(),
