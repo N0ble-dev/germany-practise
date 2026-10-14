@@ -50,6 +50,9 @@ async function prepare() {
     "CONTENT_AUDIO_EMAILS",
     "CONTENT_PUBLISHER_EMAILS",
     "CONTENT_AUDIO_BASE_URL",
+    "CONTENT_REVIEW_DATABASE_URL",
+    "CONTENT_REVIEW_BRANCH_HOST",
+    "CONTENT_PUBLICATION_DATABASE_URL",
   ]) {
     const value = setting(key);
     if (value) values[key] = value;

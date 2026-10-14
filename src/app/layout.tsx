@@ -16,6 +16,7 @@ import "./exam-arena.css";
 import "./personal-life.css";
 import "./community.css";
 import "./content-factory.css";
+import "./content-imports.css";
 export const metadata: Metadata = {
   applicationName: "Deutsch Journey",
   creator: creatorBrand.name,

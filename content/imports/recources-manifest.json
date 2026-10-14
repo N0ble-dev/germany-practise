@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": "recources/data/activities.csv",
+      "sha256": "5d2ec0dfdbd9e3b026d6f3151d376035459343d61294c5045700920d97d1e8bb",
+      "bytes": 421318
+    },
+    {
+      "path": "recources/data/activities.jsonl",
+      "sha256": "64f0b65e346b712eabca3d5c9763fcec3d85d8c6128d5cabdf9a038cd68ef259",
+      "bytes": 475920
+    },
+    {
+      "path": "recources/data/chapters.csv",
+      "sha256": "9e2b5191a105998d552e57926c00b37dc5ff0fe8595e4fbff3570f698b4da195",
+      "bytes": 98778
+    },
+    {
+      "path": "recources/data/chapters.jsonl",
+      "sha256": "f8e1c69dfe6d25dd6c19d05b90a31892b4c28d271b16bb4683dd92d48463f50b",
+      "bytes": 101138
+    },
+    {
+      "path": "recources/data/chapter_grammar_references.csv",
+      "sha256": "bf75b5afb2e85f1b6a1b10079d7d06f4bf1f27a4870470d704336f175fcae5c7",
+      "bytes": 9303
+    },
+    {
+      "path": "recources/data/chapter_grammar_references.jsonl",
+      "sha256": "69d6d661567150096fb1ff253c21810d3a28782ca017328224825aac13d8128f",
+      "bytes": 17440
+    },
+    {
+      "path": "recources/data/extraction_warnings.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "recources/data/media_references.csv",
+      "sha256": "c1911afd9442179556581cb0d3a3c295e652f8f072cc90d474548623c788e2ea",
+      "bytes": 18241
+    },
+    {
+      "path": "recources/data/media_references.jsonl",
+      "sha256": "db8343b4851f9c29b3f1a773eb42949e4a0288c0a59357f2860baa1d76e495f3",
+      "bytes": 70113
+    },
+    {
+      "path": "recources/data/neon_schema.sql",
+      "sha256": "2cad37ebe1a2c9806cbf2ddafa7a7b23badd20c6cb9b6aa81f500e2b9445ab11",
+      "bytes": 4577
+    },
+    {
+      "path": "recources/data/README.md",
+      "sha256": "c2611c46a8c47cf5e332e6294b9211b2ecae2517d1679eede9f9c66a9fc5ee61",
+      "bytes": 8925
+    },
+    {
+      "path": "recources/data/source_documents.csv",
+      "sha256": "49971005fd2c8d0672295a6608a8bb400eb3107a41ff5d09413041e1d4cfca43",
+      "bytes": 847
+    },
+    {
+      "path": "recources/data/source_documents.jsonl",
+      "sha256": "d8830081bd289e20dac8c4c8e3376a382aac034a40623e53902a14c890fb06a3",
+      "bytes": 916
+    },
+    {
+      "path": "recources/data/source_links.csv",
+      "sha256": "b77bfd7015256784476270506e646187f5d782a749737d10712a3a642f969eaf",
+      "bytes": 37484
+    },
+    {
+      "path": "recources/data/source_links.jsonl",
+      "sha256": "20e074b262d35f5c8cabaff53a53225682f4da5c5511c2c92e4b99b0bf5d8466",
+      "bytes": 82147
+    },
+    {
+      "path": "recources/data/source_pages.jsonl",
+      "sha256": "e6d5768bf148e9ba6e500d651e3f0f07d4089bfed8150af943ea1f22a53f1f86",
+      "bytes": 1464052
+    },
+    {
+      "path": "recources/data/vocabulary.csv",
+      "sha256": "d720ec9b1ba32b876367a1e69a79773d0bf1d2299468234f2a377c1bfcb33dd5",
+      "bytes": 432460
+    },
+    {
+      "path": "recources/data/vocabulary.jsonl",
+      "sha256": "d5746e8b06426b0a7253a90ca8fe167a0a9b168feb582758e3a9d0b6bc907b25",
+      "bytes": 1155496
+    },
+    {
+      "path": "recources/data/vocabulary_categories.csv",
+      "sha256": "54635464bd5fce5087d4fa8ccc511e9fe040272e5ce32e6c967e528f015650f9",
+      "bytes": 12720
+    },
+    {
+      "path": "recources/data/vocabulary_categories.jsonl",
+      "sha256": "785c0dba1b184e8d1bed00e96c62481e796fe983d853e69c3f21f53ec1f179d6",
+      "bytes": 29171
+    },
+    {
+      "path": "recources/deu.txt",
+      "sha256": "298229a6e518b046391ee558678032e78d30364366fd511ff1b481269b8bc380",
+      "bytes": 51760397
+    },
+    {
+      "path": "recources/deutsch-journey-content-ingestion-complete-guide.md",
+      "sha256": "542f982561c4881052d17706fb14b738998c53d20fa9e956c538c42b2998c708",
+      "bytes": 36828
+    },
+    {
+      "path": "recources/deutsch_im_blick_content.db",
+      "sha256": "bdeab77da6e2f2f22232ff39c6f00c5b11a020d624f207ff4934a1c249dfe838",
+      "bytes": 4091904
+    },
+    {
+      "path": "recources/extraction_report.json",
+      "sha256": "a4169ce79b8959d1d14b1332b8fda05cf5f64291f6a4bccc16b390d41d9ee641",
+      "bytes": 756
+    },
+    {
+      "path": "recources/IMPORT_INTO_DEUTSCH_JOURNEY.md",
+      "sha256": "95b8f6e86bf04c7f313111c59681ba4111c0804ae63e452276eba0006961a47a",
+      "bytes": 3135
+    },
+    {
+      "path": "recources/neon_schema.sql",
+      "sha256": "2cad37ebe1a2c9806cbf2ddafa7a7b23badd20c6cb9b6aa81f500e2b9445ab11",
+      "bytes": 4577
+    },
+    {
+      "path": "recources/README.md",
+      "sha256": "200ff1619ae4dc1a2947aef7fd5667943d24e97af8be791043a8641410adff3e",
+      "bytes": 4184
+    },
+    {
+      "path": "recources/README2.md",
+      "sha256": "c2611c46a8c47cf5e332e6294b9211b2ecae2517d1679eede9f9c66a9fc5ee61",
+      "bytes": 8925
+    },
+    {
+      "path": "recources/scripts/build_database.py",
+      "sha256": "9f8105dbb33c15740f07cd7b798007b2ae3e91e2c404c1f02102948b171b2cec",
+      "bytes": 18297
+    },
+    {
+      "path": "recources/scripts/fetch_tatoeba.py",
+      "sha256": "7bfa859a2d5750e01ba5891f3d0f5f20ba54624836bd02879f4dc2bd3c34bca9",
+      "bytes": 4073
+    },
+    {
+      "path": "recources/scripts/fetch_zum.py",
+      "sha256": "fd6a09a5f22986feb861e9c86ed5daee9d1a805b45c4118f96b382e1d2472169",
+      "bytes": 3108
+    },
+    {
+      "path": "recources/scripts/import_neon.mjs",
+      "sha256": "235a9a62097a51b2f308e12b34fe4008568681c3d1b86f9257908be1bbf616ff",
+      "bytes": 2164
+    },
+    {
+      "path": "recources/scripts/import_to_neon.mjs",
+      "sha256": "7de7b087d0097eb0ea562bc1097f4e81f3e1ea0fb2fcd85048ec0eec0018010c",
+      "bytes": 2148
+    },
+    {
+      "path": "recources/sql/content_staging.sql",
+      "sha256": "c97c6d3a0251d0197030b3aa0e79a85b9cfcec9b480f77bd1099b839a255d5cb",
+      "bytes": 866
+    },
+    {
+      "path": "recources/staging/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "recources/_about.txt",
+      "sha256": "262eaba34251ebb2e7c5d514c5a2b856fe6eec058cee957d22a6c6129947a228",
+      "bytes": 1441
+    }
+  ],
+  "archives": [
+    {
+      "id": "deutsch-im-blick-20e0d0a93f2d14ae",
+      "provider": "deutsch_im_blick",
+      "title": "Deutsch im Blick · Second edition (2017)",
+      "manifestHash": "20e0d0a93f2d14ae1dae6aedfa77a82d69ce2a6b25ab4bac7db2585a16a5701a",
+      "expectedCount": 3951,
+      "manifest": {
+        "schemaVersion": 1,
+        "sourceUrl": "https://coerll.utexas.edu/dib/",
+        "licenseClaim": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Deutsch im Blick (2nd ed., 2017), COERLL / Germanic Studies, University of Texas at Austin. Original source: https://coerll.utexas.edu/dib/ . Licensed CC BY 4.0. Extracted and organized for Deutsch Journey; alterations/normalization should be indicated. Individual third-party embedded materials require separate rights review.",
+        "counts": {
+          "source_document": 1,
+          "chapter": 10,
+          "source_page": 484,
+          "vocabulary": 2296,
+          "vocabulary_category": 149,
+          "activity": 316,
+          "grammar_reference": 76,
+          "source_link": 355,
+          "media_reference": 264,
+          "extraction_warning": 0
+        },
+        "files": [
+          {
+            "path": "recources/data/activities.csv",
+            "sha256": "5d2ec0dfdbd9e3b026d6f3151d376035459343d61294c5045700920d97d1e8bb",
+            "bytes": 421318
+          },
+          {
+            "path": "recources/data/activities.jsonl",
+            "sha256": "64f0b65e346b712eabca3d5c9763fcec3d85d8c6128d5cabdf9a038cd68ef259",
+            "bytes": 475920
+          },
+          {
+            "path": "recources/data/chapters.csv",
+            "sha256": "9e2b5191a105998d552e57926c00b37dc5ff0fe8595e4fbff3570f698b4da195",
+            "bytes": 98778
+          },
+          {
+            "path": "recources/data/chapters.jsonl",
+            "sha256": "f8e1c69dfe6d25dd6c19d05b90a31892b4c28d271b16bb4683dd92d48463f50b",
+            "bytes": 101138
+          },
+          {
+            "path": "recources/data/chapter_grammar_references.csv",
+            "sha256": "bf75b5afb2e85f1b6a1b10079d7d06f4bf1f27a4870470d704336f175fcae5c7",
+            "bytes": 9303
+          },
+          {
+            "path": "recources/data/chapter_grammar_references.jsonl",
+            "sha256": "69d6d661567150096fb1ff253c21810d3a28782ca017328224825aac13d8128f",
+            "bytes": 17440
+          },
+          {
+            "path": "recources/data/extraction_warnings.jsonl",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          {
+            "path": "recources/data/media_references.csv",
+            "sha256": "c1911afd9442179556581cb0d3a3c295e652f8f072cc90d474548623c788e2ea",
+            "bytes": 18241
+          },
+          {
+            "path": "recources/data/media_references.jsonl",
+            "sha256": "db8343b4851f9c29b3f1a773eb42949e4a0288c0a59357f2860baa1d76e495f3",
+            "bytes": 70113
+          },
+          {
+            "path": "recources/data/neon_schema.sql",
+            "sha256": "2cad37ebe1a2c9806cbf2ddafa7a7b23badd20c6cb9b6aa81f500e2b9445ab11",
+            "bytes": 4577
+          },
+          {
+            "path": "recources/data/README.md",
+            "sha256": "c2611c46a8c47cf5e332e6294b9211b2ecae2517d1679eede9f9c66a9fc5ee61",
+            "bytes": 8925
+          },
+          {
+            "path": "recources/data/source_documents.csv",
+            "sha256": "49971005fd2c8d0672295a6608a8bb400eb3107a41ff5d09413041e1d4cfca43",
+            "bytes": 847
+          },
+          {
+            "path": "recources/data/source_documents.jsonl",
+            "sha256": "d8830081bd289e20dac8c4c8e3376a382aac034a40623e53902a14c890fb06a3",
+            "bytes": 916
+          },
+          {
+            "path": "recources/data/source_links.csv",
+            "sha256": "b77bfd7015256784476270506e646187f5d782a749737d10712a3a642f969eaf",
+            "bytes": 37484
+          },
+          {
+            "path": "recources/data/source_links.jsonl",
+            "sha256": "20e074b262d35f5c8cabaff53a53225682f4da5c5511c2c92e4b99b0bf5d8466",
+            "bytes": 82147
+          },
+          {
+            "path": "recources/data/source_pages.jsonl",
+            "sha256": "e6d5768bf148e9ba6e500d651e3f0f07d4089bfed8150af943ea1f22a53f1f86",
+            "bytes": 1464052
+          },
+          {
+            "path": "recources/data/vocabulary.csv",
+            "sha256": "d720ec9b1ba32b876367a1e69a79773d0bf1d2299468234f2a377c1bfcb33dd5",
+            "bytes": 432460
+          },
+          {
+            "path": "recources/data/vocabulary.jsonl",
+            "sha256": "d5746e8b06426b0a7253a90ca8fe167a0a9b168feb582758e3a9d0b6bc907b25",
+            "bytes": 1155496
+          },
+          {
+            "path": "recources/data/vocabulary_categories.csv",
+            "sha256": "54635464bd5fce5087d4fa8ccc511e9fe040272e5ce32e6c967e528f015650f9",
+            "bytes": 12720
+          },
+          {
+            "path": "recources/data/vocabulary_categories.jsonl",
+            "sha256": "785c0dba1b184e8d1bed00e96c62481e796fe983d853e69c3f21f53ec1f179d6",
+            "bytes": 29171
+          },
+          {
+            "path": "recources/deutsch-journey-content-ingestion-complete-guide.md",
+            "sha256": "542f982561c4881052d17706fb14b738998c53d20fa9e956c538c42b2998c708",
+            "bytes": 36828
+          },
+          {
+            "path": "recources/deutsch_im_blick_content.db",
+            "sha256": "bdeab77da6e2f2f22232ff39c6f00c5b11a020d624f207ff4934a1c249dfe838",
+            "bytes": 4091904
+          },
+          {
+            "path": "recources/extraction_report.json",
+            "sha256": "a4169ce79b8959d1d14b1332b8fda05cf5f64291f6a4bccc16b390d41d9ee641",
+            "bytes": 756
+          },
+          {
+            "path": "recources/IMPORT_INTO_DEUTSCH_JOURNEY.md",
+            "sha256": "95b8f6e86bf04c7f313111c59681ba4111c0804ae63e452276eba0006961a47a",
+            "bytes": 3135
+          },
+          {
+            "path": "recources/neon_schema.sql",
+            "sha256": "2cad37ebe1a2c9806cbf2ddafa7a7b23badd20c6cb9b6aa81f500e2b9445ab11",
+            "bytes": 4577
+          },
+          {
+            "path": "recources/README.md",
+            "sha256": "200ff1619ae4dc1a2947aef7fd5667943d24e97af8be791043a8641410adff3e",
+            "bytes": 4184
+          },
+          {
+            "path": "recources/README2.md",
+            "sha256": "c2611c46a8c47cf5e332e6294b9211b2ecae2517d1679eede9f9c66a9fc5ee61",
+            "bytes": 8925
+          },
+          {
+            "path": "recources/scripts/build_database.py",
+            "sha256": "9f8105dbb33c15740f07cd7b798007b2ae3e91e2c404c1f02102948b171b2cec",
+            "bytes": 18297
+          },
+          {
+            "path": "recources/scripts/fetch_tatoeba.py",
+            "sha256": "7bfa859a2d5750e01ba5891f3d0f5f20ba54624836bd02879f4dc2bd3c34bca9",
+            "bytes": 4073
+          },
+          {
+            "path": "recources/scripts/fetch_zum.py",
+            "sha256": "fd6a09a5f22986feb861e9c86ed5daee9d1a805b45c4118f96b382e1d2472169",
+            "bytes": 3108
+          },
+          {
+            "path": "recources/scripts/import_neon.mjs",
+            "sha256": "235a9a62097a51b2f308e12b34fe4008568681c3d1b86f9257908be1bbf616ff",
+            "bytes": 2164
+          },
+          {
+            "path": "recources/scripts/import_to_neon.mjs",
+            "sha256": "7de7b087d0097eb0ea562bc1097f4e81f3e1ea0fb2fcd85048ec0eec0018010c",
+            "bytes": 2148
+          },
+          {
+            "path": "recources/sql/content_staging.sql",
+            "sha256": "c97c6d3a0251d0197030b3aa0e79a85b9cfcec9b480f77bd1099b839a255d5cb",
+            "bytes": 866
+          },
+          {
+            "path": "recources/staging/.gitkeep",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          }
+        ],
+        "notes": [
+          "SQLite, JSONL, CSV and extraction counts match. The source PDF is not present in this folder; its supplied checksum remains a provenance claim, not a reverified binary checksum.",
+          "All extracted language, CEFR, answer keys and rights require review. Third-party assets are not cleared by the book's license.",
+          "QR/URL references are not recordings. No media has been downloaded."
+        ]
+      }
+    },
+    {
+      "id": "tatoeba-5e53bd1f27017773",
+      "provider": "tatoeba",
+      "title": "Tatoeba / ManyThings · Full supplied German–English export",
+      "manifestHash": "5e53bd1f27017773ec9f0f536aaac6734593e5c5b675e82f70376b7c473a854d",
+      "expectedCount": 331266,
+      "manifest": {
+        "schemaVersion": 1,
+        "sourceUrl": "https://www.manythings.org/anki/",
+        "licenseClaim": "CC-BY-2.0-FR (per-row source claim)",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
+        "attribution": "Sentence-level German and English author names and Tatoeba IDs are preserved; export compiled by ManyThings.org/anki.",
+        "counts": {
+          "sentence_pair": 331254,
+          "quarantine": 12
+        },
+        "files": [
+          {
+            "path": "recources/deu.txt",
+            "sha256": "298229a6e518b046391ee558678032e78d30364366fd511ff1b481269b8bc380",
+            "bytes": 51760397
+          },
+          {
+            "path": "recources/_about.txt",
+            "sha256": "262eaba34251ebb2e7c5d514c5a2b856fe6eec058cee957d22a6c6129947a228",
+            "bytes": 1441
+          }
+        ],
+        "notes": [
+          "331266 source rows; 0 exact duplicate identities skipped; 12 rows retained in quarantine, not silently dropped.",
+          "Shortness does not establish CEFR. German, translations, context and rights still need human review.",
+          "Arabic, verified level and licensed audio are absent."
+        ]
+      }
+    },
+    {
+      "id": "zum-59cafd878e0e1517",
+      "provider": "zum",
+      "title": "ZUM · Existing curated revision evidence",
+      "manifestHash": "59cafd878e0e1517c862594c6f2db83b1c12fa2879a35dfe22c6a8554bf46f44",
+      "expectedCount": 4,
+      "manifest": {
+        "schemaVersion": 1,
+        "sourceUrl": "https://deutsch-lernen.zum.de/wiki/Hauptseite",
+        "licenseClaim": "CC-BY-4.0 (exact selected text evidence)",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Original authors, exact revisions, license evidence and adaptation notices are retained in each source item.",
+        "counts": {
+          "wiki_page": 4
+        },
+        "files": [
+          {
+            "path": "content/source-assets/zum-personalpronomen-r86838.json",
+            "sha256": "24f379eabdc4db05baa0a51e82c291d07821eb17ba51222edfaad12b5fbe601f",
+            "bytes": 1748
+          },
+          {
+            "path": "content/source-assets/zum-possessivartikel-r79259.json",
+            "sha256": "49a7b4fd00bd3ec081cc65dbf0c64ca75e9d892ef48c012bd8ba986504844bee",
+            "bytes": 2423
+          },
+          {
+            "path": "content/source-assets/zum-satze-r87581.json",
+            "sha256": "a9df1608d1f0ae9b9d15118613cbe07886afd053af810754e3a2b97958ed3472",
+            "bytes": 2408
+          },
+          {
+            "path": "content/source-assets/zum-sich-vorstellen-r78352.json",
+            "sha256": "b07ebd160316f6c19d0c64f1551f069f86f6dc5b126da99c5fcfe61773ce2eee",
+            "bytes": 2380
+          }
+        ],
+        "notes": [
+          "Reuses existing curated text evidence rather than the supplied prototype's unverified API path or placeholder crawler identity.",
+          "Embedded media and external materials have not been imported."
+        ]
+      }
+    }
+  ],
+  "inputRows": 331266,
+  "duplicates": 0,
+  "quarantined": 12,
+  "sqlAction": "Supplied schemas and importers were inspected; their behavior is implemented through isolated Drizzle migrations and immutable TypeScript imports.",
+  "sqliteParity": "passed",
+  "csvParity": "passed",
+  "originalPdfPresent": false
+}

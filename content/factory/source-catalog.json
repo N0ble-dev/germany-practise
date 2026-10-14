@@ -2,6 +2,16 @@
   "schemaVersion": 1,
   "sources": [
     {
+      "id": "deutsch-im-blick",
+      "name": "Deutsch im Blick · COERLL / UT Austin",
+      "url": "https://coerll.utexas.edu/dib/",
+      "termsUrl": "https://coerll.utexas.edu/dib/",
+      "lane": "open_content",
+      "importMethod": "official_download",
+      "policy": "per_item_review",
+      "restrictions": "Preserve supplied extraction provenance and source-page context. The archive claims CC BY 4.0 for original material; every third-party text, image, recording and linked asset needs separate rights evidence. Do not infer A1–C2 coverage or publish unreviewed extracts."
+    },
+    {
       "id": "cefr",
       "name": "Council of Europe CEFR",
       "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",

@@ -117,9 +117,15 @@ export function ContentCoverage() {
             review.
           </p>
         </div>
-        <Link href="/admin/content">
-          Open review studio <ArrowUpRight size={17} aria-hidden="true" />
-        </Link>
+        <div>
+          <Link href="/admin/content/imports">
+            Explore source imports <ArrowUpRight size={17} aria-hidden="true" />
+          </Link>
+          <br />
+          <Link href="/admin/content">
+            Open review studio <ArrowUpRight size={17} aria-hidden="true" />
+          </Link>
+        </div>
       </header>
       <div className="factory-note">
         <ShieldCheck size={22} aria-hidden="true" />
@@ -372,7 +378,12 @@ export function ContentCoverage() {
           </section>
           {current.intake && (
             <section className="panel factory-sources">
-              <h2>Review-only source intake</h2>
+              <h2>Initial pilot sample</h2>
+              <p>
+                The full supplied archives are available in{" "}
+                <Link href="/admin/content/imports">Source imports</Link>. This
+                earlier sample is retained as pilot evidence.
+              </p>
               <p>
                 <strong>
                   {current.intake.totalCandidates} sentence candidates

@@ -142,6 +142,8 @@ export function ContentReviewWorkbench({
         <div>
           <Link href="/admin/content/coverage">Curriculum coverage →</Link>
           <br />
+          <Link href="/admin/content/imports">Source imports →</Link>
+          <br />
           <Link href="/courses">View published courses →</Link>
         </div>
       </header>

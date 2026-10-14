@@ -6,6 +6,8 @@ export type AuthDestination =
   | "/sentences"
   | "/admin/content"
   | "/admin/content/coverage"
+  | "/admin/content/imports"
+  | "/admin/content/imports/deutsch-im-blick"
   | "/admin/exams"
   | "/exams/plan"
   | "/exams/mistakes"
@@ -23,6 +25,8 @@ export function authDestination(value: unknown): AuthDestination {
     value === "/sentences" ||
     value === "/admin/content" ||
     value === "/admin/content/coverage" ||
+    value === "/admin/content/imports" ||
+    value === "/admin/content/imports/deutsch-im-blick" ||
     value === "/admin/exams" ||
     value === "/exams/plan" ||
     value === "/exams/mistakes"

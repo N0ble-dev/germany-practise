@@ -15,6 +15,13 @@ import {
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 export {
+  contentIntakeSchema,
+  intakeArchives,
+  intakeItems,
+  intakeDrafts,
+  intakeReviews,
+} from "./intake-schema";
+export {
   examDefinitionsTable,
   examPaperVersions,
   examTaskVersions,
