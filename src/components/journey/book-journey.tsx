@@ -56,6 +56,8 @@ import {
   NumbersPractice,
 } from "./exercises";
 import { VoiceRecorder } from "./voice-recorder";
+import { PersonalLifeProfile } from "../personal-life-profile";
+import { interests } from "@/lib/personal-life";
 
 export function BookJourney() {
   const { state } = useApp();
@@ -114,6 +116,7 @@ export function BookJourney() {
           </small>
         </div>
       </section>
+      <PersonalLifeProfile />
       <div className="book-overview-grid">
         <div className="book-modules">
           {bookModules.map((module) => {
@@ -236,7 +239,6 @@ export function BookJourney() {
               </p>
             </div>
           </section>
-          <PersonalDetails />
           <section className="panel">
             <span className="eyebrow">LEARNING THAT STICKS</span>
             <h2>Understanding comes first.</h2>
@@ -279,52 +281,6 @@ export function BookJourney() {
         Menschen textbook and its recordings alongside this journey.
       </p>
     </>
-  );
-}
-function PersonalDetails() {
-  const { state, notify } = useApp();
-  const [profile, setProfile] = useState(state.personalProfile);
-  return (
-    <section className="panel personal-book-profile">
-      <span className="eyebrow">MAKE IT YOURS</span>
-      <h2>German for your own life.</h2>
-      <p className="muted">
-        Use German names for your city, country, profession, and languages.
-        Empty fields use clearly illustrative examples.
-      </p>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          updateState((s) => ({ ...s, personalProfile: profile }));
-          notify("Your personal sentence details are saved.");
-        }}
-      >
-        {(
-          [
-            ["country", "Country", "Ägypten"],
-            ["city", "City", "Alexandria"],
-            ["profession", "Profession", "Softwareentwickler"],
-            ["languages", "Languages", "Arabisch und Englisch"],
-          ] as const
-        ).map(([key, label, example]) => (
-          <label key={key}>
-            {label}
-            <input
-              lang="de"
-              value={profile[key]}
-              maxLength={key === "languages" ? 150 : 80}
-              placeholder={`Example: ${example}`}
-              onChange={(e) =>
-                setProfile((p) => ({ ...p, [key]: e.target.value }))
-              }
-            />
-          </label>
-        ))}
-        <Button size="sm" type="submit">
-          Save my details
-        </Button>
-      </form>
-    </section>
   );
 }
 export function LessonJourney({ number }: { number: number }) {
@@ -657,7 +613,16 @@ function LessonStep({
             them on the book journey page.
           </p>
           <div className="pattern-list">
-            {lesson.patterns.map((pattern) => {
+            {[
+              ...new Set([
+                ...lesson.patterns,
+                ...(lesson.number === 7
+                  ? state.personalProfile.interests.map(
+                      (id) => interests.find((item) => item.id === id)!.german,
+                    )
+                  : []),
+              ]),
+            ].map((pattern) => {
               const text = personalize(
                 pattern,
                 state.name,

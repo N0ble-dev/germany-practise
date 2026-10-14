@@ -12,6 +12,7 @@ import {
   Square,
 } from "lucide-react";
 import { useApp } from "./learning-app";
+import { PersonalLifeHint } from "./personal-life-support";
 import { Button } from "./ui/button";
 import { lessons } from "@/lib/content";
 import { normalizeAnswer, textSimilarity } from "@/lib/learning";
@@ -372,6 +373,7 @@ function AudioExercise({ mode }: { mode: "speaking" | "listening" }) {
           </div>
         </section>
         <aside className="practice-side">
+          <PersonalLifeHint kind={mode} />
           <section className="panel">
             <h3>Make the sound stick.</h3>
             <ol className="help-steps">

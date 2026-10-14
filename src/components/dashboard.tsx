@@ -19,6 +19,7 @@ import { useApp } from "./learning-app";
 import { GermanyMotivation } from "./germany-motivation";
 import { UpcomingStudy } from "./upcoming-study";
 import { StudyShortcuts } from "./study-shortcuts";
+import { PersonalLifeTodayCard } from "./personal-life-support";
 import { Button } from "./ui/button";
 import {
   dailyActivities,
@@ -165,6 +166,7 @@ export function Dashboard() {
               ))}
             </div>
           </section>
+          <PersonalLifeTodayCard />
           <section className="continue-section">
             <div className="section-heading">
               <h2>Pick up where you are</h2>

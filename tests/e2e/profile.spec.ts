@@ -177,7 +177,12 @@ test("failed logout does not report success or erase account learning", async ({
   );
   await page.goto("/profile");
   await page.getByRole("button", { name: "Sign out", exact: true }).click();
-  await expect(page.locator("main").getByRole("alert")).toBeVisible();
+  await expect(
+    page
+      .locator("main")
+      .getByRole("alert")
+      .filter({ hasText: "Sign-out could not finish" }),
+  ).toBeVisible();
   await expect(page).toHaveURL(/\/profile$/);
   await page.reload();
   await expect(page.getByText(sentence, { exact: true })).toBeVisible();
@@ -207,11 +212,19 @@ test("the profile shows collections, saves personal details and downloads a real
   await expect(
     page.getByText("My private German practice", { exact: true }),
   ).toBeVisible();
+  await page
+    .locator(".personal-life")
+    .getByRole("button", { name: "Edit my preferences", exact: true })
+    .click();
   await page.getByLabel("City", { exact: true }).fill("Berlin");
   await page
     .getByRole("button", { name: "Save my learning details", exact: true })
     .click();
   await page.reload();
+  await page
+    .locator(".personal-life")
+    .getByRole("button", { name: "Edit my preferences", exact: true })
+    .click();
   await expect(page.getByLabel("City", { exact: true })).toHaveValue("Berlin");
   await page
     .getByRole("button", { name: "Export as PDF", exact: true })

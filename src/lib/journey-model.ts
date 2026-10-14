@@ -58,7 +58,33 @@ export const personalProfileSchema = z.object({
   city: z.string().max(80).default(""),
   profession: z.string().max(80).default(""),
   languages: z.string().max(150).default(""),
+  motivation: z
+    .enum(["home", "career", "study", "people", "travel"])
+    .nullable()
+    .default(null),
+  interests: z
+    .array(z.enum(["coffee", "cooking", "music", "sport", "reading", "travel"]))
+    .max(6)
+    .refine((items) => new Set(items).size === items.length)
+    .default([]),
+  situations: z
+    .array(
+      z.enum([
+        "work",
+        "neighbors",
+        "cafe",
+        "shopping",
+        "transport",
+        "friends",
+        "family",
+        "home",
+      ]),
+    )
+    .max(8)
+    .refine((items) => new Set(items).size === items.length)
+    .default([]),
 });
+export type PersonalProfile = z.infer<typeof personalProfileSchema>;
 export const wordEvidenceSchema = z.object({
   recognized: z.boolean().default(false),
   article: z.boolean().default(false),

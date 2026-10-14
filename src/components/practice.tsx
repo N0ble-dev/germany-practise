@@ -16,6 +16,7 @@ import {
   PencilLine,
 } from "lucide-react";
 import { useApp } from "./learning-app";
+import { PersonalLifeHint } from "./personal-life-support";
 import { Button } from "./ui/button";
 import { formatWord, normalizeAnswer, sentencePatterns } from "@/lib/learning";
 import { lessons, situations } from "@/lib/content";
@@ -58,6 +59,7 @@ export function SentenceLab() {
           A1 sentence patterns
         </span>
       </div>
+      <PersonalLifeHint kind="sentences" />
       <section className="panel sentence-lab">
         <label>
           Choose a word from your collection

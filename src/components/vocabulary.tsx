@@ -11,6 +11,7 @@ import {
   Pencil,
 } from "lucide-react";
 import { useApp } from "./learning-app";
+import { PersonalLifeHint } from "./personal-life-support";
 import { Button } from "./ui/button";
 import { Dialog } from "./ui/dialog";
 import { addWord, updateState } from "@/lib/store";
@@ -162,6 +163,7 @@ export function Vocabulary() {
           familiar words
         </span>
       </div>
+      <PersonalLifeHint kind="vocabulary" />
       <section className="panel">
         <div className="filter-row">
           <label className="search-field">

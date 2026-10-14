@@ -1966,6 +1966,12 @@ export function personalize(
     languages: string;
   },
 ): string {
+  if (text === "Ich arbeite als {profession}.") {
+    if (["Student", "Studentin"].includes(profile.profession))
+      return "Ich studiere.";
+    if (["Schüler", "Schülerin"].includes(profile.profession))
+      return "Ich gehe zur Schule.";
+  }
   return text.replace(
     /\{(name|country|city|profession|languages)\}/g,
     (_, key: string) =>

@@ -3,6 +3,7 @@ import { destinations } from "./destinations";
 import { formatWord, streak, type LearningState, type Word } from "./learning";
 import { stepLabels } from "./journey-model";
 import { studyLabels } from "./planner-model";
+import { personalProfileReport } from "./personal-life";
 
 export const reportSections = [
   { id: "overview", label: "Profile and progress" },
@@ -94,12 +95,7 @@ export function buildLearningReport(
           `${state.xp} XP · ${state.words.length} words · ${state.savedSentences.length} saved sentences`,
           `${streak(state, now)} consecutive study days · ${state.completedLessons.length}/12 chapters completed`,
           `${state.goal} minutes of practice · ${state.goal * 2} XP daily intention`,
-          ...Object.entries(state.personalProfile)
-            .filter(([, value]) => value)
-            .map(
-              ([key, value]) =>
-                `${key[0].toUpperCase() + key.slice(1)}: ${value}`,
-            ),
+          ...personalProfileReport(state.personalProfile),
         ],
       },
     ]);

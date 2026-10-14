@@ -274,13 +274,6 @@
   color: var(--muted);
   margin-top: 5px;
 }
-.personal-book-profile form {
-  display: grid;
-  gap: 12px;
-}
-.personal-book-profile label {
-  font-size: 11px;
-}
 .memory-map {
   margin: 26px 0 16px;
 }
@@ -826,9 +819,6 @@
   }
   .book-overview-grid > .book-side {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .book-overview-grid > .book-side > :last-child {
-    grid-column: 1 / -1;
   }
   .chapter-layout {
     grid-template-columns: 1fr;

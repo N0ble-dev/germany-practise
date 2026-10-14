@@ -36,7 +36,7 @@ import {
   ProfileNotebook,
   ProfilePdfExport,
 } from "./profile-notebook";
-import { personalProfileSchema } from "@/lib/journey-model";
+import { PersonalLifeProfile } from "./personal-life-profile";
 import { ProfileShareControls } from "./profile-share";
 export function Progress() {
   const { state } = useApp();
@@ -287,6 +287,7 @@ export function Profile() {
       </div>
       <ProfileSummary />
       <ProfileShareControls />
+      <PersonalLifeProfile />
       <ProfileNotebook />
       <div className="two-column profile-grid">
         <section className="panel">
@@ -316,52 +317,6 @@ export function Profile() {
             </label>
             <Button type="submit" variant="outline">
               Save my name
-            </Button>
-          </form>
-          <form
-            className="profile-personal-form"
-            onSubmit={(event) => {
-              event.preventDefault();
-              const data = personalProfileSchema.parse(
-                Object.fromEntries(new FormData(event.currentTarget)),
-              );
-              updateState((state) => ({ ...state, personalProfile: data }));
-              notify("Your personal learning details are saved.");
-            }}
-          >
-            <fieldset>
-              <legend>Your German introductions</legend>
-              <p className="muted small">
-                These details help personalize your book exercises.
-              </p>
-              {(
-                [
-                  ["country", "Country"],
-                  ["city", "City"],
-                  ["profession", "Profession"],
-                  ["languages", "Languages I speak"],
-                ] as const
-              ).map(([field, label]) => (
-                <label key={field}>
-                  {label}
-                  <input
-                    name={field}
-                    key={state.personalProfile[field]}
-                    defaultValue={state.personalProfile[field]}
-                    maxLength={field === "languages" ? 150 : 80}
-                    autoComplete={
-                      field === "country"
-                        ? "country-name"
-                        : field === "city"
-                          ? "address-level2"
-                          : "off"
-                    }
-                  />
-                </label>
-              ))}
-            </fieldset>
-            <Button variant="outline" type="submit">
-              Save my learning details
             </Button>
           </form>
           <fieldset className="goal-options">
