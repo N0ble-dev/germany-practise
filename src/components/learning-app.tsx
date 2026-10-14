@@ -126,7 +126,12 @@ export function LearningApp({
   cloudEnabled: boolean;
 }) {
   const pathname = usePathname();
-  if (pathname.startsWith("/share/"))
+  if (
+    pathname.startsWith("/share/") ||
+    pathname.startsWith("/admin/content") ||
+    pathname.startsWith("/courses") ||
+    pathname === "/exams/resources"
+  )
     return (
       <div className="public-share-shell">
         <header>

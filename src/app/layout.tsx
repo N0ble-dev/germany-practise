@@ -10,6 +10,8 @@ import "./welcome.css";
 import "./profile.css";
 import "./review.css";
 import "./social.css";
+import "./content-studio.css";
+import "./exams.css";
 export const metadata: Metadata = {
   applicationName: "Deutsch Journey",
   creator: creatorBrand.name,

@@ -1,0 +1,41 @@
+name: Publish reviewed content
+on:
+  workflow_dispatch:
+    inputs:
+      lesson_file:
+        description: Versioned lesson JSON in content/lessons
+        required: true
+        type: string
+      content_hash:
+        description: SHA-256 shown for the exact reviewed version
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: content-production-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: content-production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run content:validate
+      - run: npm run content:test
+      - name: Promote exact reviewed version
+        env:
+          LESSON_FILE: ${{ inputs.lesson_file }}
+          APPROVED_HASH: ${{ inputs.content_hash }}
+          CONTENT_REVIEW_DATABASE_URL: ${{ secrets.CONTENT_REVIEW_DATABASE_URL }}
+          CONTENT_PUBLICATION_DATABASE_URL: ${{ secrets.CONTENT_PUBLICATION_DATABASE_URL }}
+          CONTENT_PUBLISHER_ID: ${{ secrets.CONTENT_PUBLISHER_ID }}
+          CONTENT_AUDIO_BASE_URL: ${{ vars.CONTENT_AUDIO_BASE_URL }}
+          CONTENT_PUBLICATION_APPROVED: "true"
+        run: npm run content:promote -- "$LESSON_FILE" "$APPROVED_HASH"

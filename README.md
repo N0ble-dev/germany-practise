@@ -57,6 +57,7 @@ Dependency versions are pinned in `package.json` and `package-lock.json` for rep
 - **Preferences:** name, 10/20/30-minute intentions with XP targets, English/Arabic support, theme, and backup import/export.
 - **Study together (`/space`):** a private space for an owner and up to two study partners, expiring single-use invitation links, and a shared word/sentence notebook. Keep a partner's entry in your own learning collection. See [shared study spaces and profile cards](docs/shared-study-spaces.md) for setup and access rules.
 - **Share a learner card:** choose a card name, Google photo visibility and progress visibility, download a PNG, or publish an opt-in public card link from the profile. Update the snapshot or turn sharing off at any time.
+- **Exam resources (`/exams/resources`):** preserved official A1–C2 provider links, searchable learning resources, adult A1 preparation tips and four-week study guide. The [first source batch](docs/content/source-import-report.md) also stages selected CC BY ZUM text with provenance for editorial review; protected provider materials remain outbound links.
 
 Daily counters are derived from timestamped activity using the learner’s local calendar day. Streaks count days with recorded learning activity. The minute goal estimates a practice duration; elapsed study time is not measured. No progress is fabricated for a new learner. Spaced reviews, lesson completion, and all local learning work without cloud configuration. Local storage does not make the site an installable/offline PWA.
 
@@ -124,7 +125,11 @@ Unreadable saved data is preserved instead of silently overwritten. The app expl
 
 Existing v2 backups receive empty journey and vocabulary-evidence defaults. Your collection, notes, review schedules, and earned XP remain. Earlier single-question chapter completions remain in the backup history; the book journey counts only chapters that meet its new mastery checks. Journey steps, best scores, mission drafts, module responses, word evidence, and personal details are included in local exports and the optional JSONB cloud snapshot without a new database migration.
 
-## Checks
+## Verified curriculum pipeline
+
+The original companion lessons now have an audit and a separate versioned content-production pipeline. Start with [implementation/setup](docs/content-pipeline-setup.md) and [the supplied plan](docs/deutsch-journey-content-verification-pipeline.md). `/admin/content` is restricted to configured verified Google accounts; `/courses` exposes only reviewed publications. Run `npm run content:validate`, `npm run content:test` and `npm run content:qa-report`. The Lesson 1 pilot is a draft requiring human reviews, rights clearance and licensed recordings. Existing personal notebooks and book progress are preserved.
+
+## Application checks
 
 ```sh
 npm run typecheck

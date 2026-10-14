@@ -10,10 +10,12 @@ import {
   uniqueIndex,
   index,
   check,
+  foreignKey,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import type { PublicCard, SharedContent } from "@/lib/social-model";
 import type { LearningState } from "@/lib/learning";
+import type { LessonPack, ReviewCategory } from "@/lib/content-pipeline/model";
 // Reference Neon's existing user table; its schema is managed by Neon, not our migrations.
 const neonUsers = pgSchema("neon_auth").table("user", {
   id: uuid("id").primaryKey(),
@@ -123,6 +125,140 @@ export const profileShares = pgTable("profile_shares", {
   card: jsonb("card").$type<PublicCard>().notNull(),
   image: text("image").notNull(),
   updatedAt: timestamp("updated_at", { withTimezone: true })
+    .notNull()
+    .defaultNow(),
+});
+
+// Shared curriculum is stored once; existing personal snapshots remain intact.
+export const courses = pgTable("courses", {
+  id: text("id").primaryKey(),
+  cefr: text("cefr").notNull(),
+  title: text("title").notNull(),
+  sortOrder: integer("sort_order").notNull().default(0),
+});
+export const lessonVersions = pgTable(
+  "lesson_versions",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    lessonKey: text("lesson_key").notNull(),
+    version: integer("version").notNull(),
+    courseId: text("course_id")
+      .notNull()
+      .references(() => courses.id),
+    content: jsonb("content_json").$type<LessonPack>().notNull(),
+    contentHash: text("content_hash").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    publishedAt: timestamp("published_at", { withTimezone: true }),
+  },
+  (table) => [
+    uniqueIndex("lesson_version_key").on(table.lessonKey, table.version),
+    uniqueIndex("lesson_publication_identity").on(
+      table.courseId,
+      table.lessonKey,
+      table.id,
+    ),
+    check("lesson_positive_version", sql`${table.version}>0`),
+  ],
+);
+export const contentReviews = pgTable(
+  "content_reviews",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    lessonVersionId: uuid("lesson_version_id")
+      .notNull()
+      .references(() => lessonVersions.id),
+    category: text("category").$type<ReviewCategory>().notNull(),
+    reviewerId: uuid("reviewer_id").notNull(),
+    reviewerName: text("reviewer_name").notNull(),
+    decision: text("decision").notNull(),
+    comment: text("comment").notNull(),
+    contentHash: text("content_hash").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (table) => [
+    index("content_review_lookup").on(
+      table.lessonVersionId,
+      table.category,
+      table.createdAt,
+    ),
+    check(
+      "content_review_category",
+      sql`${table.category} in ('language','pedagogy','arabic','rights','audio')`,
+    ),
+    check(
+      "content_review_decision",
+      sql`${table.decision} in ('approved','changes_requested')`,
+    ),
+  ],
+);
+export const mediaAssets = pgTable(
+  "media_assets",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    lessonVersionId: uuid("lesson_version_id")
+      .notNull()
+      .references(() => lessonVersions.id),
+    assetKey: text("asset_key").notNull(),
+    storageKey: text("storage_key").notNull(),
+    fileHash: text("file_hash").notNull(),
+    licenseRef: text("license_ref").notNull(),
+    verifiedAt: timestamp("verified_at", { withTimezone: true }),
+    verification: jsonb("verification").$type<{
+      duration: number;
+      sampleRate: number;
+      channels: number;
+      bytes: number;
+      fileHash: string;
+    }>(),
+  },
+  (table) => [
+    uniqueIndex("version_media_key").on(table.lessonVersionId, table.assetKey),
+  ],
+);
+export const curriculumSources = pgTable("curriculum_sources", {
+  id: text("id").primaryKey(),
+  sourceUrl: text("source_url").notNull(),
+  license: text("license"),
+  attribution: text("attribution"),
+  permissionDoc: text("permission_doc"),
+  lastCheckedAt: timestamp("last_checked_at", { withTimezone: true }),
+});
+export const coursePublications = pgTable(
+  "course_publications",
+  {
+    courseId: text("course_id")
+      .notNull()
+      .references(() => courses.id),
+    lessonKey: text("lesson_key").notNull(),
+    publishedVersionId: uuid("published_version_id").notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (table) => [
+    primaryKey({ columns: [table.courseId, table.lessonKey] }),
+    foreignKey({
+      columns: [table.courseId, table.lessonKey, table.publishedVersionId],
+      foreignColumns: [
+        lessonVersions.courseId,
+        lessonVersions.lessonKey,
+        lessonVersions.id,
+      ],
+    }),
+  ],
+);
+export const contentPublicationEvents = pgTable("content_publication_events", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  lessonVersionId: uuid("lesson_version_id")
+    .notNull()
+    .references(() => lessonVersions.id),
+  actorId: uuid("actor_id").notNull(),
+  contentHash: text("content_hash").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true })
     .notNull()
     .defaultNow(),
 });

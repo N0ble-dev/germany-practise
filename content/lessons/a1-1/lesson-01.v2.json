@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "id": "a1-1-l01",
+  "version": 2,
+  "courseId": "a1-1",
+  "cefr": "A1",
+  "courseSubdivision": "A1.1",
+  "lessonNumber": 1,
+  "status": "draft",
+  "title": {
+    "de": "Hallo! Ich bin …",
+    "en": "Meeting a new classmate",
+    "ar": "التعارف مع زميل جديد"
+  },
+  "estimatedMinutes": 35,
+  "canDo": [
+    "Greet someone and say goodbye",
+    "Give your name, country, city, and how you feel",
+    "Ask someone their name"
+  ],
+  "scene": {
+    "de": "Zwei Lernende treffen sich in einer Sprachschule.",
+    "en": "Two learners meet at a language school.",
+    "ar": "يتعارف متعلمان في مدرسة لغات."
+  },
+  "prerequisites": [],
+  "pronunciationFocus": {
+    "de": "Satzmelodie bei Begrüßungen, Aussagen und Fragen",
+    "en": "Sentence melody in greetings, statements and questions",
+    "ar": "نغمة الجملة في التحيات والجمل الخبرية والأسئلة"
+  },
+  "listeningOutcomes": ["Identify a name and country in a short introduction"],
+  "speakingOutcome": "Give a short introduction and ask a classmate's name.",
+  "assessmentRules": {
+    "vocabulary": 80,
+    "listening": 70,
+    "grammar": 70,
+    "speaking": 70,
+    "missionRequired": true
+  },
+  "references": [
+    {
+      "id": "cefr-descriptors",
+      "name": "Council of Europe CEFR descriptors",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+      "use": "curriculum_reference_only",
+      "license": null,
+      "permissionRef": null,
+      "attribution": null
+    },
+    {
+      "id": "goethe-a1-scope",
+      "name": "Goethe A1 scope and practice reference",
+      "url": "https://www.goethe.de/de/m/spr/prf/ueb/pa1.html",
+      "use": "curriculum_reference_only",
+      "license": null,
+      "permissionRef": null,
+      "attribution": null
+    },
+    {
+      "id": "zum-sich-vorstellen-r78352",
+      "name": "Sich vorstellen · ZUM Deutsch Lernen",
+      "url": "https://deutsch-lernen.zum.de/index.php?title=Sich%20vorstellen&oldid=78352",
+      "use": "licensed_content",
+      "license": "CC-BY-4.0",
+      "permissionRef": "content/source-assets/zum-sich-vorstellen-r78352.json",
+      "attribution": "Sich vorstellen — Karl Kirst / ZUM Deutsch Lernen. CC BY 4.0. Selected introductory question/answer patterns; split combined informal/formal lines; omitted family/marital-status phrases, templates, external worksheets and media.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Karl Kirst"],
+      "modifications": "Selected introductory question/answer patterns; split combined informal/formal lines; omitted family/marital-status phrases, templates, external worksheets and media.",
+      "sourceAssetHash": "fc4d2cb69e604b2e770ceab24d7aa1c50195dcadba6c6e0d7eb1f01d6f30106c",
+      "revision": "78352"
+    },
+    {
+      "id": "zum-personalpronomen-r86838",
+      "name": "Personalpronomen · ZUM Deutsch Lernen",
+      "url": "https://deutsch-lernen.zum.de/index.php?title=Personalpronomen&oldid=86838",
+      "use": "licensed_content",
+      "license": "CC-BY-4.0",
+      "permissionRef": "content/source-assets/zum-personalpronomen-r86838.json",
+      "attribution": "Personalpronomen — Karl Kirst, Susanne / ZUM Deutsch Lernen. CC BY 4.0. Extracted only nominative forms; removed formatting and the duplicate sie entry; excluded all case extensions, galleries and third-party links.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Karl Kirst", "Susanne"],
+      "modifications": "Extracted only nominative forms; removed formatting and the duplicate sie entry; excluded all case extensions, galleries and third-party links.",
+      "sourceAssetHash": "4c49776cae10a8028dee29918694a30065d99cce05d02088bf048dd5a097f091",
+      "revision": "86838"
+    },
+    {
+      "id": "zum-satze-r87581",
+      "name": "Sätze · ZUM Deutsch Lernen",
+      "url": "https://deutsch-lernen.zum.de/index.php?title=S%C3%A4tze&oldid=87581",
+      "use": "licensed_content",
+      "license": "CC-BY-4.0",
+      "permissionRef": "content/source-assets/zum-satze-r87581.json",
+      "attribution": "Sätze — Ralf Klötzke, Karl Kirst, Susanne / ZUM Deutsch Lernen. CC BY 4.0. Selected eight short example statements only; omitted syntactic labels, datives, later grammar and all external materials. Level assignment is an unreviewed estimate.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Ralf Klötzke", "Karl Kirst", "Susanne"],
+      "modifications": "Selected eight short example statements only; omitted syntactic labels, datives, later grammar and all external materials. Level assignment is an unreviewed estimate.",
+      "sourceAssetHash": "f2738eef00fa186d45d21d343a1690ccddd5cd623c8e49da0afe7b0bbe4c44a4",
+      "revision": "87581"
+    }
+  ],
+  "rights": {
+    "origin": "mixed",
+    "commercialUseCleared": false,
+    "evidenceRef": "docs/content/source-import-report.md",
+    "notes": "Original companion draft with selected CC BY 4.0 ZUM text adaptations. Source revisions, named contributors and modification notices are attached. All human gates and distributable audio remain pending."
+  },
+  "vocabulary": [
+    {
+      "id": "w-hallo",
+      "de": "Hallo",
+      "en": "hello",
+      "ar": "مرحبًا",
+      "example": "Hallo! Wie geht's?",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-morgen",
+      "de": "Guten Morgen",
+      "en": "good morning",
+      "ar": "صباح الخير",
+      "example": "Guten Morgen! Ich bin Nabil.",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-tag",
+      "de": "Guten Tag",
+      "en": "good day",
+      "ar": "نهارك سعيد",
+      "example": "Guten Tag! Wie heißen Sie?",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-abend",
+      "de": "Guten Abend",
+      "en": "good evening",
+      "ar": "مساء الخير",
+      "example": "Guten Abend! Wie geht es Ihnen?",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-tschuess",
+      "de": "Tschüss",
+      "en": "bye",
+      "ar": "وداعًا",
+      "example": "Tschüss! Bis morgen.",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-wiedersehen",
+      "de": "Auf Wiedersehen",
+      "en": "goodbye",
+      "ar": "إلى اللقاء",
+      "example": "Auf Wiedersehen, Frau Müller.",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-heissen",
+      "de": "heißen",
+      "en": "to be called",
+      "ar": "يُدعى",
+      "example": "Ich heiße Nabil.",
+      "type": "verb",
+      "conjugation": {
+        "ich": "heiße",
+        "du": "heißt",
+        "Sie": "heißen"
+      },
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-kommen",
+      "de": "kommen",
+      "en": "to come",
+      "ar": "يأتي",
+      "example": "Ich komme aus Ägypten.",
+      "type": "verb",
+      "conjugation": {
+        "ich": "komme",
+        "du": "kommst",
+        "Sie": "kommen"
+      },
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-wohnen",
+      "de": "wohnen",
+      "en": "to live",
+      "ar": "يسكن",
+      "example": "Ich wohne in Alexandria.",
+      "type": "verb",
+      "conjugation": {
+        "ich": "wohne",
+        "du": "wohnst",
+        "Sie": "wohnen"
+      },
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-gut",
+      "de": "gut",
+      "en": "good",
+      "ar": "جيد",
+      "example": "Mir geht's gut.",
+      "type": "adjective",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-aegypten",
+      "de": "Ägypten",
+      "en": "Egypt",
+      "ar": "مصر",
+      "example": "Ich komme aus Ägypten.",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    },
+    {
+      "id": "w-deutsch",
+      "de": "Deutsch",
+      "en": "German",
+      "ar": "الألمانية",
+      "example": "Ich lerne Deutsch.",
+      "type": "phrase",
+      "conjugation": null,
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g-present",
+      "title": {
+        "de": "ich, du und Sie",
+        "en": "Introducing yourself with ich, du and Sie",
+        "ar": "التعريف بالنفس باستخدام ich وdu وSie"
+      },
+      "explanation": {
+        "de": "Ich heiße … Du heißt … Sie heißen … Mit Sie sprechen wir eine Person höflich an.",
+        "en": "Use ich for yourself, du for an informal partner, and Sie for a formal partner. The verb form changes with the subject.",
+        "ar": "نستخدم ich للحديث عن أنفسنا، وdu لمخاطبة شخص بصورة غير رسمية، وSie للمخاطبة الرسمية. يتغير تصريف الفعل بحسب الفاعل."
+      },
+      "examples": ["Ich heiße Lea.", "Wie heißt du?", "Wie heißen Sie?"]
+    },
+    {
+      "id": "g-name-question",
+      "title": {
+        "de": "Nach dem Namen fragen",
+        "en": "Ask a name: informal and formal",
+        "ar": "السؤال عن الاسم: المخاطبة الرسمية وغير الرسمية"
+      },
+      "explanation": {
+        "de": "Wie heißt du? ist informell. Wie heißen Sie? ist höflich. Sie schreiben wir in der höflichen Anrede groß.",
+        "en": "Use Wie heißt du? informally, or Wie heißen Sie? formally. Formal Sie starts with a capital letter. These are draft teaching explanations adapted around ZUM's introductory patterns.",
+        "ar": "نستخدم Wie heißt du? في المخاطبة غير الرسمية، وWie heißen Sie? في المخاطبة الرسمية. يبدأ ضمير المخاطبة الرسمي Sie بحرف كبير."
+      },
+      "examples": [
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Woher kommst du?",
+        "Woher kommen Sie?"
+      ]
+    },
+    {
+      "id": "g-pronouns",
+      "title": {
+        "de": "Personalpronomen im Nominativ",
+        "en": "Subject pronouns",
+        "ar": "ضمائر الفاعل"
+      },
+      "explanation": {
+        "de": "ich, du, er, es, sie, wir, ihr, sie und Sie sind Personalpronomen im Nominativ. sie kann eine Frau oder mehrere Personen meinen; Sie ist die höfliche Anrede.",
+        "en": "Subject forms include ich, du, er, es, sie, wir, ihr and Sie. The lower-case sie can mean she or they; capitalized Sie is formal you. The pronoun list comes from ZUM; this explanatory text and translations are new drafts.",
+        "ar": "من ضمائر الفاعل: ich وdu وer وes وsie وwir وihr وSie. قد تعني sie هي أو هم، أما Sie بحرف كبير فتستخدم في المخاطبة الرسمية."
+      },
+      "examples": ["ich", "du", "er", "es", "sie", "wir", "ihr", "Sie"]
+    },
+    {
+      "id": "g-statements",
+      "title": {
+        "de": "Kurze Aussagen",
+        "en": "Simple statements",
+        "ar": "جمل خبرية قصيرة"
+      },
+      "explanation": {
+        "de": "In diesen Beispielen steht das konjugierte Verb nach dem Subjekt. Achten Sie auf das Verb und lesen Sie den Satz laut.",
+        "en": "In these simple subject-first statements, the conjugated verb follows the subject. Notice the verb and say each sentence out loud. Example sentences are selected from ZUM; the teaching explanation and translations are drafts.",
+        "ar": "في هذه الأمثلة التي تبدأ بالفاعل يأتي الفعل المصرف بعده. انتبه إلى الفعل واقرأ كل جملة بصوت مسموع."
+      },
+      "examples": [
+        "Ich wohne in Berlin.",
+        "Er kommt aus Syrien.",
+        "Ich gehe nach Hause."
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "d-school",
+      "context": {
+        "de": "In der Sprachschule",
+        "en": "At the language school",
+        "ar": "في مدرسة اللغات"
+      },
+      "lines": [
+        {
+          "id": "line-1",
+          "speaker": "A",
+          "text": {
+            "de": "Guten Tag! Ich heiße Nabil. Wie heißen Sie?",
+            "en": "Hello! My name is Nabil. What is your name?",
+            "ar": "مرحبًا! اسمي نبيل. ما اسم حضرتك؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "line-2",
+          "speaker": "B",
+          "text": {
+            "de": "Ich heiße Anna. Freut mich.",
+            "en": "My name is Anna. Nice to meet you.",
+            "ar": "اسمي آنا. تشرفت بمعرفتك."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "line-3",
+          "speaker": "A",
+          "text": {
+            "de": "Freut mich auch. Woher kommen Sie?",
+            "en": "Nice to meet you too. Where are you from?",
+            "ar": "وأنا أيضًا تشرفت بمعرفتك. من أين حضرتك؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "line-4",
+          "speaker": "B",
+          "text": {
+            "de": "Ich komme aus Deutschland. Und Sie?",
+            "en": "I'm from Germany. And you?",
+            "ar": "أنا من ألمانيا. وحضرتك؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "line-5",
+          "speaker": "A",
+          "text": {
+            "de": "Ich komme aus Ägypten.",
+            "en": "I'm from Egypt.",
+            "ar": "أنا من مصر."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "line-6",
+          "speaker": "B",
+          "text": {
+            "de": "Und wo wohnen Sie?",
+            "en": "And where do you live?",
+            "ar": "وأين تسكن حضرتك؟"
+          },
+          "audioKey": null
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "e-listen-name",
+      "type": "multiple_choice",
+      "skill": "listening",
+      "prompt": {
+        "de": "Wie heißt die erste Person?",
+        "en": "What is the first speaker's name?",
+        "ar": "ما اسم المتحدث الأول؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Anna",
+            "en": "Anna",
+            "ar": "آنا"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Nabil",
+            "en": "Nabil",
+            "ar": "نبيل"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Lukas",
+            "en": "Lukas",
+            "ar": "لوكاس"
+          }
+        }
+      ],
+      "correctOptionId": "option-2",
+      "explanation": {
+        "de": "Die erste Person sagt: Ich heiße Nabil.",
+        "en": "The first speaker says Ich heiße Nabil.",
+        "ar": "يقول المتحدث الأول: Ich heiße Nabil، أي اسمي نبيل."
+      },
+      "audioLineIds": ["line-1"]
+    },
+    {
+      "id": "e-listen-country",
+      "type": "multiple_choice",
+      "skill": "listening",
+      "prompt": {
+        "de": "Woher kommt Anna?",
+        "en": "Where does Anna come from?",
+        "ar": "من أين آنا؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Ägypten",
+            "en": "Egypt",
+            "ar": "مصر"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Deutschland",
+            "en": "Germany",
+            "ar": "ألمانيا"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Italien",
+            "en": "Italy",
+            "ar": "إيطاليا"
+          }
+        }
+      ],
+      "correctOptionId": "option-2",
+      "explanation": {
+        "de": "Anna sagt: Ich komme aus Deutschland.",
+        "en": "Anna says Ich komme aus Deutschland.",
+        "ar": "تقول آنا إنها من ألمانيا: Ich komme aus Deutschland."
+      },
+      "audioLineIds": ["line-4"]
+    },
+    {
+      "id": "e-listen-greeting",
+      "type": "multiple_choice",
+      "skill": "listening",
+      "prompt": {
+        "de": "Was bedeutet Freut mich?",
+        "en": "What does Freut mich express?",
+        "ar": "ماذا تعني Freut mich؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Schön, Sie kennenzulernen.",
+            "en": "Nice to meet you.",
+            "ar": "تشرفت بمعرفتك."
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Ich bin müde.",
+            "en": "I am tired.",
+            "ar": "أنا متعب."
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Bis morgen!",
+            "en": "See you tomorrow!",
+            "ar": "أراك غدًا!"
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Freut mich sagen wir, wenn wir jemanden kennenlernen.",
+        "en": "Freut mich is a friendly expression when meeting someone.",
+        "ar": "نقول Freut mich للتعبير عن سعادتنا بالتعرف على شخص."
+      },
+      "audioLineIds": ["line-2"]
+    },
+    {
+      "id": "e-grammar-name",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "prompt": {
+        "de": "Ich ___ Nabil.",
+        "en": "Complete: Ich ___ Nabil.",
+        "ar": "أكمل: Ich ___ Nabil."
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "heiße",
+            "en": "heiße",
+            "ar": "heiße"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "heißt",
+            "en": "heißt",
+            "ar": "heißt"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "heißen",
+            "en": "heißen",
+            "ar": "heißen"
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Mit ich heißt die Form heiße.",
+        "en": "With ich, use heiße.",
+        "ar": "تصريف heißen مع ich هو heiße."
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "e-grammar-country",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "prompt": {
+        "de": "Woher ___ du?",
+        "en": "Complete: Woher ___ du?",
+        "ar": "أكمل: Woher ___ du؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "komme",
+            "en": "komme",
+            "ar": "komme"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "kommst",
+            "en": "kommst",
+            "ar": "kommst"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "kommen",
+            "en": "kommen",
+            "ar": "kommen"
+          }
+        }
+      ],
+      "correctOptionId": "option-2",
+      "explanation": {
+        "de": "Mit du heißt die Form kommst.",
+        "en": "With du, use kommst.",
+        "ar": "تصريف kommen مع du هو kommst."
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "e-grammar-city",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "prompt": {
+        "de": "Ich ___ in Alexandria.",
+        "en": "Complete: Ich ___ in Alexandria.",
+        "ar": "أكمل: Ich ___ in Alexandria."
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "wohnst",
+            "en": "wohnst",
+            "ar": "wohnst"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "wohnen",
+            "en": "wohnen",
+            "ar": "wohnen"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "wohne",
+            "en": "wohne",
+            "ar": "wohne"
+          }
+        }
+      ],
+      "correctOptionId": "option-3",
+      "explanation": {
+        "de": "Mit ich heißt die Form wohne.",
+        "en": "With ich, use wohne.",
+        "ar": "تصريف wohnen مع ich هو wohne."
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "e-build",
+      "type": "sentence_builder",
+      "prompt": {
+        "de": "Ordnen Sie: heiße / Ich / Lea.",
+        "en": "Put the words in order: heiße / Ich / Lea.",
+        "ar": "رتب الكلمات: heiße / Ich / Lea."
+      },
+      "acceptableAnswers": ["Ich heiße Lea."],
+      "explanation": {
+        "de": "Ich steht vor heiße.",
+        "en": "In this statement, the subject Ich comes before the verb heiße.",
+        "ar": "في هذه الجملة الخبرية يأتي الفاعل Ich قبل الفعل heiße."
+      },
+      "wordIds": ["w-heissen"],
+      "grammarIds": ["g-present"],
+      "audioLineIds": []
+    },
+    {
+      "id": "e-speak",
+      "type": "free_speech",
+      "prompt": {
+        "de": "Begrüßen Sie eine Person und nennen Sie Ihren Namen.",
+        "en": "Greet someone and say your name out loud.",
+        "ar": "حيِّ شخصًا واذكر اسمك بصوت مسموع."
+      },
+      "acceptableAnswers": [
+        "Hallo! Ich heiße Lea.",
+        "Guten Tag! Ich heiße Omar."
+      ],
+      "explanation": {
+        "de": "Das sind Beispiele. Ihr eigener Name ist auch richtig.",
+        "en": "These are examples. Use your own name. This is speaking practice, not a pronunciation grade.",
+        "ar": "هذه أمثلة. استخدم اسمك الحقيقي. هذا تدريب على التحدث وليس تقييمًا لجودة النطق."
+      },
+      "wordIds": ["w-hallo", "w-heissen"],
+      "grammarIds": ["g-present"],
+      "audioLineIds": []
+    }
+  ],
+  "mission": {
+    "id": "m-introduce",
+    "prompt": {
+      "de": "Stellen Sie sich vor: Begrüßung, Name, Land, Stadt und Befinden. Fragen Sie nach dem Namen und verabschieden Sie sich.",
+      "en": "Introduce yourself: greet your classmate, give your name, country and city, say how you feel, ask their name, and say goodbye.",
+      "ar": "عرِّف بنفسك: حيِّ زميلك واذكر اسمك وبلدك ومدينتك وكيف تشعر. اسأله عن اسمه ثم ودِّعه."
+    },
+    "acceptableAnswers": [
+      "Hallo! Ich heiße Lea. Ich komme aus Deutschland. Ich wohne in Berlin. Mir geht's gut. Wie heißt du? Tschüss!"
+    ],
+    "criteria": [
+      {
+        "de": "Begrüßung",
+        "en": "Greet your classmate",
+        "ar": "تحية الزميل"
+      },
+      {
+        "de": "Name",
+        "en": "Give your name",
+        "ar": "ذكر الاسم"
+      },
+      {
+        "de": "Land und Stadt",
+        "en": "Give your country and city",
+        "ar": "ذكر البلد والمدينة"
+      },
+      {
+        "de": "Befinden",
+        "en": "Say how you feel",
+        "ar": "التعبير عن الحال"
+      },
+      {
+        "de": "Frage nach dem Namen",
+        "en": "Ask their name",
+        "ar": "السؤال عن الاسم"
+      },
+      {
+        "de": "Abschied",
+        "en": "Say goodbye",
+        "ar": "التوديع"
+      }
+    ]
+  },
+  "media": []
+}

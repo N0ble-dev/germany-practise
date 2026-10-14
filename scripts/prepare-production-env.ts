@@ -42,6 +42,14 @@ async function prepare() {
     "GOOGLE_CALENDAR_CLIENT_ID",
     "GOOGLE_CALENDAR_CLIENT_SECRET",
     "CALENDAR_TOKEN_ENCRYPTION_KEY",
+    "CONTENT_AUTHOR_EMAILS",
+    "CONTENT_LANGUAGE_EMAILS",
+    "CONTENT_PEDAGOGY_EMAILS",
+    "CONTENT_ARABIC_EMAILS",
+    "CONTENT_RIGHTS_EMAILS",
+    "CONTENT_AUDIO_EMAILS",
+    "CONTENT_PUBLISHER_EMAILS",
+    "CONTENT_AUDIO_BASE_URL",
   ]) {
     const value = setting(key);
     if (value) values[key] = value;

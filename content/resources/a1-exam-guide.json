@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "level": "A1",
+  "exam": "Goethe-Zertifikat A1: Start Deutsch 1",
+  "audience": "adults",
+  "checkedAt": "2026-10-14",
+  "formatSource": "https://www.goethe.de/ins/eg/de/sta/alx/prf/gzsd1/inf.html",
+  "scoringSource": "https://www.goethe.de/de/spr/prf/pes.html",
+  "passRule": "At least 60 out of 100 points overall, with all exam sections attempted. This rule applies to adult Start Deutsch 1, not every Goethe exam.",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Hören",
+      "label": "Listening",
+      "minutes": 20,
+      "description": "Understand everyday conversations, telephone messages and announcements.",
+      "tips": [
+        "Read the question first and decide which detail you need: a time, number, place or intention.",
+        "Listen for a changed plan or a correction; the first detail may be a distractor.",
+        "After practice, review the transcript and write down what you misheard."
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Lesen",
+      "label": "Reading",
+      "minutes": 25,
+      "description": "Find meaning in short messages, advertisements, signs and notices.",
+      "tips": [
+        "Scan for the detail asked in the question before reading every word.",
+        "Check negatives such as nicht and kein, and conditions involving opening times.",
+        "Choose the answer that matches the meaning, rather than one that repeats a word."
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Schreiben",
+      "label": "Writing",
+      "minutes": 20,
+      "description": "Complete a simple form and write a short everyday message.",
+      "tips": [
+        "List the requested content points and include each one in your message.",
+        "Use short sentences you can control, with a greeting and a suitable closing.",
+        "Check verb position, noun capitals and whether each request is clear."
+      ]
+    },
+    {
+      "id": "speaking",
+      "title": "Sprechen",
+      "label": "Speaking",
+      "minutes": 15,
+      "description": "Introduce yourself, exchange everyday information and make a request in a group.",
+      "tips": [
+        "Practise your name, country, city, languages, profession and hobbies out loud.",
+        "Take turns asking a simple question, answering and making a polite request.",
+        "Use a repair phrase when needed: Wie bitte? Können Sie das bitte wiederholen?"
+      ]
+    }
+  ],
+  "schedule": [
+    {
+      "week": 1,
+      "title": "Know the format",
+      "tasks": [
+        "Explore the official A1 models one skill at a time.",
+        "Practise your introduction, spelling and numbers."
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Build your rhythm",
+      "tasks": [
+        "Alternate listening and reading practice.",
+        "Keep notes on misunderstood words and write short everyday messages."
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Try exam conditions",
+      "tasks": [
+        "Speak with a partner and ask for human writing feedback.",
+        "Use an official model with its published timing and listening instructions."
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Work on weak spots",
+      "tasks": [
+        "Review the patterns behind your mistakes.",
+        "Attempt a different official model and seek feedback on speaking and writing."
+      ]
+    }
+  ]
+}

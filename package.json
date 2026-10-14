@@ -18,7 +18,15 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "content:audit": "node --experimental-strip-types scripts/content/audit.ts",
+    "content:validate": "node --experimental-strip-types scripts/content/cli.ts validate",
+    "content:qa-report": "node --experimental-strip-types scripts/content/cli.ts qa-report",
+    "content:audio-check": "node --experimental-strip-types scripts/content/cli.ts audio-manifest",
+    "content:test": "vitest run tests/unit/content-pipeline.test.ts tests/unit/content-repository.test.ts tests/unit/content-resources.test.ts",
+    "content:promote": "node --experimental-strip-types scripts/content/promote.ts",
+    "content:fetch-zum": "node --experimental-strip-types scripts/content/fetch-zum.ts",
+    "content:check-links": "node --experimental-strip-types scripts/content/check-resource-links.ts"
   },
   "dependencies": {
     "@fontsource-variable/nunito-sans": "5.3.0",

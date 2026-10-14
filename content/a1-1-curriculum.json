@@ -1,0 +1,1170 @@
+{
+  "schemaVersion": 1,
+  "courseId": "a1-1",
+  "cefr": "A1",
+  "courseSubdivision": "A1.1",
+  "status": "planning_draft",
+  "sourceHash": "460c39548782216a86dec921aa738e25b635db1229877313a39af3ec8264fc42",
+  "references": [
+    "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+    "https://www.goethe.de/de/m/spr/prf/ueb/pa1.html"
+  ],
+  "lessons": [
+    {
+      "id": "a1-1-l01",
+      "number": 1,
+      "title": "Hallo! Ich bin …",
+      "canDo": [
+        "Greet someone and say goodbye",
+        "Give your name, country, city, and how you feel",
+        "Ask someone their name"
+      ],
+      "scene": "Sprachschule",
+      "estimatedMinutes": 35,
+      "prerequisites": [],
+      "introducedGrammar": [
+        "Present tense: heißen, kommen, wohnen; ich/du/Sie; statements and questions"
+      ],
+      "pronunciationFocus": "Sentence melody",
+      "listeningOutcomes": [
+        "What is the first speaker's name?",
+        "Where does Anna come from?",
+        "What does Freut mich express?"
+      ],
+      "speakingOutcome": "Introduce yourself to a new classmate.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "Hallo",
+          "plural": null
+        },
+        {
+          "de": "Guten Morgen",
+          "plural": null
+        },
+        {
+          "de": "Guten Tag",
+          "plural": null
+        },
+        {
+          "de": "Guten Abend",
+          "plural": null
+        },
+        {
+          "de": "Tschüss",
+          "plural": null
+        },
+        {
+          "de": "Auf Wiedersehen",
+          "plural": null
+        },
+        {
+          "de": "heißen",
+          "plural": null
+        },
+        {
+          "de": "kommen",
+          "plural": null
+        },
+        {
+          "de": "wohnen",
+          "plural": null
+        },
+        {
+          "de": "gut",
+          "plural": null
+        },
+        {
+          "de": "Ägypten",
+          "plural": null
+        },
+        {
+          "de": "Deutsch",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 5,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l02",
+      "number": 2,
+      "title": "Ich bin Softwareentwickler",
+      "canDo": [
+        "Say and ask a profession",
+        "Read and write a short personal profile",
+        "Use numbers for age and contact details"
+      ],
+      "scene": "Sprachschule",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l01"],
+      "introducedGrammar": ["Present tense; professions; personal questions"],
+      "pronunciationFocus": "Word stress",
+      "listeningOutcomes": [
+        "What is the person's profession?",
+        "Which city is mentioned?",
+        "How old is the speaker?"
+      ],
+      "speakingOutcome": "Tell someone a little about your life and work.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "der Beruf",
+          "plural": "die Berufe"
+        },
+        {
+          "de": "arbeiten",
+          "plural": null
+        },
+        {
+          "de": "der Student",
+          "plural": "die Studenten"
+        },
+        {
+          "de": "die Studentin",
+          "plural": "die Studentinnen"
+        },
+        {
+          "de": "der Lehrer",
+          "plural": "die Lehrer"
+        },
+        {
+          "de": "die Lehrerin",
+          "plural": "die Lehrerinnen"
+        },
+        {
+          "de": "der Arzt",
+          "plural": "die Ärzte"
+        },
+        {
+          "de": "die Ärztin",
+          "plural": "die Ärztinnen"
+        },
+        {
+          "de": "der Softwareentwickler",
+          "plural": "die Softwareentwickler"
+        },
+        {
+          "de": "ledig",
+          "plural": null
+        },
+        {
+          "de": "verheiratet",
+          "plural": null
+        },
+        {
+          "de": "die Telefonnummer",
+          "plural": "die Telefonnummern"
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 4,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l03",
+      "number": 3,
+      "title": "Das ist meine Familie",
+      "canDo": [
+        "Introduce family members",
+        "Use mein and meine",
+        "Ask about family and languages"
+      ],
+      "scene": "Sprachschule",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l02"],
+      "introducedGrammar": ["Possessives; family; mein/meine"],
+      "pronunciationFocus": "Question melody",
+      "listeningOutcomes": [
+        "Who is in the photo?",
+        "What is her name?",
+        "Which language does she speak?"
+      ],
+      "speakingOutcome": "Introduce your family and the languages you speak.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "die Familie",
+          "plural": "die Familien"
+        },
+        {
+          "de": "die Mutter",
+          "plural": "die Mütter"
+        },
+        {
+          "de": "der Vater",
+          "plural": "die Väter"
+        },
+        {
+          "de": "der Bruder",
+          "plural": "die Brüder"
+        },
+        {
+          "de": "die Schwester",
+          "plural": "die Schwestern"
+        },
+        {
+          "de": "die Eltern",
+          "plural": "die Eltern"
+        },
+        {
+          "de": "der Sohn",
+          "plural": "die Söhne"
+        },
+        {
+          "de": "die Tochter",
+          "plural": "die Töchter"
+        },
+        {
+          "de": "sprechen",
+          "plural": null
+        },
+        {
+          "de": "Arabisch",
+          "plural": null
+        },
+        {
+          "de": "Englisch",
+          "plural": null
+        },
+        {
+          "de": "ein bisschen",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 6,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l04",
+      "number": 4,
+      "title": "Der Tisch ist schön",
+      "canDo": [
+        "Name furniture with its article",
+        "Ask and understand a price",
+        "Describe size, appearance, and price"
+      ],
+      "scene": "Wohnung",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l03"],
+      "introducedGrammar": ["Articles and nouns; describing objects"],
+      "pronunciationFocus": "Long and short vowels",
+      "listeningOutcomes": [
+        "How much is the table?",
+        "What costs 20 Euro?",
+        "Does the customer like the table?"
+      ],
+      "speakingOutcome": "Ask a price and describe furniture you like.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "der Tisch",
+          "plural": "die Tische"
+        },
+        {
+          "de": "der Stuhl",
+          "plural": "die Stühle"
+        },
+        {
+          "de": "das Bett",
+          "plural": "die Betten"
+        },
+        {
+          "de": "das Sofa",
+          "plural": "die Sofas"
+        },
+        {
+          "de": "der Schrank",
+          "plural": "die Schränke"
+        },
+        {
+          "de": "die Lampe",
+          "plural": "die Lampen"
+        },
+        {
+          "de": "schön",
+          "plural": null
+        },
+        {
+          "de": "teuer",
+          "plural": null
+        },
+        {
+          "de": "billig",
+          "plural": null
+        },
+        {
+          "de": "groß",
+          "plural": null
+        },
+        {
+          "de": "klein",
+          "plural": null
+        },
+        {
+          "de": "kosten",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 5,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 5
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l05",
+      "number": 5,
+      "title": "Was ist das?",
+      "canDo": [
+        "Ask for the German name of an object",
+        "Ask someone to repeat or slow down",
+        "Describe color or material"
+      ],
+      "scene": "Geschäft",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l04"],
+      "introducedGrammar": [
+        "Identifying objects; indefinite articles and questions"
+      ],
+      "pronunciationFocus": "Sentence stress",
+      "listeningOutcomes": [
+        "What is the object?",
+        "Why does the person say Wie bitte?",
+        "How does the conversation end?"
+      ],
+      "speakingOutcome": "Ask what an object is called and ask for repetition.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "das Handy",
+          "plural": "die Handys"
+        },
+        {
+          "de": "der Schlüssel",
+          "plural": "die Schlüssel"
+        },
+        {
+          "de": "die Tasche",
+          "plural": "die Taschen"
+        },
+        {
+          "de": "der Stift",
+          "plural": "die Stifte"
+        },
+        {
+          "de": "das Buch",
+          "plural": "die Bücher"
+        },
+        {
+          "de": "die Brille",
+          "plural": "die Brillen"
+        },
+        {
+          "de": "rot",
+          "plural": null
+        },
+        {
+          "de": "blau",
+          "plural": null
+        },
+        {
+          "de": "schwarz",
+          "plural": null
+        },
+        {
+          "de": "weiß",
+          "plural": null
+        },
+        {
+          "de": "Wie bitte?",
+          "plural": null
+        },
+        {
+          "de": "Langsam, bitte.",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 5,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 7
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l06",
+      "number": 6,
+      "title": "Ich brauche einen Laptop",
+      "canDo": [
+        "Name common office and tech items",
+        "Say what you need and do not need",
+        "Use einen, ein, and eine in context"
+      ],
+      "scene": "Büro",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l05"],
+      "introducedGrammar": ["Accusative objects; office equipment"],
+      "pronunciationFocus": "The ü sound",
+      "listeningOutcomes": [
+        "Which computer does the person need?",
+        "What else is needed?",
+        "Does the person need a printer?"
+      ],
+      "speakingOutcome": "Say what you need to set up a desk.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "der Computer",
+          "plural": "die Computer"
+        },
+        {
+          "de": "der Laptop",
+          "plural": "die Laptops"
+        },
+        {
+          "de": "der Drucker",
+          "plural": "die Drucker"
+        },
+        {
+          "de": "das Telefon",
+          "plural": "die Telefone"
+        },
+        {
+          "de": "die Tastatur",
+          "plural": "die Tastaturen"
+        },
+        {
+          "de": "die Maus",
+          "plural": "die Mäuse"
+        },
+        {
+          "de": "der Bildschirm",
+          "plural": "die Bildschirme"
+        },
+        {
+          "de": "das Büro",
+          "plural": "die Büros"
+        },
+        {
+          "de": "brauchen",
+          "plural": null
+        },
+        {
+          "de": "haben",
+          "plural": null
+        },
+        {
+          "de": "suchen",
+          "plural": null
+        },
+        {
+          "de": "kaufen",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 4,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 5
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l07",
+      "number": 7,
+      "title": "Du kannst wirklich …",
+      "canDo": [
+        "Name two hobbies",
+        "Say what you can and cannot do",
+        "Give and respond to a compliment"
+      ],
+      "scene": "Park",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l06"],
+      "introducedGrammar": ["Modal können; activities and ability"],
+      "pronunciationFocus": "Moving sentence stress",
+      "listeningOutcomes": [
+        "Which hobby is mentioned?",
+        "Can the person swim?",
+        "What is the compliment about?"
+      ],
+      "speakingOutcome": "Talk about hobbies and give a compliment.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "Fußball spielen",
+          "plural": null
+        },
+        {
+          "de": "fotografieren",
+          "plural": null
+        },
+        {
+          "de": "kochen",
+          "plural": null
+        },
+        {
+          "de": "schwimmen",
+          "plural": null
+        },
+        {
+          "de": "tanzen",
+          "plural": null
+        },
+        {
+          "de": "singen",
+          "plural": null
+        },
+        {
+          "de": "Rad fahren",
+          "plural": null
+        },
+        {
+          "de": "Musik hören",
+          "plural": null
+        },
+        {
+          "de": "lesen",
+          "plural": null
+        },
+        {
+          "de": "reisen",
+          "plural": null
+        },
+        {
+          "de": "können",
+          "plural": null
+        },
+        {
+          "de": "toll",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 4,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l08",
+      "number": 8,
+      "title": "Kein Problem. Ich habe Zeit!",
+      "canDo": [
+        "Use days and clock times",
+        "Accept or refuse politely",
+        "Arrange an activity and meeting place"
+      ],
+      "scene": "Café",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l07"],
+      "introducedGrammar": ["Time and weekday expressions; appointments"],
+      "pronunciationFocus": "Unstressed e",
+      "listeningOutcomes": [
+        "Which day is the plan for?",
+        "What will the friends do?",
+        "What time do they agree on?"
+      ],
+      "speakingOutcome": "Agree on an activity, day, time, and meeting place.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "der Montag",
+          "plural": "die Montage"
+        },
+        {
+          "de": "der Dienstag",
+          "plural": "die Dienstage"
+        },
+        {
+          "de": "der Mittwoch",
+          "plural": "die Mittwoche"
+        },
+        {
+          "de": "der Donnerstag",
+          "plural": "die Donnerstage"
+        },
+        {
+          "de": "der Freitag",
+          "plural": "die Freitage"
+        },
+        {
+          "de": "der Samstag",
+          "plural": "die Samstage"
+        },
+        {
+          "de": "der Sonntag",
+          "plural": "die Sonntage"
+        },
+        {
+          "de": "heute",
+          "plural": null
+        },
+        {
+          "de": "morgen",
+          "plural": null
+        },
+        {
+          "de": "treffen",
+          "plural": null
+        },
+        {
+          "de": "das Kino",
+          "plural": "die Kinos"
+        },
+        {
+          "de": "das Café",
+          "plural": "die Cafés"
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 6,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 7
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l09",
+      "number": 9,
+      "title": "Ich möchte etwas essen",
+      "canDo": [
+        "Say what you like and would like",
+        "Order a drink and some food",
+        "Accept or refuse politely"
+      ],
+      "scene": "Restaurant",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l08"],
+      "introducedGrammar": ["möchten; food and drink; ordering politely"],
+      "pronunciationFocus": "Stress in compound nouns",
+      "listeningOutcomes": [
+        "Which drink is ordered?",
+        "What food is ordered?",
+        "What is the total?"
+      ],
+      "speakingOutcome": "Order breakfast politely without answer choices.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "das Brot",
+          "plural": "die Brote"
+        },
+        {
+          "de": "das Brötchen",
+          "plural": "die Brötchen"
+        },
+        {
+          "de": "der Käse",
+          "plural": null
+        },
+        {
+          "de": "die Milch",
+          "plural": null
+        },
+        {
+          "de": "der Kaffee",
+          "plural": "die Kaffees"
+        },
+        {
+          "de": "der Tee",
+          "plural": "die Tees"
+        },
+        {
+          "de": "das Wasser",
+          "plural": null
+        },
+        {
+          "de": "das Gemüse",
+          "plural": null
+        },
+        {
+          "de": "das Obst",
+          "plural": null
+        },
+        {
+          "de": "der Reis",
+          "plural": null
+        },
+        {
+          "de": "essen",
+          "plural": null
+        },
+        {
+          "de": "trinken",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 6,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l10",
+      "number": 10,
+      "title": "Ich steige jetzt ein",
+      "canDo": [
+        "Name common transport",
+        "Understand a simple announcement",
+        "Use separable verbs and ask for directions"
+      ],
+      "scene": "Bahnhof",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l09"],
+      "introducedGrammar": ["Separable verbs; transport and travel"],
+      "pronunciationFocus": "Stress in separable verbs",
+      "listeningOutcomes": [
+        "What is the train's destination?",
+        "What time does the train leave?",
+        "Where should the passenger get off?"
+      ],
+      "speakingOutcome": "Find your transport and ask where to get off.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "der Bus",
+          "plural": "die Busse"
+        },
+        {
+          "de": "der Zug",
+          "plural": "die Züge"
+        },
+        {
+          "de": "die U-Bahn",
+          "plural": "die U-Bahnen"
+        },
+        {
+          "de": "die S-Bahn",
+          "plural": "die S-Bahnen"
+        },
+        {
+          "de": "das Auto",
+          "plural": "die Autos"
+        },
+        {
+          "de": "das Fahrrad",
+          "plural": "die Fahrräder"
+        },
+        {
+          "de": "der Bahnhof",
+          "plural": "die Bahnhöfe"
+        },
+        {
+          "de": "die Haltestelle",
+          "plural": "die Haltestellen"
+        },
+        {
+          "de": "einsteigen",
+          "plural": null
+        },
+        {
+          "de": "aussteigen",
+          "plural": null
+        },
+        {
+          "de": "ankommen",
+          "plural": null
+        },
+        {
+          "de": "umsteigen",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 5,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l11",
+      "number": 11,
+      "title": "Was hast du heute gemacht?",
+      "canDo": [
+        "Describe a normal routine",
+        "Talk about completed activities with haben",
+        "Write or speak a short daily summary"
+      ],
+      "scene": "Wohnung",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l10"],
+      "introducedGrammar": ["Perfekt with haben; personal events"],
+      "pronunciationFocus": "Sentence stress with Perfekt",
+      "listeningOutcomes": [
+        "What did the person learn?",
+        "When did they cook?",
+        "What did they watch?"
+      ],
+      "speakingOutcome": "Tell someone about your day in a short diary.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "aufstehen",
+          "plural": null
+        },
+        {
+          "de": "frühstücken",
+          "plural": null
+        },
+        {
+          "de": "arbeiten",
+          "plural": null
+        },
+        {
+          "de": "lernen",
+          "plural": null
+        },
+        {
+          "de": "einkaufen",
+          "plural": null
+        },
+        {
+          "de": "kochen",
+          "plural": null
+        },
+        {
+          "de": "telefonieren",
+          "plural": null
+        },
+        {
+          "de": "fernsehen",
+          "plural": null
+        },
+        {
+          "de": "machen",
+          "plural": null
+        },
+        {
+          "de": "spielen",
+          "plural": null
+        },
+        {
+          "de": "gestern",
+          "plural": null
+        },
+        {
+          "de": "am Abend",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 4,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 5
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    },
+    {
+      "id": "a1-1-l12",
+      "number": 12,
+      "title": "Was ist denn hier passiert?",
+      "canDo": [
+        "Use months and seasons",
+        "Talk about movement with sein in Perfekt",
+        "Combine haben and sein in a short story"
+      ],
+      "scene": "Party",
+      "estimatedMinutes": 35,
+      "prerequisites": ["a1-1-l11"],
+      "introducedGrammar": ["Perfekt with sein; travel and events"],
+      "pronunciationFocus": "Vocalic r",
+      "listeningOutcomes": [
+        "When was the trip?",
+        "How did the person travel?",
+        "What did they do in Berlin?"
+      ],
+      "speakingOutcome": "Tell a tiny story about a trip or celebration.",
+      "cefrDescriptorRefs": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+      ],
+      "vocabularyTargets": [
+        {
+          "de": "die Party",
+          "plural": "die Partys"
+        },
+        {
+          "de": "der Geburtstag",
+          "plural": "die Geburtstage"
+        },
+        {
+          "de": "die Reise",
+          "plural": "die Reisen"
+        },
+        {
+          "de": "der Urlaub",
+          "plural": "die Urlaube"
+        },
+        {
+          "de": "der Sommer",
+          "plural": "die Sommer"
+        },
+        {
+          "de": "der Winter",
+          "plural": "die Winter"
+        },
+        {
+          "de": "der Frühling",
+          "plural": "die Frühlinge"
+        },
+        {
+          "de": "der Herbst",
+          "plural": "die Herbste"
+        },
+        {
+          "de": "fahren",
+          "plural": null
+        },
+        {
+          "de": "gehen",
+          "plural": null
+        },
+        {
+          "de": "fliegen",
+          "plural": null
+        },
+        {
+          "de": "bleiben",
+          "plural": null
+        }
+      ],
+      "assessmentRules": {
+        "vocabulary": 80,
+        "listening": 70,
+        "grammar": 70,
+        "speaking": 70,
+        "missionRequired": true
+      },
+      "counts": {
+        "words": 12,
+        "dialogueLines": 4,
+        "grammarQuestions": 3,
+        "listeningQuestions": 3,
+        "patterns": 6
+      },
+      "findings": [
+        "Existing companion text has no recorded human language/pedagogy/rights approval.",
+        "Arabic vocabulary exists; dialogue, exercise and grammar translations need separate review/production.",
+        "Browser device speech is not a licensed, reviewed audio asset; recorded audio coverage is zero.",
+        "Original helper infers verb types from spelling; verify parts of speech, noun plurals and conjugation forms.",
+        "Mission regular expressions and self-check speaking are practice feedback, not CEFR certification."
+      ],
+      "source": "src/lib/journey-content.ts"
+    }
+  ]
+}

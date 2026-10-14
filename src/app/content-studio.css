@@ -1,0 +1,244 @@
+.content-studio {
+  color: var(--text);
+}
+.studio-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 15px 0 28px;
+}
+.studio-heading h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  max-width: 680px;
+  margin: 12px 0;
+}
+.studio-heading a {
+  color: var(--primary);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.studio-principle {
+  display: flex;
+  gap: 16px;
+  padding: 18px 22px;
+  background: var(--mint);
+  border-radius: 14px;
+  align-items: center;
+}
+.studio-principle svg {
+  flex-shrink: 0;
+  color: var(--primary);
+}
+.studio-principle p {
+  margin: 0;
+}
+.studio-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.studio-main {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+.studio-main h2 {
+  margin-bottom: 16px;
+}
+.studio-main h3 {
+  margin: 16px 0 8px;
+}
+.studio-main label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+  margin: 18px 0;
+}
+.studio-main textarea {
+  min-height: 110px;
+  width: 100%;
+  resize: vertical;
+}
+.studio-main .studio-json {
+  min-height: 280px;
+  font-family: monospace;
+  font-size: 12px;
+}
+.studio-file input {
+  min-width: 0;
+  width: 100%;
+  font-size: 14px;
+}
+.studio-queue {
+  position: sticky;
+  top: 24px;
+}
+.studio-queue h2 {
+  margin-bottom: 20px;
+}
+.studio-queue ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.studio-queue li {
+  margin: 8px 0;
+}
+.studio-queue li button {
+  text-align: left;
+  width: 100%;
+  min-height: 70px;
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+}
+.studio-queue li button[aria-pressed="true"] {
+  background: var(--lavender);
+  border-color: var(--primary);
+}
+.studio-queue small {
+  color: var(--muted);
+}
+.studio-version {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.studio-message {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  min-height: 24px;
+  margin: 20px 0;
+  color: var(--primary);
+}
+.studio-hash {
+  overflow-wrap: anywhere;
+}
+.studio-diff {
+  overflow-wrap: anywhere;
+  padding-left: 18px;
+}
+.studio-source {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 420px;
+  overflow: auto;
+  padding: 20px;
+  background: var(--bg);
+  font-size: 12px;
+  border-radius: 10px;
+}
+.studio-main details {
+  margin-top: 20px;
+}
+.studio-main summary {
+  cursor: pointer;
+  font-weight: 700;
+  min-height: 44px;
+  display: list-item;
+  padding: 10px 0;
+}
+.studio-vocabulary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.studio-vocabulary article {
+  display: grid;
+  gap: 5px;
+  background: var(--bg);
+  padding: 16px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+.studio-vocabulary p {
+  margin: 5px 0;
+}
+.studio-dialogue article,
+.studio-exercise {
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
+}
+.studio-dialogue p {
+  margin: 7px 0;
+}
+.studio-dialogue audio,
+.studio-exercise audio {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 12px;
+}
+.studio-gates {
+  margin: 20px 0;
+}
+.studio-gates article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
+}
+.studio-gates h3 {
+  text-transform: capitalize;
+  margin: 0 0 8px;
+}
+.studio-gates p {
+  margin: 5px 0;
+  overflow-wrap: anywhere;
+}
+.studio-release {
+  border-left: 4px solid var(--primary);
+}
+.studio-main .studio-confirm {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-weight: 500;
+}
+.studio-confirm input {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  accent-color: var(--primary);
+  flex-shrink: 0;
+}
+.content-studio .button {
+  min-height: 44px;
+}
+@media (max-width: 850px) {
+  .studio-layout {
+    grid-template-columns: 1fr;
+  }
+  .studio-queue {
+    position: static;
+  }
+  .studio-heading {
+    flex-direction: column;
+  }
+  .studio-gates article {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 420px) {
+  .studio-vocabulary {
+    grid-template-columns: 1fr;
+  }
+  .studio-main .panel,
+  .studio-queue {
+    padding: 18px;
+  }
+  .studio-gates .button-row {
+    flex-wrap: wrap;
+  }
+}

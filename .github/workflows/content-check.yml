@@ -1,0 +1,48 @@
+name: Content validation
+on:
+  pull_request:
+    paths:
+      [
+        "content/**",
+        "scripts/content/**",
+        "src/lib/content-pipeline/**",
+        "src/db/**",
+        "drizzle/neon/**",
+        "tests/unit/content-*",
+        "tests/fixtures/content-*",
+        ".github/workflows/content-*.yml",
+        "package*.json",
+      ]
+  push:
+    branches: [main]
+    paths:
+      [
+        "content/**",
+        "scripts/content/**",
+        "src/lib/content-pipeline/**",
+        "src/db/**",
+        "drizzle/neon/**",
+        "tests/unit/content-*",
+        "tests/fixtures/content-*",
+        ".github/workflows/content-*.yml",
+        "package*.json",
+      ]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run content:validate
+      - run: npm run content:test
+      - run: npm run content:qa-report
+      - uses: actions/upload-artifact@v4
+        with:
+          name: content-qa-report
+          path: artifacts/content/qa-report.json
