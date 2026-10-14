@@ -9,6 +9,7 @@ import {
   primaryKey,
   uniqueIndex,
   index,
+  unique,
   check,
   foreignKey,
 } from "drizzle-orm/pg-core";
@@ -27,11 +28,57 @@ export {
 } from "./exams-schema";
 import type { PublicCard, SharedContent } from "@/lib/social-model";
 import type { LearningState } from "@/lib/learning";
+import type { SignatureDrawing } from "@/lib/community-model";
 import type { LessonPack, ReviewCategory } from "@/lib/content-pipeline/model";
 // Reference Neon's existing user table; its schema is managed by Neon, not our migrations.
 const neonUsers = pgSchema("neon_auth").table("user", {
   id: uuid("id").primaryKey(),
 });
+export const sentencePosts = pgTable(
+  "sentence_posts",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    authorId: uuid("author_id")
+      .notNull()
+      .references(() => neonUsers.id, { onDelete: "cascade" }),
+    german: text("german").notNull(),
+    signature: text("signature").notNull().default(""),
+    signatureStyle: text("signature_style").notNull().default("written"),
+    signatureDrawing: jsonb("signature_drawing").$type<SignatureDrawing>(),
+    revision: integer("revision").notNull().default(0),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (table) => [
+    unique("sentence_posts_author_sentence").on(table.authorId, table.german),
+    index("sentence_posts_feed").on(table.createdAt, table.id),
+    check(
+      "sentence_posts_text_length",
+      sql`length(trim(${table.german})) between 1 and 500`,
+    ),
+    check(
+      "sentence_posts_signature_length",
+      sql`length(${table.signature})<=60`,
+    ),
+    check(
+      "sentence_posts_signature_style",
+      sql`${table.signatureStyle} in ('drawn','written','clean')`,
+    ),
+    check(
+      "sentence_posts_drawing_shape",
+      sql`${table.signatureDrawing} is null or jsonb_typeof(${table.signatureDrawing})='object'`,
+    ),
+    check(
+      "sentence_posts_drawing_style",
+      sql`(${table.signatureStyle}='drawn')=(${table.signatureDrawing} is not null)`,
+    ),
+    check("sentence_posts_revision", sql`${table.revision}>=0`),
+  ],
+);
 export const learningStates = pgTable("neon_learning_states", {
   userId: uuid("user_id")
     .primaryKey()
