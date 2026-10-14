@@ -4,14 +4,21 @@ import Link from "next/link";
 import type { LessonPack } from "@/lib/content-pipeline/model";
 import { Button } from "./ui/button";
 import { ContentSourceCredits } from "./content-source-credits";
-export function PublishedLesson({ pack }: { pack: LessonPack }) {
+export function PublishedLesson({
+  pack,
+  preview = false,
+}: {
+  pack: LessonPack;
+  preview?: boolean;
+}) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   return (
     <div className="content-studio">
       <header className="studio-heading">
         <div>
           <span className="eyebrow">
-            {pack.courseSubdivision} · REVIEWED VERSION {pack.version}
+            {pack.courseSubdivision} ·{" "}
+            {preview ? "UNREVIEWED DRAFT" : "REVIEWED VERSION"} {pack.version}
           </span>
           <h1>{pack.title.en}</h1>
           <p lang="de">{pack.title.de}</p>
@@ -19,9 +26,21 @@ export function PublishedLesson({ pack }: { pack: LessonPack }) {
             {pack.title.ar}
           </p>
         </div>
-        <Link href="/courses">All reviewed lessons →</Link>
+        <Link href={preview ? "/admin/content/coverage" : "/courses"}>
+          {preview ? "Back to coverage" : "All reviewed lessons"} →
+        </Link>
       </header>
       <div className="studio-main">
+        {preview && (
+          <section className="factory-warning">
+            <strong>Editorial preview</strong>
+            <p>
+              This draft is not published or approved. Missing recordings stay
+              unavailable. Practice here stays in this tab and creates no
+              learner progress or review evidence.
+            </p>
+          </section>
+        )}
         <section className="panel">
           <h2>Your goal today</h2>
           <ul>
@@ -62,12 +81,22 @@ export function PublishedLesson({ pack }: { pack: LessonPack }) {
                   <p lang="ar" dir="rtl">
                     {line.text.ar}
                   </p>
-                  <audio
-                    controls
-                    preload="none"
-                    src={`/api/catalog/audio?lesson=${pack.id}&line=${line.id}`}
-                    aria-label={`German recording: ${line.text.de}`}
-                  />
+                  {line.audioKey ? (
+                    <audio
+                      controls
+                      preload="none"
+                      src={
+                        preview
+                          ? `/api/admin/content/audio?lesson=${pack.id}&version=${pack.version}&line=${line.id}`
+                          : `/api/catalog/audio?lesson=${pack.id}&line=${line.id}`
+                      }
+                      aria-label={`German recording: ${line.text.de}`}
+                    />
+                  ) : (
+                    <p className="muted small">
+                      Recording not available in this draft.
+                    </p>
+                  )}
                 </article>
               ))}
             </div>
@@ -100,15 +129,27 @@ export function PublishedLesson({ pack }: { pack: LessonPack }) {
               <p lang="ar" dir="rtl">
                 {item.prompt.ar}
               </p>
-              {item.audioLineIds.map((lineId) => (
-                <audio
-                  key={lineId}
-                  controls
-                  preload="none"
-                  src={`/api/catalog/audio?lesson=${pack.id}&line=${lineId}`}
-                  aria-label="Exercise recording"
-                />
-              ))}
+              {item.audioLineIds.map((lineId) =>
+                pack.dialogues
+                  .flatMap((d) => d.lines)
+                  .find((l) => l.id === lineId)?.audioKey ? (
+                  <audio
+                    key={lineId}
+                    controls
+                    preload="none"
+                    src={
+                      preview
+                        ? `/api/admin/content/audio?lesson=${pack.id}&version=${pack.version}&line=${lineId}`
+                        : `/api/catalog/audio?lesson=${pack.id}&line=${lineId}`
+                    }
+                    aria-label="Exercise recording"
+                  />
+                ) : (
+                  <p key={lineId} className="muted small">
+                    Exercise recording is pending.
+                  </p>
+                ),
+              )}
               {item.type === "multiple_choice" ? (
                 <>
                   <div className="button-row">

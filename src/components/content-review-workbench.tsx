@@ -139,7 +139,11 @@ export function ContentReviewWorkbench({
           <h1>Good German starts with careful review.</h1>
           <p>Original lessons. Named reviewers. Every recording checked.</p>
         </div>
-        <Link href="/courses">View published courses →</Link>
+        <div>
+          <Link href="/admin/content/coverage">Curriculum coverage →</Link>
+          <br />
+          <Link href="/courses">View published courses →</Link>
+        </div>
       </header>
       <div className="studio-principle">
         <ShieldCheck size={22} aria-hidden="true" />
