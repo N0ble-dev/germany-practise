@@ -13,6 +13,18 @@ import {
   foreignKey,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
+export {
+  examDefinitionsTable,
+  examPaperVersions,
+  examTaskVersions,
+  examMediaAssets,
+  examReviewSignoffs,
+  examAttempts,
+  examResponses,
+  examFeedback,
+  examGoals,
+  examPublicationEvents,
+} from "./exams-schema";
 import type { PublicCard, SharedContent } from "@/lib/social-model";
 import type { LearningState } from "@/lib/learning";
 import type { LessonPack, ReviewCategory } from "@/lib/content-pipeline/model";

@@ -1,0 +1,41 @@
+name: Publish reviewed exam practice
+on:
+  workflow_dispatch:
+    inputs:
+      exam_file:
+        description: Committed versioned JSON in content/exams
+        required: true
+        type: string
+      content_hash:
+        description: Exact SHA-256 of the complete reviewed exam pack
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: exam-production-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: exam-production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run exams:validate
+      - run: npm run exams:test
+      - name: Promote the exact approved version
+        env:
+          EXAM_FILE: ${{ inputs.exam_file }}
+          APPROVED_HASH: ${{ inputs.content_hash }}
+          CONTENT_REVIEW_DATABASE_URL: ${{ secrets.CONTENT_REVIEW_DATABASE_URL }}
+          CONTENT_PUBLICATION_DATABASE_URL: ${{ secrets.CONTENT_PUBLICATION_DATABASE_URL }}
+          CONTENT_PUBLISHER_ID: ${{ secrets.CONTENT_PUBLISHER_ID }}
+          CONTENT_AUDIO_BASE_URL: ${{ vars.CONTENT_AUDIO_BASE_URL }}
+          EXAM_PUBLICATION_APPROVED: "true"
+        run: npm run exams:promote -- "$EXAM_FILE" "$APPROVED_HASH"

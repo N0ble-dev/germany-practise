@@ -29,6 +29,13 @@
       "when": 1791926836223,
       "tag": "0003_yielding_eternity",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791933913955,
+      "tag": "0004_lean_cassandra_nova",
+      "breakpoints": true
     }
   ]
 }

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Mic, Square, Download } from "lucide-react";
+import { Mic, Square, Download, Trash2 } from "lucide-react";
 import { Button } from "../ui/button";
 export function VoiceRecorder({ seconds = 30 }: { seconds?: number }) {
   const [recording, setRecording] = useState(false);
@@ -110,6 +110,18 @@ export function VoiceRecorder({ seconds = 30 }: { seconds?: number }) {
               <Download size={16} />
               Keep this recording
             </a>
+          </Button>
+        )}
+        {url && !recording && (
+          <Button
+            variant="ghost"
+            onClick={() => {
+              if (audioUrl.current) URL.revokeObjectURL(audioUrl.current);
+              audioUrl.current = "";
+              setUrl("");
+            }}
+          >
+            <Trash2 size={16} aria-hidden="true" /> Discard recording
           </Button>
         )}
       </div>

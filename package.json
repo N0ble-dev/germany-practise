@@ -26,7 +26,11 @@
     "content:test": "vitest run tests/unit/content-pipeline.test.ts tests/unit/content-repository.test.ts tests/unit/content-resources.test.ts",
     "content:promote": "node --experimental-strip-types scripts/content/promote.ts",
     "content:fetch-zum": "node --experimental-strip-types scripts/content/fetch-zum.ts",
-    "content:check-links": "node --experimental-strip-types scripts/content/check-resource-links.ts"
+    "content:check-links": "node --experimental-strip-types scripts/content/check-resource-links.ts",
+    "exams:validate": "node --experimental-strip-types scripts/exams/validate.ts",
+    "exams:import": "node --experimental-strip-types scripts/exams/import.ts",
+    "exams:promote": "node --experimental-strip-types scripts/exams/promote.ts",
+    "exams:test": "vitest run --maxWorkers=2 tests/unit/exams.test.ts tests/unit/exam-repository.test.ts"
   },
   "dependencies": {
     "@fontsource-variable/nunito-sans": "5.3.0",

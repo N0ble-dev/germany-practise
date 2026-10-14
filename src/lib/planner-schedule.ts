@@ -3,7 +3,15 @@ import { studySessionSchema, type StudySession } from "./planner-model";
 
 export type SessionDraft = Pick<
   StudySession,
-  "title" | "duration" | "timeZone" | "kind" | "lesson" | "note" | "reminder"
+  | "title"
+  | "duration"
+  | "timeZone"
+  | "kind"
+  | "lesson"
+  | "note"
+  | "reminder"
+  | "examCode"
+  | "examSkill"
 > & {
   date: string;
   time: string;

@@ -1,0 +1,53 @@
+name: Exam validation
+on:
+  pull_request:
+    paths:
+      [
+        "content/exams/**",
+        "scripts/exams/**",
+        "src/lib/exams/**",
+        "src/components/exams/**",
+        "src/app/exams/**",
+        "src/app/api/exams/**",
+        "src/app/api/admin/exams/**",
+        "src/db/**",
+        "drizzle/neon/**",
+        "tests/unit/exam*",
+        ".github/workflows/exam-*.yml",
+        "package*.json",
+      ]
+  push:
+    branches: [main]
+    paths:
+      [
+        "content/exams/**",
+        "scripts/exams/**",
+        "src/lib/exams/**",
+        "src/components/exams/**",
+        "src/app/exams/**",
+        "src/app/api/exams/**",
+        "src/app/api/admin/exams/**",
+        "src/db/**",
+        "drizzle/neon/**",
+        "tests/unit/exam*",
+        ".github/workflows/exam-*.yml",
+        "package*.json",
+      ]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run exams:validate
+      - run: npm run exams:test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exam-draft-validation
+          path: artifacts/exams/draft-validation.json

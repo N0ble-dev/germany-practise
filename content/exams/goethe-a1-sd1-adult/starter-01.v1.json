@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "id": "a1-starter-01",
+  "version": 1,
+  "examCode": "goethe-a1-sd1-adult",
+  "title": "Everyday beginnings · A1 starter practice",
+  "definitionRevision": "2026-10-14-reference-v1",
+  "kind": "drill",
+  "status": "draft",
+  "creator": "Deutsch Journey · original editorial draft",
+  "rights": {
+    "provenance": "original",
+    "license": "Deutsch Journey original text; human rights review pending",
+    "licenseCode": "DJ-ORIGINAL",
+    "sourceUrl": null,
+    "licenseUrl": null,
+    "authors": [
+      "Deutsch Journey original editorial draft"
+    ],
+    "modified": false,
+    "scope": "commercial_saas",
+    "evidence": "Original text authored for this project. No Goethe questions, cards, recordings or distinctive model-paper passages are imported. No recorded audio is included.",
+    "verified": false
+  },
+  "blueprint": {
+    "revision": "a1-starter-demo-v1",
+    "complete": false,
+    "sectionCounts": {
+      "listening": 3,
+      "reading": 3,
+      "writing": 2,
+      "speaking": 3
+    },
+    "notes": "Short, original coach-format demonstrations. Not a full mock. Teacher review, translation review and owned recorded audio are required before scored publication. Browser speech is only a control demonstration."
+  },
+  "media": [],
+  "tasks": [
+    {
+      "id": "class-time",
+      "skill": "listening",
+      "title": {
+        "de": "Ein Kurs beginnt",
+        "en": "A class is starting",
+        "ar": "موعد بداية الدورة"
+      },
+      "instructions": {
+        "de": "Wann beginnt der Kurs heute?",
+        "en": "Choose the starting time you hear.",
+        "ar": "اختر وقت بداية الدورة الذي تسمعه."
+      },
+      "objective": "time_numbers",
+      "lesson": 8,
+      "weight": 1,
+      "type": "choice",
+      "passage": "Hallo, hier ist das Sprachzentrum. Unser Kurs beginnt heute nicht um siebzehn Uhr, sondern um siebzehn Uhr fünfundvierzig. Bitte kommen Sie fünf Minuten früher.",
+      "options": [
+        {
+          "id": "option-1",
+          "text": "17:00 Uhr"
+        },
+        {
+          "id": "option-2",
+          "text": "17:45 Uhr"
+        },
+        {
+          "id": "option-3",
+          "text": "18:15 Uhr"
+        }
+      ],
+      "correct": "option-2",
+      "explanation": {
+        "de": "Die erste Uhrzeit wird korrigiert: Der Kurs beginnt um 17:45 Uhr.",
+        "en": "The speaker corrects the first time. The class begins at 17:45, not 17:00.",
+        "ar": "يصحح المتحدث الموعد الأول: تبدأ الدورة الساعة 17:45 وليس 17:00."
+      },
+      "evidence": "siebzehn Uhr fünfundvierzig",
+      "audioId": null
+    },
+    {
+      "id": "cafe-drinks",
+      "skill": "listening",
+      "title": {
+        "de": "Im kleinen Café",
+        "en": "At a small café",
+        "ar": "في مقهى صغير"
+      },
+      "instructions": {
+        "de": "Was gibt es heute nicht?",
+        "en": "Which drink is unavailable today?",
+        "ar": "أي مشروب غير متاح اليوم؟"
+      },
+      "objective": "negation",
+      "lesson": 9,
+      "weight": 1,
+      "type": "choice",
+      "passage": "Guten Tag! Wir haben heute keinen Apfelsaft. Sie können aber Wasser oder Tee bestellen.",
+      "options": [
+        {
+          "id": "option-1",
+          "text": "Wasser"
+        },
+        {
+          "id": "option-2",
+          "text": "Tee"
+        },
+        {
+          "id": "option-3",
+          "text": "Apfelsaft"
+        }
+      ],
+      "correct": "option-3",
+      "explanation": {
+        "de": "Keinen Apfelsaft bedeutet: Apfelsaft ist heute nicht verfügbar.",
+        "en": "Keinen signals what is unavailable. Water and tea can still be ordered.",
+        "ar": "كلمة keinen تحدد المشروب غير المتاح. يمكن طلب الماء والشاي."
+      },
+      "evidence": "keinen Apfelsaft",
+      "audioId": null
+    },
+    {
+      "id": "station-platform",
+      "skill": "listening",
+      "title": {
+        "de": "Am Bahnhof",
+        "en": "At the station",
+        "ar": "في محطة القطار"
+      },
+      "instructions": {
+        "de": "Wo fährt der Zug heute ab?",
+        "en": "Choose today's platform.",
+        "ar": "اختر رصيف القطار اليوم."
+      },
+      "objective": "everyday_details",
+      "lesson": 10,
+      "weight": 1,
+      "type": "choice",
+      "passage": "Achtung, eine Änderung: Der Zug nach Bremen fährt heute von Gleis vier ab. Gleis zwei ist geschlossen.",
+      "options": [
+        {
+          "id": "option-1",
+          "text": "Gleis zwei"
+        },
+        {
+          "id": "option-2",
+          "text": "Gleis vier"
+        },
+        {
+          "id": "option-3",
+          "text": "Gleis sechs"
+        }
+      ],
+      "correct": "option-2",
+      "explanation": {
+        "de": "Der Zug fährt heute von Gleis vier ab.",
+        "en": "The announcement names platform four; platform two is closed.",
+        "ar": "الإعلان يذكر الرصيف الرابع، أما الرصيف الثاني فمغلق."
+      },
+      "evidence": "Gleis vier",
+      "audioId": null
+    },
+    {
+      "id": "library-hours",
+      "skill": "reading",
+      "title": {
+        "de": "Eine Nachricht an der Tür",
+        "en": "A notice on the door",
+        "ar": "إعلان على الباب"
+      },
+      "instructions": {
+        "de": "Die Bibliothek ist am Samstag um 15 Uhr geöffnet. Richtig oder falsch?",
+        "en": "Is the library open on Saturday at 15:00?",
+        "ar": "هل المكتبة مفتوحة يوم السبت الساعة 15:00؟"
+      },
+      "objective": "time_numbers",
+      "lesson": 8,
+      "weight": 1,
+      "type": "choice",
+      "passage": "Stadtbibliothek: Montag bis Freitag 9–18 Uhr. Samstag 10–14 Uhr. Sonntag geschlossen.",
+      "options": [
+        {
+          "id": "option-1",
+          "text": "Richtig"
+        },
+        {
+          "id": "option-2",
+          "text": "Falsch"
+        }
+      ],
+      "correct": "option-2",
+      "explanation": {
+        "de": "Am Samstag schließt die Bibliothek um 14 Uhr.",
+        "en": "Saturday opening ends at 14:00, so it is closed at 15:00.",
+        "ar": "ينتهي وقت العمل يوم السبت الساعة 14:00، لذلك تكون مغلقة الساعة 15:00."
+      },
+      "evidence": "Samstag 10–14 Uhr",
+      "audioId": null
+    },
+    {
+      "id": "meeting-change",
+      "skill": "reading",
+      "title": {
+        "de": "Eine kurze Nachricht",
+        "en": "A short message",
+        "ar": "رسالة قصيرة"
+      },
+      "instructions": {
+        "de": "Wo treffen sich die Freunde?",
+        "en": "Where will the friends meet?",
+        "ar": "أين سيلتقي الأصدقاء؟"
+      },
+      "objective": "everyday_details",
+      "lesson": 8,
+      "weight": 1,
+      "type": "choice",
+      "passage": "Hallo Rami, es regnet. Wir treffen uns heute nicht im Park. Komm bitte um 16 Uhr ins Café am Markt. Bis später! Lea",
+      "options": [
+        {
+          "id": "option-1",
+          "text": "Im Park"
+        },
+        {
+          "id": "option-2",
+          "text": "Im Café am Markt"
+        },
+        {
+          "id": "option-3",
+          "text": "Am Bahnhof"
+        }
+      ],
+      "correct": "option-2",
+      "explanation": {
+        "de": "Lea schreibt: Komm ... ins Café am Markt.",
+        "en": "The plan changes because of rain. They will meet at the café, not the park.",
+        "ar": "تغيرت الخطة بسبب المطر. سيلتقيان في المقهى وليس الحديقة."
+      },
+      "evidence": "ins Café am Markt",
+      "audioId": null
+    },
+    {
+      "id": "shop-payment",
+      "skill": "reading",
+      "title": {
+        "de": "Ein Hinweis im Geschäft",
+        "en": "A shop notice",
+        "ar": "إعلان في متجر"
+      },
+      "instructions": {
+        "de": "Man kann hier heute mit Karte bezahlen. Richtig oder falsch?",
+        "en": "Can customers pay by card today?",
+        "ar": "هل يمكن الدفع بالبطاقة اليوم؟"
+      },
+      "objective": "negation",
+      "lesson": 6,
+      "weight": 1,
+      "type": "choice",
+      "passage": "Liebe Kunden, unser Kartengerät funktioniert heute nicht. Bitte bezahlen Sie bar. Vielen Dank!",
+      "options": [
+        {
+          "id": "option-1",
+          "text": "Richtig"
+        },
+        {
+          "id": "option-2",
+          "text": "Falsch"
+        }
+      ],
+      "correct": "option-2",
+      "explanation": {
+        "de": "Das Kartengerät funktioniert nicht. Man muss bar bezahlen.",
+        "en": "The notice says the card machine is not working, so customers should pay cash.",
+        "ar": "جهاز الدفع بالبطاقة لا يعمل، لذلك يطلب المتجر الدفع نقداً."
+      },
+      "evidence": "Bitte bezahlen Sie bar",
+      "audioId": null
+    },
+    {
+      "id": "course-form",
+      "skill": "writing",
+      "title": {
+        "de": "Ein Formular ausfüllen",
+        "en": "Complete a simple form",
+        "ar": "ملء استمارة بسيطة"
+      },
+      "instructions": {
+        "de": "Melden Sie sich für einen Sprachkurs an. Schreiben Sie passende Angaben in das Formular. Sie können erfundene Angaben benutzen.",
+        "en": "Complete a language-course form. You may use invented details; do not enter sensitive identification data.",
+        "ar": "املأ استمارة دورة لغة. يمكنك استخدام بيانات خيالية؛ لا تدخل بيانات هوية حساسة."
+      },
+      "objective": "personal_information",
+      "lesson": 1,
+      "weight": 1,
+      "type": "writing",
+      "formFields": [
+        {
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "id": "city",
+          "label": "Wohnort"
+        },
+        {
+          "id": "language",
+          "label": "Muttersprache"
+        },
+        {
+          "id": "course",
+          "label": "Gewünschter Kurs"
+        },
+        {
+          "id": "day",
+          "label": "Gewünschter Kurstag"
+        }
+      ],
+      "contentPoints": [
+        {
+          "de": "Alle fünf Felder ausfüllen.",
+          "en": "Complete all five fields.",
+          "ar": "املأ الحقول الخمسة."
+        },
+        {
+          "de": "Angaben verständlich schreiben.",
+          "en": "Make each detail understandable.",
+          "ar": "اكتب البيانات بوضوح."
+        }
+      ],
+      "targetWords": 30
+    },
+    {
+      "id": "message-course",
+      "skill": "writing",
+      "title": {
+        "de": "Eine kurze Nachricht schreiben",
+        "en": "Write a short message",
+        "ar": "كتابة رسالة قصيرة"
+      },
+      "instructions": {
+        "de": "Sie können am Dienstag nicht zum Sprachkurs kommen. Schreiben Sie Ihrer Lehrerin Frau Weber eine kurze Nachricht: Warum kommen Sie nicht? Fragen Sie nach den Hausaufgaben. Sagen Sie, wann Sie wieder kommen. Schreiben Sie ungefähr 30 Wörter.",
+        "en": "Write to your teacher: explain why you cannot come on Tuesday, ask for homework, and say when you will return. Aim for about 30 words.",
+        "ar": "اكتب لمعلمتك: لماذا لن تحضر يوم الثلاثاء؟ اسأل عن الواجب واذكر موعد عودتك. حاول كتابة نحو 30 كلمة."
+      },
+      "objective": "message_points",
+      "lesson": 8,
+      "weight": 1,
+      "type": "writing",
+      "formFields": [],
+      "contentPoints": [
+        {
+          "de": "Grund für Ihre Abwesenheit.",
+          "en": "A reason for your absence.",
+          "ar": "سبب الغياب."
+        },
+        {
+          "de": "Eine Frage nach den Hausaufgaben.",
+          "en": "A question about homework.",
+          "ar": "سؤال عن الواجب."
+        },
+        {
+          "de": "Wann Sie wieder kommen.",
+          "en": "When you will return.",
+          "ar": "موعد عودتك."
+        }
+      ],
+      "targetWords": 30
+    },
+    {
+      "id": "oral-introduction",
+      "skill": "speaking",
+      "title": {
+        "de": "Teil 1: Sich vorstellen",
+        "en": "Part 1: Introduce yourself",
+        "ar": "الجزء الأول: قدم نفسك"
+      },
+      "instructions": {
+        "de": "Stellen Sie sich kurz vor. Buchstabieren Sie dann Ihren Vornamen und nennen Sie eine Telefonnummer mit erfundenen Ziffern.",
+        "en": "Introduce yourself, spell your first name, and practise a telephone number using invented digits.",
+        "ar": "قدم نفسك، وتهجّ اسمك الأول، وتدرب على رقم هاتف بأرقام خيالية."
+      },
+      "objective": "personal_information",
+      "lesson": 1,
+      "weight": 1,
+      "type": "speaking",
+      "part": 1,
+      "card": "Name · Alter · Land · Wohnort · Sprachen · Beruf · Hobby",
+      "contentPoints": [
+        {
+          "de": "Persönliche Informationen nennen.",
+          "en": "Give a few personal details.",
+          "ar": "اذكر بعض المعلومات الشخصية."
+        },
+        {
+          "de": "Den Vornamen buchstabieren.",
+          "en": "Spell your first name.",
+          "ar": "تهجّ اسمك الأول."
+        },
+        {
+          "de": "Zahlen klar sagen.",
+          "en": "Say the digits clearly.",
+          "ar": "انطق الأرقام بوضوح."
+        }
+      ]
+    },
+    {
+      "id": "oral-information",
+      "skill": "speaking",
+      "title": {
+        "de": "Teil 2: Fragen und antworten",
+        "en": "Part 2: Ask and answer",
+        "ar": "الجزء الثاني: اسأل وأجب"
+      },
+      "instructions": {
+        "de": "Thema: Freizeit. Fragen Sie eine andere Person, wann sie Musik hört. Antworten Sie danach auf die Frage: Was machen Sie am Wochenende gern?",
+        "en": "Ask a partner when they listen to music. Then answer a question about what you enjoy at the weekend.",
+        "ar": "اسأل شريكاً متى يستمع إلى الموسيقى، ثم أجب عن سؤال حول ما تحب فعله في عطلة الأسبوع."
+      },
+      "objective": "questions",
+      "lesson": 7,
+      "weight": 1,
+      "type": "speaking",
+      "part": 2,
+      "card": "Freizeit · Musik",
+      "contentPoints": [
+        {
+          "de": "Eine passende Frage stellen.",
+          "en": "Ask a suitable question.",
+          "ar": "اطرح سؤالاً مناسباً."
+        },
+        {
+          "de": "Mit einer verständlichen Antwort reagieren.",
+          "en": "Give an understandable answer.",
+          "ar": "قدم إجابة مفهومة."
+        }
+      ]
+    },
+    {
+      "id": "oral-request",
+      "skill": "speaking",
+      "title": {
+        "de": "Teil 3: Um etwas bitten",
+        "en": "Part 3: Make a request",
+        "ar": "الجزء الثالث: قدم طلباً"
+      },
+      "instructions": {
+        "de": "Im Kurs fehlt Ihnen ein Radiergummi. Bitten Sie eine andere Person höflich darum. Reagieren Sie danach auf eine Bitte um Hilfe.",
+        "en": "You need an eraser in class. Make a polite request, then respond to a request for help.",
+        "ar": "تحتاج إلى ممحاة في الصف. اطلبها بأدب، ثم استجب لطلب مساعدة."
+      },
+      "objective": "polite_requests",
+      "lesson": 5,
+      "weight": 1,
+      "type": "speaking",
+      "part": 3,
+      "card": "Im Kurs · Radiergummi",
+      "contentPoints": [
+        {
+          "de": "Eine höfliche Bitte formulieren.",
+          "en": "Make a polite request.",
+          "ar": "قدم طلباً مهذباً."
+        },
+        {
+          "de": "Auf die Bitte der anderen Person reagieren.",
+          "en": "Respond to the other person's request.",
+          "ar": "استجب لطلب الشخص الآخر."
+        }
+      ]
+    }
+  ]
+}

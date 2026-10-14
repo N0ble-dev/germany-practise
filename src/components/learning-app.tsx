@@ -34,6 +34,7 @@ import {
   Compass,
   CalendarDays,
   Users,
+  GraduationCap,
 } from "lucide-react";
 import { useLearning, updateState, activateLearningAccount } from "@/lib/store";
 import { authClient } from "@/lib/auth-client";
@@ -81,6 +82,7 @@ const navigation = [
       { href: "/speaking", label: "Speaking", icon: Mic },
       { href: "/sentences", label: "Sentence lab", icon: PencilLine },
       { href: "/games", label: "Mini games", icon: Puzzle },
+      { href: "/exams", label: "Exam Arena", icon: GraduationCap },
     ],
   },
   {
@@ -108,6 +110,7 @@ const titles: Record<string, string> = {
   "/progress": "Look how far you’ve come",
   "/profile": "Your learning preferences",
   "/space": "Your shared study space",
+  "/exams": "Prepare for your next step",
   "/signup": "Your German journey starts here",
   "/signin": "Welcome back",
 };
@@ -130,7 +133,8 @@ export function LearningApp({
     pathname.startsWith("/share/") ||
     pathname.startsWith("/admin/content") ||
     pathname.startsWith("/courses") ||
-    pathname === "/exams/resources"
+    pathname === "/exams/resources" ||
+    pathname.startsWith("/admin/exams")
   )
     return (
       <div className="public-share-shell">

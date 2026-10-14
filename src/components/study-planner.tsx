@@ -14,6 +14,7 @@ import {
   Mic,
   Plus,
   Trash2,
+  GraduationCap,
 } from "lucide-react";
 import { useApp } from "./learning-app";
 import { Button } from "./ui/button";
@@ -21,6 +22,11 @@ import { Dialog } from "./ui/dialog";
 import { StudyCalendarConnection } from "./study-calendar-connection";
 import { updateState } from "@/lib/store";
 import { lessons } from "@/lib/content";
+import {
+  examDefinitions,
+  examSkills,
+  skillLabels,
+} from "@/lib/exams/definitions";
 import {
   studyHref,
   studyKinds,
@@ -50,6 +56,7 @@ const icons = {
   listening: Headphones,
   speaking: Mic,
   grammar: BookOpen,
+  exam: GraduationCap,
 };
 function calendarDate(day: string, options: Intl.DateTimeFormatOptions) {
   return new Date(`${day}T12:00:00Z`).toLocaleDateString("en", {
@@ -92,6 +99,8 @@ function SessionForm({
     duration: initial?.duration ?? state.goal,
     kind: initial?.kind ?? "lesson",
     lesson: initial?.lesson ?? state.currentLesson,
+    examCode: initial?.examCode ?? "goethe-a1-sd1-adult",
+    examSkill: initial?.examSkill ?? "listening",
     note: initial?.note ?? "",
     reminder: initial ? initial.reminder : 10,
     repeat: "once",
@@ -201,6 +210,46 @@ function SessionForm({
           />
         </label>
       </div>
+      {draft.kind === "exam" && (
+        <div className="plan-form-row">
+          <label>
+            Target exam
+            <select
+              value={draft.examCode}
+              onChange={(event) =>
+                setDraft({
+                  ...draft,
+                  examCode: event.target.value as SessionDraft["examCode"],
+                })
+              }
+            >
+              {examDefinitions.map((definition) => (
+                <option key={definition.code} value={definition.code}>
+                  {definition.level} · adult Goethe exam
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Exam skill
+            <select
+              value={draft.examSkill}
+              onChange={(event) =>
+                setDraft({
+                  ...draft,
+                  examSkill: event.target.value as SessionDraft["examSkill"],
+                })
+              }
+            >
+              {examSkills.map((skill) => (
+                <option value={skill} key={skill}>
+                  {skillLabels[skill].de} · {skillLabels[skill].en}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+      )}
       {(draft.kind === "lesson" || draft.kind === "grammar") && (
         <label>
           Book chapter
