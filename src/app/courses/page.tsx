@@ -11,7 +11,7 @@ export default async function CoursesPage() {
       <section className="panel">
         <h1>Reviewed German courses</h1>
         <p>The course catalog could not load. Try again shortly.</p>
-        <Link href="/lessons">Continue your companion lessons</Link>
+        <Link href="/lessons">Continue your foundation course</Link>
       </section>
     );
   }
@@ -26,14 +26,15 @@ export default async function CoursesPage() {
             recording reviews.
           </p>
         </div>
-        <Link href="/lessons">Your book journey →</Link>
+        <Link href="/lessons">Your foundation course →</Link>
       </header>
       {!lessons.length ? (
         <section className="panel">
           <h2>The first reviewed lesson is being prepared.</h2>
           <p>
-            Keep practising with your original companion lessons while the new
-            course completes its review.
+            Keep practising with your A1.1 foundation course while new lessons
+            complete their review. The A1–C2 course path is being developed;
+            each lesson appears here when it is ready.
           </p>
           <Link href="/lessons">Continue practising</Link>
         </section>

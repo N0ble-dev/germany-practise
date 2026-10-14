@@ -56,7 +56,7 @@ export async function createLearnerCard(
   signal: AbortSignal,
 ) {
   const [template, photo] = await Promise.all([
-    loadCardImage("/card-front.png", signal),
+    loadCardImage("/card-front.svg", signal),
     details.accountId ? loadAccountPhoto(details.accountId, signal) : null,
     document.fonts.ready,
   ]);

@@ -68,7 +68,7 @@ test("glass shortcuts support keyboard use without WebGL", async ({ page }) => {
   });
   await page.reload();
   const desk = page.getByRole("region", { name: "Your study desk" });
-  const book = desk.getByRole("link", { name: "Book journey", exact: true });
+  const book = desk.getByRole("link", { name: "My journey", exact: true });
   await expect(book).toBeVisible();
   await expect(book.locator("span").last()).toHaveCSS("opacity", "1");
   await expect(book.locator(":scope > span").first()).toHaveCSS(

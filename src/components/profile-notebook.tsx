@@ -463,7 +463,7 @@ export function ProfileNotebook() {
         <summary>
           <span>
             <BookOpen size={20} />
-            My A1.1 book journey
+            Foundation course · A1.1
           </span>
           <span>{state.completedLessons.length}/12 completed</span>
         </summary>

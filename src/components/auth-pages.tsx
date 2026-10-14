@@ -33,7 +33,7 @@ export function AuthPage({
   return (
     <section className="welcome-layout" aria-labelledby="welcome-title">
       <div className="welcome-story">
-        <span className="eyebrow">A LITTLE GERMAN, EVERY DAY</span>
+        <span className="eyebrow">GERMAN FOR THE LIFE YOU WANT</span>
         <h1 id="welcome-title">
           {mode === "signup"
             ? "Your German journey starts here."
@@ -41,7 +41,7 @@ export function AuthPage({
         </h1>
         <p>
           {mode === "signup"
-            ? "Learn a little today. Build a life you can picture in Germany."
+            ? "For your work, your everyday life, or your next exam. Start with a little German today and build a journey that feels like you."
             : "Welcome back. Bring your words, your study plan, and your Germany dream with you."}
         </p>
         <figure className="welcome-photo">
@@ -64,7 +64,7 @@ export function AuthPage({
         <div className="welcome-benefits">
           <span>
             <BookOpen size={17} />
-            Follow your A1.1 book journey
+            Practise German for your own life
           </span>
           <span>
             <CalendarDays size={17} />

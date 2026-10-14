@@ -308,7 +308,7 @@ export function LessonJourney({ number }: { number: number }) {
   }
   return (
     <>
-      <Link className="text-link back-to-book" href="/lessons">
+      <Link className="text-link back-to-book" href="/lessons/foundation">
         <ArrowLeft size={15} />
         Back to the book journey
       </Link>

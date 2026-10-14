@@ -70,6 +70,7 @@ const navigation = [
     items: [
       { href: "/", label: "Today", icon: LayoutDashboard },
       { href: "/lessons", label: "My learning path", icon: BookOpen },
+      { href: "/courses", label: "Reviewed courses", icon: GraduationCap },
       { href: "/planner", label: "My study calendar", icon: CalendarDays },
       { href: "/vocabulary", label: "Vocabulary", icon: Library },
       { href: "/space", label: "Study together", icon: Users },
@@ -97,7 +98,7 @@ const navigation = [
   },
 ];
 const titles: Record<string, string> = {
-  "/": "Your daily companion",
+  "/": "Your German, every day",
   "/lessons": "My learning path",
   "/planner": "My study calendar",
   "/vocabulary": "My vocabulary",
@@ -307,7 +308,7 @@ function LearningWorkspace({
               <strong>
                 deutsch journey<span className="brand-dot">.</span>
               </strong>
-              <small>A little German, every day</small>
+              <small>German for the life you want</small>
             </div>
           </Link>
           <button
@@ -366,7 +367,7 @@ function LearningWorkspace({
                 <strong>{displayName}</strong>
                 <small>
                   {identity
-                    ? "Google account · A1 explorer"
+                    ? "Google account · German learner"
                     : "Guest · saved on this device"}
                 </small>
               </div>

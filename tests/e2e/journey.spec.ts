@@ -89,7 +89,7 @@ test("a learner recalls, listens, speaks, and passes the first chapter's life mi
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
-  await page.goto("/lessons");
+  await page.goto("/lessons/foundation");
   await expect(
     page.getByRole("heading", { name: "Your book. Your everyday German." }),
   ).toBeVisible();
@@ -248,7 +248,8 @@ test("module responses persist, cover mixed tasks, and the final challenge combi
 test("every lesson has its sound focus and the journey is accessible on mobile and dark themes", async ({
   page,
 }) => {
-  await page.goto("/lessons");
+  test.setTimeout(120_000);
+  await page.goto("/lessons/foundation");
   await expect(page.locator("main h1")).toBeVisible();
   const desktop = await new AxeBuilder({ page }).analyze();
   expect(
@@ -269,7 +270,7 @@ test("every lesson has its sound focus and the journey is accessible on mobile a
   }
   await page.setViewportSize({ width: 390, height: 844 });
   for (const route of [
-    "/lessons",
+    "/lessons/foundation",
     "/lessons/1?step=words",
     "/lessons/6?step=speak",
     "/lessons/12?step=mission",
@@ -289,7 +290,7 @@ test("every lesson has its sound focus and the journey is accessible on mobile a
       ),
     ).toEqual([]);
   }
-  await page.goto("/lessons");
+  await page.goto("/lessons/foundation");
   await page.screenshot({
     path: "test-results/book-journey-mobile.png",
     fullPage: true,

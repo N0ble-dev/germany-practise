@@ -20,6 +20,7 @@ import { GermanyMotivation } from "./germany-motivation";
 import { UpcomingStudy } from "./upcoming-study";
 import { StudyShortcuts } from "./study-shortcuts";
 import { PersonalLifeTodayCard } from "./personal-life-support";
+import { JourneyTodayCard } from "./german-journey";
 import { Button } from "./ui/button";
 import {
   dailyActivities,
@@ -167,6 +168,7 @@ export function Dashboard() {
             </div>
           </section>
           <PersonalLifeTodayCard />
+          <JourneyTodayCard />
           <section className="continue-section">
             <div className="section-heading">
               <h2>Pick up where you are</h2>
@@ -184,7 +186,7 @@ export function Dashboard() {
               </div>
               <div className="lesson-preview-copy">
                 <span className="muted small">
-                  Menschen companion · Lesson {state.currentLesson}
+                  Foundation course · Lesson {state.currentLesson}
                 </span>
                 <h3 lang="de">{lesson.title}</h3>
                 <p>{lesson.translation}</p>

@@ -24,7 +24,7 @@ const shortcuts = [
   {
     icon: Book02Icon,
     color: "purple",
-    label: "Book journey",
+    label: "My journey",
     href: "/lessons",
   },
   { icon: Note01Icon, color: "blue", label: "Words", href: "/vocabulary" },

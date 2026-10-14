@@ -18,6 +18,7 @@ import { Button } from "../ui/button";
 import { useApp } from "../learning-app";
 import { examFetch } from "./exam-studio";
 import type { ExamGoal } from "@/lib/exams/model";
+import type { JourneyLevel } from "@/lib/german-journey";
 import {
   examDefinitions,
   examDisclaimer,
@@ -54,12 +55,14 @@ const strategies = {
     "Rehearse with a partner and ask a proficient speaker for feedback.",
   ],
 };
-export function ExamArena() {
+export function ExamArena({
+  initialLevel,
+}: { initialLevel?: JourneyLevel } = {}) {
   const { identity } = useApp();
-  const [level, setLevel] = useState("A1");
+  const [level, setLevel] = useState<string>(initialLevel ?? "A1");
   const [goal, setGoal] = useState<ExamGoal | null>(null);
   const [goalError, setGoalError] = useState("");
-  const chosen = useRef(false);
+  const chosen = useRef(!!initialLevel);
   const accountId = identity?.id;
   useEffect(() => {
     if (!accountId) return;
@@ -197,8 +200,8 @@ export function ExamArena() {
         <BookOpen size={19} aria-hidden="true" />
         <p>
           {level === "A1"
-            ? "Your Menschen A1.1 journey builds the foundation. A full A1 exam expects the wider A1 level, so keep learning beyond A1.1 alongside exam practice."
-            : `Your current companion course is A1.1. This guide explains ${level}; it does not mean the course covers the full ${level} syllabus.`}
+            ? "Your A1.1 foundation course is a starting point. A full A1 exam expects the wider A1 level, so keep learning beyond A1.1 alongside exam practice."
+            : `Your current foundation course is A1.1. This guide explains ${level}; it does not mean the course covers the full ${level} syllabus.`}
         </p>
       </div>
       <section aria-labelledby="arena-skills-heading">

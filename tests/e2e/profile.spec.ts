@@ -204,7 +204,7 @@ test("the profile shows collections, saves personal details and downloads a real
   await expect(
     page.getByText("My private note: ü, ä, ö and ß.", { exact: true }),
   ).toBeVisible();
-  await page.getByText("My A1.1 book journey", { exact: true }).click();
+  await page.getByText("Foundation course · A1.1", { exact: true }).click();
   await expect(
     page.getByText("Meine private Lebensaufgabe.", { exact: true }),
   ).toBeVisible();

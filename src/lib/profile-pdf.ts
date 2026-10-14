@@ -76,7 +76,7 @@ export async function createProfilePdf(
   pdf.setProperties({
     title: "Deutsch Journey · My learning notebook",
     author: report.learner,
-    subject: "My A1.1 German learning journey",
+    subject: "My personal German learning journey",
     creator: "Deutsch Journey",
   });
   pdf.setLanguage("de-DE");
@@ -131,7 +131,7 @@ export async function createProfilePdf(
   if (fonts.logo) pdf.addImage(fonts.logo, "PNG", left, 19, 13, 13);
   text("DEUTSCH JOURNEY", fonts.logo ? 36 : left, 25, 12, true);
   text("A little German, every day.", fonts.logo ? 36 : left, 31, 8.5);
-  text("MENSCHEN A1.1 · PERSONAL STUDY NOTEBOOK", left, 57, 9, true);
+  text("DEUTSCH JOURNEY · PERSONAL STUDY NOTEBOOK", left, 57, 9, true);
   text("My German", left, 77, 31, true);
   text("learning notebook.", left, 94, 31, true);
   pdf.setDrawColor(...line);

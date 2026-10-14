@@ -53,7 +53,7 @@ export function ProfileLanyard() {
     return () => controller.abort();
   }, [name, photo, accountId, words, xp]);
   const currentView = view === "3d" && reducedMotion ? "front" : view;
-  const frontImage = front || "/card-front.png";
+  const frontImage = front || "/card-front.svg";
   return (
     <figure
       className="learner-card-showcase"
@@ -62,7 +62,7 @@ export function ProfileLanyard() {
       <div className="learner-card-stage">
         <div className="learner-card-stage-label" aria-hidden="true">
           <span className="learner-card-dot" />
-          DEUTSCH JOURNEY · A1.1
+          DEUTSCH JOURNEY · MY GERMAN, MY WAY
         </div>
         <div
           className={`learner-card-still ${currentView === "3d" ? "card-fallback" : ""}`}

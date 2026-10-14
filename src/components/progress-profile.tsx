@@ -86,8 +86,8 @@ export function Progress() {
       icon: Mic,
     },
     {
-      title: "A1 explorer",
-      detail: "Complete all 12 chapters",
+      title: "Foundation explorer",
+      detail: "Complete the 12 A1.1 chapters",
       earned: masteredChapters === 12,
       icon: Award,
     },

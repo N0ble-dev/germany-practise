@@ -17,15 +17,16 @@ import "./personal-life.css";
 import "./community.css";
 import "./content-factory.css";
 import "./content-imports.css";
+import "./german-journey.css";
 export const metadata: Metadata = {
   applicationName: "Deutsch Journey",
   creator: creatorBrand.name,
   authors: [
     { name: creatorBrand.name, url: creatorBrand.website || undefined },
   ],
-  title: "Deutsch Journey · A little German, every day",
+  title: "Deutsch Journey · German for the life you want",
   description:
-    "Your personal A1.1 German learning companion. Build a steady habit with vocabulary, spaced reviews, listening, and everyday conversations.",
+    "Make German part of your life. Build a daily practice, collect useful words, study with friends, and prepare for your next exam with Deutsch Journey.",
 };
 export const viewport: Viewport = {
   width: "device-width",
