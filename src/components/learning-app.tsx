@@ -35,6 +35,7 @@ import {
   CalendarDays,
   Users,
   GraduationCap,
+  Globe2,
 } from "lucide-react";
 import { useLearning, updateState, activateLearningAccount } from "@/lib/store";
 import { authClient } from "@/lib/auth-client";
@@ -72,6 +73,7 @@ const navigation = [
       { href: "/planner", label: "My study calendar", icon: CalendarDays },
       { href: "/vocabulary", label: "Vocabulary", icon: Library },
       { href: "/space", label: "Study together", icon: Users },
+      { href: "/community", label: "Sentence gallery", icon: Globe2 },
     ],
   },
   {
@@ -134,7 +136,8 @@ export function LearningApp({
     pathname.startsWith("/admin/content") ||
     pathname.startsWith("/courses") ||
     pathname === "/exams/resources" ||
-    pathname.startsWith("/admin/exams")
+    pathname.startsWith("/admin/exams") ||
+    pathname === "/community"
   )
     return (
       <div className="public-share-shell">

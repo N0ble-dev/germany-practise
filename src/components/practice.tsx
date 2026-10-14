@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { useApp } from "./learning-app";
 import { PersonalLifeHint } from "./personal-life-support";
+import { SentenceSharingSection } from "./sentence-sharing";
 import { Button } from "./ui/button";
 import { formatWord, normalizeAnswer, sentencePatterns } from "@/lib/learning";
 import { lessons, situations } from "@/lib/content";
@@ -131,6 +132,7 @@ export function SentenceLab() {
           </div>
         )}
       </section>
+      <SentenceSharingSection />
       <section className="panel saved-sentences">
         <h2>Your useful sentences</h2>
         {state.savedSentences.length ? (
