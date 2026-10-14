@@ -1,5 +1,7 @@
 # Full resource intake and the wider German journey
 
+**Later rollout:** the user subsequently requested all supplied content on the learner site. The [learner-library implementation](./learner-content-library.md) copies the full immutable source archives to production and serves their public reference projection. The dev-only and pending-course details below describe the initial rollout; they do not describe the current public source-library availability.
+
 Implemented on 14 October 2026 from the supplied `recources/` guides, extraction, and sentence export. The raw folder is preserved and ignored by Git. Its prototype scripts and SQL were inspected as reference material; they were not executed unchanged.
 
 ## Imported source material

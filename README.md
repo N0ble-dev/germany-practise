@@ -4,7 +4,9 @@ A personal German learning platform for everyday life, work, study partners, and
 
 The [A1–C2 content factory foundation](./docs/content-factory-implementation.md) adds a 132-lesson planning map, protected editorial coverage/preview pages, pinned staging releases and source audits. These are planning targets and unreviewed drafts; the learner catalog continues to serve only reviewed publications.
 
-The [full resource integration](./docs/resource-intake-implementation.md) adds an audited source library and protected correction/review studio for the supplied book extraction and full sentence corpus. `/lessons` now opens the wider A1–C2 journey with self-guided practice and level-specific exam links; the existing A1.1 book course remains at `/lessons/foundation`. New course outlines are explicitly marked in preparation.
+The [full resource integration](./docs/resource-intake-implementation.md) adds an audited source library and protected correction/review studio for the supplied book extraction and full sentence corpus. `/lessons` opens the wider A1–C2 journey with self-guided practice and level-specific exam links; the existing A1.1 book course remains at `/lessons/foundation`. Real-life practice themes link to the public library without claiming assessed course completion.
+
+The [learner content library](./docs/learner-content-library.md) now makes all usable supplied source content available at `/library`: full books, vocabulary, sentence pairs, activities, grammar and resource references. Learners can search, read, practise and keep source texts with credits. The journey's practice themes are actionable rather than “in preparation” placeholders.
 
 ## Run locally
 
