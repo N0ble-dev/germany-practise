@@ -19,6 +19,7 @@ vi.mock("@/lib/auth", () => ({
   getAuth: () => ({ getSession: mocks.session }),
 }));
 import { ContentRepository } from "@/lib/content-pipeline/repository";
+import { factoryEvidence } from "@/lib/content-factory/repository";
 import { reviewCategories } from "@/lib/content-pipeline/model";
 import { contentHash } from "@/lib/content-pipeline/hash";
 import { inspectWav } from "@/lib/content-pipeline/audio";
@@ -96,6 +97,56 @@ async function approve(version = 1) {
   return { pack, hash };
 }
 describe("real PostgreSQL content storage and publication", () => {
+  it("loads latest factory evidence in one query while preserving an older effective publication and newest rejection", async () => {
+    const first = await approve();
+    await repository.publish(actor.id, first.pack.id, 1, first.hash);
+    const second = completePack(2);
+    await repository.importDraft(second);
+    await repository.review(
+      actor,
+      second.id,
+      2,
+      contentHash(second),
+      "language",
+      "approved",
+      "Initial check.",
+    );
+    await repository.review(
+      actor,
+      second.id,
+      2,
+      contentHash(second),
+      "language",
+      "changes_requested",
+      "Latest correction required.",
+    );
+    mocks.execute.mockClear();
+    const evidence = await factoryEvidence(
+      (query) => mocks.execute(query),
+      [first.pack.id],
+    );
+    expect(mocks.execute).toHaveBeenCalledTimes(1);
+    expect(evidence).toHaveLength(2);
+    expect(evidence.find((e) => e.pack.version === 1)?.published).toBe(true);
+    const latest = evidence.find((e) => e.pack.version === 2)!;
+    expect(latest.published).toBe(false);
+    expect(latest.reviews).toHaveLength(1);
+    expect(latest.reviews[0].decision).toBe("changes_requested");
+    await repository.review(
+      actor,
+      first.pack.id,
+      1,
+      first.hash,
+      "rights",
+      "changes_requested",
+      "Rights withdrawn.",
+    );
+    expect(
+      (
+        await factoryEvidence((query) => mocks.execute(query), [first.pack.id])
+      ).some((e) => e.published),
+    ).toBe(false);
+  });
   it("imports idempotently, rejects same-version edits and protects immutability in SQL", async () => {
     const pack = pilotPack();
     const result = await repository.importDraft(pack);

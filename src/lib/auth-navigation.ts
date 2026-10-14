@@ -5,6 +5,7 @@ export type AuthDestination =
   | "/space"
   | "/sentences"
   | "/admin/content"
+  | "/admin/content/coverage"
   | "/admin/exams"
   | "/exams/plan"
   | "/exams/mistakes"
@@ -21,6 +22,7 @@ export function authDestination(value: unknown): AuthDestination {
     value === "/space" ||
     value === "/sentences" ||
     value === "/admin/content" ||
+    value === "/admin/content/coverage" ||
     value === "/admin/exams" ||
     value === "/exams/plan" ||
     value === "/exams/mistakes"

@@ -6,6 +6,7 @@ on:
         "content/**",
         "scripts/content/**",
         "src/lib/content-pipeline/**",
+        "src/lib/content-factory/**",
         "src/db/**",
         "drizzle/neon/**",
         "tests/unit/content-*",
@@ -14,12 +15,13 @@ on:
         "package*.json",
       ]
   push:
-    branches: [main]
+    branches: [main, master]
     paths:
       [
         "content/**",
         "scripts/content/**",
         "src/lib/content-pipeline/**",
+        "src/lib/content-factory/**",
         "src/db/**",
         "drizzle/neon/**",
         "tests/unit/content-*",
@@ -42,7 +44,9 @@ jobs:
       - run: npm run content:validate
       - run: npm run content:test
       - run: npm run content:qa-report
+      - run: npm run content:factory
+      - run: npm run content:license-audit
       - uses: actions/upload-artifact@v4
         with:
           name: content-qa-report
-          path: artifacts/content/qa-report.json
+          path: artifacts/content/*.json

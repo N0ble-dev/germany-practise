@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "id": "a1-1-l03",
+  "version": 1,
+  "courseId": "a1-1",
+  "cefr": "A1",
+  "courseSubdivision": "A1.1",
+  "lessonNumber": 3,
+  "status": "draft",
+  "title": {
+    "de": "Menschen, die mir wichtig sind",
+    "en": "People who matter to me",
+    "ar": "أشخاص مهمون في حياتي"
+  },
+  "estimatedMinutes": 35,
+  "canDo": [
+    "Introduce family members",
+    "Use mein and meine",
+    "Ask about family and languages"
+  ],
+  "scene": {
+    "de": "Lea erzählt Amir von ihrer Familie. Amir spricht über einen Freund.",
+    "en": "Lea tells Amir about her family. Amir talks about a friend.",
+    "ar": "تحدث ليا أمير عن عائلتها. ويتحدث أمير عن صديق."
+  },
+  "prerequisites": ["a1-1-l02"],
+  "pronunciationFocus": {
+    "de": "Wortakzent und Frageintonation",
+    "en": "Word stress and question intonation",
+    "ar": "نبر الكلمات ونغمة الأسئلة"
+  },
+  "listeningOutcomes": ["Which languages does Amir speak?"],
+  "speakingOutcome": "Introduce your family and the languages you speak.",
+  "assessmentRules": {
+    "vocabulary": 80,
+    "listening": 70,
+    "grammar": 70,
+    "speaking": 70,
+    "missionRequired": true
+  },
+  "references": [
+    {
+      "id": "cefr-descriptors",
+      "name": "Council of Europe CEFR descriptors",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+      "use": "curriculum_reference_only",
+      "license": null,
+      "permissionRef": null,
+      "attribution": null
+    },
+    {
+      "id": "goethe-a1-scope",
+      "name": "Goethe A1 scope and practice reference",
+      "url": "https://www.goethe.de/de/m/spr/prf/ueb/pa1.html",
+      "use": "curriculum_reference_only",
+      "license": null,
+      "permissionRef": null,
+      "attribution": null
+    }
+  ],
+  "rights": {
+    "origin": "original",
+    "commercialUseCleared": false,
+    "evidenceRef": "content/provenance/a1-1-l03.md",
+    "notes": "Original bilingual authoring draft. Human German/pedagogy/locale/rights reviews and owned recordings are pending; no protected textbook passages or publisher audio used."
+  },
+  "vocabulary": [
+    {
+      "id": "w-familie",
+      "de": "Familie",
+      "en": "family",
+      "ar": "عائلة",
+      "type": "noun",
+      "article": "die",
+      "plural": "Familien",
+      "pluralKind": "form",
+      "example": "Das ist meine Familie.",
+      "conjugation": null
+    },
+    {
+      "id": "w-mutter",
+      "de": "Mutter",
+      "en": "mother",
+      "ar": "أم",
+      "type": "noun",
+      "article": "die",
+      "plural": "Mütter",
+      "pluralKind": "form",
+      "example": "Meine Mutter heißt Nora.",
+      "conjugation": null
+    },
+    {
+      "id": "w-vater",
+      "de": "Vater",
+      "en": "father",
+      "ar": "أب",
+      "type": "noun",
+      "article": "der",
+      "plural": "Väter",
+      "pluralKind": "form",
+      "example": "Mein Vater heißt Paul.",
+      "conjugation": null
+    },
+    {
+      "id": "w-bruder",
+      "de": "Bruder",
+      "en": "brother",
+      "ar": "أخ",
+      "type": "noun",
+      "article": "der",
+      "plural": "Brüder",
+      "pluralKind": "form",
+      "example": "Mein Bruder wohnt in Köln.",
+      "conjugation": null
+    },
+    {
+      "id": "w-schwester",
+      "de": "Schwester",
+      "en": "sister",
+      "ar": "أخت",
+      "type": "noun",
+      "article": "die",
+      "plural": "Schwestern",
+      "pluralKind": "form",
+      "example": "Meine Schwester heißt Anna.",
+      "conjugation": null
+    },
+    {
+      "id": "w-eltern",
+      "de": "Eltern",
+      "en": "parents",
+      "ar": "والدان",
+      "type": "noun",
+      "article": "die",
+      "plural": "Eltern",
+      "pluralKind": "form",
+      "example": "Meine Eltern wohnen in Bonn.",
+      "conjugation": null
+    },
+    {
+      "id": "w-freund",
+      "de": "Freund",
+      "en": "friend (male)",
+      "ar": "صديق",
+      "type": "noun",
+      "article": "der",
+      "plural": "Freunde",
+      "pluralKind": "form",
+      "example": "Mein Freund heißt Karim.",
+      "conjugation": null
+    },
+    {
+      "id": "w-freundin",
+      "de": "Freundin",
+      "en": "friend (female)",
+      "ar": "صديقة",
+      "type": "noun",
+      "article": "die",
+      "plural": "Freundinnen",
+      "pluralKind": "form",
+      "example": "Meine Freundin heißt Mia.",
+      "conjugation": null
+    },
+    {
+      "id": "w-sprache",
+      "de": "Sprache",
+      "en": "language",
+      "ar": "لغة",
+      "type": "noun",
+      "article": "die",
+      "plural": "Sprachen",
+      "pluralKind": "form",
+      "example": "Welche Sprachen sprichst du?",
+      "conjugation": null
+    },
+    {
+      "id": "w-sprechen",
+      "de": "sprechen",
+      "en": "to speak",
+      "ar": "يتحدث",
+      "type": "verb",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Ich spreche Deutsch.",
+      "conjugation": {
+        "ich": "spreche",
+        "du": "sprichst",
+        "Sie": "sprechen"
+      }
+    },
+    {
+      "id": "w-mein",
+      "de": "mein Bruder",
+      "en": "my brother",
+      "ar": "أخي",
+      "type": "phrase",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Mein Bruder heißt Tim.",
+      "conjugation": null
+    },
+    {
+      "id": "w-meine",
+      "de": "meine Schwester",
+      "en": "my sister",
+      "ar": "أختي",
+      "type": "phrase",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Meine Schwester heißt Anna.",
+      "conjugation": null
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g-possessives",
+      "title": {
+        "de": "mein und meine",
+        "en": "mein and meine",
+        "ar": "mein وmeine"
+      },
+      "explanation": {
+        "de": "Im Nominativ: mein Vater, mein Bruder; meine Mutter, meine Schwester. Für den Plural: meine Eltern. Fragen: Welche Sprachen sprichst du?",
+        "en": "In the nominative, use mein with masculine or neuter nouns and meine with feminine or plural nouns: mein Vater, meine Mutter, meine Eltern. Ask Welche Sprachen sprichst du?",
+        "ar": "في حالة الرفع نستخدم mein مع الأسماء المذكرة والمحايدة وmeine مع المؤنث والجمع: mein Vater، meine Mutter، meine Eltern. نسأل: Welche Sprachen sprichst du?"
+      },
+      "examples": [
+        "Mein Bruder heißt Tim.",
+        "Meine Schwester heißt Anna.",
+        "Meine Eltern wohnen in Bonn.",
+        "Ich spreche Arabisch und Deutsch."
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "l3-dialogue",
+      "context": {
+        "de": "Lea erzählt Amir von ihrer Familie. Amir spricht über einen Freund.",
+        "en": "Lea tells Amir about her family. Amir talks about a friend.",
+        "ar": "تحدث ليا أمير عن عائلتها. ويتحدث أمير عن صديق."
+      },
+      "lines": [
+        {
+          "id": "l3-line-1",
+          "speaker": "Lea",
+          "text": {
+            "de": "Das ist meine Schwester Anna.",
+            "en": "This is my sister Anna.",
+            "ar": "هذه أختي آنا."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l3-line-2",
+          "speaker": "Amir",
+          "text": {
+            "de": "Wo wohnt sie?",
+            "en": "Where does she live?",
+            "ar": "أين تسكن؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l3-line-3",
+          "speaker": "Lea",
+          "text": {
+            "de": "Sie wohnt in Köln. Meine Eltern wohnen in Bonn.",
+            "en": "She lives in Cologne. My parents live in Bonn.",
+            "ar": "تسكن في كولونيا. ويسكن والداي في بون."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l3-line-4",
+          "speaker": "Amir",
+          "text": {
+            "de": "Mein Freund Karim wohnt auch in Köln.",
+            "en": "My friend Karim also lives in Cologne.",
+            "ar": "يسكن صديقي كريم أيضًا في كولونيا."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l3-line-5",
+          "speaker": "Lea",
+          "text": {
+            "de": "Welche Sprachen sprichst du?",
+            "en": "Which languages do you speak?",
+            "ar": "ما اللغات التي تتحدثها؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l3-line-6",
+          "speaker": "Amir",
+          "text": {
+            "de": "Ich spreche Arabisch und ein bisschen Deutsch.",
+            "en": "I speak Arabic and a little German.",
+            "ar": "أتحدث العربية وقليلًا من الألمانية."
+          },
+          "audioKey": null
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l3-reading",
+      "type": "multiple_choice",
+      "skill": "reading",
+      "prompt": {
+        "de": "Anna ist Leas Schwester. Sie wohnt in Köln. Leas Eltern wohnen in Bonn.\nWo wohnen Leas Eltern?",
+        "en": "Anna is Lea’s sister. She lives in Cologne. Lea’s parents live in Bonn.\nWhere do Lea’s parents live?",
+        "ar": "آنا أخت ليا. تسكن في كولونيا. ويسكن والدا ليا في بون.\nأين يسكن والدا ليا؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Bonn",
+            "en": "Bonn",
+            "ar": "Bonn"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Köln",
+            "en": "Köln",
+            "ar": "Köln"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Berlin",
+            "en": "Berlin",
+            "ar": "Berlin"
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Lies oder höre noch einmal und prüfe das passende Detail.",
+        "en": "Read or listen again and check the relevant detail.",
+        "ar": "اقرأ أو استمع مرة أخرى وتحقق من المعلومة المناسبة."
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "l3-listening",
+      "type": "multiple_choice",
+      "skill": "listening",
+      "prompt": {
+        "de": "Welche Sprachen spricht Amir?",
+        "en": "Which languages does Amir speak?",
+        "ar": "ما اللغات التي يتحدثها أمير؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Arabisch und ein bisschen Deutsch",
+            "en": "Arabisch und ein bisschen Deutsch",
+            "ar": "Arabisch und ein bisschen Deutsch"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Deutsch und Englisch",
+            "en": "Deutsch und Englisch",
+            "ar": "Deutsch und Englisch"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Nur Englisch",
+            "en": "Nur Englisch",
+            "ar": "Nur Englisch"
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Lies oder höre noch einmal und prüfe das passende Detail.",
+        "en": "Read or listen again and check the relevant detail.",
+        "ar": "اقرأ أو استمع مرة أخرى وتحقق من المعلومة المناسبة."
+      },
+      "audioLineIds": ["l3-line-6"]
+    },
+    {
+      "id": "l3-grammar",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "prompt": {
+        "de": "Welcher Satz ist richtig?",
+        "en": "Which sentence is correct?",
+        "ar": "أي جملة صحيحة؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Mein Bruder heißt Tim.",
+            "en": "Mein Bruder heißt Tim.",
+            "ar": "Mein Bruder heißt Tim."
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Meine Bruder heißt Tim.",
+            "en": "Meine Bruder heißt Tim.",
+            "ar": "Meine Bruder heißt Tim."
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Mein Bruder heißen Tim.",
+            "en": "Mein Bruder heißen Tim.",
+            "ar": "Mein Bruder heißen Tim."
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Im Nominativ: mein Vater, mein Bruder; meine Mutter, meine Schwester. Für den Plural: meine Eltern. Fragen: Welche Sprachen sprichst du?",
+        "en": "In the nominative, use mein with masculine or neuter nouns and meine with feminine or plural nouns: mein Vater, meine Mutter, meine Eltern. Ask Welche Sprachen sprichst du?",
+        "ar": "في حالة الرفع نستخدم mein مع الأسماء المذكرة والمحايدة وmeine مع المؤنث والجمع: mein Vater، meine Mutter، meine Eltern. نسأل: Welche Sprachen sprichst du?"
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "l3-builder",
+      "type": "sentence_builder",
+      "prompt": {
+        "de": "Ordne die Wörter: Anna. / heißt / Schwester / Meine",
+        "en": "Put the words in order: Anna. / heißt / Schwester / Meine",
+        "ar": "رتب الكلمات: Anna. / heißt / Schwester / Meine"
+      },
+      "acceptableAnswers": ["Meine Schwester heißt Anna."],
+      "explanation": {
+        "de": "Im Nominativ: mein Vater, mein Bruder; meine Mutter, meine Schwester. Für den Plural: meine Eltern. Fragen: Welche Sprachen sprichst du?",
+        "en": "In the nominative, use mein with masculine or neuter nouns and meine with feminine or plural nouns: mein Vater, meine Mutter, meine Eltern. Ask Welche Sprachen sprichst du?",
+        "ar": "في حالة الرفع نستخدم mein مع الأسماء المذكرة والمحايدة وmeine مع المؤنث والجمع: mein Vater، meine Mutter، meine Eltern. نسأل: Welche Sprachen sprichst du?"
+      },
+      "wordIds": ["w-schwester", "w-meine"],
+      "grammarIds": ["g-possessives"],
+      "audioLineIds": []
+    },
+    {
+      "id": "l3-dictation",
+      "type": "dictation",
+      "prompt": {
+        "de": "Hör zu und schreibe den Satz.",
+        "en": "Listen and write the sentence.",
+        "ar": "استمع واكتب الجملة."
+      },
+      "acceptableAnswers": ["Das ist meine Schwester Anna."],
+      "explanation": {
+        "de": "Lies oder höre noch einmal und prüfe das passende Detail.",
+        "en": "Read or listen again and check the relevant detail.",
+        "ar": "اقرأ أو استمع مرة أخرى وتحقق من المعلومة المناسبة."
+      },
+      "wordIds": [],
+      "grammarIds": ["g-possessives"],
+      "audioLineIds": ["l3-line-1"]
+    },
+    {
+      "id": "l3-speech",
+      "type": "free_speech",
+      "prompt": {
+        "de": "Stell eine Person vor, die dir wichtig ist: Name, Beziehung und Wohnort. Du kannst eine erfundene Person wählen. Sag auch, welche Sprachen du sprichst.",
+        "en": "Introduce someone who matters to you: name, relationship and where they live. You may choose a fictional person. Also say which languages you speak.",
+        "ar": "قدّم شخصًا مهمًا في حياتك: اسمه وعلاقتك به ومكان سكنه. يمكنك اختيار شخص خيالي. واذكر أيضًا اللغات التي تتحدثها."
+      },
+      "acceptableAnswers": [
+        "Das ist mein Freund Karim. Er wohnt in Köln. Ich spreche Arabisch und ein bisschen Deutsch."
+      ],
+      "explanation": {
+        "de": "Deine Antwort darf anders sein. Prüfe die Kriterien.",
+        "en": "Your response can be different. Check the criteria; this example is not an automatic speaking score.",
+        "ar": "يمكن أن تختلف إجابتك. راجع المعايير؛ هذا المثال ليس تقييمًا آليًا للتحدث."
+      },
+      "wordIds": [],
+      "grammarIds": ["g-possessives"],
+      "audioLineIds": []
+    }
+  ],
+  "mission": {
+    "id": "l3-mission",
+    "prompt": {
+      "de": "Stell eine Person vor, die dir wichtig ist: Name, Beziehung und Wohnort. Du kannst eine erfundene Person wählen. Sag auch, welche Sprachen du sprichst.",
+      "en": "Introduce someone who matters to you: name, relationship and where they live. You may choose a fictional person. Also say which languages you speak.",
+      "ar": "قدّم شخصًا مهمًا في حياتك: اسمه وعلاقتك به ومكان سكنه. يمكنك اختيار شخص خيالي. واذكر أيضًا اللغات التي تتحدثها."
+    },
+    "acceptableAnswers": [
+      "Das ist mein Freund Karim. Er wohnt in Köln. Ich spreche Arabisch und ein bisschen Deutsch."
+    ],
+    "criteria": [
+      {
+        "de": "Ich benutze mein oder meine passend.",
+        "en": "I use mein or meine appropriately.",
+        "ar": "أستخدم mein أوmeine بشكل مناسب."
+      },
+      {
+        "de": "Ich nenne eine Person und eine Sprache.",
+        "en": "I introduce a person and name a language I speak.",
+        "ar": "أقدم شخصًا وأذكر لغة أتحدثها."
+      }
+    ]
+  },
+  "media": []
+}

@@ -21,9 +21,11 @@ async function main() {
     throw new ContentError("Manual publication approval is required.");
   if (
     process.env.GITHUB_ACTIONS === "true" &&
-    process.env.GITHUB_REF !== "refs/heads/main"
+    !["refs/heads/main", "refs/heads/master"].includes(
+      process.env.GITHUB_REF ?? "",
+    )
   )
-    throw new ContentError("Only the main branch can publish.");
+    throw new ContentError("Only main or master can publish.");
   if (!path || !sha256Schema.safeParse(expectedHash).success)
     throw new ContentError(
       "Supply a lesson JSON path and its reviewed SHA-256.",

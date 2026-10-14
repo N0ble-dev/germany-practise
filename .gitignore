@@ -6,7 +6,7 @@ node_modules/
 *.tsbuildinfo
 playwright-report/
 test-results/
-coverage/
+/coverage/
 .agents
 .cache/
 artifacts/

@@ -2,6 +2,8 @@
 
 A personal German A1.1 learning companion, rebuilt from the original browser app using strict TypeScript. Read the original product brief in [deutsch-journey-next-neon-features.md](./deutsch-journey-next-neon-features.md).
 
+The [A1–C2 content factory foundation](./docs/content-factory-implementation.md) adds a 132-lesson planning map, protected editorial coverage/preview pages, pinned staging releases and source audits. These are planning targets and unreviewed drafts; the learner catalog continues to serve only reviewed publications.
+
 ## Run locally
 
 Use Node.js 22.13+ or Node.js 24+ (Node 24 LTS recommended).

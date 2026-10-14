@@ -6,6 +6,13 @@ const config: NextConfig = {
   poweredByHeader: false,
   turbopack: { root: projectRoot },
   outputFileTracingRoot: projectRoot,
+  outputFileTracingIncludes: {
+    "/api/admin/content/coverage": [
+      "./content/lessons/**/*.json",
+      "./content/factory/candidates/*.jsonl",
+    ],
+    "/api/admin/content/draft": ["./content/lessons/**/*.json"],
+  },
   async headers() {
     return [
       {

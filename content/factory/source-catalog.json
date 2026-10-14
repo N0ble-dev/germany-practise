@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "cefr",
+      "name": "Council of Europe CEFR",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+      "termsUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+      "lane": "reference",
+      "importMethod": "outbound_only",
+      "policy": "reference_only",
+      "restrictions": "Use to design and verify outcome mappings; do not reproduce the full publication."
+    },
+    {
+      "id": "goethe",
+      "name": "Goethe-Institut",
+      "url": "https://www.goethe.de/en/spr/prf/ueb.html",
+      "termsUrl": "https://www.goethe.de/en/uun/imp.html",
+      "lane": "reference",
+      "importMethod": "outbound_only",
+      "policy": "reference_only",
+      "restrictions": "Exam specification and outbound links only. Protected tests, PDFs and recordings are not import feeds."
+    },
+    {
+      "id": "hueber",
+      "name": "Hueber Menschen",
+      "url": "https://www.hueber.de/menschen",
+      "termsUrl": "https://www.hueber.de/en/ueber-uns/kopierregeln-digitaler-unterricht",
+      "lane": "reference",
+      "importMethod": "outbound_only",
+      "policy": "reference_only",
+      "restrictions": "Companion sequencing reference only. Publisher textbook, exercises and audio require specific SaaS permission."
+    },
+    {
+      "id": "zum",
+      "name": "ZUM Deutsch Lernen",
+      "url": "https://deutsch-lernen.zum.de/wiki/Handlungsfelder",
+      "termsUrl": "https://deutsch-lernen.zum.de/wiki/ZUM_Deutsch_Lernen:%C3%9Cber_ZUM_Deutsch_Lernen",
+      "lane": "open_content",
+      "importMethod": "curated_mediawiki",
+      "policy": "per_item_review",
+      "restrictions": "Select exact text revisions and preserve author, CC BY attribution and modification notices. Every embedded or linked asset requires its own audit."
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata Lexemes",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Lexicographical_data/Documentation/Query_Service",
+      "termsUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "lane": "structured_data",
+      "importMethod": "official_entity_json",
+      "policy": "structured_cc0_only",
+      "restrictions": "Import only structured German lexeme entities under CC0. Keep item IDs/revisions and missing forms; namespace documentation prose is not CC0 data."
+    },
+    {
+      "id": "tatoeba",
+      "name": "Tatoeba",
+      "url": "https://tatoeba.org/en/downloads",
+      "termsUrl": "https://en.wiki.tatoeba.org/articles/show/using-the-tatoeba-corpus",
+      "lane": "structured_data",
+      "importMethod": "official_download",
+      "policy": "per_item_review",
+      "restrictions": "Verify each sentence license, author and translation link. Audio has independent rights; no recordings are imported by default."
+    },
+    {
+      "id": "kaikki",
+      "name": "Kaikki / Wiktionary",
+      "url": "https://kaikki.org/dewiktionary/",
+      "termsUrl": "https://kaikki.org/dewiktionary/",
+      "lane": "structured_data",
+      "importMethod": "manual_permission",
+      "policy": "blocked_pending_permission",
+      "restrictions": "Separate staging only after CC BY-SA/GFDL attribution and derivative obligations have been resolved."
+    },
+    {
+      "id": "kultur",
+      "name": "Kultur und Sprache",
+      "url": "https://www.kulturundsprache.at/oer",
+      "termsUrl": "https://www.kulturundsprache.at/oer",
+      "lane": "open_content",
+      "importMethod": "manual_permission",
+      "policy": "per_item_review",
+      "restrictions": "Audit exact original and third-party assets and share-alike obligations before adaptation."
+    },
+    {
+      "id": "dw",
+      "name": "Deutsche Welle Learn German",
+      "url": "https://learngerman.dw.com/",
+      "termsUrl": "https://www.dw.com/en/legal-notice/a-157386",
+      "lane": "reference",
+      "importMethod": "outbound_only",
+      "policy": "reference_only",
+      "restrictions": "Research and learner links only without specific redistribution permission."
+    },
+    {
+      "id": "vhs",
+      "name": "vhs-Lernportal",
+      "url": "https://www.vhs-lernportal.de/wws/kursangebot.php",
+      "termsUrl": "https://www.vhs-lernportal.de/wws/9.php#/wws/nutzungsbedingungen.php",
+      "lane": "reference",
+      "importMethod": "outbound_only",
+      "policy": "reference_only",
+      "restrictions": "Compare progression and link learners to the portal; do not copy courses or media without a license."
+    }
+  ]
+}

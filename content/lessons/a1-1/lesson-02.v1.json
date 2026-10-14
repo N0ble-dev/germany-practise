@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "id": "a1-1-l02",
+  "version": 1,
+  "courseId": "a1-1",
+  "cefr": "A1",
+  "courseSubdivision": "A1.1",
+  "lessonNumber": 2,
+  "status": "draft",
+  "title": {
+    "de": "Was machst du beruflich?",
+    "en": "Tell me about your work and studies",
+    "ar": "حدثني عن عملك ودراستك"
+  },
+  "estimatedMinutes": 35,
+  "canDo": [
+    "Say and ask a profession",
+    "Read and write a short personal profile",
+    "Use numbers for age and contact details"
+  ],
+  "scene": {
+    "de": "Mira und Sami sprechen in der Pause über Arbeit und Studium.",
+    "en": "Mira and Sami talk about work and studies during a break.",
+    "ar": "تتحدث ميرا وسامي عن العمل والدراسة أثناء الاستراحة."
+  },
+  "prerequisites": ["a1-1-l01"],
+  "pronunciationFocus": {
+    "de": "Wortakzent und Frageintonation",
+    "en": "Word stress and question intonation",
+    "ar": "نبر الكلمات ونغمة الأسئلة"
+  },
+  "listeningOutcomes": ["What does Sami study?"],
+  "speakingOutcome": "Tell someone a little about your life and work.",
+  "assessmentRules": {
+    "vocabulary": 80,
+    "listening": 70,
+    "grammar": 70,
+    "speaking": 70,
+    "missionRequired": true
+  },
+  "references": [
+    {
+      "id": "cefr-descriptors",
+      "name": "Council of Europe CEFR descriptors",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+      "use": "curriculum_reference_only",
+      "license": null,
+      "permissionRef": null,
+      "attribution": null
+    },
+    {
+      "id": "goethe-a1-scope",
+      "name": "Goethe A1 scope and practice reference",
+      "url": "https://www.goethe.de/de/m/spr/prf/ueb/pa1.html",
+      "use": "curriculum_reference_only",
+      "license": null,
+      "permissionRef": null,
+      "attribution": null
+    }
+  ],
+  "rights": {
+    "origin": "original",
+    "commercialUseCleared": false,
+    "evidenceRef": "content/provenance/a1-1-l02.md",
+    "notes": "Original bilingual authoring draft. Human German/pedagogy/locale/rights reviews and owned recordings are pending; no protected textbook passages or publisher audio used."
+  },
+  "vocabulary": [
+    {
+      "id": "w-beruf",
+      "de": "Beruf",
+      "en": "profession",
+      "ar": "مهنة",
+      "type": "noun",
+      "article": "der",
+      "plural": "Berufe",
+      "pluralKind": "form",
+      "example": "Was ist dein Beruf?",
+      "conjugation": null
+    },
+    {
+      "id": "w-entwickler",
+      "de": "Softwareentwickler",
+      "en": "software developer (male)",
+      "ar": "مطور برمجيات",
+      "type": "noun",
+      "article": "der",
+      "plural": "Softwareentwickler",
+      "pluralKind": "form",
+      "example": "Ich bin Softwareentwickler.",
+      "conjugation": null
+    },
+    {
+      "id": "w-entwicklerin",
+      "de": "Softwareentwicklerin",
+      "en": "software developer (female)",
+      "ar": "مطورة برمجيات",
+      "type": "noun",
+      "article": "die",
+      "plural": "Softwareentwicklerinnen",
+      "pluralKind": "form",
+      "example": "Mira ist Softwareentwicklerin.",
+      "conjugation": null
+    },
+    {
+      "id": "w-student",
+      "de": "Student",
+      "en": "student (male)",
+      "ar": "طالب جامعي",
+      "type": "noun",
+      "article": "der",
+      "plural": "Studenten",
+      "pluralKind": "form",
+      "example": "Sami ist Student.",
+      "conjugation": null
+    },
+    {
+      "id": "w-studentin",
+      "de": "Studentin",
+      "en": "student (female)",
+      "ar": "طالبة جامعية",
+      "type": "noun",
+      "article": "die",
+      "plural": "Studentinnen",
+      "pluralKind": "form",
+      "example": "Lea ist Studentin.",
+      "conjugation": null
+    },
+    {
+      "id": "w-universitaet",
+      "de": "Universität",
+      "en": "university",
+      "ar": "جامعة",
+      "type": "noun",
+      "article": "die",
+      "plural": "Universitäten",
+      "pluralKind": "form",
+      "example": "Ich studiere an einer Universität.",
+      "conjugation": null
+    },
+    {
+      "id": "w-telefonnummer",
+      "de": "Telefonnummer",
+      "en": "telephone number",
+      "ar": "رقم الهاتف",
+      "type": "noun",
+      "article": "die",
+      "plural": "Telefonnummern",
+      "pluralKind": "form",
+      "example": "Wie ist deine Telefonnummer?",
+      "conjugation": null
+    },
+    {
+      "id": "w-pause",
+      "de": "Pause",
+      "en": "break",
+      "ar": "استراحة",
+      "type": "noun",
+      "article": "die",
+      "plural": "Pausen",
+      "pluralKind": "form",
+      "example": "Wir haben eine Pause.",
+      "conjugation": null
+    },
+    {
+      "id": "w-arbeiten",
+      "de": "arbeiten",
+      "en": "to work",
+      "ar": "يعمل",
+      "type": "verb",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Ich arbeite in Berlin.",
+      "conjugation": {
+        "ich": "arbeite",
+        "du": "arbeitest",
+        "Sie": "arbeiten"
+      }
+    },
+    {
+      "id": "w-studieren",
+      "de": "studieren",
+      "en": "to study at university",
+      "ar": "يدرس في الجامعة",
+      "type": "verb",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Ich studiere Informatik.",
+      "conjugation": {
+        "ich": "studiere",
+        "du": "studierst",
+        "Sie": "studieren"
+      }
+    },
+    {
+      "id": "w-beruflich",
+      "de": "Was machst du beruflich?",
+      "en": "What do you do for work?",
+      "ar": "ما عملك؟",
+      "type": "phrase",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Was machst du beruflich?",
+      "conjugation": null
+    },
+    {
+      "id": "w-alter",
+      "de": "Wie alt bist du?",
+      "en": "How old are you?",
+      "ar": "كم عمرك؟",
+      "type": "phrase",
+      "article": null,
+      "plural": null,
+      "pluralKind": "not_used",
+      "example": "Wie alt bist du?",
+      "conjugation": null
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g-professions",
+      "title": {
+        "de": "Beruf, Studium und Alter",
+        "en": "Profession, studies and age",
+        "ar": "المهنة والدراسة والعمر"
+      },
+      "explanation": {
+        "de": "Nach sein steht der Beruf normalerweise ohne Artikel: Ich bin Softwareentwicklerin. Für das Alter: Ich bin 25 Jahre alt. Studium: Ich studiere Informatik.",
+        "en": "A profession after sein normally has no article: Ich bin Softwareentwicklerin. Give age with Ich bin 25 Jahre alt. Use studieren for university study: Ich studiere Informatik.",
+        "ar": "عادةً تأتي المهنة بعد sein دون أداة: Ich bin Softwareentwicklerin. للتعبير عن العمر: Ich bin 25 Jahre alt. تُستخدم studieren للدراسة الجامعية: Ich studiere Informatik."
+      },
+      "examples": [
+        "Ich bin Softwareentwicklerin.",
+        "Ich bin Student.",
+        "Ich studiere Informatik.",
+        "Ich arbeite in Berlin.",
+        "Ich bin 25 Jahre alt."
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "l2-dialogue",
+      "context": {
+        "de": "Mira und Sami sprechen in der Pause über Arbeit und Studium.",
+        "en": "Mira and Sami talk about work and studies during a break.",
+        "ar": "تتحدث ميرا وسامي عن العمل والدراسة أثناء الاستراحة."
+      },
+      "lines": [
+        {
+          "id": "l2-line-1",
+          "speaker": "Mira",
+          "text": {
+            "de": "Was machst du beruflich?",
+            "en": "What do you do for work?",
+            "ar": "ما عملك؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l2-line-2",
+          "speaker": "Sami",
+          "text": {
+            "de": "Ich bin Student. Ich studiere Informatik.",
+            "en": "I am a student. I study computer science.",
+            "ar": "أنا طالب جامعي. أدرس علوم الحاسوب."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l2-line-3",
+          "speaker": "Mira",
+          "text": {
+            "de": "Ich bin Softwareentwicklerin. Ich arbeite in Berlin.",
+            "en": "I am a software developer. I work in Berlin.",
+            "ar": "أنا مطورة برمجيات. أعمل في برلين."
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l2-line-4",
+          "speaker": "Sami",
+          "text": {
+            "de": "Wie alt bist du?",
+            "en": "How old are you?",
+            "ar": "كم عمرك؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l2-line-5",
+          "speaker": "Mira",
+          "text": {
+            "de": "Ich bin 25 Jahre alt. Und du?",
+            "en": "I am 25 years old. And you?",
+            "ar": "عمري خمس وعشرون سنة. وأنت؟"
+          },
+          "audioKey": null
+        },
+        {
+          "id": "l2-line-6",
+          "speaker": "Sami",
+          "text": {
+            "de": "Ich bin 23 Jahre alt.",
+            "en": "I am 23 years old.",
+            "ar": "عمري ثلاث وعشرون سنة."
+          },
+          "audioKey": null
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l2-reading",
+      "type": "multiple_choice",
+      "skill": "reading",
+      "prompt": {
+        "de": "Name: Mira. Beruf: Softwareentwicklerin. Arbeitsort: Berlin. Alter: 25.\nWo arbeitet Mira?",
+        "en": "Name: Mira. Profession: software developer. Place of work: Berlin. Age: 25.\nWhere does Mira work?",
+        "ar": "الاسم: ميرا. المهنة: مطورة برمجيات. مكان العمل: برلين. العمر: 25 سنة.\nأين تعمل ميرا؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Berlin",
+            "en": "Berlin",
+            "ar": "Berlin"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Hamburg",
+            "en": "Hamburg",
+            "ar": "Hamburg"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Bonn",
+            "en": "Bonn",
+            "ar": "Bonn"
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Lies oder höre noch einmal und prüfe das passende Detail.",
+        "en": "Read or listen again and check the relevant detail.",
+        "ar": "اقرأ أو استمع مرة أخرى وتحقق من المعلومة المناسبة."
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "l2-listening",
+      "type": "multiple_choice",
+      "skill": "listening",
+      "prompt": {
+        "de": "Was studiert Sami?",
+        "en": "What does Sami study?",
+        "ar": "ماذا يدرس سامي؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Informatik",
+            "en": "Informatik",
+            "ar": "Informatik"
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Medizin",
+            "en": "Medizin",
+            "ar": "Medizin"
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Musik",
+            "en": "Musik",
+            "ar": "Musik"
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Lies oder höre noch einmal und prüfe das passende Detail.",
+        "en": "Read or listen again and check the relevant detail.",
+        "ar": "اقرأ أو استمع مرة أخرى وتحقق من المعلومة المناسبة."
+      },
+      "audioLineIds": ["l2-line-2"]
+    },
+    {
+      "id": "l2-grammar",
+      "type": "multiple_choice",
+      "skill": "grammar",
+      "prompt": {
+        "de": "Welcher Satz ist richtig?",
+        "en": "Which sentence is correct?",
+        "ar": "أي جملة صحيحة؟"
+      },
+      "options": [
+        {
+          "id": "option-1",
+          "text": {
+            "de": "Ich bin Student.",
+            "en": "Ich bin Student.",
+            "ar": "Ich bin Student."
+          }
+        },
+        {
+          "id": "option-2",
+          "text": {
+            "de": "Ich sein Student.",
+            "en": "Ich sein Student.",
+            "ar": "Ich sein Student."
+          }
+        },
+        {
+          "id": "option-3",
+          "text": {
+            "de": "Ich bist Student.",
+            "en": "Ich bist Student.",
+            "ar": "Ich bist Student."
+          }
+        }
+      ],
+      "correctOptionId": "option-1",
+      "explanation": {
+        "de": "Nach sein steht der Beruf normalerweise ohne Artikel: Ich bin Softwareentwicklerin. Für das Alter: Ich bin 25 Jahre alt. Studium: Ich studiere Informatik.",
+        "en": "A profession after sein normally has no article: Ich bin Softwareentwicklerin. Give age with Ich bin 25 Jahre alt. Use studieren for university study: Ich studiere Informatik.",
+        "ar": "عادةً تأتي المهنة بعد sein دون أداة: Ich bin Softwareentwicklerin. للتعبير عن العمر: Ich bin 25 Jahre alt. تُستخدم studieren للدراسة الجامعية: Ich studiere Informatik."
+      },
+      "audioLineIds": []
+    },
+    {
+      "id": "l2-builder",
+      "type": "sentence_builder",
+      "prompt": {
+        "de": "Ordne die Wörter: Berlin. / in / arbeite / Ich",
+        "en": "Put the words in order: Berlin. / in / arbeite / Ich",
+        "ar": "رتب الكلمات: Berlin. / in / arbeite / Ich"
+      },
+      "acceptableAnswers": ["Ich arbeite in Berlin."],
+      "explanation": {
+        "de": "Nach sein steht der Beruf normalerweise ohne Artikel: Ich bin Softwareentwicklerin. Für das Alter: Ich bin 25 Jahre alt. Studium: Ich studiere Informatik.",
+        "en": "A profession after sein normally has no article: Ich bin Softwareentwicklerin. Give age with Ich bin 25 Jahre alt. Use studieren for university study: Ich studiere Informatik.",
+        "ar": "عادةً تأتي المهنة بعد sein دون أداة: Ich bin Softwareentwicklerin. للتعبير عن العمر: Ich bin 25 Jahre alt. تُستخدم studieren للدراسة الجامعية: Ich studiere Informatik."
+      },
+      "wordIds": ["w-arbeiten"],
+      "grammarIds": ["g-professions"],
+      "audioLineIds": []
+    },
+    {
+      "id": "l2-dictation",
+      "type": "dictation",
+      "prompt": {
+        "de": "Hör zu und schreibe den Satz.",
+        "en": "Listen and write the sentence.",
+        "ar": "استمع واكتب الجملة."
+      },
+      "acceptableAnswers": ["Was machst du beruflich?"],
+      "explanation": {
+        "de": "Lies oder höre noch einmal und prüfe das passende Detail.",
+        "en": "Read or listen again and check the relevant detail.",
+        "ar": "اقرأ أو استمع مرة أخرى وتحقق من المعلومة المناسبة."
+      },
+      "wordIds": [],
+      "grammarIds": ["g-professions"],
+      "audioLineIds": ["l2-line-1"]
+    },
+    {
+      "id": "l2-speech",
+      "type": "free_speech",
+      "prompt": {
+        "de": "Stell dich ohne Vorlage vor: Name, Beruf oder Studium, Stadt. Frag die andere Person nach ihrem Beruf. Teile nur Kontaktdaten, die du teilen möchtest.",
+        "en": "Introduce yourself without a model: name, work or studies, and city. Ask about the other person’s work. Share contact details only if you want to.",
+        "ar": "عرّف بنفسك دون نموذج: اسمك وعملك أو دراستك ومدينتك. اسأل الشخص الآخر عن عمله. شارك بيانات التواصل فقط إذا أردت."
+      },
+      "acceptableAnswers": [
+        "Ich heiße Sami. Ich bin Student. Ich studiere Informatik. Ich wohne in Bonn. Was machst du beruflich?"
+      ],
+      "explanation": {
+        "de": "Deine Antwort darf anders sein. Prüfe die Kriterien.",
+        "en": "Your response can be different. Check the criteria; this example is not an automatic speaking score.",
+        "ar": "يمكن أن تختلف إجابتك. راجع المعايير؛ هذا المثال ليس تقييمًا آليًا للتحدث."
+      },
+      "wordIds": [],
+      "grammarIds": ["g-professions"],
+      "audioLineIds": []
+    }
+  ],
+  "mission": {
+    "id": "l2-mission",
+    "prompt": {
+      "de": "Stell dich ohne Vorlage vor: Name, Beruf oder Studium, Stadt. Frag die andere Person nach ihrem Beruf. Teile nur Kontaktdaten, die du teilen möchtest.",
+      "en": "Introduce yourself without a model: name, work or studies, and city. Ask about the other person’s work. Share contact details only if you want to.",
+      "ar": "عرّف بنفسك دون نموذج: اسمك وعملك أو دراستك ومدينتك. اسأل الشخص الآخر عن عمله. شارك بيانات التواصل فقط إذا أردت."
+    },
+    "acceptableAnswers": [
+      "Ich heiße Sami. Ich bin Student. Ich studiere Informatik. Ich wohne in Bonn. Was machst du beruflich?"
+    ],
+    "criteria": [
+      {
+        "de": "Ich nenne meinen Beruf oder mein Studium.",
+        "en": "I describe my work or studies.",
+        "ar": "أصف عملي أو دراستي."
+      },
+      {
+        "de": "Ich stelle eine passende Frage.",
+        "en": "I ask an appropriate question.",
+        "ar": "أطرح سؤالًا مناسبًا."
+      }
+    ]
+  },
+  "media": []
+}

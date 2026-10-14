@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "a1-1-factory-pilot",
+  "status": "staging_candidate",
+  "changelog": "Three original bilingual pilot lessons exercising the existing data-driven engine. Lesson 1 includes previously staged licensed ZUM text evidence. All are drafts; owned audio, human review and independent writing activities remain incomplete.",
+  "lessons": [
+    {
+      "path": "content/lessons/a1-1/lesson-01.v2.json",
+      "lessonId": "a1-1-l01",
+      "version": 2,
+      "contentHash": "f842b46b889527c00da3e87ec2f4b5b1a0dc5851eea84d3cc8501475610cd77e"
+    },
+    {
+      "path": "content/lessons/a1-1/lesson-02.v1.json",
+      "lessonId": "a1-1-l02",
+      "version": 1,
+      "contentHash": "275942d4e12f3181238dd9d6e900c4a444eae351dd4b88bc4b39faf2da160e3b"
+    },
+    {
+      "path": "content/lessons/a1-1/lesson-03.v1.json",
+      "lessonId": "a1-1-l03",
+      "version": 1,
+      "contentHash": "16473f13b5cb0c7dcd1a25c76ee792c1cc27ed80f994fe27684013de7f821392"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ import {
   validateRelationships,
 } from "../../src/lib/content-pipeline/gates.ts";
 import { inspectWav } from "../../src/lib/content-pipeline/audio.ts";
+import { readFactory, readRelease } from "./factory-files.ts";
 import {
   resourceCatalogSchema,
   sourceAssetSchema,
@@ -40,6 +41,12 @@ async function main() {
   const mode = process.argv[2] ?? "validate";
   if (!["validate", "qa-report", "audio-manifest"].includes(mode))
     throw new Error("Use validate, qa-report or audio-manifest.");
+  const factory = await readFactory();
+  const releaseIndex = process.argv.indexOf("--release");
+  const release =
+    releaseIndex >= 0
+      ? await readRelease(process.argv[releaseIndex + 1] ?? "", factory.drafts)
+      : undefined;
   const packs: LessonPack[] = [],
     errors: string[] = [];
   resourceCatalogSchema.parse(
@@ -93,13 +100,13 @@ async function main() {
     curricula.push(
       curriculumSchema.parse(JSON.parse(await readFile(path, "utf8"))),
     );
-  const planned = curricula.flatMap((c) => c.lessons);
+  const planned = factory.map.courses.flatMap((c) => c.lessons);
   if (!curricula.length)
     errors.push(
       "A course curriculum is required before authoring lesson packs.",
     );
   for (const pack of packs) {
-    const course = curricula.find((c) => c.courseId === pack.courseId);
+    const course = factory.map.courses.find((c) => c.id === pack.courseId);
     if (
       !course ||
       !course.lessons.some(
@@ -115,7 +122,7 @@ async function main() {
       Object.fromEntries(planned.map((l) => [l.id, l.prerequisites])),
     ),
   );
-  const report = packs.map((pack) => ({
+  const report = (release?.packs ?? packs).map((pack) => ({
     id: pack.id,
     version: pack.version,
     contentHash: contentHash(pack),
@@ -174,12 +181,22 @@ async function main() {
     await mkdir("artifacts/content", { recursive: true });
     await writeFile(
       "artifacts/content/qa-report.json",
-      JSON.stringify({ errors, lessons: report }, null, 2) + "\n",
+      JSON.stringify(
+        {
+          releaseId: release?.manifest.id ?? null,
+          releaseHash: release?.releaseHash ?? null,
+          reviewEvidence: "offline_not_loaded",
+          errors,
+          lessons: report,
+        },
+        null,
+        2,
+      ) + "\n",
     );
   }
   for (const error of errors) console.error(error);
   console.log(
-    `${packs.length} draft pack(s); ${errors.length} structural error(s); ${report.reduce((n, r) => n + r.blockers.length, 0)} outstanding publication checks.`,
+    `${packs.length} draft pack(s); ${errors.length} structural error(s); ${report.length} revision(s) audited; ${report.reduce((n, r) => n + r.blockers.length, 0)} outstanding publication checks.`,
   );
   if (errors.length || !packs.length) process.exitCode = 1;
 }

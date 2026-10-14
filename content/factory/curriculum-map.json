@@ -1,0 +1,4408 @@
+{
+  "schemaVersion": 1,
+  "status": "planning_draft",
+  "mappingStatus": "needs_specialist_review",
+  "description": "132 illustrative lesson briefs across nine internal course subdivisions. Outcomes are original design targets informed by CEFR, not official descriptor quotations or proof of certification. Level specialists must verify sequence, depth and mappings before authoring or release.",
+  "references": [
+    "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+    "https://www.goethe.de/en/spr/prf/ueb.html"
+  ],
+  "outcomes": [
+    {
+      "id": "a1-listening",
+      "level": "A1",
+      "skill": "listening",
+      "canDo": "Recognize essential details in a short, clearly spoken everyday exchange.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a1-reading",
+      "level": "A1",
+      "skill": "reading",
+      "canDo": "Understand a short everyday notice or personal message.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a1-writing",
+      "level": "A1",
+      "skill": "writing",
+      "canDo": "Write a brief personal message or complete basic information.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a1-speaking",
+      "level": "A1",
+      "skill": "speaking",
+      "canDo": "Take part in a simple personal exchange with support.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a2-listening",
+      "level": "A2",
+      "skill": "listening",
+      "canDo": "Follow the main details of a routine service or personal conversation.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a2-reading",
+      "level": "A2",
+      "skill": "reading",
+      "canDo": "Find relevant information in a straightforward everyday text.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a2-writing",
+      "level": "A2",
+      "skill": "writing",
+      "canDo": "Write a connected short message about a routine need or past event.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "a2-speaking",
+      "level": "A2",
+      "skill": "speaking",
+      "canDo": "Manage a routine exchange and explain a simple plan or experience.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b1-listening",
+      "level": "B1",
+      "skill": "listening",
+      "canDo": "Follow the main points and reasons in clear familiar-topic speech.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b1-reading",
+      "level": "B1",
+      "skill": "reading",
+      "canDo": "Understand connected everyday or workplace texts and their main arguments.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b1-writing",
+      "level": "B1",
+      "skill": "writing",
+      "canDo": "Write a connected account or request with relevant reasons.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b1-speaking",
+      "level": "B1",
+      "skill": "speaking",
+      "canDo": "Sustain a familiar-topic discussion and respond to follow-up questions.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b2-listening",
+      "level": "B2",
+      "skill": "listening",
+      "canDo": "Follow detailed discussion, contrasting positions and supporting evidence.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b2-reading",
+      "level": "B2",
+      "skill": "reading",
+      "canDo": "Interpret a complex factual or argumentative text and compare viewpoints.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b2-writing",
+      "level": "B2",
+      "skill": "writing",
+      "canDo": "Write a detailed, structured argument with relevant supporting evidence.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "b2-speaking",
+      "level": "B2",
+      "skill": "speaking",
+      "canDo": "Explain and defend a position while responding to counterarguments.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c1-listening",
+      "level": "C1",
+      "skill": "listening",
+      "canDo": "Interpret stance, implication and discourse structure in demanding speech.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c1-reading",
+      "level": "C1",
+      "skill": "reading",
+      "canDo": "Analyze complex texts, implicit meaning and rhetorical organization.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c1-writing",
+      "level": "C1",
+      "skill": "writing",
+      "canDo": "Write a precise, coherent text adapted to an academic or professional audience.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c1-speaking",
+      "level": "C1",
+      "skill": "speaking",
+      "canDo": "Communicate flexibly and fluently on complex issues with appropriate register.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c2-listening",
+      "level": "C2",
+      "skill": "listening",
+      "canDo": "Interpret subtle implications, irony and stylistic shifts in demanding speech.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c2-reading",
+      "level": "C2",
+      "skill": "reading",
+      "canDo": "Critically interpret nuanced language and synthesize challenging texts.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c2-writing",
+      "level": "C2",
+      "skill": "writing",
+      "canDo": "Produce and revise sophisticated synthesis with precise style and meaning.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    },
+    {
+      "id": "c2-speaking",
+      "level": "C2",
+      "skill": "speaking",
+      "canDo": "Discuss demanding issues spontaneously with precise nuance and reformulation.",
+      "referenceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors"
+    }
+  ],
+  "courses": [
+    {
+      "id": "a1-1",
+      "level": "A1",
+      "subdivision": "A1.1",
+      "title": "A1.1 · Your first everyday conversations",
+      "origin": "original_companion",
+      "modules": [
+        {
+          "id": "a1-1-m1",
+          "title": "Meet people",
+          "lessonIds": ["a1-1-l01", "a1-1-l02", "a1-1-l03", "a1-1-l04"]
+        },
+        {
+          "id": "a1-1-m2",
+          "title": "Everyday objects",
+          "lessonIds": ["a1-1-l05", "a1-1-l06", "a1-1-l07", "a1-1-l08"]
+        },
+        {
+          "id": "a1-1-m3",
+          "title": "Make plans",
+          "lessonIds": ["a1-1-l09", "a1-1-l10", "a1-1-l11", "a1-1-l12"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "a1-1-l01",
+          "number": 1,
+          "title": "Hallo! Ich bin …",
+          "scene": "Sprachschule",
+          "mission": "Introduce yourself to a new classmate.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["daily-life"],
+          "grammar": [
+            "Present tense: heißen, kommen, wohnen; ich/du/Sie; statements and questions"
+          ],
+          "pronunciationFocus": "Sentence melody",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l02",
+          "number": 2,
+          "title": "Ich bin Softwareentwickler",
+          "scene": "Sprachschule",
+          "mission": "Tell someone a little about your life and work.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l01"],
+          "topics": ["daily-life"],
+          "grammar": ["Present tense; professions; personal questions"],
+          "pronunciationFocus": "Word stress",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l03",
+          "number": 3,
+          "title": "Das ist meine Familie",
+          "scene": "Sprachschule",
+          "mission": "Introduce your family and the languages you speak.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l02"],
+          "topics": ["daily-life"],
+          "grammar": ["Possessives; family; mein/meine"],
+          "pronunciationFocus": "Question melody",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l04",
+          "number": 4,
+          "title": "Der Tisch ist schön",
+          "scene": "Wohnung",
+          "mission": "Ask a price and describe furniture you like.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l03"],
+          "topics": ["daily-life"],
+          "grammar": ["Articles and nouns; describing objects"],
+          "pronunciationFocus": "Long and short vowels",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l05",
+          "number": 5,
+          "title": "Was ist das?",
+          "scene": "Geschäft",
+          "mission": "Ask what an object is called and ask for repetition.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l04"],
+          "topics": ["daily-life"],
+          "grammar": ["Identifying objects; indefinite articles and questions"],
+          "pronunciationFocus": "Sentence stress",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l06",
+          "number": 6,
+          "title": "Ich brauche einen Laptop",
+          "scene": "Büro",
+          "mission": "Say what you need to set up a desk.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l05"],
+          "topics": ["daily-life"],
+          "grammar": ["Accusative objects; office equipment"],
+          "pronunciationFocus": "The ü sound",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l07",
+          "number": 7,
+          "title": "Du kannst wirklich …",
+          "scene": "Park",
+          "mission": "Talk about hobbies and give a compliment.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l06"],
+          "topics": ["daily-life"],
+          "grammar": ["Modal können; activities and ability"],
+          "pronunciationFocus": "Moving sentence stress",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l08",
+          "number": 8,
+          "title": "Kein Problem. Ich habe Zeit!",
+          "scene": "Café",
+          "mission": "Agree on an activity, day, time, and meeting place.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l07"],
+          "topics": ["daily-life"],
+          "grammar": ["Time and weekday expressions; appointments"],
+          "pronunciationFocus": "Unstressed e",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l09",
+          "number": 9,
+          "title": "Ich möchte etwas essen",
+          "scene": "Restaurant",
+          "mission": "Order breakfast politely without answer choices.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l08"],
+          "topics": ["daily-life"],
+          "grammar": ["möchten; food and drink; ordering politely"],
+          "pronunciationFocus": "Stress in compound nouns",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l10",
+          "number": 10,
+          "title": "Ich steige jetzt ein",
+          "scene": "Bahnhof",
+          "mission": "Find your transport and ask where to get off.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l09"],
+          "topics": ["daily-life"],
+          "grammar": ["Separable verbs; transport and travel"],
+          "pronunciationFocus": "Stress in separable verbs",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l11",
+          "number": 11,
+          "title": "Was hast du heute gemacht?",
+          "scene": "Wohnung",
+          "mission": "Tell someone about your day in a short diary.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l10"],
+          "topics": ["daily-life"],
+          "grammar": ["Perfekt with haben; personal events"],
+          "pronunciationFocus": "Sentence stress with Perfekt",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-1-l12",
+          "number": 12,
+          "title": "Was ist denn hier passiert?",
+          "scene": "Party",
+          "mission": "Tell a tiny story about a trip or celebration.",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-1-l11"],
+          "topics": ["daily-life"],
+          "grammar": ["Perfekt with sein; travel and events"],
+          "pronunciationFocus": "Vocalic r",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        }
+      ]
+    },
+    {
+      "id": "a1-2",
+      "level": "A1",
+      "subdivision": "A1.2",
+      "title": "A1.2 · Beginner German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "a1-2-m1",
+          "title": "Around town",
+          "lessonIds": ["a1-2-l01", "a1-2-l02", "a1-2-l03", "a1-2-l04"]
+        },
+        {
+          "id": "a1-2-m2",
+          "title": "Everyday arrangements",
+          "lessonIds": ["a1-2-l05", "a1-2-l06", "a1-2-l07", "a1-2-l08"]
+        },
+        {
+          "id": "a1-2-m3",
+          "title": "My day in Germany",
+          "lessonIds": ["a1-2-l09", "a1-2-l10", "a1-2-l11", "a1-2-l12"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "a1-2-l01",
+          "number": 1,
+          "title": "Ask where the pharmacy is",
+          "scene": "Around town",
+          "mission": "Ask where the pharmacy is",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["around-town"],
+          "grammar": ["Directions with links/rechts/geradeaus"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l02",
+          "number": 2,
+          "title": "Find an apartment address",
+          "scene": "Around town",
+          "mission": "Find an apartment address",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l01"],
+          "topics": ["around-town"],
+          "grammar": ["Local prepositions"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l03",
+          "number": 3,
+          "title": "Buy a bus ticket",
+          "scene": "Around town",
+          "mission": "Buy a bus ticket",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l02"],
+          "topics": ["around-town"],
+          "grammar": ["Numbers and simple requests"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l04",
+          "number": 4,
+          "title": "Read a station notice",
+          "scene": "Around town",
+          "mission": "Read a station notice",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l03"],
+          "topics": ["around-town"],
+          "grammar": ["Time expressions"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l05",
+          "number": 5,
+          "title": "Book a doctor appointment",
+          "scene": "Everyday arrangements",
+          "mission": "Book a doctor appointment",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l04"],
+          "topics": ["everyday-arrangements"],
+          "grammar": ["Modal möchten"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l06",
+          "number": 6,
+          "title": "Describe a simple symptom",
+          "scene": "Everyday arrangements",
+          "mission": "Describe a simple symptom",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l05"],
+          "topics": ["everyday-arrangements"],
+          "grammar": ["haben and sein"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l07",
+          "number": 7,
+          "title": "Shop for clothes in a size",
+          "scene": "Everyday arrangements",
+          "mission": "Shop for clothes in a size",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l06"],
+          "topics": ["everyday-arrangements"],
+          "grammar": ["Accusative and prices"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l08",
+          "number": 8,
+          "title": "Invite a friend for the weekend",
+          "scene": "Everyday arrangements",
+          "mission": "Invite a friend for the weekend",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l07"],
+          "topics": ["everyday-arrangements"],
+          "grammar": ["Separable verbs"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l09",
+          "number": 9,
+          "title": "Explain a simple work schedule",
+          "scene": "My day in Germany",
+          "mission": "Explain a simple work schedule",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l08"],
+          "topics": ["my-day-in-germany"],
+          "grammar": ["Present tense and time"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l10",
+          "number": 10,
+          "title": "Complete a registration form",
+          "scene": "My day in Germany",
+          "mission": "Complete a registration form",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l09"],
+          "topics": ["my-day-in-germany"],
+          "grammar": ["Personal questions"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l11",
+          "number": 11,
+          "title": "Send a short absence message",
+          "scene": "My day in Germany",
+          "mission": "Send a short absence message",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l10"],
+          "topics": ["my-day-in-germany"],
+          "grammar": ["Simple connectors"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        },
+        {
+          "id": "a1-2-l12",
+          "number": 12,
+          "title": "Tell a short story about yesterday",
+          "scene": "My day in Germany",
+          "mission": "Tell a short story about yesterday",
+          "outcomeIds": [
+            "a1-listening",
+            "a1-reading",
+            "a1-writing",
+            "a1-speaking"
+          ],
+          "prerequisites": ["a1-2-l11"],
+          "topics": ["my-day-in-germany"],
+          "grammar": ["Perfekt with haben/sein"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a1-sd1-adult",
+          "authoringDirection": "Short original scenes, supported instructions, EN/AR explanations and visible practice hints. Include independent writing and speaking tasks."
+        }
+      ]
+    },
+    {
+      "id": "a2-1",
+      "level": "A2",
+      "subdivision": "A2.1",
+      "title": "A2.1 · Elementary German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "a2-1-m1",
+          "title": "Home and neighborhood",
+          "lessonIds": ["a2-1-l01", "a2-1-l02", "a2-1-l03", "a2-1-l04"]
+        },
+        {
+          "id": "a2-1-m2",
+          "title": "Health and services",
+          "lessonIds": ["a2-1-l05", "a2-1-l06", "a2-1-l07", "a2-1-l08"]
+        },
+        {
+          "id": "a2-1-m3",
+          "title": "Work and learning",
+          "lessonIds": ["a2-1-l09", "a2-1-l10", "a2-1-l11", "a2-1-l12"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "a2-1-l01",
+          "number": 1,
+          "title": "Arrange an apartment viewing",
+          "scene": "Home and neighborhood",
+          "mission": "Arrange an apartment viewing",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["home-and-neighborhood"],
+          "grammar": ["Two-way prepositions: location"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l02",
+          "number": 2,
+          "title": "Describe a problem at home",
+          "scene": "Home and neighborhood",
+          "mission": "Describe a problem at home",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l01"],
+          "topics": ["home-and-neighborhood"],
+          "grammar": ["Modal verbs"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l03",
+          "number": 3,
+          "title": "Ask a neighbor for help",
+          "scene": "Home and neighborhood",
+          "mission": "Ask a neighbor for help",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l02"],
+          "topics": ["home-and-neighborhood"],
+          "grammar": ["Dative pronouns"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l04",
+          "number": 4,
+          "title": "Compare two apartment adverts",
+          "scene": "Home and neighborhood",
+          "mission": "Compare two apartment adverts",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l03"],
+          "topics": ["home-and-neighborhood"],
+          "grammar": ["Comparatives"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l05",
+          "number": 5,
+          "title": "Describe how a symptom started",
+          "scene": "Health and services",
+          "mission": "Describe how a symptom started",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l04"],
+          "topics": ["health-and-services"],
+          "grammar": ["Perfekt"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l06",
+          "number": 6,
+          "title": "Understand pharmacy instructions",
+          "scene": "Health and services",
+          "mission": "Understand pharmacy instructions",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l05"],
+          "topics": ["health-and-services"],
+          "grammar": ["Imperatives"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l07",
+          "number": 7,
+          "title": "Move a medical appointment",
+          "scene": "Health and services",
+          "mission": "Move a medical appointment",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l06"],
+          "topics": ["health-and-services"],
+          "grammar": ["Time prepositions"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l08",
+          "number": 8,
+          "title": "Explain a missed appointment",
+          "scene": "Health and services",
+          "mission": "Explain a missed appointment",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l07"],
+          "topics": ["health-and-services"],
+          "grammar": ["weil clauses"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l09",
+          "number": 9,
+          "title": "Describe previous work experience",
+          "scene": "Work and learning",
+          "mission": "Describe previous work experience",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l08"],
+          "topics": ["work-and-learning"],
+          "grammar": ["Perfekt of separable verbs"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l10",
+          "number": 10,
+          "title": "Ask about a language course",
+          "scene": "Work and learning",
+          "mission": "Ask about a language course",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l09"],
+          "topics": ["work-and-learning"],
+          "grammar": ["Indirect simple questions"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l11",
+          "number": 11,
+          "title": "Request a shift change",
+          "scene": "Work and learning",
+          "mission": "Request a shift change",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l10"],
+          "topics": ["work-and-learning"],
+          "grammar": ["Polite requests"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-1-l12",
+          "number": 12,
+          "title": "Write a short work update",
+          "scene": "Work and learning",
+          "mission": "Write a short work update",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-1-l11"],
+          "topics": ["work-and-learning"],
+          "grammar": ["Connectors und/aber/denn"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        }
+      ]
+    },
+    {
+      "id": "a2-2",
+      "level": "A2",
+      "subdivision": "A2.2",
+      "title": "A2.2 · Elementary German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "a2-2-m1",
+          "title": "Travel and plans",
+          "lessonIds": ["a2-2-l01", "a2-2-l02", "a2-2-l03", "a2-2-l04"]
+        },
+        {
+          "id": "a2-2-m2",
+          "title": "People and daily life",
+          "lessonIds": ["a2-2-l05", "a2-2-l06", "a2-2-l07", "a2-2-l08"]
+        },
+        {
+          "id": "a2-2-m3",
+          "title": "Everyday independence",
+          "lessonIds": ["a2-2-l09", "a2-2-l10", "a2-2-l11", "a2-2-l12"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "a2-2-l01",
+          "number": 1,
+          "title": "Rebook a train journey",
+          "scene": "Travel and plans",
+          "mission": "Rebook a train journey",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["travel-and-plans"],
+          "grammar": ["Modal verbs in context"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l02",
+          "number": 2,
+          "title": "Describe a holiday problem",
+          "scene": "Travel and plans",
+          "mission": "Describe a holiday problem",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l01"],
+          "topics": ["travel-and-plans"],
+          "grammar": ["Präteritum of sein/haben"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l03",
+          "number": 3,
+          "title": "Plan an affordable weekend",
+          "scene": "Travel and plans",
+          "mission": "Plan an affordable weekend",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l02"],
+          "topics": ["travel-and-plans"],
+          "grammar": ["Comparatives and superlatives"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l04",
+          "number": 4,
+          "title": "Explain a change of plans",
+          "scene": "Travel and plans",
+          "mission": "Explain a change of plans",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l03"],
+          "topics": ["travel-and-plans"],
+          "grammar": ["weil and dass clauses"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l05",
+          "number": 5,
+          "title": "Discuss household responsibilities",
+          "scene": "People and daily life",
+          "mission": "Discuss household responsibilities",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l04"],
+          "topics": ["people-and-daily-life"],
+          "grammar": ["Possessives in cases"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l06",
+          "number": 6,
+          "title": "Describe a person for a friend",
+          "scene": "People and daily life",
+          "mission": "Describe a person for a friend",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l05"],
+          "topics": ["people-and-daily-life"],
+          "grammar": ["Adjective endings: introduction"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l07",
+          "number": 7,
+          "title": "Make plans by phone",
+          "scene": "People and daily life",
+          "mission": "Make plans by phone",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l06"],
+          "topics": ["people-and-daily-life"],
+          "grammar": ["wenn clauses"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l08",
+          "number": 8,
+          "title": "Reply to an informal invitation",
+          "scene": "People and daily life",
+          "mission": "Reply to an informal invitation",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l07"],
+          "topics": ["people-and-daily-life"],
+          "grammar": ["Future meaning in present tense"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l09",
+          "number": 9,
+          "title": "Ask a service office for information",
+          "scene": "Everyday independence",
+          "mission": "Ask a service office for information",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l08"],
+          "topics": ["everyday-independence"],
+          "grammar": ["Question clauses"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l10",
+          "number": 10,
+          "title": "Understand a simple contract notice",
+          "scene": "Everyday independence",
+          "mission": "Understand a simple contract notice",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l09"],
+          "topics": ["everyday-independence"],
+          "grammar": ["Negation and time"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l11",
+          "number": 11,
+          "title": "Write a short service complaint",
+          "scene": "Everyday independence",
+          "mission": "Write a short service complaint",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l10"],
+          "topics": ["everyday-independence"],
+          "grammar": ["Polite modal requests"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        },
+        {
+          "id": "a2-2-l12",
+          "number": 12,
+          "title": "Explain a personal learning plan",
+          "scene": "Everyday independence",
+          "mission": "Explain a personal learning plan",
+          "outcomeIds": [
+            "a2-listening",
+            "a2-reading",
+            "a2-writing",
+            "a2-speaking"
+          ],
+          "prerequisites": ["a2-2-l11"],
+          "topics": ["everyday-independence"],
+          "grammar": ["Connected narration"],
+          "pronunciationFocus": "Word stress, question melody and intelligible everyday chunks.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-a2-adult",
+          "authoringDirection": "Connected everyday messages and routine service exchanges, past events and plans. Include reading, writing and unscripted spoken transfer."
+        }
+      ]
+    },
+    {
+      "id": "b1-1",
+      "level": "B1",
+      "subdivision": "B1.1",
+      "title": "B1.1 · Independent German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "b1-1-m1",
+          "title": "Finding your place",
+          "lessonIds": ["b1-1-l01", "b1-1-l02", "b1-1-l03", "b1-1-l04"]
+        },
+        {
+          "id": "b1-1-m2",
+          "title": "Working together",
+          "lessonIds": ["b1-1-l05", "b1-1-l06", "b1-1-l07", "b1-1-l08"]
+        },
+        {
+          "id": "b1-1-m3",
+          "title": "Services and participation",
+          "lessonIds": ["b1-1-l09", "b1-1-l10", "b1-1-l11", "b1-1-l12"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "b1-1-l01",
+          "number": 1,
+          "title": "Explain your move to a new city",
+          "scene": "Finding your place",
+          "mission": "Explain your move to a new city",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["finding-your-place"],
+          "grammar": ["Past narration"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l02",
+          "number": 2,
+          "title": "Discuss advantages of a neighborhood",
+          "scene": "Finding your place",
+          "mission": "Discuss advantages of a neighborhood",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l01"],
+          "topics": ["finding-your-place"],
+          "grammar": ["weil/obwohl"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l03",
+          "number": 3,
+          "title": "Resolve a disagreement with a landlord",
+          "scene": "Finding your place",
+          "mission": "Resolve a disagreement with a landlord",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l02"],
+          "topics": ["finding-your-place"],
+          "grammar": ["Konjunktiv II requests"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l04",
+          "number": 4,
+          "title": "Summarize an apartment viewing",
+          "scene": "Finding your place",
+          "mission": "Summarize an apartment viewing",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l03"],
+          "topics": ["finding-your-place"],
+          "grammar": ["Relative clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l05",
+          "number": 5,
+          "title": "Describe a workplace problem",
+          "scene": "Working together",
+          "mission": "Describe a workplace problem",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l04"],
+          "topics": ["working-together"],
+          "grammar": ["Subordinate clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l06",
+          "number": 6,
+          "title": "Explain a missed deadline",
+          "scene": "Working together",
+          "mission": "Explain a missed deadline",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l05"],
+          "topics": ["working-together"],
+          "grammar": ["Plusquamperfekt: introduction"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l07",
+          "number": 7,
+          "title": "Give a reasoned proposal to a team",
+          "scene": "Working together",
+          "mission": "Give a reasoned proposal to a team",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l06"],
+          "topics": ["working-together"],
+          "grammar": ["Infinitive clauses with zu"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l08",
+          "number": 8,
+          "title": "Prepare a job interview introduction",
+          "scene": "Working together",
+          "mission": "Prepare a job interview introduction",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l07"],
+          "topics": ["working-together"],
+          "grammar": ["Past and present contrast"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l09",
+          "number": 9,
+          "title": "Challenge an incorrect bill",
+          "scene": "Services and participation",
+          "mission": "Challenge an incorrect bill",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l08"],
+          "topics": ["services-and-participation"],
+          "grammar": ["Formal requests"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l10",
+          "number": 10,
+          "title": "Explain a travel disruption",
+          "scene": "Services and participation",
+          "mission": "Explain a travel disruption",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l09"],
+          "topics": ["services-and-participation"],
+          "grammar": ["Temporal clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l11",
+          "number": 11,
+          "title": "Understand a public-service letter",
+          "scene": "Services and participation",
+          "mission": "Understand a public-service letter",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l10"],
+          "topics": ["services-and-participation"],
+          "grammar": ["Passive: introduction"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-1-l12",
+          "number": 12,
+          "title": "Write a reasoned request for help",
+          "scene": "Services and participation",
+          "mission": "Write a reasoned request for help",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-1-l11"],
+          "topics": ["services-and-participation"],
+          "grammar": ["Formal correspondence"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        }
+      ]
+    },
+    {
+      "id": "b1-2",
+      "level": "B1",
+      "subdivision": "B1.2",
+      "title": "B1.2 · Independent German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "b1-2-m1",
+          "title": "Opinions and choices",
+          "lessonIds": ["b1-2-l01", "b1-2-l02", "b1-2-l03", "b1-2-l04"]
+        },
+        {
+          "id": "b1-2-m2",
+          "title": "Stories and relationships",
+          "lessonIds": ["b1-2-l05", "b1-2-l06", "b1-2-l07", "b1-2-l08"]
+        },
+        {
+          "id": "b1-2-m3",
+          "title": "Communicating independently",
+          "lessonIds": ["b1-2-l09", "b1-2-l10", "b1-2-l11", "b1-2-l12"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "b1-2-l01",
+          "number": 1,
+          "title": "Compare study and work options",
+          "scene": "Opinions and choices",
+          "mission": "Compare study and work options",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["opinions-and-choices"],
+          "grammar": ["Comparative structures"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l02",
+          "number": 2,
+          "title": "Discuss a health habit",
+          "scene": "Opinions and choices",
+          "mission": "Discuss a health habit",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l01"],
+          "topics": ["opinions-and-choices"],
+          "grammar": ["Conditional clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l03",
+          "number": 3,
+          "title": "Recommend a cultural activity",
+          "scene": "Opinions and choices",
+          "mission": "Recommend a cultural activity",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l02"],
+          "topics": ["opinions-and-choices"],
+          "grammar": ["Relative clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l04",
+          "number": 4,
+          "title": "Explain a spending decision",
+          "scene": "Opinions and choices",
+          "mission": "Explain a spending decision",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l03"],
+          "topics": ["opinions-and-choices"],
+          "grammar": ["Purpose clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l05",
+          "number": 5,
+          "title": "Narrate an unexpected event",
+          "scene": "Stories and relationships",
+          "mission": "Narrate an unexpected event",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l04"],
+          "topics": ["stories-and-relationships"],
+          "grammar": ["Past tense sequencing"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l06",
+          "number": 6,
+          "title": "Resolve a misunderstanding with a friend",
+          "scene": "Stories and relationships",
+          "mission": "Resolve a misunderstanding with a friend",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l05"],
+          "topics": ["stories-and-relationships"],
+          "grammar": ["Reported meaning"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l07",
+          "number": 7,
+          "title": "Describe a learning difficulty",
+          "scene": "Stories and relationships",
+          "mission": "Describe a learning difficulty",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l06"],
+          "topics": ["stories-and-relationships"],
+          "grammar": ["Concessive clauses"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l08",
+          "number": 8,
+          "title": "Discuss an environmental action",
+          "scene": "Stories and relationships",
+          "mission": "Discuss an environmental action",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l07"],
+          "topics": ["stories-and-relationships"],
+          "grammar": ["Cause and consequence"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l09",
+          "number": 9,
+          "title": "Summarize a familiar news report",
+          "scene": "Communicating independently",
+          "mission": "Summarize a familiar news report",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l08"],
+          "topics": ["communicating-independently"],
+          "grammar": ["Text connectors"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l10",
+          "number": 10,
+          "title": "Plan a group project",
+          "scene": "Communicating independently",
+          "mission": "Plan a group project",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l09"],
+          "topics": ["communicating-independently"],
+          "grammar": ["Negotiating with Konjunktiv II"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l11",
+          "number": 11,
+          "title": "Write an opinion with supporting reasons",
+          "scene": "Communicating independently",
+          "mission": "Write an opinion with supporting reasons",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l10"],
+          "topics": ["communicating-independently"],
+          "grammar": ["Argument structure"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        },
+        {
+          "id": "b1-2-l12",
+          "number": 12,
+          "title": "Present a personal goal and answer questions",
+          "scene": "Communicating independently",
+          "mission": "Present a personal goal and answer questions",
+          "outcomeIds": [
+            "b1-listening",
+            "b1-reading",
+            "b1-writing",
+            "b1-speaking"
+          ],
+          "prerequisites": ["b1-2-l11"],
+          "topics": ["communicating-independently"],
+          "grammar": ["Connected discourse"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b1-adult",
+          "authoringDirection": "Sustained narration, reasons and follow-up interaction. Use connected readings and original open writing with a human-reviewed rubric."
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "level": "B2",
+      "subdivision": "B2",
+      "title": "B2 · Upper-intermediate German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "b2-m1",
+          "title": "Professional collaboration",
+          "lessonIds": ["b2-l01", "b2-l02", "b2-l03", "b2-l04"]
+        },
+        {
+          "id": "b2-m2",
+          "title": "Study and research",
+          "lessonIds": ["b2-l05", "b2-l06", "b2-l07", "b2-l08"]
+        },
+        {
+          "id": "b2-m3",
+          "title": "Housing and institutions",
+          "lessonIds": ["b2-l09", "b2-l10", "b2-l11", "b2-l12"]
+        },
+        {
+          "id": "b2-m4",
+          "title": "Media and society",
+          "lessonIds": ["b2-l13", "b2-l14", "b2-l15", "b2-l16"]
+        },
+        {
+          "id": "b2-m5",
+          "title": "Environment and culture",
+          "lessonIds": ["b2-l17", "b2-l18", "b2-l19", "b2-l20"]
+        },
+        {
+          "id": "b2-m6",
+          "title": "Independent performance",
+          "lessonIds": ["b2-l21", "b2-l22", "b2-l23", "b2-l24"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "b2-l01",
+          "number": 1,
+          "title": "Argue for a flexible work policy",
+          "scene": "Professional collaboration",
+          "mission": "Argue for a flexible work policy",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["professional-collaboration"],
+          "grammar": ["Concessive connectors"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l02",
+          "number": 2,
+          "title": "Lead a team problem-solving meeting",
+          "scene": "Professional collaboration",
+          "mission": "Lead a team problem-solving meeting",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l01"],
+          "topics": ["professional-collaboration"],
+          "grammar": ["Passive and alternatives"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l03",
+          "number": 3,
+          "title": "Negotiate a project timeline",
+          "scene": "Professional collaboration",
+          "mission": "Negotiate a project timeline",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l02"],
+          "topics": ["professional-collaboration"],
+          "grammar": ["Conditional constructions"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l04",
+          "number": 4,
+          "title": "Write a detailed project recommendation",
+          "scene": "Professional collaboration",
+          "mission": "Write a detailed project recommendation",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l03"],
+          "topics": ["professional-collaboration"],
+          "grammar": ["Nominalization"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l05",
+          "number": 5,
+          "title": "Compare two university programmes",
+          "scene": "Study and research",
+          "mission": "Compare two university programmes",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l04"],
+          "topics": ["study-and-research"],
+          "grammar": ["Extended adjective phrases"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l06",
+          "number": 6,
+          "title": "Summarize an original research explainer",
+          "scene": "Study and research",
+          "mission": "Summarize an original research explainer",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l05"],
+          "topics": ["study-and-research"],
+          "grammar": ["Reported speech: introduction"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l07",
+          "number": 7,
+          "title": "Defend a seminar position",
+          "scene": "Study and research",
+          "mission": "Defend a seminar position",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l06"],
+          "topics": ["study-and-research"],
+          "grammar": ["Correlative connectors"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l08",
+          "number": 8,
+          "title": "Write a structured academic response",
+          "scene": "Study and research",
+          "mission": "Write a structured academic response",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l07"],
+          "topics": ["study-and-research"],
+          "grammar": ["Reference and cohesion"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l09",
+          "number": 9,
+          "title": "Evaluate housing-policy proposals",
+          "scene": "Housing and institutions",
+          "mission": "Evaluate housing-policy proposals",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l08"],
+          "topics": ["housing-and-institutions"],
+          "grammar": ["Participial modifiers"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l10",
+          "number": 10,
+          "title": "Negotiate a rental dispute",
+          "scene": "Housing and institutions",
+          "mission": "Negotiate a rental dispute",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l09"],
+          "topics": ["housing-and-institutions"],
+          "grammar": ["Formal conditional requests"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l11",
+          "number": 11,
+          "title": "Interpret a public consultation text",
+          "scene": "Housing and institutions",
+          "mission": "Interpret a public consultation text",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l10"],
+          "topics": ["housing-and-institutions"],
+          "grammar": ["Passive registers"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l12",
+          "number": 12,
+          "title": "Write a persuasive institutional letter",
+          "scene": "Housing and institutions",
+          "mission": "Write a persuasive institutional letter",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l11"],
+          "topics": ["housing-and-institutions"],
+          "grammar": ["Argument and register"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l13",
+          "number": 13,
+          "title": "Distinguish evidence from opinion in news",
+          "scene": "Media and society",
+          "mission": "Distinguish evidence from opinion in news",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l12"],
+          "topics": ["media-and-society"],
+          "grammar": ["Indirect speech"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l14",
+          "number": 14,
+          "title": "Debate online privacy trade-offs",
+          "scene": "Media and society",
+          "mission": "Debate online privacy trade-offs",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l13"],
+          "topics": ["media-and-society"],
+          "grammar": ["Modal particles in context"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l15",
+          "number": 15,
+          "title": "Compare interpretations of a social issue",
+          "scene": "Media and society",
+          "mission": "Compare interpretations of a social issue",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l14"],
+          "topics": ["media-and-society"],
+          "grammar": ["Contrastive connectors"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l16",
+          "number": 16,
+          "title": "Write a balanced commentary",
+          "scene": "Media and society",
+          "mission": "Write a balanced commentary",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l15"],
+          "topics": ["media-and-society"],
+          "grammar": ["Concession and rebuttal"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l17",
+          "number": 17,
+          "title": "Evaluate a transport sustainability plan",
+          "scene": "Environment and culture",
+          "mission": "Evaluate a transport sustainability plan",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l16"],
+          "topics": ["environment-and-culture"],
+          "grammar": ["Causal nominal phrases"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l18",
+          "number": 18,
+          "title": "Discuss a cultural misunderstanding",
+          "scene": "Environment and culture",
+          "mission": "Discuss a cultural misunderstanding",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l17"],
+          "topics": ["environment-and-culture"],
+          "grammar": ["Pragmatic softening"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l19",
+          "number": 19,
+          "title": "Explain a complex health recommendation",
+          "scene": "Environment and culture",
+          "mission": "Explain a complex health recommendation",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l18"],
+          "topics": ["environment-and-culture"],
+          "grammar": ["Extended subordination"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l20",
+          "number": 20,
+          "title": "Review an original cultural feature",
+          "scene": "Environment and culture",
+          "mission": "Review an original cultural feature",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l19"],
+          "topics": ["environment-and-culture"],
+          "grammar": ["Evaluative language"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l21",
+          "number": 21,
+          "title": "Synthesize two everyday-policy viewpoints",
+          "scene": "Independent performance",
+          "mission": "Synthesize two everyday-policy viewpoints",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l20"],
+          "topics": ["independent-performance"],
+          "grammar": ["Cohesive devices"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l22",
+          "number": 22,
+          "title": "Handle follow-up questions in a debate",
+          "scene": "Independent performance",
+          "mission": "Handle follow-up questions in a debate",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l21"],
+          "topics": ["independent-performance"],
+          "grammar": ["Reformulation"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l23",
+          "number": 23,
+          "title": "Revise a formal argument for clarity",
+          "scene": "Independent performance",
+          "mission": "Revise a formal argument for clarity",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l22"],
+          "topics": ["independent-performance"],
+          "grammar": ["Sentence variation"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        },
+        {
+          "id": "b2-l24",
+          "number": 24,
+          "title": "Present a proposal to different audiences",
+          "scene": "Independent performance",
+          "mission": "Present a proposal to different audiences",
+          "outcomeIds": [
+            "b2-listening",
+            "b2-reading",
+            "b2-writing",
+            "b2-speaking"
+          ],
+          "prerequisites": ["b2-l23"],
+          "topics": ["independent-performance"],
+          "grammar": ["Register shifts"],
+          "pronunciationFocus": "Connected speech, emphasis and turn-taking signals.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-b2-adult",
+          "authoringDirection": "Detailed argument, natural-pace multi-speaker listening and extended writing. Require evidence, counterarguments and register-sensitive feedback."
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "level": "C1",
+      "subdivision": "C1",
+      "title": "C1 · Advanced German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "c1-m1",
+          "title": "Academic discourse",
+          "lessonIds": ["c1-l01", "c1-l02", "c1-l03", "c1-l04"]
+        },
+        {
+          "id": "c1-m2",
+          "title": "Professional judgment",
+          "lessonIds": ["c1-l05", "c1-l06", "c1-l07", "c1-l08"]
+        },
+        {
+          "id": "c1-m3",
+          "title": "Public debate",
+          "lessonIds": ["c1-l09", "c1-l10", "c1-l11", "c1-l12"]
+        },
+        {
+          "id": "c1-m4",
+          "title": "Culture and interpretation",
+          "lessonIds": ["c1-l13", "c1-l14", "c1-l15", "c1-l16"]
+        },
+        {
+          "id": "c1-m5",
+          "title": "Flexible advanced communication",
+          "lessonIds": ["c1-l17", "c1-l18", "c1-l19", "c1-l20"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "c1-l01",
+          "number": 1,
+          "title": "Synthesize contrasting original academic texts",
+          "scene": "Academic discourse",
+          "mission": "Synthesize contrasting original academic texts",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["academic-discourse"],
+          "grammar": ["Complex nominal groups"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l02",
+          "number": 2,
+          "title": "Deliver an evidence-based seminar presentation",
+          "scene": "Academic discourse",
+          "mission": "Deliver an evidence-based seminar presentation",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l01"],
+          "topics": ["academic-discourse"],
+          "grammar": ["Discourse signposting"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l03",
+          "number": 3,
+          "title": "Critique an argument and its assumptions",
+          "scene": "Academic discourse",
+          "mission": "Critique an argument and its assumptions",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l02"],
+          "topics": ["academic-discourse"],
+          "grammar": ["Concessive nuance"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l04",
+          "number": 4,
+          "title": "Write a coherent research-position paper",
+          "scene": "Academic discourse",
+          "mission": "Write a coherent research-position paper",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l03"],
+          "topics": ["academic-discourse"],
+          "grammar": ["Advanced cohesion"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l05",
+          "number": 5,
+          "title": "Negotiate a sensitive workplace change",
+          "scene": "Professional judgment",
+          "mission": "Negotiate a sensitive workplace change",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l04"],
+          "topics": ["professional-judgment"],
+          "grammar": ["Indirectness and hedging"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l06",
+          "number": 6,
+          "title": "Interpret implicit priorities in a meeting",
+          "scene": "Professional judgment",
+          "mission": "Interpret implicit priorities in a meeting",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l05"],
+          "topics": ["professional-judgment"],
+          "grammar": ["Modal particles and stance"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l07",
+          "number": 7,
+          "title": "Write an executive briefing from several sources",
+          "scene": "Professional judgment",
+          "mission": "Write an executive briefing from several sources",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l06"],
+          "topics": ["professional-judgment"],
+          "grammar": ["Condensation"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l08",
+          "number": 8,
+          "title": "Adapt a proposal for a specialist audience",
+          "scene": "Professional judgment",
+          "mission": "Adapt a proposal for a specialist audience",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l07"],
+          "topics": ["professional-judgment"],
+          "grammar": ["Professional register"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l09",
+          "number": 9,
+          "title": "Analyze framing in public-policy discourse",
+          "scene": "Public debate",
+          "mission": "Analyze framing in public-policy discourse",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l08"],
+          "topics": ["public-debate"],
+          "grammar": ["Reported positions"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l10",
+          "number": 10,
+          "title": "Debate a difficult ethical trade-off",
+          "scene": "Public debate",
+          "mission": "Debate a difficult ethical trade-off",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l09"],
+          "topics": ["public-debate"],
+          "grammar": ["Qualification and counterargument"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l11",
+          "number": 11,
+          "title": "Write a nuanced opinion for publication",
+          "scene": "Public debate",
+          "mission": "Write a nuanced opinion for publication",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l10"],
+          "topics": ["public-debate"],
+          "grammar": ["Rhetorical organization"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l12",
+          "number": 12,
+          "title": "Mediate opposing community perspectives",
+          "scene": "Public debate",
+          "mission": "Mediate opposing community perspectives",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l11"],
+          "topics": ["public-debate"],
+          "grammar": ["Paraphrase and attribution"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l13",
+          "number": 13,
+          "title": "Interpret irony in an original cultural essay",
+          "scene": "Culture and interpretation",
+          "mission": "Interpret irony in an original cultural essay",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l12"],
+          "topics": ["culture-and-interpretation"],
+          "grammar": ["Pragmatic markers"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l14",
+          "number": 14,
+          "title": "Compare competing interpretations of a narrative",
+          "scene": "Culture and interpretation",
+          "mission": "Compare competing interpretations of a narrative",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l13"],
+          "topics": ["culture-and-interpretation"],
+          "grammar": ["Perspective and voice"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l15",
+          "number": 15,
+          "title": "Discuss implied meaning in a recorded exchange",
+          "scene": "Culture and interpretation",
+          "mission": "Discuss implied meaning in a recorded exchange",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l14"],
+          "topics": ["culture-and-interpretation"],
+          "grammar": ["Prosody and implication"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l16",
+          "number": 16,
+          "title": "Write a critical cultural review",
+          "scene": "Culture and interpretation",
+          "mission": "Write a critical cultural review",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l15"],
+          "topics": ["culture-and-interpretation"],
+          "grammar": ["Style and evaluation"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l17",
+          "number": 17,
+          "title": "Respond to challenging questions under pressure",
+          "scene": "Flexible advanced communication",
+          "mission": "Respond to challenging questions under pressure",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l16"],
+          "topics": ["flexible-advanced-communication"],
+          "grammar": ["Repair and reformulation"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l18",
+          "number": 18,
+          "title": "Synthesize a demanding multi-source dossier",
+          "scene": "Flexible advanced communication",
+          "mission": "Synthesize a demanding multi-source dossier",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l17"],
+          "topics": ["flexible-advanced-communication"],
+          "grammar": ["Information hierarchy"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l19",
+          "number": 19,
+          "title": "Revise an argument for precision and tone",
+          "scene": "Flexible advanced communication",
+          "mission": "Revise an argument for precision and tone",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l18"],
+          "topics": ["flexible-advanced-communication"],
+          "grammar": ["Lexical nuance"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        },
+        {
+          "id": "c1-l20",
+          "number": 20,
+          "title": "Present a complex position with audience adaptation",
+          "scene": "Flexible advanced communication",
+          "mission": "Present a complex position with audience adaptation",
+          "outcomeIds": [
+            "c1-listening",
+            "c1-reading",
+            "c1-writing",
+            "c1-speaking"
+          ],
+          "prerequisites": ["c1-l19"],
+          "topics": ["flexible-advanced-communication"],
+          "grammar": ["Fluent register control"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c1-adult",
+          "authoringDirection": "Demanding original texts, implicit stance, rhetorical structure and flexible professional or academic register. Require an experienced advanced-level reviewer."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "level": "C2",
+      "subdivision": "C2",
+      "title": "C2 · Mastery German",
+      "origin": "deutsch_journey_original",
+      "modules": [
+        {
+          "id": "c2-m1",
+          "title": "Precision and inference",
+          "lessonIds": ["c2-l01", "c2-l02", "c2-l03", "c2-l04"]
+        },
+        {
+          "id": "c2-m2",
+          "title": "Critical synthesis",
+          "lessonIds": ["c2-l05", "c2-l06", "c2-l07", "c2-l08"]
+        },
+        {
+          "id": "c2-m3",
+          "title": "Style and editorial craft",
+          "lessonIds": ["c2-l09", "c2-l10", "c2-l11", "c2-l12"]
+        },
+        {
+          "id": "c2-m4",
+          "title": "Mastery in demanding settings",
+          "lessonIds": ["c2-l13", "c2-l14", "c2-l15", "c2-l16"]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "c2-l01",
+          "number": 1,
+          "title": "Analyze ambiguity in a complex original essay",
+          "scene": "Precision and inference",
+          "mission": "Analyze ambiguity in a complex original essay",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": [],
+          "topics": ["precision-and-inference"],
+          "grammar": ["Scope and ambiguity"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l02",
+          "number": 2,
+          "title": "Interpret subtle irony across speakers",
+          "scene": "Precision and inference",
+          "mission": "Interpret subtle irony across speakers",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l01"],
+          "topics": ["precision-and-inference"],
+          "grammar": ["Prosody and pragmatics"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l03",
+          "number": 3,
+          "title": "Compare stylistic choices in original texts",
+          "scene": "Precision and inference",
+          "mission": "Compare stylistic choices in original texts",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l02"],
+          "topics": ["precision-and-inference"],
+          "grammar": ["Marked syntax"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l04",
+          "number": 4,
+          "title": "Reformulate a dense argument without distortion",
+          "scene": "Precision and inference",
+          "mission": "Reformulate a dense argument without distortion",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l03"],
+          "topics": ["precision-and-inference"],
+          "grammar": ["Semantic precision"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l05",
+          "number": 5,
+          "title": "Synthesize conflicting specialist positions",
+          "scene": "Critical synthesis",
+          "mission": "Synthesize conflicting specialist positions",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l04"],
+          "topics": ["critical-synthesis"],
+          "grammar": ["Attribution and qualification"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l06",
+          "number": 6,
+          "title": "Evaluate an argument with implicit premises",
+          "scene": "Critical synthesis",
+          "mission": "Evaluate an argument with implicit premises",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l05"],
+          "topics": ["critical-synthesis"],
+          "grammar": ["Inference and stance"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l07",
+          "number": 7,
+          "title": "Write a rigorous critical analysis",
+          "scene": "Critical synthesis",
+          "mission": "Write a rigorous critical analysis",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l06"],
+          "topics": ["critical-synthesis"],
+          "grammar": ["Advanced rhetorical structure"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l08",
+          "number": 8,
+          "title": "Defend a nuanced position against objections",
+          "scene": "Critical synthesis",
+          "mission": "Defend a nuanced position against objections",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l07"],
+          "topics": ["critical-synthesis"],
+          "grammar": ["Strategic reformulation"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l09",
+          "number": 9,
+          "title": "Edit an original technical text for clarity",
+          "scene": "Style and editorial craft",
+          "mission": "Edit an original technical text for clarity",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l08"],
+          "topics": ["style-and-editorial-craft"],
+          "grammar": ["Information structure"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l10",
+          "number": 10,
+          "title": "Adapt literary-style prose for a new audience",
+          "scene": "Style and editorial craft",
+          "mission": "Adapt literary-style prose for a new audience",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l09"],
+          "topics": ["style-and-editorial-craft"],
+          "grammar": ["Stylistic variation"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l11",
+          "number": 11,
+          "title": "Explain cultural allusion with appropriate caveats",
+          "scene": "Style and editorial craft",
+          "mission": "Explain cultural allusion with appropriate caveats",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l10"],
+          "topics": ["style-and-editorial-craft"],
+          "grammar": ["Pragmatic context"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l12",
+          "number": 12,
+          "title": "Write a sophisticated review of competing views",
+          "scene": "Style and editorial craft",
+          "mission": "Write a sophisticated review of competing views",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l11"],
+          "topics": ["style-and-editorial-craft"],
+          "grammar": ["Evaluative precision"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l13",
+          "number": 13,
+          "title": "Negotiate an abstract issue with subtle constraints",
+          "scene": "Mastery in demanding settings",
+          "mission": "Negotiate an abstract issue with subtle constraints",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l12"],
+          "topics": ["mastery-in-demanding-settings"],
+          "grammar": ["Calibrated politeness"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l14",
+          "number": 14,
+          "title": "Mediate a highly complex disagreement",
+          "scene": "Mastery in demanding settings",
+          "mission": "Mediate a highly complex disagreement",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l13"],
+          "topics": ["mastery-in-demanding-settings"],
+          "grammar": ["Meaning-preserving synthesis"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l15",
+          "number": 15,
+          "title": "Present a specialist argument to non-specialists",
+          "scene": "Mastery in demanding settings",
+          "mission": "Present a specialist argument to non-specialists",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l14"],
+          "topics": ["mastery-in-demanding-settings"],
+          "grammar": ["Audience-sensitive register"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        },
+        {
+          "id": "c2-l16",
+          "number": 16,
+          "title": "Deliver and revise a multi-source capstone",
+          "scene": "Mastery in demanding settings",
+          "mission": "Deliver and revise a multi-source capstone",
+          "outcomeIds": [
+            "c2-listening",
+            "c2-reading",
+            "c2-writing",
+            "c2-speaking"
+          ],
+          "prerequisites": ["c2-l15"],
+          "topics": ["mastery-in-demanding-settings"],
+          "grammar": ["Flexible discourse control"],
+          "pronunciationFocus": "Prosody, stance, subtle contrast and audience-sensitive delivery.",
+          "requiredSkills": ["listening", "reading", "writing", "speaking"],
+          "requiredActivities": [
+            "vocabulary",
+            "grammar",
+            "dialogue",
+            "listening",
+            "reading",
+            "writing",
+            "speaking",
+            "mission"
+          ],
+          "examCode": "goethe-c2-adult",
+          "authoringDirection": "Subtle pragmatics, style, inference and cross-source synthesis. Commission specialist original input and calibrated human assessment; do not lengthen beginner quizzes."
+        }
+      ]
+    }
+  ]
+}
