@@ -6,14 +6,14 @@ Updated: 14 October 2026
 
 ## 1. Official Goethe exam material — A1 through C2
 
-| Level | Official Goethe link | Available study materials |
-|---|---|---|
-| A1 Start Deutsch 1 (adults) | https://www.goethe.de/en/m/spr/prf/ueb/pa1.html | Three original Goethe practice/model exam sets, PDFs, listening audio, speaking example, vocabulary list and online practice |
-| A2 adults | https://www.goethe.de/ins/de/en/prf/gzsd2/ub2.html | Model/practice papers, audio, sample speaking video, online training |
-| B1 adults | https://www.goethe.de/ins/de/en/prf/gzb1/ueb.html | Model and practice papers, audio, speaking video and vocabulary |
-| B2 | https://www.goethe.de/ins/de/en/m/prf/gzb2/ue9.html | Model paper, listening audio, speaking video and digital practice |
-| C1 | https://www.goethe.de/ins/de/en/prf/gzc1/u24.html | Model paper, audio and speaking demonstration |
-| C2 | https://www.goethe.de/ins/de/en/m/prf/prf/gzc2/ueb.html | Model and practice sets, audio, speaking demonstration and reading/literature information |
+| Level                       | Official Goethe link                                    | Available study materials                                                                                                    |
+| --------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| A1 Start Deutsch 1 (adults) | https://www.goethe.de/en/m/spr/prf/ueb/pa1.html         | Three original Goethe practice/model exam sets, PDFs, listening audio, speaking example, vocabulary list and online practice |
+| A2 adults                   | https://www.goethe.de/ins/de/en/prf/gzsd2/ub2.html      | Model/practice papers, audio, sample speaking video, online training                                                         |
+| B1 adults                   | https://www.goethe.de/ins/de/en/prf/gzb1/ueb.html       | Model and practice papers, audio, speaking video and vocabulary                                                              |
+| B2                          | https://www.goethe.de/ins/de/en/m/prf/gzb2/ue9.html     | Model paper, listening audio, speaking video and digital practice                                                            |
+| C1                          | https://www.goethe.de/ins/de/en/prf/gzc1/u24.html       | Model paper, audio and speaking demonstration                                                                                |
+| C2                          | https://www.goethe.de/ins/de/en/m/prf/prf/gzc2/ueb.html | Model and practice sets, audio, speaking demonstration and reading/literature information                                    |
 
 Main examination hub: https://www.goethe.de/en/spr/prf/ueb.html
 
@@ -38,17 +38,17 @@ Sources: https://www.goethe.de/ins/eg/de/sta/alx/prf/gzsd1/inf.html and https://
 
 ## 2. Reliable curriculum and language-learning references
 
-| Source | Link | Best purpose | Reuse status |
-|---|---|---|---|
-| CEFR Companion Volume (Council of Europe) | https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions | Competency targets, skill outcomes across A1–C2 | Use as a framework; do not republish whole text |
-| Goethe free exercises | https://www.goethe.de/de/spr/ueb.html | Grammar, vocabulary, lifestyle, listening | Learner practice/research; obtain rights to reproduce |
-| Goethe pronunciation trainer | https://www.goethe.de/de/spr/ueb/ast.html | Pronunciation method and exercises | Learner practice/research; not a media source for rehosting |
-| vhs-Lernportal | https://www.vhs-lernportal.de/wws/kursangebot-lernende.php | Structured A1–B1 content and exercise inspiration | Check rights before reuse |
-| DW Nicos Weg A1 film | https://www.youtube.com/watch?v=4-eDoThe6qo | Contextual listening and story progression | Link for learners; do not copy footage/audio |
-| telc A1 official exam info | https://www.telc.net/en/language-examinations/certificate-exams/german/start-german1-telc-german-a1/ | Compare exam skills and task types | Check rights before reproducing tests |
-| telc free teaching material | https://www.telc.net/en/teaching-materials/free-downloads/ | Additional exercises, worksheets, audio | Check licensing and scope of permitted use |
-| ZUM Deutsch Lernen | https://deutsch-lernen.zum.de/wiki/Hauptseite | Grammar / interactive resources, open education | Most text CC BY 4.0; verify individual asset licenses |
-| ZUM licensing | https://deutsch-lernen.zum.de/wiki/%C3%9Cber_ZUM_Deutsch_Lernen | Confirm reuse rules, attribution | Verify each page, image, audio, embedded source |
+| Source                                    | Link                                                                                                                     | Best purpose                                      | Reuse status                                                |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ----------------------------------------------------------- |
+| CEFR Companion Volume (Council of Europe) | https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions | Competency targets, skill outcomes across A1–C2   | Use as a framework; do not republish whole text             |
+| Goethe free exercises                     | https://www.goethe.de/de/spr/ueb.html                                                                                    | Grammar, vocabulary, lifestyle, listening         | Learner practice/research; obtain rights to reproduce       |
+| Goethe pronunciation trainer              | https://www.goethe.de/de/spr/ueb/ast.html                                                                                | Pronunciation method and exercises                | Learner practice/research; not a media source for rehosting |
+| vhs-Lernportal                            | https://www.vhs-lernportal.de/wws/kursangebot-lernende.php                                                               | Structured A1–B1 content and exercise inspiration | Check rights before reuse                                   |
+| DW Nicos Weg A1 film                      | https://www.youtube.com/watch?v=4-eDoThe6qo                                                                              | Contextual listening and story progression        | Link for learners; do not copy footage/audio                |
+| telc A1 official exam info                | https://www.telc.net/en/language-examinations/certificate-exams/german/start-german1-telc-german-a1/                     | Compare exam skills and task types                | Check rights before reproducing tests                       |
+| telc free teaching material               | https://www.telc.net/en/teaching-materials/free-downloads/                                                               | Additional exercises, worksheets, audio           | Check licensing and scope of permitted use                  |
+| ZUM Deutsch Lernen                        | https://deutsch-lernen.zum.de/wiki/Hauptseite                                                                            | Grammar / interactive resources, open education   | Most text CC BY 4.0; verify individual asset licenses       |
+| ZUM licensing                             | https://deutsch-lernen.zum.de/wiki/%C3%9Cber_ZUM_Deutsch_Lernen                                                          | Confirm reuse rules, attribution                  | Verify each page, image, audio, embedded source             |
 
 ### Critical commercial SaaS rights
 
@@ -62,6 +62,7 @@ Sources: https://www.goethe.de/ins/eg/de/sta/alx/prf/gzsd1/inf.html and https://
 ## 3. Exam techniques you can teach inside the app
 
 ### Listening — Hören
+
 1. Read the question before listening; identify what you need (name, number, time, place, intention).
 2. Expect distractors and changed plans. The first number or date heard may not be the answer.
 3. Learn to recognize paraphrases; the audio might not repeat the answer choice verbatim.
@@ -69,12 +70,14 @@ Sources: https://www.goethe.de/ins/eg/de/sta/alx/prf/gzsd1/inf.html and https://
 5. After finishing, re-listen with transcript, save misunderstood words, practise dictation.
 
 ### Reading — Lesen
+
 1. Read the question first, then scan the text for relevant details.
 2. Watch for negatives such as `nicht`, `kein`, `geschlossen` and for time conditions.
 3. Confirm meaning rather than matching one identical word.
 4. Use a timer in exam mode; reveal explanations only afterward.
 
 ### Writing — Schreiben
+
 1. Identify every requested content point and tick each off while drafting.
 2. Keep basic messages simple and accurate rather than using grammar you cannot control.
 3. Practise greetings, introductions, making requests, thanking and signing off.
@@ -82,6 +85,7 @@ Sources: https://www.goethe.de/ins/eg/de/sta/alx/prf/gzsd1/inf.html and https://
 5. Assess task completion separately from grammatical accuracy.
 
 ### Speaking — Sprechen
+
 1. At A1, practise an introduction using name, age, country, city, languages, profession and hobbies.
 2. Train question forms, then make requests and respond politely.
 3. Use repair phrases: `Wie bitte?`, `Können Sie das bitte wiederholen?`, `Langsam, bitte.`
@@ -91,7 +95,9 @@ Sources: https://www.goethe.de/ins/eg/de/sta/alx/prf/gzsd1/inf.html and https://
 ## 4. Suggested app feature design
 
 ### Exam resource directory
+
 Each entry:
+
 - certificate level / provider
 - skill, source title, source URL
 - original model or supplementary practice
@@ -100,6 +106,7 @@ Each entry:
 - checked_at and next_review_at
 
 ### Goethe Exam Arena
+
 - Exam Explorer: section descriptions and official resource links
 - Skill Drills: original exercises reviewed for the targeted level
 - Timed Mock Exam: original versioned paper, realistic timing and answer key

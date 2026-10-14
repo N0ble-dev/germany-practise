@@ -7,15 +7,15 @@
 
 ## A. Level-organized teaching platforms
 
-| Resource | Levels | Material | SaaS approach | Official URL |
-|---|---|---|---|---|
-| **ZUM Deutsch Lernen** | A1–C2 | Learning paths, grammar, H5P exercises, topic-based tasks | **Selective import possible**: site is generally CC BY 4.0; check every specific page, embedded resource, and media license | https://deutsch-lernen.zum.de/wiki/Hauptseite |
-| **Goethe Deutsch für dich** | A1–C2 | Grammar, vocabulary, reading, listening exercises | **Reference/link**, permission required before reposting exercises, audio or media | https://www.goethe.de/prj/dfd/en/home.cfm |
-| **vhs-Lernportal** | A1–C1 (some advanced courses specifically job-related) | Comprehensive A1, A2, B1 courses, work-language and C1 Beruf | **Reference/link**; no verified bulk commercial reuse rights | https://www.vhs-lernportal.de/wws/kursangebot.php |
-| **DW Learn German** | A1–C1, plus selected additional resources | News, stories, videos, listening, courses | **Reference/link**; do not automatically reproduce videos, transcripts, audio | https://learngerman.dw.com/ |
-| **deutsch.info** | A1–B2 | 4 structured courses, grammar, media, living in Germany/Austria | **Reference/link**: default site copyright notice CC BY-NC-SA 4.0 (non-commercial) unless otherwise marked. Specific new OER may differ; check item-level terms | https://deutsch.info/?hl=en |
-| **DeutschAkademie Grammar Trainer** | A1–C1 | Topic/level-organized grammar exercises | **Reference/link**; commercial content import not established | https://www.deutschakademie.de/en/online-german-courses-1/ |
-| **SCHUBERT Verlag online exercises** | A1–C1 observed in indexed exercises | Progression-based grammar, exercises, downloadable personal study PDFs | **Link only**; explicitly forbids commercial reuse, collections and republishing on other sites | https://www.aufgaben.schubert-verlag.de/ |
+| Resource                             | Levels                                                 | Material                                                               | SaaS approach                                                                                                                                                   | Official URL                                               |
+| ------------------------------------ | ------------------------------------------------------ | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **ZUM Deutsch Lernen**               | A1–C2                                                  | Learning paths, grammar, H5P exercises, topic-based tasks              | **Selective import possible**: site is generally CC BY 4.0; check every specific page, embedded resource, and media license                                     | https://deutsch-lernen.zum.de/wiki/Hauptseite              |
+| **Goethe Deutsch für dich**          | A1–C2                                                  | Grammar, vocabulary, reading, listening exercises                      | **Reference/link**, permission required before reposting exercises, audio or media                                                                              | https://www.goethe.de/prj/dfd/en/home.cfm                  |
+| **vhs-Lernportal**                   | A1–C1 (some advanced courses specifically job-related) | Comprehensive A1, A2, B1 courses, work-language and C1 Beruf           | **Reference/link**; no verified bulk commercial reuse rights                                                                                                    | https://www.vhs-lernportal.de/wws/kursangebot.php          |
+| **DW Learn German**                  | A1–C1, plus selected additional resources              | News, stories, videos, listening, courses                              | **Reference/link**; do not automatically reproduce videos, transcripts, audio                                                                                   | https://learngerman.dw.com/                                |
+| **deutsch.info**                     | A1–B2                                                  | 4 structured courses, grammar, media, living in Germany/Austria        | **Reference/link**: default site copyright notice CC BY-NC-SA 4.0 (non-commercial) unless otherwise marked. Specific new OER may differ; check item-level terms | https://deutsch.info/?hl=en                                |
+| **DeutschAkademie Grammar Trainer**  | A1–C1                                                  | Topic/level-organized grammar exercises                                | **Reference/link**; commercial content import not established                                                                                                   | https://www.deutschakademie.de/en/online-german-courses-1/ |
+| **SCHUBERT Verlag online exercises** | A1–C1 observed in indexed exercises                    | Progression-based grammar, exercises, downloadable personal study PDFs | **Link only**; explicitly forbids commercial reuse, collections and republishing on other sites                                                                 | https://www.aufgaben.schubert-verlag.de/                   |
 
 ### Source and license proof
 
@@ -32,13 +32,14 @@
 
 ## B. Selectively reusable open educational content
 
-| Resource | Best fit | License / considerations | Link |
-|---|---|---|---|
-| **ZUM Deutsch Lernen** | Grammar, practice activities, learning sequences A1–C2 | Generally **CC BY 4.0**; attribution + source/license link + modification notice, individual assets may differ | https://deutsch-lernen.zum.de/wiki/Hauptseite |
-| **Kultur und Sprache (Austrian education)** | Culture, Austrian German, listening/reading/speaking classroom materials | Original contents generally **CC BY-SA 4.0**, except otherwise indicated; check third-party media; share-alike for adaptations | https://www.kulturundsprache.at/oer |
-| **ondaz** | Topic-specific grammar and interaction, mainly B2/C1 with some A2/B1 | ZUM classifies some ondaz material CC BY 4.0, but verify each target item/source license directly before importing | https://ondaz.de/ |
+| Resource                                    | Best fit                                                                 | License / considerations                                                                                                       | Link                                          |
+| ------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
+| **ZUM Deutsch Lernen**                      | Grammar, practice activities, learning sequences A1–C2                   | Generally **CC BY 4.0**; attribution + source/license link + modification notice, individual assets may differ                 | https://deutsch-lernen.zum.de/wiki/Hauptseite |
+| **Kultur und Sprache (Austrian education)** | Culture, Austrian German, listening/reading/speaking classroom materials | Original contents generally **CC BY-SA 4.0**, except otherwise indicated; check third-party media; share-alike for adaptations | https://www.kulturundsprache.at/oer           |
+| **ondaz**                                   | Topic-specific grammar and interaction, mainly B2/C1 with some A2/B1     | ZUM classifies some ondaz material CC BY 4.0, but verify each target item/source license directly before importing             | https://ondaz.de/                             |
 
 References:
+
 - https://www.kulturundsprache.at/oer
 - https://deutsch-lernen.zum.de/wiki/OER-Materialien
 - https://creativecommons.org/licenses/by/4.0/
@@ -48,13 +49,14 @@ References:
 
 ## C. Reusable German language DATA (not ready-made CEFR courses)
 
-| Dataset | What it provides | Rights | Import plan |
-|---|---|---|---|
-| **Tatoeba** | German sentences, bilingual pairs, some audio | Text mostly **CC BY 2.0 FR**; some text CC0; recordings have **per-audio licenses** | Download German+English / German+Arabic sentence pairs, filter, verify, tag by level |
-| **Wikidata Lexemes** | Structured language data and lexical facts | **CC0** for structured data | Extract only useful German lexemes and forms, then linguistic QC |
-| **Wiktionary via Kaikki/Wiktextract** | Machine-readable German vocabulary, meanings, morphology, senses | **CC BY-SA/GFDL** from Wiktionary; share-alike and attribution complexity | Stage in a separate import table; check individual quality; track source and reuse obligations |
+| Dataset                               | What it provides                                                 | Rights                                                                              | Import plan                                                                                    |
+| ------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Tatoeba**                           | German sentences, bilingual pairs, some audio                    | Text mostly **CC BY 2.0 FR**; some text CC0; recordings have **per-audio licenses** | Download German+English / German+Arabic sentence pairs, filter, verify, tag by level           |
+| **Wikidata Lexemes**                  | Structured language data and lexical facts                       | **CC0** for structured data                                                         | Extract only useful German lexemes and forms, then linguistic QC                               |
+| **Wiktionary via Kaikki/Wiktextract** | Machine-readable German vocabulary, meanings, morphology, senses | **CC BY-SA/GFDL** from Wiktionary; share-alike and attribution complexity           | Stage in a separate import table; check individual quality; track source and reuse obligations |
 
 Primary references:
+
 - https://tatoeba.org/en/downloads
 - https://en.wiki.tatoeba.org/articles/show/faq
 - https://www.wikidata.org/wiki/Wikidata:Licensing

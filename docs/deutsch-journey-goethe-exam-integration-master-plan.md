@@ -12,7 +12,7 @@
 
 **DO NOT build a webpage that merely lists PDFs, external exam links or embedded videos.** Build a native, responsive preparation journey inside the existing application. Every exercise, recording, result, mistake and next recommendation lives in Deutsch Journey and contributes to the learner's progress.
 
-Build **one highly credible adult Goethe A1: Start Deutsch 1 experience end-to-end**, then reproduce the engine for other exam definitions. Original tests must be mapped to official *format and competencies*, not copied from official model papers.
+Build **one highly credible adult Goethe A1: Start Deutsch 1 experience end-to-end**, then reproduce the engine for other exam definitions. Original tests must be mapped to official _format and competencies_, not copied from official model papers.
 
 Core user promise:
 
@@ -32,19 +32,19 @@ Do not replace or destructively migrate the existing local/JSONB notebook snapsh
 
 ## 1. Source-by-source integration policy
 
-| Source | What was confirmed / is useful | How it enters the product | Copy / host content? |
-|---|---|---|---|
-| **Goethe-Institut exam training A1–C2** | Official practice sets, sample task types, answer keys, audio, speaking demonstrations and digital accessible training | **Authoritative *exam-format reference*.** Use to configure layouts, section timing, task taxonomies, writing/speaking targets, and the official exam guide | **No by default.** Do not ingest official questions/audio/videos/PDFs without written permission/license |
-| **Goethe adult A1 examination page** | Four sections and published lengths: Hören 20m, Lesen 25m, Schreiben 20m, Sprechen 15m; speaking in a group | A1 exam profile, mode configuration and user explanation | Paraphrase factual format; link source |
-| **Goethe A1 digital model: Sprechen** | 3 parts: introduce yourself, ask/give information, make/respond to requests | In-app **original** three-part speaking simulator | Do not reproduce Goethe cards/scripts |
-| **Goethe results information** | A1 overall >=60/100 after all parts; A2 additionally written >=45 and oral >=15; B1–C2 60/100 **per module** | Versioned **official scoring metadata** and clearly labelled independent simulation metrics | Factual rules yes; no copied marking sheets |
-| **CEFR Companion Volume** | Can-do descriptors by level/skill | Learning outcome tags, curriculum coverage and diagnostic competency map | Use referenced objectives; avoid wholesale redistribution |
-| **ZUM Deutsch Lernen** | A1–C2 openly licensed teaching texts and activities, generally CC BY 4.0, with separately marked media licenses | Candidate supplementary grammar/skill resources; selective **licensed** adaptation as an in-app task when each item passes rights review | **Yes, selectively:** item-level evidence, attribution, transformation/license checks and editorial review |
-| **Tatoeba** | Downloadable examples/translation pairs and per-file/per-audio licenses | Source material for ancillary practice sentences and examples; not exam-paper templates | **Only items with compatible license** and review; per-audio rights checked separately |
-| **Wikidata lexemes** | CC0 structured lexical data | Article/inflection enrichment; not exam readiness evidence | CC0 structured data, review factual quality |
-| **Wiktionary via Kaikki** | Structured meanings/forms | Optional dictionary enrichment after legal review | Share-alike/attribution can complicate commercial mixed content |
-| **vhs-Lernportal, Deutsche Welle, deutsch.info, DeutschAkademie** | Useful grammar/course patterns and listening practice | Competency-gap analysis and editorial inspiration, optionally a separate *further study* link | **Do not silently import content** |
-| **SCHUBERT-Verlag** | Level-organized exercises and explicit restrictions on redistribution/collection | Understand practice themes or link to original site | **No unlicensed reposting/import** |
+| Source                                                            | What was confirmed / is useful                                                                                         | How it enters the product                                                                                                                                   | Copy / host content?                                                                                       |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Goethe-Institut exam training A1–C2**                           | Official practice sets, sample task types, answer keys, audio, speaking demonstrations and digital accessible training | **Authoritative _exam-format reference_.** Use to configure layouts, section timing, task taxonomies, writing/speaking targets, and the official exam guide | **No by default.** Do not ingest official questions/audio/videos/PDFs without written permission/license   |
+| **Goethe adult A1 examination page**                              | Four sections and published lengths: Hören 20m, Lesen 25m, Schreiben 20m, Sprechen 15m; speaking in a group            | A1 exam profile, mode configuration and user explanation                                                                                                    | Paraphrase factual format; link source                                                                     |
+| **Goethe A1 digital model: Sprechen**                             | 3 parts: introduce yourself, ask/give information, make/respond to requests                                            | In-app **original** three-part speaking simulator                                                                                                           | Do not reproduce Goethe cards/scripts                                                                      |
+| **Goethe results information**                                    | A1 overall >=60/100 after all parts; A2 additionally written >=45 and oral >=15; B1–C2 60/100 **per module**           | Versioned **official scoring metadata** and clearly labelled independent simulation metrics                                                                 | Factual rules yes; no copied marking sheets                                                                |
+| **CEFR Companion Volume**                                         | Can-do descriptors by level/skill                                                                                      | Learning outcome tags, curriculum coverage and diagnostic competency map                                                                                    | Use referenced objectives; avoid wholesale redistribution                                                  |
+| **ZUM Deutsch Lernen**                                            | A1–C2 openly licensed teaching texts and activities, generally CC BY 4.0, with separately marked media licenses        | Candidate supplementary grammar/skill resources; selective **licensed** adaptation as an in-app task when each item passes rights review                    | **Yes, selectively:** item-level evidence, attribution, transformation/license checks and editorial review |
+| **Tatoeba**                                                       | Downloadable examples/translation pairs and per-file/per-audio licenses                                                | Source material for ancillary practice sentences and examples; not exam-paper templates                                                                     | **Only items with compatible license** and review; per-audio rights checked separately                     |
+| **Wikidata lexemes**                                              | CC0 structured lexical data                                                                                            | Article/inflection enrichment; not exam readiness evidence                                                                                                  | CC0 structured data, review factual quality                                                                |
+| **Wiktionary via Kaikki**                                         | Structured meanings/forms                                                                                              | Optional dictionary enrichment after legal review                                                                                                           | Share-alike/attribution can complicate commercial mixed content                                            |
+| **vhs-Lernportal, Deutsche Welle, deutsch.info, DeutschAkademie** | Useful grammar/course patterns and listening practice                                                                  | Competency-gap analysis and editorial inspiration, optionally a separate _further study_ link                                                               | **Do not silently import content**                                                                         |
+| **SCHUBERT-Verlag**                                               | Level-organized exercises and explicit restrictions on redistribution/collection                                       | Understand practice themes or link to original site                                                                                                         | **No unlicensed reposting/import**                                                                         |
 
 **Verified external URLs:**
 
@@ -190,7 +190,7 @@ The user must see a useful learning destination, not a wall of external links:
 3. Ask available daily study time and preferred help language (English/Arabic).
 4. Explain official Goethe exam vs independent practice clearly.
 5. Offer **5–10-minute diagnostic**, or continue without one.
-6. Create *editable* prep plan; do not make unjustified claims of pass probability.
+6. Create _editable_ prep plan; do not make unjustified claims of pass probability.
 
 If the learner is currently A1.1, recommend **starter exam-style practice** and explain that a full A1 test typically assumes complete A1 competency (often acquired through A1.1+A1.2 or equivalent learning).
 
@@ -228,6 +228,7 @@ If the learner is currently A1.1, recommend **starter exam-style practice** and 
 **Content:** original everyday dialogues, train announcements, phone messages, short radio snippets, later interviews/lectures depending on level.
 
 **Task UI / engine:**
+
 - Play prompt with configurable speed in training only.
 - Number of plays, pauses and sequencing stored in task-version settings for the intended paper.
 - Question formats: single-select, matching, true/false, other paper-specific objective tasks.
@@ -240,7 +241,7 @@ If the learner is currently A1.1, recommend **starter exam-style practice** and 
 
 ## 9. Lesen — Reading studio
 
-- Render *original* notices, websites, emails, messages, advertisements and increasingly complex texts.
+- Render _original_ notices, websites, emails, messages, advertisements and increasingly complex texts.
 - Adaptive practice: scanning details, global meaning, negatives, inference, matching.
 - One source text can generate multiple teacher-reviewed independent questions.
 - Text highlight (practice), keyword help (practice), distraction comparison after answer.
@@ -259,14 +260,16 @@ If the learner is currently A1.1, recommend **starter exam-style practice** and 
 ## 11. Sprechen — Speaking studio
 
 ### Native modes
+
 1. Listen and repeat (not exam-scored).
 2. Guided roleplay / simulated examiner.
-3. Partner practice (existing two-partner study space can be leveraged *after authorization audit*).
+3. Partner practice (existing two-partner study space can be leveraged _after authorization audit_).
 4. Timed section simulation with voice recording; transparent limits versus real group/paired exam.
 
 ### A1 adult specific blueprint
 
 The official A1 model describes three tasks:
+
 - **Part 1:** introduce yourself (name, age, country, town, languages, profession, hobby).
 - **Part 2:** ask for and give information about familiar everyday subjects.
 - **Part 3:** make requests and respond appropriately.
@@ -274,7 +277,8 @@ The official A1 model describes three tasks:
 Build **your own original question cards and prompts**; do not copy Goethe cards. Do not describe an AI single-person simulator as reproducing a real group examination exactly.
 
 ### Feedback protocol
-- Store *recognized transcript* separately from actual recording and show ASR uncertainty.
+
+- Store _recognized transcript_ separately from actual recording and show ASR uncertainty.
 - Assess whether the requested **information was communicated**, plus general intelligibility, grammatical targets and turn-taking.
 - ASR agreement is **not an acoustic pronunciation accuracy score**. Never invent phoneme-level precision if the technology does not provide it.
 - In the first release: structured text feedback + optional recording replay + user-friendly “what to try next.”
@@ -307,7 +311,7 @@ Next three actions:
 [Repeat Part 2 oral card]
 ```
 
-**Important:** values above are fictional UI samples, *not* the official distribution of marks/questions. Report labels should clearly distinguish `raw item accuracy`, `unofficial rubric feedback`, and `official scoring reference`.
+**Important:** values above are fictional UI samples, _not_ the official distribution of marks/questions. Report labels should clearly distinguish `raw item accuracy`, `unofficial rubric feedback`, and `official scoring reference`.
 
 **Mistake mapping** must point to existing `lesson_slug` / `vocabulary_id` / `grammar_objective_id` where possible. When a resource isn't present in the course, create a content-authoring backlog instead of a dead link.
 
@@ -334,25 +338,25 @@ One definition per exam **and audience/version**, not just per CEFR level.
 
 Proposed adult starter registry:
 
-| Exam | Hören | Lesen | Schreiben | Sprechen | Important distinction |
-|---|---:|---:|---:|---:|---|
-| A1 Start Deutsch 1 | 20 min | 25 min | 20 min | 15 min | Group speaking, **combined overall** passing rule |
-| A2 Goethe-Zertifikat A2 | 30 min | 30 min | 30 min | 15 min | Overall plus **minimum written/oral** scores |
-| B1 Goethe-Zertifikat B1 | 40 min | 65 min | 60 min | 15 min | Modules separately assessed; paired speaking |
-| B2 Goethe-Zertifikat B2 | 40 min | 65 min | 75 min | 15 min | Separate modules; presentation and discussion |
-| C1 Goethe-Zertifikat C1 | 40 min | 65 min | 75 min | 20 min | Separate modules; advanced task/argumentation |
-| C2 Goethe-Zertifikat C2 | 35 min | 80 min | 80 min | 15 min | Separate modules; individual speaking |
+| Exam                    |  Hören |  Lesen | Schreiben | Sprechen | Important distinction                             |
+| ----------------------- | -----: | -----: | --------: | -------: | ------------------------------------------------- |
+| A1 Start Deutsch 1      | 20 min | 25 min |    20 min |   15 min | Group speaking, **combined overall** passing rule |
+| A2 Goethe-Zertifikat A2 | 30 min | 30 min |    30 min |   15 min | Overall plus **minimum written/oral** scores      |
+| B1 Goethe-Zertifikat B1 | 40 min | 65 min |    60 min |   15 min | Modules separately assessed; paired speaking      |
+| B2 Goethe-Zertifikat B2 | 40 min | 65 min |    75 min |   15 min | Separate modules; presentation and discussion     |
+| C1 Goethe-Zertifikat C1 | 40 min | 65 min |    75 min |   20 min | Separate modules; advanced task/argumentation     |
+| C2 Goethe-Zertifikat C2 | 35 min | 80 min |    80 min |   15 min | Separate modules; individual speaking             |
 
-These are Goethe-published standard *section durations*, not the promised total in-person appointment length. Prep time and accommodation rules may be additional and vary. **Recheck official current exam detail per level before launch**.
+These are Goethe-published standard _section durations_, not the promised total in-person appointment length. Prep time and accommodation rules may be additional and vary. **Recheck official current exam detail per level before launch**.
 
 **Source:** https://www.goethe.de/en/spr/prf.html and official individual certificate pages; scoring https://www.goethe.de/en/spr/prf/pes.html.
 
 ### Scoring config: model as data, not application branching
 
-- A1 adult: official pass at **60/100 total** with all sections attempted; written component 75 available, oral 25. An *unofficial* exam may show a **practice equivalent** only if the question weighting and human-scored components have been correctly modelled and reviewed. Otherwise show skill-level raw accuracy without artificial 100-point equivalence.
+- A1 adult: official pass at **60/100 total** with all sections attempted; written component 75 available, oral 25. An _unofficial_ exam may show a **practice equivalent** only if the question weighting and human-scored components have been correctly modelled and reviewed. Otherwise show skill-level raw accuracy without artificial 100-point equivalence.
 - A2 adult: official **60/100 overall + 45 written + 15 oral**, with all parts attempted.
 - B1/B2/C1/C2: official **60/100 within each separately assessed module**. Never average the modules into one fake pass prediction.
-- Version the grade configuration and keep source metadata. Teachers must validate any *simulated* rubric, raw-to-scaled conversions and question counts against the target paper definition.
+- Version the grade configuration and keep source metadata. Teachers must validate any _simulated_ rubric, raw-to-scaled conversions and question counts against the target paper definition.
 - When writing/speaking has not been assessed, show **incomplete provisional results**, not `pass`.
 
 Example definition fragment (**structure illustrative**, not an official marking recipe):
@@ -433,7 +437,7 @@ All contents below should be **original and reviewed**, never copied from an off
 }
 ```
 
-**Production data hygiene:** Split public questions from private answer keys and transcripts. A public attempt API must **not** send `correctOptionIds`, rationale, examiner reference response or hidden hints before submission. Store solutions server-side or in access-controlled tables/fields and expose only after scoring. The example above is an *authoring pack*, not the client payload.
+**Production data hygiene:** Split public questions from private answer keys and transcripts. A public attempt API must **not** send `correctOptionIds`, rationale, examiner reference response or hidden hints before submission. Store solutions server-side or in access-controlled tables/fields and expose only after scoring. The example above is an _authoring pack_, not the client payload.
 
 ### Content blueprint per paper
 
@@ -524,29 +528,29 @@ This is a suggested layout to adapt to existing conventions, **not an assertion 
 
 Prefer **relational content with versioned immutable JSON for polymorphic tasks**; do not bury all attempts in the learner's existing JSONB backup snapshot.
 
-| Table | Essential fields | Reason |
-|---|---|---|
-| `exam_definitions` | id, exam_code unique, provider, CEFR, audience, official_url, checked_at, blueprint_version, scoring_rule_version, status | Separate adult/youth and changing rules |
-| `exam_sections` | id, definition_id, skill, duration_seconds, section_order, rules_json | Timing and interaction |
-| `exam_papers` | id, exam_id, paper_slug, title, kind, current_published_version_id nullable | Named original practice packs |
-| `exam_paper_versions` | id, paper_id, version, immutable_hash, content_status, published_at, provenance_status | Preserve what learner actually took |
-| `exam_task_versions` | id, paper_version_id, section_id, order_index, task_type, prompt_json, private_solution_json, objective_tags, weight, media_id | Versioned tasks and answer keys |
-| `exam_media_assets` | id, storage_key, transcript, content_hash, license_id, audio_duration, qa_status | Licensed original media and provenance |
-| `content_license_records` | id, source_url, author, license_code, evidence_url, allowed_scope, verified_by, verified_at | Publication rights |
-| `exam_review_signoffs` | id, paper_version_id, reviewer_id, reviewer_role, review_type, revision_hash, approved_at | Approval for exact revision |
-| `exam_attempts` | id, user_id, paper_version_id, mode, status, started_at, submitted_at, timer_state_json, interruption_flag | User-scoped state |
-| `exam_responses` | id, attempt_id, task_version_id, answer_json, saved_at, evaluated_at, review_status | Version-specific answers |
-| `exam_feedback` | id, response_id, engine, rubric_version, reviewer_id nullable, confidence, feedback_json, status | Separate AI from reviewed scores |
-| `exam_speech_recordings` | id, user_id, attempt_id, media_key, status, retained_until, deleted_at | Private learner recordings |
-| `exam_skill_observations` | id, user_id, attempt_id, skill, objective_tag, measured_value, kind, observed_at | Honest evidence for recommendations |
-| `exam_goals` | id, user_id unique, exam_code, planned_at nullable, booking_confirmed, daily_minutes, tz, coaching_lang | Study planning |
-| `exam_recommendations` | id, user_id, linked_objective, linked_lesson_id nullable, reason_json, generated_at, completed_at | Explainable exam-to-lesson connection |
+| Table                     | Essential fields                                                                                                               | Reason                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
+| `exam_definitions`        | id, exam_code unique, provider, CEFR, audience, official_url, checked_at, blueprint_version, scoring_rule_version, status      | Separate adult/youth and changing rules |
+| `exam_sections`           | id, definition_id, skill, duration_seconds, section_order, rules_json                                                          | Timing and interaction                  |
+| `exam_papers`             | id, exam_id, paper_slug, title, kind, current_published_version_id nullable                                                    | Named original practice packs           |
+| `exam_paper_versions`     | id, paper_id, version, immutable_hash, content_status, published_at, provenance_status                                         | Preserve what learner actually took     |
+| `exam_task_versions`      | id, paper_version_id, section_id, order_index, task_type, prompt_json, private_solution_json, objective_tags, weight, media_id | Versioned tasks and answer keys         |
+| `exam_media_assets`       | id, storage_key, transcript, content_hash, license_id, audio_duration, qa_status                                               | Licensed original media and provenance  |
+| `content_license_records` | id, source_url, author, license_code, evidence_url, allowed_scope, verified_by, verified_at                                    | Publication rights                      |
+| `exam_review_signoffs`    | id, paper_version_id, reviewer_id, reviewer_role, review_type, revision_hash, approved_at                                      | Approval for exact revision             |
+| `exam_attempts`           | id, user_id, paper_version_id, mode, status, started_at, submitted_at, timer_state_json, interruption_flag                     | User-scoped state                       |
+| `exam_responses`          | id, attempt_id, task_version_id, answer_json, saved_at, evaluated_at, review_status                                            | Version-specific answers                |
+| `exam_feedback`           | id, response_id, engine, rubric_version, reviewer_id nullable, confidence, feedback_json, status                               | Separate AI from reviewed scores        |
+| `exam_speech_recordings`  | id, user_id, attempt_id, media_key, status, retained_until, deleted_at                                                         | Private learner recordings              |
+| `exam_skill_observations` | id, user_id, attempt_id, skill, objective_tag, measured_value, kind, observed_at                                               | Honest evidence for recommendations     |
+| `exam_goals`              | id, user_id unique, exam_code, planned_at nullable, booking_confirmed, daily_minutes, tz, coaching_lang                        | Study planning                          |
+| `exam_recommendations`    | id, user_id, linked_objective, linked_lesson_id nullable, reason_json, generated_at, completed_at                              | Explainable exam-to-lesson connection   |
 
 **Constraints/indexes:** `(user_id, started_at DESC)` attempts, `(attempt_id, task_version_id)` unique response, `paper_version_id` immutable FK; published versions cannot be edited; audit all admin changes. Use idempotent content import with `paper_slug + version + hash`, not blind inserts. Review source licensing at **media level**, not just article level.
 
 ### User and content ownership
 
-- Content is shared read-only to learners *when published*.
+- Content is shared read-only to learners _when published_.
 - Attempts, responses, recordings, feedback, goals and reports belong to a verified `session.user.id` on the server.
 - Admin roles explicitly grant author / reviewer / publisher actions; user ID passed by client never authorizes reading another learner's data.
 - Existing study spaces must **not automatically expose exam answers, recordings or private reports** to invited partners. Add explicit opt-in sharing later.
@@ -672,19 +676,19 @@ Automated tools **cannot certify** that a question is idiomatic, level-appropria
 
 Each task signoff should answer:
 
-| Dimension | Human QA question |
-|---|---|
-| Source rights | Do we own/have suitable commercial rights for *every* element? |
-| German naturalness | Would a fluent speaker naturally say/read this? |
-| Level fit | Is required vocabulary/grammar appropriate to target CEFR? |
-| Skill validity | Does the task test its intended skill, not obscure trivia? |
-| Distractors | Is there exactly one defensible answer where required? |
-| Writing | Are requested points answerable and scoring criteria transparent? |
-| Speaking | Does prompt work in realistic conversation, with accessible alternatives? |
-| Audio | Does spoken script match, with natural prosody and balanced volume? |
-| Translation | Is Arabic/English coaching accurate and kept out of strict German exam conditions? |
-| Explanations | Can the learner understand why the answer is right? |
-| Mapping | Do recommended follow-up lessons actually exist? |
+| Dimension          | Human QA question                                                                  |
+| ------------------ | ---------------------------------------------------------------------------------- |
+| Source rights      | Do we own/have suitable commercial rights for _every_ element?                     |
+| German naturalness | Would a fluent speaker naturally say/read this?                                    |
+| Level fit          | Is required vocabulary/grammar appropriate to target CEFR?                         |
+| Skill validity     | Does the task test its intended skill, not obscure trivia?                         |
+| Distractors        | Is there exactly one defensible answer where required?                             |
+| Writing            | Are requested points answerable and scoring criteria transparent?                  |
+| Speaking           | Does prompt work in realistic conversation, with accessible alternatives?          |
+| Audio              | Does spoken script match, with natural prosody and balanced volume?                |
+| Translation        | Is Arabic/English coaching accurate and kept out of strict German exam conditions? |
+| Explanations       | Can the learner understand why the answer is right?                                |
+| Mapping            | Do recommended follow-up lessons actually exist?                                   |
 
 Two separate signoffs recommended for mock papers: **language/exam editor** + **publisher/legal/rights checker** (one person may hold separate roles in a tiny beta, but preserve auditable steps). Corrections create new version, never mutate a published version associated with an attempt.
 
@@ -726,7 +730,7 @@ Keep exam progress in relational tables. Add **references** to current learner d
 - `exam_attempts` activity can feed the existing daily progress summaries, but **avoid double-awarding XP** for replays, retries or duplicated events.
 - Exam mistakes can enqueue local vocabulary and spaced review; ask before importing large word sets.
 - Existing calendar planning integrates exam goals only if user opts in.
-- Existing small study groups can offer *explicitly shared* paired rehearsal; no implicit access to recordings/scores.
+- Existing small study groups can offer _explicitly shared_ paired rehearsal; no implicit access to recordings/scores.
 - Existing cloud snapshots are kept intact; do not serialize a large exam history into the snapshot on each save.
 
 **Example end-to-end flow:**
@@ -831,18 +835,18 @@ EXAM-020 Beta with teacher + learners, analytics and release gate
 
 ## 29. Free / Pro boundaries (proposal; not yet a billing state)
 
-| Capability | Free | Pro (when actually implemented) |
-|---|---|---|
-| Exam structure explorer / source explanations | Yes | Yes |
-| Original A1 diagnostic and small daily drills | Yes | Yes |
-| Basic attempt history and targeted lesson links | Yes | Yes |
-| One starter original practice paper | Yes | Yes |
-| Additional reviewed mock banks | Limited sample | Expanded catalogue |
-| AI writing/speaking coaching | Small clearly stated allowance | Larger fair-use allowance |
-| Personalized exam calendar/advanced improvement plan | Basic | Enhanced |
-| Verified teacher assessment | Not included by default | Optional add-on / separately priced if offered |
+| Capability                                           | Free                           | Pro (when actually implemented)                |
+| ---------------------------------------------------- | ------------------------------ | ---------------------------------------------- |
+| Exam structure explorer / source explanations        | Yes                            | Yes                                            |
+| Original A1 diagnostic and small daily drills        | Yes                            | Yes                                            |
+| Basic attempt history and targeted lesson links      | Yes                            | Yes                                            |
+| One starter original practice paper                  | Yes                            | Yes                                            |
+| Additional reviewed mock banks                       | Limited sample                 | Expanded catalogue                             |
+| AI writing/speaking coaching                         | Small clearly stated allowance | Larger fair-use allowance                      |
+| Personalized exam calendar/advanced improvement plan | Basic                          | Enhanced                                       |
+| Verified teacher assessment                          | Not included by default        | Optional add-on / separately priced if offered |
 
-Do not put *official downloadable free Goethe tests* behind a paywall. The paid value is the platform's **original assessed practice, feedback and progress system**. Honor existing Free commitments from the SaaS plan.
+Do not put _official downloadable free Goethe tests_ behind a paywall. The paid value is the platform's **original assessed practice, feedback and progress system**. Honor existing Free commitments from the SaaS plan.
 
 ## 30. Success metrics that signal actual exam-prep value
 
@@ -934,7 +938,7 @@ If any area is missing: publish as `practice set` or `section drill`, **not a co
 
 Build **A1 adult Exam Arena as a first-class part of Deutsch Journey**, not a detached micro-site. The first release should have A1 exam guidance, genuine original in-app exercises in all four skills, private attempts, useful feedback, and an immediate link from each weakness to the learner's existing course. Once a complete original paper has passed qualified human review, enable a full timed mock. Expand to A2–C2 with a reusable definition-based engine and distinct scoring rules.
 
-**North star:** *Don't just tell users what the Goethe exam is. Help them practise, understand their mistakes and speak more confidently when exam day arrives.*
+**North star:** _Don't just tell users what the Goethe exam is. Help them practise, understand their mistakes and speak more confidently when exam day arrives._
 
 ---
 

@@ -8,19 +8,19 @@
 
 - **Menschen A1.1** is a named Hueber product, not a reusable dataset. Its lesson sequence can guide a companion experience, but textbook passages, exercises, answer keys, dialogues, images and audio must **not** be bulk-republished without the proper agreement. Hueber explicitly says that uploading materials to learning platforms requires a licensing agreement: https://www.hueber.de/en/ueber-uns/kopierregeln-digitaler-unterricht
 - **CEFR** provides learning objectives; **Goethe** provides reliable examples of A1 exam scope and vocabulary. Their public pages do not automatically grant republication rights. https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors and https://www.goethe.de/de/m/spr/prf/ueb/pa1.html
-- "A1.1" is a *course subdivision*; CEFR officially describes **A1**, not a distinct certified A1.1 level.
+- "A1.1" is a _course subdivision_; CEFR officially describes **A1**, not a distinct certified A1.1 level.
 - AI-generated German is a **draft**, not verified truth. Pronunciation scores based on speech recognition are not official pronunciation certification.
 
 ## 1. Where to obtain content and how to verify it
 
-| Resource | Safe primary use | Verify / rights considerations |
-|---|---|---|
-| Council of Europe CEFR descriptors | Learning outcomes / skills rubric | Read and map outcomes, not copy entire publication into product |
-| Goethe-Zertifikat A1 Wortliste, sample tests | Vocabulary coverage, exercise skill targets and assessment pattern | Do not republish exam audio/tests or entire list without permission |
-| Hueber Menschen A1.1 | Course alignment and learner's own reference | Explicit permission for published reuse of protected material |
-| Tatoeba | Supplemental short sentences | Inspect exact sentence/audio licensing and attribution; manually check grammar and appropriateness |
-| German teacher / editor (qualified, ideally DaF/DaZ) | Review grammar, level, lesson utility, translations, spoken naturalness | Record named reviewer, review timestamp and reviewer decision |
-| Commercially licensed German TTS or professional voice actor | **New audio you own or can distribute** | Retain generation/voice licenses and quality-check audio |
+| Resource                                                     | Safe primary use                                                        | Verify / rights considerations                                                                     |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Council of Europe CEFR descriptors                           | Learning outcomes / skills rubric                                       | Read and map outcomes, not copy entire publication into product                                    |
+| Goethe-Zertifikat A1 Wortliste, sample tests                 | Vocabulary coverage, exercise skill targets and assessment pattern      | Do not republish exam audio/tests or entire list without permission                                |
+| Hueber Menschen A1.1                                         | Course alignment and learner's own reference                            | Explicit permission for published reuse of protected material                                      |
+| Tatoeba                                                      | Supplemental short sentences                                            | Inspect exact sentence/audio licensing and attribution; manually check grammar and appropriateness |
+| German teacher / editor (qualified, ideally DaF/DaZ)         | Review grammar, level, lesson utility, translations, spoken naturalness | Record named reviewer, review timestamp and reviewer decision                                      |
+| Commercially licensed German TTS or professional voice actor | **New audio you own or can distribute**                                 | Retain generation/voice licenses and quality-check audio                                           |
 
 For a **paid** product, build primarily **original** content, commissioned or generated then human-reviewed, with an auditable permission trail. Verify Arabic translations separately (Modern Standard Arabic vs Egyptian dialect), and keep English translations natural.
 
@@ -57,27 +57,80 @@ Store one versioned JSON file per lesson in Git, and validate before import.
   "title": { "de": "Sich begrüßen", "en": "Meeting someone", "ar": "التعارف" },
   "canDo": ["I can greet someone", "I can ask for and give a name"],
   "references": [
-    {"name": "CEFR A1 can-do descriptors", "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors", "use": "curriculum_reference_only"}
+    {
+      "name": "CEFR A1 can-do descriptors",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+      "use": "curriculum_reference_only"
+    }
   ],
-  "rights": { "origin": "original", "commercialUseCleared": true, "notes": "New example content; no textbook text reproduced" },
+  "rights": {
+    "origin": "original",
+    "commercialUseCleared": true,
+    "notes": "New example content; no textbook text reproduced"
+  },
   "vocabulary": [
-    { "id": "w-hallo", "de": "Hallo", "en": "hello", "ar": "مرحبًا", "type": "phrase", "article": null, "plural": null },
-    { "id": "w-name", "de": "der Name", "en": "name", "ar": "الاسم", "type": "noun", "article": "der", "plural": "die Namen" }
+    {
+      "id": "w-hallo",
+      "de": "Hallo",
+      "en": "hello",
+      "ar": "مرحبًا",
+      "type": "phrase",
+      "article": null,
+      "plural": null
+    },
+    {
+      "id": "w-name",
+      "de": "der Name",
+      "en": "name",
+      "ar": "الاسم",
+      "type": "noun",
+      "article": "der",
+      "plural": "die Namen"
+    }
   ],
   "dialogues": [
-    { "id": "d-hello", "context": "Two students meet", "lines": [
-      { "speaker": "A", "de": "Hallo! Ich heiße Lea. Wie heißt du?", "en": "Hello! My name is Lea. What's your name?", "ar": "مرحبًا! اسمي ليا. ما اسمك؟", "audioKey": null },
-      { "speaker": "B", "de": "Ich heiße Omar. Freut mich!", "en": "My name is Omar. Nice to meet you!", "ar": "اسمي عمر. تشرفت بمعرفتك!", "audioKey": null }
-    ] }
+    {
+      "id": "d-hello",
+      "context": "Two students meet",
+      "lines": [
+        {
+          "speaker": "A",
+          "de": "Hallo! Ich heiße Lea. Wie heißt du?",
+          "en": "Hello! My name is Lea. What's your name?",
+          "ar": "مرحبًا! اسمي ليا. ما اسمك؟",
+          "audioKey": null
+        },
+        {
+          "speaker": "B",
+          "de": "Ich heiße Omar. Freut mich!",
+          "en": "My name is Omar. Nice to meet you!",
+          "ar": "اسمي عمر. تشرفت بمعرفتك!",
+          "audioKey": null
+        }
+      ]
+    }
   ],
   "exercises": [
-    { "id": "e-name", "type": "multiple_choice", "prompt": "How do you ask someone's name informally?", "options": [
-      {"id": "a", "text": "Wie heißt du?"},
-      {"id": "b", "text": "Wo ist das?"},
-      {"id": "c", "text": "Wie viel kostet das?"}
-    ], "correctOptionId": "a", "explanation": "‘Wie heißt du?’ asks for a name using informal ‘du’." }
+    {
+      "id": "e-name",
+      "type": "multiple_choice",
+      "prompt": "How do you ask someone's name informally?",
+      "options": [
+        { "id": "a", "text": "Wie heißt du?" },
+        { "id": "b", "text": "Wo ist das?" },
+        { "id": "c", "text": "Wie viel kostet das?" }
+      ],
+      "correctOptionId": "a",
+      "explanation": "‘Wie heißt du?’ asks for a name using informal ‘du’."
+    }
   ],
-  "reviews": { "language": null, "pedagogy": null, "arabic": null, "audio": null, "rights": null }
+  "reviews": {
+    "language": null,
+    "pedagogy": null,
+    "arabic": null,
+    "audio": null,
+    "rights": null
+  }
 }
 ```
 
@@ -121,13 +174,13 @@ Optional: pass content through a German grammar-checker such as LanguageTool, if
 
 An editor should use an admin review page; each review is stored per **specific content version**.
 
-| Gate | Reviewer verifies |
-|---|---|
-| `language` | Native/natural German; cases/articles, punctuation, context, respectful language |
-| `pedagogy` | Appropriate A1 vocabulary/grammar; clear skills progression; valid distractors |
-| `arabic` | Correct Modern Standard Arabic / chosen dialect; natural translations |
-| `rights` | Original or documented licenses; compatible with paid redistribution; media attribution |
-| `audio` | Matches script exactly; appropriate pacing/stress/intonation, not distorted |
+| Gate       | Reviewer verifies                                                                       |
+| ---------- | --------------------------------------------------------------------------------------- |
+| `language` | Native/natural German; cases/articles, punctuation, context, respectful language        |
+| `pedagogy` | Appropriate A1 vocabulary/grammar; clear skills progression; valid distractors          |
+| `arabic`   | Correct Modern Standard Arabic / chosen dialect; natural translations                   |
+| `rights`   | Original or documented licenses; compatible with paid redistribution; media attribution |
+| `audio`    | Matches script exactly; appropriate pacing/stress/intonation, not distorted             |
 
 Record `reviewerId`, `decision`, `comment`, `contentHash`, `reviewedAt` per gate. **Any change to lesson text/audio invalidates dependent approvals**, forcing a new review.
 
@@ -153,15 +206,15 @@ Your existing SaaS already has user-specific JSONB learning snapshots. Do **not*
 
 Suggested shared catalog tables:
 
-| Table | Key fields |
-|---|---|
-| `courses` | `id`, `cefr`, `title`, `visibility`, `sort_order` |
-| `lesson_versions` | `id`, `lesson_key`, `version`, `course_id`, `status`, `content_json`, `content_hash`, `created_at`, `published_at` |
-| `content_reviews` | `id`, `lesson_version_id`, `category`, `reviewer_id`, `decision`, `content_hash`, `created_at` |
-| `media_assets` | `id`, `lesson_version_id`, `storage_key`, `file_hash`, `license_ref`, `qa_status` |
-| `curriculum_sources` | `id`, `source_url`, `license`, `attribution`, `permission_doc`, `last_checked_at` |
-| `course_publications` | `course_id`, `lesson_key`, `published_version_id`, `updated_at` |
-| `lesson_progress` (learner-specific) | `user_id`, `lesson_key`, `lesson_version_seen`, `completed_at`, `mastery_json` |
+| Table                                | Key fields                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `courses`                            | `id`, `cefr`, `title`, `visibility`, `sort_order`                                                                  |
+| `lesson_versions`                    | `id`, `lesson_key`, `version`, `course_id`, `status`, `content_json`, `content_hash`, `created_at`, `published_at` |
+| `content_reviews`                    | `id`, `lesson_version_id`, `category`, `reviewer_id`, `decision`, `content_hash`, `created_at`                     |
+| `media_assets`                       | `id`, `lesson_version_id`, `storage_key`, `file_hash`, `license_ref`, `qa_status`                                  |
+| `curriculum_sources`                 | `id`, `source_url`, `license`, `attribution`, `permission_doc`, `last_checked_at`                                  |
+| `course_publications`                | `course_id`, `lesson_key`, `published_version_id`, `updated_at`                                                    |
+| `lesson_progress` (learner-specific) | `user_id`, `lesson_key`, `lesson_version_seen`, `completed_at`, `mastery_json`                                     |
 
 Maintain a public read view that returns only `course_publications` references to approved immutable `lesson_versions`. A private reviewer/admin API can read drafts. **Never** use a frontend `status = published` button as the only authorization check.
 
@@ -220,12 +273,12 @@ name: Content validation
 on:
   pull_request:
     paths:
-      - 'content/**'
-      - 'scripts/content/**'
-      - '.github/workflows/content-check.yml'
+      - "content/**"
+      - "scripts/content/**"
+      - ".github/workflows/content-check.yml"
   push:
     branches: [main]
-    paths: ['content/**', 'scripts/content/**']
+    paths: ["content/**", "scripts/content/**"]
 jobs:
   verify:
     runs-on: ubuntu-latest

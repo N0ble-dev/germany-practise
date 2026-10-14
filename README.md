@@ -1,8 +1,10 @@
 # Deutsch Journey
 
-A personal German A1.1 learning companion, rebuilt from the original browser app using strict TypeScript. Read the original product brief in [deutsch-journey-next-neon-features.md](./deutsch-journey-next-neon-features.md).
+A personal German learning platform for everyday life, work, study partners, and exam goals, built with strict TypeScript. **German for the life you want** is the product identity. The current foundation course covers A1.1; the broader A1–C2 path is being developed through reviewed original content. Available course levels are labeled explicitly. Read the original product brief in [deutsch-journey-next-neon-features.md](./deutsch-journey-next-neon-features.md).
 
 The [A1–C2 content factory foundation](./docs/content-factory-implementation.md) adds a 132-lesson planning map, protected editorial coverage/preview pages, pinned staging releases and source audits. These are planning targets and unreviewed drafts; the learner catalog continues to serve only reviewed publications.
+
+The [full resource integration](./docs/resource-intake-implementation.md) adds an audited source library and protected correction/review studio for the supplied book extraction and full sentence corpus. `/lessons` now opens the wider A1–C2 journey with self-guided practice and level-specific exam links; the existing A1.1 book course remains at `/lessons/foundation`. New course outlines are explicitly marked in preparation.
 
 ## Run locally
 
